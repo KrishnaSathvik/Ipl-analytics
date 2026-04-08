@@ -1,0 +1,506 @@
+[
+  {
+    "season": "2008",
+    "champion": "Rajasthan Royals",
+    "totalMatches": 58,
+    "totalRuns": 16809,
+    "totalWickets": 604,
+    "totalSixes": 623,
+    "totalFours": 1703,
+    "orangeCap": {
+      "player": "SE Marsh",
+      "runs": 616
+    },
+    "purpleCap": {
+      "player": "Sohail Tanvir",
+      "wickets": 22
+    },
+    "mostPOM": "SE Marsh",
+    "final": {
+      "runnerUp": "Chennai Super Kings",
+      "venue": "DY Patil Stadium, Mumbai",
+      "result": "RR won by 3 wickets",
+      "winnerScore": "164/7 (20 ov)",
+      "runnerUpScore": "163/5 (20 ov)",
+      "mom": "Yusuf Pathan",
+      "winnerCaptain": "Shane Warne",
+      "runnerUpCaptain": "MS Dhoni"
+    }
+  },
+  {
+    "season": "2009",
+    "champion": "Deccan Chargers",
+    "totalMatches": 57,
+    "totalRuns": 15376,
+    "totalWickets": 622,
+    "totalSixes": 508,
+    "totalFours": 1321,
+    "orangeCap": {
+      "player": "ML Hayden",
+      "runs": 572
+    },
+    "purpleCap": {
+      "player": "RP Singh",
+      "wickets": 23
+    },
+    "mostPOM": "Yusuf Pathan",
+    "final": {
+      "runnerUp": "Royal Challengers Bengaluru",
+      "venue": "Wanderers Stadium, Johannesburg",
+      "result": "DC won by 6 runs",
+      "winnerScore": "143/6 (20 ov)",
+      "runnerUpScore": "137/9 (20 ov)",
+      "mom": "Anil Kumble",
+      "winnerCaptain": "Adam Gilchrist",
+      "runnerUpCaptain": "Anil Kumble"
+    }
+  },
+  {
+    "season": "2010",
+    "champion": "Chennai Super Kings",
+    "totalMatches": 60,
+    "totalRuns": 17754,
+    "totalWickets": 630,
+    "totalSixes": 587,
+    "totalFours": 1709,
+    "orangeCap": {
+      "player": "Sachin Tendulkar",
+      "runs": 618
+    },
+    "purpleCap": {
+      "player": "Pragyan Ojha",
+      "wickets": 21
+    },
+    "mostPOM": "Sachin Tendulkar",
+    "final": {
+      "runnerUp": "Mumbai Indians",
+      "venue": "DY Patil Stadium, Mumbai",
+      "result": "CSK won by 22 runs",
+      "winnerScore": "168/5 (20 ov)",
+      "runnerUpScore": "146/9 (20 ov)",
+      "mom": "Suresh Raina",
+      "winnerCaptain": "MS Dhoni",
+      "runnerUpCaptain": "Sachin Tendulkar"
+    }
+  },
+  {
+    "season": "2011",
+    "champion": "Chennai Super Kings",
+    "totalMatches": 73,
+    "totalRuns": 19928,
+    "totalWickets": 739,
+    "totalSixes": 639,
+    "totalFours": 1916,
+    "orangeCap": {
+      "player": "Chris Gayle",
+      "runs": 608
+    },
+    "purpleCap": {
+      "player": "Lasith Malinga",
+      "wickets": 28
+    },
+    "mostPOM": "Chris Gayle",
+    "final": {
+      "runnerUp": "Royal Challengers Bengaluru",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "result": "CSK won by 58 runs",
+      "winnerScore": "205/5 (20 ov)",
+      "runnerUpScore": "147/8 (20 ov)",
+      "mom": "Murali Vijay",
+      "winnerCaptain": "MS Dhoni",
+      "runnerUpCaptain": "Daniel Vettori"
+    }
+  },
+  {
+    "season": "2012",
+    "champion": "Kolkata Knight Riders",
+    "totalMatches": 74,
+    "totalRuns": 21323,
+    "totalWickets": 772,
+    "totalSixes": 733,
+    "totalFours": 1911,
+    "orangeCap": {
+      "player": "Chris Gayle",
+      "runs": 733
+    },
+    "purpleCap": {
+      "player": "Morne Morkel",
+      "wickets": 25
+    },
+    "mostPOM": "Chris Gayle",
+    "final": {
+      "runnerUp": "Chennai Super Kings",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "result": "KKR won by 5 wickets",
+      "winnerScore": "192/5 (19.4 ov)",
+      "runnerUpScore": "190/3 (20 ov)",
+      "mom": "Manvinder Bisla",
+      "winnerCaptain": "Gautam Gambhir",
+      "runnerUpCaptain": "MS Dhoni"
+    }
+  },
+  {
+    "season": "2013",
+    "champion": "Mumbai Indians",
+    "totalMatches": 76,
+    "totalRuns": 21487,
+    "totalWickets": 831,
+    "totalSixes": 681,
+    "totalFours": 2054,
+    "orangeCap": {
+      "player": "Michael Hussey",
+      "runs": 733
+    },
+    "purpleCap": {
+      "player": "Dwayne Bravo",
+      "wickets": 32
+    },
+    "mostPOM": "Michael Hussey",
+    "final": {
+      "runnerUp": "Chennai Super Kings",
+      "venue": "Eden Gardens, Kolkata",
+      "result": "MI won by 23 runs",
+      "winnerScore": "148/9 (20 ov)",
+      "runnerUpScore": "125/9 (20 ov)",
+      "mom": "Kieron Pollard",
+      "winnerCaptain": "Rohit Sharma",
+      "runnerUpCaptain": "MS Dhoni"
+    }
+  },
+  {
+    "season": "2014",
+    "champion": "Kolkata Knight Riders",
+    "totalMatches": 60,
+    "totalRuns": 17943,
+    "totalWickets": 606,
+    "totalSixes": 715,
+    "totalFours": 1563,
+    "orangeCap": {
+      "player": "Robin Uthappa",
+      "runs": 660
+    },
+    "purpleCap": {
+      "player": "Mohit Sharma",
+      "wickets": 23
+    },
+    "mostPOM": "Glenn Maxwell",
+    "final": {
+      "runnerUp": "Punjab Kings",
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "result": "KKR won by 3 wickets",
+      "winnerScore": "200/7 (19.3 ov)",
+      "runnerUpScore": "199/4 (20 ov)",
+      "mom": "Manish Pandey",
+      "winnerCaptain": "Gautam Gambhir",
+      "runnerUpCaptain": "George Bailey"
+    }
+  },
+  {
+    "season": "2015",
+    "champion": "Mumbai Indians",
+    "totalMatches": 59,
+    "totalRuns": 17427,
+    "totalWickets": 626,
+    "totalSixes": 692,
+    "totalFours": 1611,
+    "orangeCap": {
+      "player": "David Warner",
+      "runs": 562
+    },
+    "purpleCap": {
+      "player": "Dwayne Bravo",
+      "wickets": 26
+    },
+    "mostPOM": "David Warner",
+    "final": {
+      "runnerUp": "Chennai Super Kings",
+      "venue": "Eden Gardens, Kolkata",
+      "result": "MI won by 41 runs",
+      "winnerScore": "202/5 (20 ov)",
+      "runnerUpScore": "161/8 (20 ov)",
+      "mom": "Rohit Sharma",
+      "winnerCaptain": "Rohit Sharma",
+      "runnerUpCaptain": "MS Dhoni"
+    }
+  },
+  {
+    "season": "2016",
+    "champion": "Sunrisers Hyderabad",
+    "totalMatches": 60,
+    "totalRuns": 17962,
+    "totalWickets": 591,
+    "totalSixes": 639,
+    "totalFours": 1633,
+    "orangeCap": {
+      "player": "Virat Kohli",
+      "runs": 973
+    },
+    "purpleCap": {
+      "player": "Bhuvneshwar Kumar",
+      "wickets": 23
+    },
+    "mostPOM": "Virat Kohli",
+    "final": {
+      "runnerUp": "Royal Challengers Bengaluru",
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "result": "SRH won by 8 runs",
+      "winnerScore": "208/7 (20 ov)",
+      "runnerUpScore": "200/7 (20 ov)",
+      "mom": "Ben Cutting",
+      "winnerCaptain": "David Warner",
+      "runnerUpCaptain": "Virat Kohli"
+    }
+  },
+  {
+    "season": "2017",
+    "champion": "Mumbai Indians",
+    "totalMatches": 59,
+    "totalRuns": 17920,
+    "totalWickets": 652,
+    "totalSixes": 706,
+    "totalFours": 1612,
+    "orangeCap": {
+      "player": "David Warner",
+      "runs": 641
+    },
+    "purpleCap": {
+      "player": "Bhuvneshwar Kumar",
+      "wickets": 26
+    },
+    "mostPOM": "BA Stokes",
+    "final": {
+      "runnerUp": "Rising Pune Supergiant",
+      "venue": "Rajiv Gandhi Intl Stadium, Hyderabad",
+      "result": "MI won by 1 run",
+      "winnerScore": "129/8 (20 ov)",
+      "runnerUpScore": "128/6 (20 ov)",
+      "mom": "Krunal Pandya",
+      "winnerCaptain": "Rohit Sharma",
+      "runnerUpCaptain": "Steve Smith"
+    }
+  },
+  {
+    "season": "2018",
+    "champion": "Chennai Super Kings",
+    "totalMatches": 60,
+    "totalRuns": 19098,
+    "totalWickets": 662,
+    "totalSixes": 872,
+    "totalFours": 1652,
+    "orangeCap": {
+      "player": "Kane Williamson",
+      "runs": 735
+    },
+    "purpleCap": {
+      "player": "Andrew Tye",
+      "wickets": 24
+    },
+    "mostPOM": "Rashid Khan",
+    "final": {
+      "runnerUp": "Sunrisers Hyderabad",
+      "venue": "Wankhede Stadium, Mumbai",
+      "result": "CSK won by 8 wickets",
+      "winnerScore": "181/2 (18.3 ov)",
+      "runnerUpScore": "178/6 (20 ov)",
+      "mom": "Shane Watson",
+      "winnerCaptain": "MS Dhoni",
+      "runnerUpCaptain": "Kane Williamson"
+    }
+  },
+  {
+    "season": "2019",
+    "champion": "Mumbai Indians",
+    "totalMatches": 60,
+    "totalRuns": 18607,
+    "totalWickets": 642,
+    "totalSixes": 786,
+    "totalFours": 1655,
+    "orangeCap": {
+      "player": "David Warner",
+      "runs": 692
+    },
+    "purpleCap": {
+      "player": "Imran Tahir",
+      "wickets": 26
+    },
+    "mostPOM": "Andre Russell",
+    "final": {
+      "runnerUp": "Chennai Super Kings",
+      "venue": "Rajiv Gandhi Intl Stadium, Hyderabad",
+      "result": "MI won by 1 run",
+      "winnerScore": "149/8 (20 ov)",
+      "runnerUpScore": "148/7 (20 ov)",
+      "mom": "Jasprit Bumrah",
+      "winnerCaptain": "Rohit Sharma",
+      "runnerUpCaptain": "MS Dhoni"
+    }
+  },
+  {
+    "season": "2020",
+    "champion": "Mumbai Indians",
+    "totalMatches": 60,
+    "totalRuns": 18566,
+    "totalWickets": 632,
+    "totalSixes": 736,
+    "totalFours": 1589,
+    "orangeCap": {
+      "player": "KL Rahul",
+      "runs": 676
+    },
+    "purpleCap": {
+      "player": "Kagiso Rabada",
+      "wickets": 32
+    },
+    "mostPOM": "AB de Villiers",
+    "final": {
+      "runnerUp": "Delhi Capitals",
+      "venue": "Dubai Intl Cricket Stadium",
+      "result": "MI won by 5 wickets",
+      "winnerScore": "157/5 (18.4 ov)",
+      "runnerUpScore": "156/7 (20 ov)",
+      "mom": "Trent Boult",
+      "winnerCaptain": "Rohit Sharma",
+      "runnerUpCaptain": "Shreyas Iyer"
+    }
+  },
+  {
+    "season": "2021",
+    "champion": "Chennai Super Kings",
+    "totalMatches": 60,
+    "totalRuns": 17727,
+    "totalWickets": 670,
+    "totalSixes": 687,
+    "totalFours": 1551,
+    "orangeCap": {
+      "player": "Ruturaj Gaikwad",
+      "runs": 635
+    },
+    "purpleCap": {
+      "player": "Harshal Patel",
+      "wickets": 32
+    },
+    "mostPOM": "Ruturaj Gaikwad",
+    "final": {
+      "runnerUp": "Kolkata Knight Riders",
+      "venue": "Dubai Intl Cricket Stadium",
+      "result": "CSK won by 27 runs",
+      "winnerScore": "192/3 (20 ov)",
+      "runnerUpScore": "165/9 (20 ov)",
+      "mom": "Faf du Plessis",
+      "winnerCaptain": "MS Dhoni",
+      "runnerUpCaptain": "Eoin Morgan"
+    }
+  },
+  {
+    "season": "2022",
+    "champion": "Gujarat Titans",
+    "totalMatches": 74,
+    "totalRuns": 23052,
+    "totalWickets": 850,
+    "totalSixes": 1062,
+    "totalFours": 2020,
+    "orangeCap": {
+      "player": "Jos Buttler",
+      "runs": 863
+    },
+    "purpleCap": {
+      "player": "Yuzvendra Chahal",
+      "wickets": 27
+    },
+    "mostPOM": "Kuldeep Yadav",
+    "final": {
+      "runnerUp": "Rajasthan Royals",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "result": "GT won by 7 wickets",
+      "winnerScore": "133/3 (18.1 ov)",
+      "runnerUpScore": "130/9 (20 ov)",
+      "mom": "Hardik Pandya",
+      "winnerCaptain": "Hardik Pandya",
+      "runnerUpCaptain": "Sanju Samson"
+    }
+  },
+  {
+    "season": "2023",
+    "champion": "Chennai Super Kings",
+    "totalMatches": 74,
+    "totalRuns": 24428,
+    "totalWickets": 859,
+    "totalSixes": 1124,
+    "totalFours": 2175,
+    "orangeCap": {
+      "player": "Shubman Gill",
+      "runs": 890
+    },
+    "purpleCap": {
+      "player": "Mohammed Shami",
+      "wickets": 28
+    },
+    "mostPOM": "YBK Jaiswal",
+    "final": {
+      "runnerUp": "Gujarat Titans",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "result": "CSK won by 5 wkts (DLS)",
+      "winnerScore": "171/5 (15 ov)",
+      "runnerUpScore": "214/4 (20 ov)",
+      "mom": "Devon Conway",
+      "winnerCaptain": "MS Dhoni",
+      "runnerUpCaptain": "Hardik Pandya"
+    }
+  },
+  {
+    "season": "2024",
+    "champion": "Kolkata Knight Riders",
+    "totalMatches": 71,
+    "totalRuns": 24657,
+    "totalWickets": 830,
+    "totalSixes": 1261,
+    "totalFours": 2175,
+    "orangeCap": {
+      "player": "Virat Kohli",
+      "runs": 741
+    },
+    "purpleCap": {
+      "player": "Harshal Patel",
+      "wickets": 24
+    },
+    "mostPOM": "Sunil Narine",
+    "final": {
+      "runnerUp": "Sunrisers Hyderabad",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "result": "KKR won by 8 wickets",
+      "winnerScore": "114/2 (10.3 ov)",
+      "runnerUpScore": "113 (18.3 ov)",
+      "mom": "Mitchell Starc",
+      "winnerCaptain": "Shreyas Iyer",
+      "runnerUpCaptain": "Pat Cummins"
+    }
+  },
+  {
+    "season": "2025",
+    "champion": "Royal Challengers Bengaluru",
+    "totalMatches": 74,
+    "totalRuns": 25309,
+    "totalWickets": 832,
+    "totalSixes": 1302,
+    "totalFours": 2263,
+    "orangeCap": {
+      "player": "B Sai Sudharsan",
+      "runs": 759
+    },
+    "purpleCap": {
+      "player": "M Prasidh Krishna",
+      "wickets": 25
+    },
+    "mostPOM": "Krunal Pandya",
+    "final": {
+      "runnerUp": "Punjab Kings",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "result": "RCB won by 6 runs",
+      "winnerScore": "190/9 (20 ov)",
+      "runnerUpScore": "184/7 (20 ov)",
+      "mom": "Krunal Pandya",
+      "winnerCaptain": "Rajat Patidar",
+      "runnerUpCaptain": "Shreyas Iyer"
+    }
+  }
+]
