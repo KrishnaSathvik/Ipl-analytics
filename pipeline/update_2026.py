@@ -106,20 +106,38 @@ def call_claude(prompt: str) -> str:
     client = anthropic.Anthropic(api_key=api_key)
 
     print("Calling Claude API with web search...")
-    response = client.messages.create(
-        model="claude-sonnet-4-20250514",
-        max_tokens=16000,
-        tools=[{"type": "web_search_20250305"}],
-        messages=[
-            {"role": "user", "content": prompt},
-        ],
-    )
+    print(f"  SDK version: {anthropic.__version__}")
+
+    try:
+        response = client.messages.create(
+            model="claude-sonnet-4-20250514",
+            max_tokens=16000,
+            tools=[{"type": "web_search_20250305", "name": "web_search"}],
+            messages=[
+                {"role": "user", "content": prompt},
+            ],
+        )
+    except anthropic.APIError as e:
+        print(f"\nAPI Error: {e.status_code} - {e.message}")
+        print(f"  Type: {type(e).__name__}")
+        sys.exit(1)
+    except Exception as e:
+        print(f"\nUnexpected error calling Claude API: {type(e).__name__}: {e}")
+        sys.exit(1)
+
+    print(f"  Stop reason: {response.stop_reason}")
+    print(f"  Usage: {response.usage.input_tokens} input, {response.usage.output_tokens} output tokens")
 
     # Extract text content from response
     result_text = ""
     for block in response.content:
         if block.type == "text":
             result_text += block.text
+
+    if not result_text:
+        print("\nError: Claude returned no text content.")
+        print(f"  Content blocks: {[b.type for b in response.content]}")
+        sys.exit(1)
 
     return result_text.strip()
 
