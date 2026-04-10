@@ -112,23 +112,6 @@
       ]
     },
     {
-      "rank": 7,
-      "team": "Gujarat Titans",
-      "short": "GT",
-      "color": "#1C1C2B",
-      "played": 3,
-      "won": 1,
-      "lost": 2,
-      "nr": 0,
-      "nrr": "-0.270",
-      "points": 2,
-      "form": [
-        "L",
-        "L",
-        "W"
-      ]
-    },
-    {
       "rank": 6,
       "team": "Sunrisers Hyderabad",
       "short": "SRH",
@@ -143,6 +126,23 @@
         "L",
         "W",
         "L"
+      ]
+    },
+       {
+      "rank": 7,
+      "team": "Gujarat Titans",
+      "short": "GT",
+      "color": "#1C1C2B",
+      "played": 3,
+      "won": 1,
+      "lost": 2,
+      "nr": 0,
+      "nrr": "-0.270",
+      "points": 2,
+      "form": [
+        "L",
+        "L",
+        "W"
       ]
     },
     {
