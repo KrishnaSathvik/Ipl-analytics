@@ -68,19 +68,6 @@
     },
     {
       "rank": 4,
-      "team": "Lucknow Super Giants",
-      "short": "LSG",
-      "color": "#A72056",
-      "played": 3,
-      "won": 2,
-      "lost": 1,
-      "nr": 0,
-      "nrr": "+0.120",
-      "points": 4,
-      "form": ["L", "W", "W"]
-    },
-    {
-      "rank": 5,
       "team": "Delhi Capitals",
       "short": "DC",
       "color": "#0078BC",
@@ -88,9 +75,22 @@
       "won": 2,
       "lost": 1,
       "nr": 0,
-      "nrr": "+0.780",
+      "nrr": "+0.811",
       "points": 4,
       "form": ["W", "W", "L"]
+    },
+    {
+      "rank": 5,
+      "team": "Lucknow Super Giants",
+      "short": "LSG",
+      "color": "#A72056",
+      "played": 3,
+      "won": 2,
+      "lost": 1,
+      "nr": 0,
+      "nrr": "-0.359",
+      "points": 4,
+      "form": ["L", "W", "W"]
     },
     {
       "rank": 6,
@@ -114,7 +114,7 @@
       "won": 1,
       "lost": 2,
       "nr": 0,
-      "nrr": "-0.190",
+      "nrr": "-0.270",
       "points": 2,
       "form": ["L", "L", "W"]
     },
@@ -140,7 +140,7 @@
       "won": 0,
       "lost": 3,
       "nr": 1,
-      "nrr": "-2.140",
+      "nrr": "-1.315",
       "points": 1,
       "form": ["L", "N", "L"]
     },
