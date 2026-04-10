@@ -43,23 +43,7 @@ const venueAnalytics = venueAnalyticsData as any[];
 
 type Tab = 'partnerships' | 'homeadvantage' | 'rivalries' | 'onthisday';
 
-const TEAM_COLOR: Record<string,string> = {
-  "Chennai Super Kings":"#F9CD05","Mumbai Indians":"#004BA0",
-  "Royal Challengers Bengaluru":"#EC1C24","Royal Challengers Bangalore":"#EC1C24",
-  "Kolkata Knight Riders":"#3A225D","Delhi Capitals":"#0078BC",
-  "Delhi Daredevils":"#0078BC","Punjab Kings":"#ED1B24","Kings XI Punjab":"#ED1B24",
-  "Rajasthan Royals":"#EA1A85","Sunrisers Hyderabad":"#FF822A",
-  "Gujarat Titans":"#1C1C2B","Lucknow Super Giants":"#A72056",
-  "Deccan Chargers":"#F7941D","Rising Pune Supergiant":"#6F2E81",
-};
-const TEAM_SHORT: Record<string,string> = {
-  "Chennai Super Kings":"CSK","Mumbai Indians":"MI",
-  "Royal Challengers Bengaluru":"RCB","Royal Challengers Bangalore":"RCB",
-  "Kolkata Knight Riders":"KKR","Delhi Capitals":"DC","Delhi Daredevils":"DC",
-  "Punjab Kings":"PBKS","Kings XI Punjab":"PBKS","Rajasthan Royals":"RR",
-  "Sunrisers Hyderabad":"SRH","Gujarat Titans":"GT","Lucknow Super Giants":"LSG",
-  "Deccan Chargers":"DCH","Rising Pune Supergiant":"RPS",
-};
+import { TEAM_COLORS as TEAM_COLOR, LOGO_CODE as TEAM_SHORT } from '../lib/teams';
 
 function Tip({ active, payload, label }: any) {
   if (!active || !payload?.length) return null;
@@ -127,7 +111,7 @@ function Partnerships() {
             <thead>
               <tr style={{ background:'var(--bg-subtle)', borderBottom:'1px solid var(--border)' }}>
                 {['#','Partnership','Runs','Inns','Avg','Best'].map(h=>(
-                  <th key={h} style={{ padding:'8px 5px', fontSize:10, fontWeight:700, color:'var(--text-4)',
+                  <th scope="col" key={h} style={{ padding:'8px 5px', fontSize:10, fontWeight:700, color:'var(--text-4)',
                     textAlign:h==='#'||h==='Partnership'?'left':'center', textTransform:'uppercase',
                     letterSpacing:'0.03em', paddingLeft:h==='#'?10:5 }}>{h}</th>
                 ))}

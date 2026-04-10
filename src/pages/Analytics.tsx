@@ -145,7 +145,7 @@ function OverRunRateChart() {
           <thead>
             <tr style={{ background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border)' }}>
               {['Over','Phase','Runs','Run Rate','6s','Wkts'].map(h => (
-                <th key={h} style={{ padding: '8px 6px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h==='Over'||h==='Phase'?'left':'center', textTransform: 'uppercase', letterSpacing: '0.03em' }}>{h}</th>
+                <th scope="col" key={h} style={{ padding: '8px 6px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h==='Over'||h==='Phase'?'left':'center', textTransform: 'uppercase', letterSpacing: '0.03em' }}>{h}</th>
               ))}
             </tr>
           </thead>
@@ -337,7 +337,7 @@ function ClutchTab() {
               <thead>
                 <tr style={{ background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border)' }}>
                   {['#','Player','Runs','SR','6s','Inns'].map(h => (
-                    <th key={h} style={{ padding: '8px 5px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h==='#'||h==='Player'?'left':'center', textTransform: 'uppercase', paddingLeft: h==='#'?10:5 }}>{h}</th>
+                    <th scope="col" key={h} style={{ padding: '8px 5px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h==='#'||h==='Player'?'left':'center', textTransform: 'uppercase', paddingLeft: h==='#'?10:5 }}>{h}</th>
                   ))}
                 </tr>
               </thead>
@@ -368,7 +368,7 @@ function ClutchTab() {
             <thead>
               <tr style={{ background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border)' }}>
                 {['#','Player','Wkts','Economy','Overs'].map(h => (
-                  <th key={h} style={{ padding: '8px 5px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h==='#'||h==='Player'?'left':'center', textTransform: 'uppercase', paddingLeft: h==='#'?10:5 }}>{h}</th>
+                  <th scope="col" key={h} style={{ padding: '8px 5px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h==='#'||h==='Player'?'left':'center', textTransform: 'uppercase', paddingLeft: h==='#'?10:5 }}>{h}</th>
                 ))}
               </tr>
             </thead>
@@ -443,7 +443,7 @@ function TossTab() {
           <thead>
             <tr style={{ background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border)' }}>
               {['', 'Team', 'Toss Win%', 'Win After Toss%'].map(h => (
-                <th key={h} style={{ padding: '8px 8px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h === 'Team' ? 'left' : 'center', textTransform: 'uppercase', letterSpacing: '0.03em' }}>{h}</th>
+                <th scope="col" key={h} style={{ padding: '8px 8px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h === 'Team' ? 'left' : 'center', textTransform: 'uppercase', letterSpacing: '0.03em' }}>{h}</th>
               ))}
             </tr>
           </thead>
@@ -523,7 +523,7 @@ function PowerplayTab() {
           <thead>
             <tr style={{ background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border)' }}>
               {['Over', 'Run Rate', 'Runs', 'Sixes', 'Wickets'].map(h => (
-                <th key={h} style={{ padding: '8px 6px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h === 'Over' ? 'left' : 'center', textTransform: 'uppercase', letterSpacing: '0.03em' }}>{h}</th>
+                <th scope="col" key={h} style={{ padding: '8px 6px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h === 'Over' ? 'left' : 'center', textTransform: 'uppercase', letterSpacing: '0.03em' }}>{h}</th>
               ))}
             </tr>
           </thead>

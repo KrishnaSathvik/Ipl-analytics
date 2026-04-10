@@ -6,24 +6,17 @@ import TeamBadge from '../components/TeamBadge';
 
 const seasons = seasonData as SeasonSummary[];
 
-const TEAM_META: Record<string, { color: string; short: string; textColor?: string }> = {
-  'Mumbai Indians':             { color: '#004BA0', short: 'MI' },
-  'Chennai Super Kings':        { color: '#F9CD05', short: 'CSK', textColor: '#000' },
-  'Kolkata Knight Riders':      { color: '#3A225D', short: 'KKR' },
-  'Royal Challengers Bengaluru':{ color: '#EC1C24', short: 'RCB' },
-  'Sunrisers Hyderabad':        { color: '#FF822A', short: 'SRH', textColor: '#000' },
-  'Gujarat Titans':             { color: '#1C1C2B', short: 'GT' },
-  'Rajasthan Royals':           { color: '#EA1A85', short: 'RR' },
-  'Deccan Chargers':            { color: '#F7941D', short: 'DCH' },
-  'Delhi Capitals':             { color: '#0078BC', short: 'DC' },
-  'Punjab Kings':               { color: '#ED1B24', short: 'PBKS' },
-  'Lucknow Super Giants':       { color: '#A72056', short: 'LSG' },
-  'Rising Pune Supergiant':     { color: '#6C1D8C', short: 'RR' }, // no logo, use closest
-};
+import { TEAM_COLORS, LOGO_CODE, TEAM_TEXT_COLOR } from '../lib/teams';
 
-const CHAMP_COLOR: Record<string, string> = Object.fromEntries(
-  Object.entries(TEAM_META).map(([k, v]) => [k, v.color])
-);
+const CHAMP_COLOR = TEAM_COLORS;
+
+const TEAM_META: Record<string, { color: string; short: string; textColor?: string }> =
+  Object.fromEntries(
+    Object.entries(LOGO_CODE).map(([name, short]) => [
+      name,
+      { color: TEAM_COLORS[name] || '#6366f1', short, textColor: TEAM_TEXT_COLOR[name] },
+    ])
+  );
 
 const TITLE_COUNT: Record<string, number> = {};
 seasons.forEach(s => {

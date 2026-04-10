@@ -25,10 +25,10 @@ export default function Nav({ current, onChange }: { current: Page; onChange: (p
   return (
     <>
       {/* ── Desktop top nav ─────────────────────────────────────────────── */}
-      <nav className="hidden md:flex fixed top-0 inset-x-0 z-50 h-12 items-center px-5 gap-0.5"
+      <nav aria-label="Main navigation" className="hidden md:flex fixed top-0 inset-x-0 z-50 h-12 items-center px-5 gap-0.5"
         style={{ background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--border)' }}>
 
-        <button onClick={() => onChange('home')} className="flex items-center gap-2 mr-4 flex-shrink-0">
+        <button onClick={() => onChange('home')} className="flex items-center gap-2 mr-4 flex-shrink-0" aria-label="IPL Hub home">
           <Cricket size={18} weight="fill" color="var(--accent)" />
           <span style={{ fontWeight: 700, fontSize: 14, color: 'var(--text)', letterSpacing: '-0.02em' }}>IPL Hub</span>
           <span style={{ fontSize: 10, padding: '1px 6px', borderRadius: 999, fontWeight: 700,
@@ -37,6 +37,7 @@ export default function Nav({ current, onChange }: { current: Page; onChange: (p
 
         {ALL_PAGES.map(item => (
           <button key={item.id} onClick={() => onChange(item.id)}
+            aria-current={current === item.id ? 'page' : undefined}
             style={{
               padding: '4px 11px', borderRadius: 6, fontSize: 13, cursor: 'pointer', whiteSpace: 'nowrap',
               fontWeight: current === item.id ? 600 : 400, border: 'none', transition: 'all 0.15s',
@@ -88,7 +89,7 @@ export default function Nav({ current, onChange }: { current: Page; onChange: (p
           </>
         )}
 
-        <nav className="md:hidden fixed bottom-0 inset-x-0 z-50"
+        <nav aria-label="Mobile navigation" className="md:hidden fixed bottom-0 inset-x-0 z-50"
           style={{
             background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(12px)',
             borderTop: '1px solid var(--border)',
@@ -99,6 +100,8 @@ export default function Nav({ current, onChange }: { current: Page; onChange: (p
               const active = current === id;
               return (
                 <button key={id} onClick={() => { onChange(id); setShowMore(false); }}
+                  aria-label={item.label}
+                  aria-current={active ? 'page' : undefined}
                   style={{
                     flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center',
                     justifyContent: 'center', padding: '10px 0 8px', gap: 3,
@@ -115,6 +118,8 @@ export default function Nav({ current, onChange }: { current: Page; onChange: (p
             })}
 
             <button onClick={() => setShowMore(v => !v)}
+              aria-label={showMore ? 'Close more pages menu' : 'More pages'}
+              aria-expanded={showMore}
               style={{
                 flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center',
                 justifyContent: 'center', padding: '10px 0 8px', gap: 3,
