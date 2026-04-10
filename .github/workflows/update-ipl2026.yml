@@ -6,6 +6,9 @@ on:
     # Run daily at 6:00 PM UTC (11:30 PM IST) during IPL season
     - cron: '0 18 * 3-5 *'
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -24,6 +27,15 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r pipeline/requirements.txt
+
+      - name: Check API key is configured
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::ANTHROPIC_API_KEY secret is not set. Go to Settings → Secrets and variables → Actions → New repository secret to add it."
+            exit 1
+          fi
 
       - name: Run update script
         env:
