@@ -6,9 +6,9 @@
     "startDate": "2026-03-28",
     "endDate": "2026-05-31",
     "totalMatches": 74,
-    "matchesPlayed": 9,
+    "matchesPlayed": 15,
     "defendingChampion": "Royal Challengers Bengaluru",
-    "lastUpdated": "2026-04-07"
+    "lastUpdated": "2026-04-10"
   },
   "groups": {
     "A": [
@@ -29,13 +29,29 @@
   "pointsTable": [
     {
       "rank": 1,
-      "team": "Punjab Kings",
-      "short": "PBKS",
-      "color": "#ED1B24",
+      "team": "Rajasthan Royals",
+      "short": "RR",
+      "color": "#EA1A85",
+      "played": 3,
+      "won": 3,
+      "lost": 0,
+      "nrr": "+2.403",
+      "points": 6,
+      "form": [
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 2,
+      "team": "Royal Challengers Bengaluru",
+      "short": "RCB",
+      "color": "#EC1C24",
       "played": 2,
       "won": 2,
       "lost": 0,
-      "nrr": "+0.637",
+      "nrr": "+1.824",
       "points": 4,
       "form": [
         "W",
@@ -43,70 +59,63 @@
       ]
     },
     {
-      "rank": 2,
-      "team": "Rajasthan Royals",
-      "short": "RR",
-      "color": "#EA1A85",
-      "played": 1,
-      "won": 1,
-      "lost": 0,
-      "nrr": "+4.171",
-      "points": 2,
-      "form": [
-        "W"
-      ]
-    },
-    {
       "rank": 3,
-      "team": "Royal Challengers Bengaluru",
-      "short": "RCB",
-      "color": "#EC1C24",
-      "played": 1,
-      "won": 1,
-      "lost": 0,
-      "nrr": "+2.907",
-      "points": 2,
+      "team": "Delhi Capitals",
+      "short": "DC",
+      "color": "#0078BC",
+      "played": 3,
+      "won": 2,
+      "lost": 1,
+      "nrr": "+0.943",
+      "points": 4,
       "form": [
-        "W"
+        "W",
+        "W",
+        "L"
       ]
     },
     {
       "rank": 4,
-      "team": "Delhi Capitals",
-      "short": "DC",
-      "color": "#0078BC",
-      "played": 1,
-      "won": 1,
+      "team": "Punjab Kings",
+      "short": "PBKS",
+      "color": "#ED1B24",
+      "played": 3,
+      "won": 2,
       "lost": 0,
-      "nrr": "+1.397",
-      "points": 2,
+      "nr": 1,
+      "nrr": "+0.637",
+      "points": 5,
       "form": [
-        "W"
+        "W",
+        "W",
+        "N"
       ]
     },
     {
       "rank": 5,
-      "team": "Mumbai Indians",
-      "short": "MI",
-      "color": "#004BA0",
-      "played": 1,
-      "won": 1,
-      "lost": 0,
-      "nrr": "+0.687",
-      "points": 2,
+      "team": "Sunrisers Hyderabad",
+      "short": "SRH",
+      "color": "#FF822A",
+      "played": 3,
+      "won": 2,
+      "lost": 1,
+      "nrr": "+0.385",
+      "points": 4,
       "form": [
-        "W"
+        "L",
+        "W",
+        "L"
       ]
     },
     {
       "rank": 6,
-      "team": "Sunrisers Hyderabad",
-      "short": "SRH",
-      "color": "#FF822A",
+      "team": "Lucknow Super Giants",
+      "short": "LSG",
+      "color": "#A72056",
       "played": 2,
       "won": 1,
       "lost": 1,
-      "nrr": "+0.469",
+      "nrr": "-0.345",
       "points": 2,
       "form": [
         "L",
@@ -115,30 +124,33 @@
     },
     {
       "rank": 7,
-      "team": "Gujarat Titans",
-      "short": "GT",
-      "color": "#1C1C2B",
-      "played": 1,
-      "won": 0,
-      "lost": 1,
-      "nrr": "-0.391",
-      "points": 0,
+      "team": "Mumbai Indians",
+      "short": "MI",
+      "color": "#004BA0",
+      "played": 3,
+      "won": 1,
+      "lost": 2,
+      "nrr": "-0.423",
+      "points": 2,
       "form": [
+        "W",
+        "L",
         "L"
       ]
     },
     {
       "rank": 8,
-      "team": "Lucknow Super Giants",
-      "short": "LSG",
-      "color": "#A72056",
-      "played": 1,
-      "won": 0,
+      "team": "Gujarat Titans",
+      "short": "GT",
+      "color": "#1C1C2B",
+      "played": 2,
+      "won": 1,
       "lost": 1,
-      "nrr": "-0.687",
-      "points": 0,
+      "nrr": "-0.021",
+      "points": 2,
       "form": [
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -146,14 +158,16 @@
       "team": "Kolkata Knight Riders",
       "short": "KKR",
       "color": "#3A225D",
-      "played": 2,
+      "played": 3,
       "won": 0,
       "lost": 2,
+      "nr": 1,
       "nrr": "-1.964",
-      "points": 0,
+      "points": 1,
       "form": [
         "L",
-        "L"
+        "L",
+        "N"
       ]
     },
     {
@@ -161,12 +175,13 @@
       "team": "Chennai Super Kings",
       "short": "CSK",
       "color": "#F9CD05",
-      "played": 2,
+      "played": 3,
       "won": 0,
-      "lost": 2,
-      "nrr": "-2.562",
+      "lost": 3,
+      "nrr": "-2.017",
       "points": 0,
       "form": [
+        "L",
         "L",
         "L"
       ]
@@ -186,244 +201,265 @@
   },
   "recentResults": [
     {
-      "matchNo": 1,
-      "date": "2026-03-28",
-      "team1": "Royal Challengers Bengaluru",
-      "team2": "Sunrisers Hyderabad",
-      "result": "RCB won by 6 wickets",
-      "venue": "M. Chinnaswamy Stadium",
-      "highlight": "Defending champions open with a statement win"
+      "matchNo": 10,
+      "date": "2026-04-05",
+      "team1": "Sunrisers Hyderabad",
+      "team2": "Lucknow Super Giants",
+      "result": "LSG won by 5 wickets",
+      "venue": "Rajiv Gandhi International Stadium",
+      "t1Score": "156/9",
+      "t2Score": "160/5",
+      "highlight": "LSG chase down target with 1 ball remaining"
     },
     {
-      "matchNo": 2,
-      "date": "2026-03-29",
+      "matchNo": 11,
+      "date": "2026-04-05",
+      "team1": "Royal Challengers Bengaluru",
+      "team2": "Chennai Super Kings",
+      "result": "RCB won by 43 runs",
+      "venue": "M. Chinnaswamy Stadium",
+      "t1Score": "250/3",
+      "t2Score": "207",
+      "highlight": "RCB post massive total, CSK remain winless"
+    },
+    {
+      "matchNo": 12,
+      "date": "2026-04-06",
       "team1": "Kolkata Knight Riders",
       "team2": "Punjab Kings",
-      "result": "PBKS won",
+      "result": "No Result (rain)",
       "venue": "Eden Gardens",
-      "highlight": "PBKS' Cameron Green stars"
+      "t1Score": "11/0 (1.1 ov)",
+      "t2Score": "-",
+      "highlight": "Rain washes out match after just one over"
     },
     {
-      "matchNo": 3,
-      "date": "2026-03-30",
-      "team1": "Chennai Super Kings",
-      "team2": "Rajasthan Royals",
-      "result": "RR won by 8 wickets",
-      "venue": "MA Chidambaram Stadium",
-      "highlight": "Jadeja returns to Chepauk \u2014 RR hammer CSK"
-    },
-    {
-      "matchNo": 4,
-      "date": "2026-03-31",
-      "team1": "Gujarat Titans",
+      "matchNo": 13,
+      "date": "2026-04-07",
+      "team1": "Rajasthan Royals",
       "team2": "Mumbai Indians",
-      "result": "MI won",
-      "venue": "Narendra Modi Stadium",
-      "highlight": "Hardik Pandya's MI start strong"
+      "result": "RR won by 27 runs",
+      "venue": "Barsapara Cricket Stadium",
+      "t1Score": "150/3 (11 ov)",
+      "t2Score": "123/9 (11 ov)",
+      "highlight": "Jaiswal's 77* powers RR in rain-affected thriller"
     },
     {
-      "matchNo": 5,
-      "date": "2026-04-01",
-      "team1": "Delhi Capitals",
-      "team2": "Lucknow Super Giants",
-      "result": "DC won",
-      "venue": "Arun Jaitley Stadium",
-      "highlight": "Axar Patel leads Delhi to victory in home opener"
-    },
-    {
-      "matchNo": 6,
-      "date": "2026-04-02",
-      "team1": "Punjab Kings",
-      "team2": "Kolkata Knight Riders",
-      "result": "PBKS won",
-      "venue": "Punjab Cricket Association Stadium",
-      "highlight": "PBKS go 2-0, KKR's big-money buys disappoint"
-    },
-    {
-      "matchNo": 7,
-      "date": "2026-04-03",
-      "team1": "Sunrisers Hyderabad",
-      "team2": "Chennai Super Kings",
-      "result": "SRH won",
-      "venue": "Rajiv Gandhi International Stadium",
-      "highlight": "Ishan Kishan's SRH bounce back; CSK still winless"
-    },
-    {
-      "matchNo": 8,
-      "date": "2026-04-04",
-      "team1": "Mumbai Indians",
-      "team2": "Rajasthan Royals",
-      "result": "RR won",
-      "venue": "Wankhede Stadium",
-      "highlight": "Vaibhav Suryavanshi watch intensifies"
-    },
-    {
-      "matchNo": 9,
-      "date": "2026-04-05",
+      "matchNo": 14,
+      "date": "2026-04-09",
       "team1": "Delhi Capitals",
       "team2": "Gujarat Titans",
-      "result": "DC won",
+      "result": "GT won by 1 run",
       "venue": "Arun Jaitley Stadium",
-      "highlight": "DC go 2-0 with another clinical win"
+      "t1Score": "209/8 (20 ov)",
+      "t2Score": "210/4 (20 ov)",
+      "highlight": "Last-ball thriller as GT edge out DC by 1 run"
+    },
+    {
+      "matchNo": 15,
+      "date": "2026-04-09",
+      "team1": "Kolkata Knight Riders",
+      "team2": "Lucknow Super Giants",
+      "result": "LSG won by 8 wickets",
+      "venue": "Eden Gardens",
+      "t1Score": "161/7 (20 ov)",
+      "t2Score": "165/2 (18.4 ov)",
+      "highlight": "Choudhary's 67* guides LSG to comfortable win"
     }
   ],
   "upcomingFixtures": [
     {
-      "matchNo": 10,
-      "date": "2026-04-08",
+      "matchNo": 16,
+      "date": "2026-04-10",
+      "team1": "Rajasthan Royals",
+      "team2": "Royal Challengers Bengaluru",
+      "venue": "Barsapara Cricket Stadium",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 17,
+      "date": "2026-04-11",
+      "team1": "Punjab Kings",
+      "team2": "Sunrisers Hyderabad",
+      "venue": "Punjab Cricket Association Stadium",
+      "time": "3:30 PM IST"
+    },
+    {
+      "matchNo": 18,
+      "date": "2026-04-11",
       "team1": "Chennai Super Kings",
-      "team2": "Kolkata Knight Riders",
+      "team2": "Delhi Capitals",
       "venue": "MA Chidambaram Stadium",
       "time": "7:30 PM IST"
     },
     {
-      "matchNo": 11,
-      "date": "2026-04-09",
-      "team1": "Lucknow Super Giants",
-      "team2": "Sunrisers Hyderabad",
-      "venue": "Ekana Cricket Stadium",
-      "time": "7:30 PM IST"
-    },
-    {
-      "matchNo": 12,
-      "date": "2026-04-10",
-      "team1": "Rajasthan Royals",
-      "team2": "Royal Challengers Bengaluru",
-      "venue": "Sawai Mansingh Stadium",
-      "time": "7:30 PM IST"
-    },
-    {
-      "matchNo": 13,
-      "date": "2026-04-11",
+      "matchNo": 19,
+      "date": "2026-04-12",
       "team1": "Mumbai Indians",
-      "team2": "Gujarat Titans",
+      "team2": "Punjab Kings",
       "venue": "Wankhede Stadium",
       "time": "3:30 PM IST"
     },
     {
-      "matchNo": 14,
+      "matchNo": 20,
       "date": "2026-04-12",
-      "team1": "Punjab Kings",
-      "team2": "Delhi Capitals",
-      "venue": "Punjab Cricket Association Stadium",
+      "team1": "Royal Challengers Bengaluru",
+      "team2": "Mumbai Indians",
+      "venue": "Wankhede Stadium",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 21,
+      "date": "2026-04-13",
+      "team1": "Gujarat Titans",
+      "team2": "Kolkata Knight Riders",
+      "venue": "Narendra Modi Stadium",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 22,
+      "date": "2026-04-14",
+      "team1": "Sunrisers Hyderabad",
+      "team2": "Rajasthan Royals",
+      "venue": "Rajiv Gandhi International Stadium",
       "time": "7:30 PM IST"
     }
   ],
   "orangeCap": [
     {
       "rank": 1,
-      "player": "Shreyas Iyer",
-      "team": "PBKS",
-      "runs": 198,
-      "innings": 2
+      "player": "Yashasvi Jaiswal",
+      "team": "RR",
+      "runs": 170,
+      "innings": 3,
+      "hs": 77,
+      "avg": 170.0,
+      "sr": 163.46
     },
     {
       "rank": 2,
-      "player": "Riyan Parag",
-      "team": "RR",
-      "runs": 167,
-      "innings": 1
+      "player": "Sameer Rizvi",
+      "team": "DC",
+      "runs": 160,
+      "innings": 3,
+      "hs": 90,
+      "avg": 53.33,
+      "sr": 156.86
     },
     {
       "rank": 3,
-      "player": "Rajat Patidar",
-      "team": "RCB",
-      "runs": 134,
-      "innings": 1
+      "player": "Angkrish Raghuvanshi",
+      "team": "KKR",
+      "runs": 155,
+      "innings": 3,
+      "hs": 73,
+      "avg": 51.67,
+      "sr": 142.2
     },
     {
       "rank": 4,
-      "player": "Axar Patel",
-      "team": "DC",
-      "runs": 121,
-      "innings": 1
+      "player": "Heinrich Klaasen",
+      "team": "SRH",
+      "runs": 145,
+      "innings": 3,
+      "hs": 62,
+      "avg": 48.33,
+      "sr": 147.95
     },
     {
       "rank": 5,
-      "player": "Hardik Pandya",
-      "team": "MI",
-      "runs": 108,
-      "innings": 1
+      "player": "Ajinkya Rahane",
+      "team": "KKR",
+      "runs": 124,
+      "innings": 3,
+      "hs": 55,
+      "avg": 41.33,
+      "sr": 135.87
     }
   ],
   "purpleCap": [
     {
       "rank": 1,
-      "player": "Jasprit Bumrah",
-      "team": "MI",
-      "wickets": 5,
-      "innings": 1,
-      "economy": 6.2
+      "player": "Ravi Bishnoi",
+      "team": "RR",
+      "wickets": 7,
+      "innings": 3,
+      "bbi": "4/41",
+      "economy": 9.11
     },
     {
       "rank": 2,
-      "player": "Yuzvendra Chahal",
-      "team": "PBKS",
-      "wickets": 4,
-      "innings": 2,
-      "economy": 7.1
+      "player": "Prasidh Krishna",
+      "team": "RR",
+      "wickets": 6,
+      "innings": 3,
+      "bbi": "3/28",
+      "economy": 10.33
     },
     {
       "rank": 3,
-      "player": "Cooper Connolly",
-      "team": "PBKS",
-      "wickets": 4,
-      "innings": 2,
-      "economy": 6.8
+      "player": "Nandre Burger",
+      "team": "RR",
+      "wickets": 5,
+      "innings": 3,
+      "bbi": "2/21",
+      "economy": 8.5
     },
     {
       "rank": 4,
-      "player": "Mohammed Siraj",
-      "team": "RCB",
-      "wickets": 3,
-      "innings": 1,
-      "economy": 7.4
+      "player": "Vijaykumar Vyshak",
+      "team": "PBKS",
+      "wickets": 5,
+      "innings": 3,
+      "bbi": "3/27",
+      "economy": 9.25
     },
     {
       "rank": 5,
-      "player": "Trent Boult",
-      "team": "RR",
-      "wickets": 3,
-      "innings": 1,
-      "economy": 5.9
+      "player": "Jacob Duffy",
+      "team": "RCB",
+      "wickets": 5,
+      "innings": 2,
+      "bbi": "3/29",
+      "economy": 8.75
     }
   ],
   "storylines": [
     {
-      "id": "dhoni-farewell",
-      "title": "Dhoni's farewell season in crisis",
-      "body": "MS Dhoni is playing his final IPL season but CSK sit 0-2, with the legend expected to play a bigger role. The farewell tour risks turning into a disappointment.",
-      "tag": "Must Watch"
+      "id": "rajasthan-perfection",
+      "title": "Rajasthan Royals' perfect start continues",
+      "body": "RR sit atop the table with a perfect 3-0 record, their latest victory coming against MI in a rain-shortened thriller. Jaiswal leads the Orange Cap race while Bishnoi dominates with the ball.",
+      "tag": "On Fire"
     },
     {
-      "id": "kkr-gamble",
-      "title": "KKR's Rs.52Cr overseas gamble failing",
-      "body": "Cameron Green (Rs.25.2Cr) and Matheesha Pathirana (Rs.18Cr) \u2014 KKR's blockbuster auction buys \u2014 have yet to fire as the defending 2024 champions sit bottom with 0 points.",
-      "tag": "Under Pressure"
+      "id": "csk-crisis-deepens",
+      "title": "CSK's nightmare start in Dhoni's farewell year",
+      "body": "Chennai Super Kings remain the only winless team, sitting rock-bottom with 0 points from 3 matches. Their 43-run defeat to RCB has intensified pressure in Dhoni's final season.",
+      "tag": "Crisis"
     },
     {
-      "id": "pbks-flying",
-      "title": "Punjab Kings flying \u2014 2 wins from 2",
-      "body": "Under new captain Shreyas Iyer, PBKS have stormed out of the blocks. After years of playoff heartbreak, they look genuinely threatening this season.",
-      "tag": "Form Team"
+      "id": "suryavanshi-breakthrough",
+      "title": "15-year-old Sooryavanshi announces himself",
+      "body": "Vaibhav Sooryavanshi's fearless 39 off 17 balls against MI showcased why RR invested in cricket's youngest talent. The teenager is already making waves in his debut IPL season.",
+      "tag": "Sensation"
     },
     {
-      "id": "rcb-defend",
-      "title": "RCB defending their first-ever title",
-      "body": "Royal Challengers Bengaluru won their maiden IPL title in 2025. Now under Rajat Patidar, they open 2026 with a win against SRH \u2014 the defense is on.",
-      "tag": "Champions"
-    },
-    {
-      "id": "all-indian-captains",
-      "title": "First-ever all-Indian captains in IPL history",
-      "body": "For the first time in 19 editions, every IPL team is led by an Indian player. A landmark moment for Indian cricket's domestic pipeline.",
+      "id": "dc-gt-thriller",
+      "title": "Last-ball drama defines GT's comeback win",
+      "body": "Gujarat Titans edged Delhi Capitals by just 1 run in a nail-biting finish that went to the final delivery. The thriller highlighted the competitive balance of IPL 2026.",
       "tag": "Historic"
     },
     {
-      "id": "suryavanshi",
-      "title": "14-year-old Vaibhav Suryavanshi in RR squad",
-      "body": "The teenage sensation from Bihar is in the Rajasthan Royals squad and could become the youngest IPL debutant. Every RR game has an extra dimension.",
-      "tag": "Prodigy"
+      "id": "mi-struggles",
+      "title": "Mumbai Indians' title defense faltering early",
+      "body": "MI have slumped to 7th place after consecutive defeats, with their batting lineup struggling without key contributions. Hardik Pandya's captaincy faces early scrutiny.",
+      "tag": "Under Pressure"
+    },
+    {
+      "id": "pbks-consistency",
+      "title": "Punjab Kings finding the consistency formula",
+      "body": "Under Shreyas Iyer's leadership, PBKS have managed 5 points from 3 matches despite a rain washout. Their balanced approach suggests they've finally cracked their playoff puzzle.",
+      "tag": "Breakout"
     }
   ],
   "auctionHighlights": [
