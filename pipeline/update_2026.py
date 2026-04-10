@@ -60,16 +60,17 @@ def build_prompt(current_data: dict) -> str:
     last_update = current_data['meta']['lastUpdated']
     matches_played = current_data['meta']['matchesPlayed']
 
-    # Get last match number from recent results
+    # Derive actual match count from results array — meta.matchesPlayed may be stale
     last_match_no = 0
     if current_data.get("recentResults"):
         last_match_no = max(r.get("matchNo", 0) for r in current_data["recentResults"])
+    actual_matches = last_match_no if last_match_no > matches_played else matches_played
 
     return f"""You are a meticulous IPL 2026 data analyst. Your job is to find ACCURATE, VERIFIED data
 from the web and update the season JSON. Accuracy is critical — do NOT guess or fabricate any statistics.
 
 ## Today's date: {today_str}
-## Last update: {last_update} (after Match #{last_match_no}, {matches_played} matches played)
+## Last update: {last_update} (after Match #{last_match_no}, {actual_matches} matches played)
 
 ## STEP 1 — SEARCH FOR DATA (do ALL of these searches):
 You MUST perform these specific web searches to gather accurate data:
