@@ -6,9 +6,9 @@
     "startDate": "2026-03-28",
     "endDate": "2026-05-31",
     "totalMatches": 74,
-    "matchesPlayed": 13,
+    "matchesPlayed": 15,
     "defendingChampion": "Royal Challengers Bengaluru",
-    "lastUpdated": "2026-04-07"
+    "lastUpdated": "2026-04-10"
   },
   "groups": {
     "A": [
@@ -38,11 +38,7 @@
       "nr": 0,
       "nrr": "+2.403",
       "points": 6,
-      "form": [
-        "W",
-        "W",
-        "W"
-      ]
+      "form": ["W", "W", "W"]
     },
     {
       "rank": 2,
@@ -55,11 +51,7 @@
       "nr": 1,
       "nrr": "+0.637",
       "points": 5,
-      "form": [
-        "N",
-        "W",
-        "W"
-      ]
+      "form": ["W", "W", "N"]
     },
     {
       "rank": 3,
@@ -72,29 +64,36 @@
       "nr": 0,
       "nrr": "+2.501",
       "points": 4,
-      "form": [
-        "W",
-        "W"
-      ]
+      "form": ["W", "W"]
     },
     {
       "rank": 4,
-      "team": "Delhi Capitals",
-      "short": "DC",
-      "color": "#0078BC",
-      "played": 2,
+      "team": "Lucknow Super Giants",
+      "short": "LSG",
+      "color": "#A72056",
+      "played": 3,
       "won": 2,
-      "lost": 0,
+      "lost": 1,
       "nr": 0,
-      "nrr": "+1.170",
+      "nrr": "+0.120",
       "points": 4,
-      "form": [
-        "W",
-        "W"
-      ]
+      "form": ["L", "W", "W"]
     },
     {
       "rank": 5,
+      "team": "Delhi Capitals",
+      "short": "DC",
+      "color": "#0078BC",
+      "played": 3,
+      "won": 2,
+      "lost": 1,
+      "nr": 0,
+      "nrr": "+0.780",
+      "points": 4,
+      "form": ["W", "W", "L"]
+    },
+    {
+      "rank": 6,
       "team": "Sunrisers Hyderabad",
       "short": "SRH",
       "color": "#FF822A",
@@ -104,30 +103,23 @@
       "nr": 0,
       "nrr": "+0.275",
       "points": 2,
-      "form": [
-        "L",
-        "W",
-        "L"
-      ]
-    },
-    {
-      "rank": 6,
-      "team": "Lucknow Super Giants",
-      "short": "LSG",
-      "color": "#A72056",
-      "played": 2,
-      "won": 1,
-      "lost": 1,
-      "nr": 0,
-      "nrr": "-0.542",
-      "points": 2,
-      "form": [
-        "W",
-        "L"
-      ]
+      "form": ["L", "W", "L"]
     },
     {
       "rank": 7,
+      "team": "Gujarat Titans",
+      "short": "GT",
+      "color": "#1C1C2B",
+      "played": 3,
+      "won": 1,
+      "lost": 2,
+      "nr": 0,
+      "nrr": "-0.190",
+      "points": 2,
+      "form": ["L", "L", "W"]
+    },
+    {
+      "rank": 8,
       "team": "Mumbai Indians",
       "short": "MI",
       "color": "#004BA0",
@@ -137,44 +129,20 @@
       "nr": 0,
       "nrr": "-0.715",
       "points": 2,
-      "form": [
-        "W",
-        "L",
-        "L"
-      ]
-    },
-    {
-      "rank": 8,
-      "team": "Kolkata Knight Riders",
-      "short": "KKR",
-      "color": "#3A225D",
-      "played": 3,
-      "won": 0,
-      "lost": 2,
-      "nr": 1,
-      "nrr": "-1.964",
-      "points": 1,
-      "form": [
-        "L",
-        "L",
-        "N"
-      ]
+      "form": ["W", "L", "L"]
     },
     {
       "rank": 9,
-      "team": "Gujarat Titans",
-      "short": "GT",
-      "color": "#1C1C2B",
-      "played": 2,
+      "team": "Kolkata Knight Riders",
+      "short": "KKR",
+      "color": "#3A225D",
+      "played": 4,
       "won": 0,
-      "lost": 2,
-      "nr": 0,
-      "nrr": "-0.424",
-      "points": 0,
-      "form": [
-        "L",
-        "L"
-      ]
+      "lost": 3,
+      "nr": 1,
+      "nrr": "-2.140",
+      "points": 1,
+      "form": ["L", "N", "L"]
     },
     {
       "rank": 10,
@@ -187,11 +155,7 @@
       "nr": 0,
       "nrr": "-2.517",
       "points": 0,
-      "form": [
-        "L",
-        "L",
-        "L"
-      ]
+      "form": ["L", "L", "L"]
     }
   ],
   "captains": {
@@ -349,25 +313,31 @@
       "t1Score": "150/3 (11)",
       "t2Score": "123/9 (11)",
       "highlight": "Yashasvi Jaiswal 77 off 32 (POM) \u2014 rain-reduced 11-over game, RR go 3-0"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "matchNo": 14,
       "date": "2026-04-08",
       "team1": "Delhi Capitals",
       "team2": "Gujarat Titans",
+      "result": "GT won by 1 run",
       "venue": "Arun Jaitley Stadium, Delhi",
-      "time": "7:30 PM IST"
+      "t1Score": "209/8 (20)",
+      "t2Score": "210/4 (20)",
+      "highlight": "Last-ball thriller \u2014 GT edge out DC by 1 run for their first win of IPL 2026"
     },
     {
       "matchNo": 15,
       "date": "2026-04-09",
       "team1": "Kolkata Knight Riders",
       "team2": "Lucknow Super Giants",
+      "result": "LSG won by 8 wickets",
       "venue": "Eden Gardens, Kolkata",
-      "time": "7:30 PM IST"
-    },
+      "t1Score": "161/7 (20)",
+      "t2Score": "165/2 (18.4)",
+      "highlight": "LSG cruise past KKR \u2014 Rishabh Pant's side climb to 4th, KKR still winless"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "matchNo": 16,
       "date": "2026-04-10",
@@ -511,39 +481,39 @@
   "storylines": [
     {
       "id": "rr-unbeaten",
-      "title": "RR 3-from-3 \u2014 Jaiswal and Bishnoi unstoppable",
-      "body": "Rajasthan Royals are the only unbeaten side after 13 matches. Yashasvi Jaiswal leads the Orange Cap with 170 runs. Ravi Bishnoi leads the Purple Cap with 7 wickets. 14-year-old Vaibhav Suryavanshi has 122 runs. This RR side looks complete.",
+      "title": "RR 3-from-3 \u2014 Jaiswal and Bishnoi dominating IPL 2026",
+      "body": "Rajasthan Royals remain the only unbeaten side after 15 matches. Yashasvi Jaiswal leads the Orange Cap (170 runs, SR 192) and hit 77 off 32 in a rain-reduced thriller vs MI in Match 13. Ravi Bishnoi leads the Purple Cap with 7 wickets including 4/20 vs GT. Vaibhav Suryavanshi has 122 runs at SR 224. RR sit top with 6 points.",
       "tag": "On Fire"
     },
     {
-      "id": "suryavanshi",
-      "title": "Vaibhav Suryavanshi \u2014 52 off 17 on debut, 122 runs in 3 games",
-      "body": "The 14-year-old from Bihar is no longer a name to watch \u2014 he's already delivering. After 52 off 17 balls on debut against CSK, he now has 122 runs in 3 innings at a strike rate of 224. The youngest player to score a half-century on IPL debut.",
-      "tag": "Sensation"
+      "id": "gt-dc-thriller",
+      "title": "GT snatch first win in last-ball thriller vs DC \u2014 Match 14",
+      "body": "Gujarat Titans, winless in their first 2 games, pulled off a stunning 1-run victory over Delhi Capitals in Match 14 at the Arun Jaitley Stadium. DC needed 2 off the last ball and could only manage a single. GT's first points of IPL 2026, while DC suffered their first loss after starting 2-0.",
+      "tag": "Breakout"
     },
     {
-      "id": "rcb-strong",
-      "title": "RCB 2-from-2 \u2014 250 posted, defending champions look dangerous",
-      "body": "Royal Challengers Bengaluru posted 250 against CSK in Match 11 \u2014 the third-highest total in IPL history. Tim David hit 70* off 25 balls. Under Rajat Patidar, RCB look every bit like repeat champions.",
+      "id": "lsg-rise",
+      "title": "LSG surge to 4th \u2014 back-to-back wins after opening loss",
+      "body": "Lucknow Super Giants have won 2 straight after losing their opener to DC. Rishabh Pant's 68* off 50 sealed a last-over win vs SRH in Match 10, then LSG cruised past KKR by 8 wickets in Match 15 at Eden Gardens. They now sit 4th with 4 points.",
       "tag": "On Fire"
     },
     {
-      "id": "csk-0-3",
-      "title": "CSK bottom \u2014 0 wins from 3, conceded 210, 250 and chased 128",
-      "body": "MS Dhoni's farewell season has become the most painful in CSK history. They have lost all 3 games, including being bowled out for 127 against a 14-year-old's 52. CSK sit last in the table with 0 points.",
+      "id": "kkr-crisis",
+      "title": "KKR 0 wins from 4 \u2014 Rs.52Cr spend yielding no returns",
+      "body": "Kolkata Knight Riders are now 0-3 with 1 washout from 4 matches. Their blockbuster auction \u2014 Cameron Green (Rs.25.2Cr) and Matheesha Pathirana (Rs.18Cr) \u2014 has delivered nothing. The 8-wicket loss to LSG in Match 15 deepened the crisis at Eden Gardens.",
       "tag": "Crisis"
     },
     {
-      "id": "kkr-winless",
-      "title": "KKR winless on the field \u2014 Cameron Green Rs.25.2Cr yet to fire",
-      "body": "KKR's only point came via an abandoned match. Cameron Green, bought for a record Rs.25.2Cr, and Matheesha Pathirana (Rs.18Cr) are yet to deliver. KKR are struggling despite their blockbuster auction.",
+      "id": "csk-bottom",
+      "title": "CSK rock bottom \u2014 0 from 3 in Dhoni's farewell season",
+      "body": "Chennai Super Kings sit last with 0 points. Bowled out for 127 in Match 3 against a 14-year-old's 52, then conceded 250 to RCB in Match 11. The pressure is mounting in what may be MS Dhoni's final IPL season.",
       "tag": "Under Pressure"
     },
     {
-      "id": "all-indian-captains",
-      "title": "Historic \u2014 first-ever season with all-Indian captains",
-      "body": "For the first time in 19 editions, all 10 IPL teams are led by Indian players. A landmark moment for Indian cricket's domestic talent pipeline.",
-      "tag": "Historic"
+      "id": "suryavanshi",
+      "title": "Vaibhav Suryavanshi \u2014 14-year-old with 122 runs at SR 224",
+      "body": "The youngest ever IPL debutant scored 52 off 17 balls against CSK in Match 3 and has 122 runs in 3 innings at a strike rate of 224. The Bihar teenager is the breakout star of IPL 2026.",
+      "tag": "Sensation"
     }
   ],
   "auctionHighlights": [
