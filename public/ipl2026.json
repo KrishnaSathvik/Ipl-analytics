@@ -112,7 +112,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 7,
       "team": "Gujarat Titans",
       "short": "GT",
       "color": "#1C1C2B",
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 6,
       "team": "Sunrisers Hyderabad",
       "short": "SRH",
       "color": "#FF822A",
@@ -360,8 +360,8 @@
       "team2": "Gujarat Titans",
       "result": "GT won by 1 run",
       "venue": "Arun Jaitley Stadium, Delhi",
-      "t1Score": "209/8 (20)",
-      "t2Score": "210/4 (20)",
+      "t1Score": "210/4 (20)",
+      "t2Score": "209/8 (20)",
       "highlight": "Last-ball thriller — GT edge out DC by 1 run for their first win of IPL 2026"
     },
     {
@@ -369,11 +369,11 @@
       "date": "2026-04-09",
       "team1": "Kolkata Knight Riders",
       "team2": "Lucknow Super Giants",
-      "result": "LSG won by 8 wickets",
+      "result": "LSG won by 3 wickets",
       "venue": "Eden Gardens, Kolkata",
-      "t1Score": "161/7 (20)",
-      "t2Score": "165/2 (18.4)",
-      "highlight": "LSG cruise past KKR — Rishabh Pant's side climb to 4th, KKR still winless"
+      "t1Score": "181/4 (20)",
+      "t2Score": "182/7 (18.4)",
+      "highlight": "LSG cruise past KKR — Rishabh Pant's side climb to 5th, KKR still winless"
     }
   ],
   "upcomingFixtures": [
