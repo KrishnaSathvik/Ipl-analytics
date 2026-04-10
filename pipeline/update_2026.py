@@ -72,16 +72,31 @@ from the web and update the season JSON. Accuracy is critical — do NOT guess o
 ## Today's date: {today_str}
 ## Last update: {last_update} (after Match #{last_match_no}, {actual_matches} matches played)
 
-## STEP 1 — SEARCH FOR DATA (do ALL of these searches):
+## TRUSTED DATA SOURCES (use ONLY these):
+- https://www.iplt20.com/ — Official IPL site (points table, results, fixtures, player stats)
+- https://www.cricbuzz.com/ — Live scores, points table, Orange/Purple Cap standings
+- https://en.wikipedia.org/wiki/2026_Indian_Premier_League — Season overview, results, statistics
+
+Do NOT use random blogs, fan sites, or AI-generated content. Cross-reference data between at least 2 of the above sources before including it.
+
+## STEP 1 — SEARCH FOR DATA (do ALL of these searches using the trusted sources):
 You MUST perform these specific web searches to gather accurate data:
 
-1. Search "IPL 2026 results schedule" — find ALL match results after Match #{last_match_no}
-2. Search "IPL 2026 points table {today_str}" — get the EXACT current standings with NRR
-3. Search "IPL 2026 orange cap most runs {today_str}" — get top 5 run scorers with exact stats
-4. Search "IPL 2026 purple cap most wickets {today_str}" — get top 5 wicket takers with exact stats
-5. Search "IPL 2026 upcoming fixtures schedule" — get next 7 upcoming matches
+1. Search "site:iplt20.com IPL 2026 points table" OR "site:cricbuzz.com IPL 2026 points table"
+   → Get the EXACT current standings: team, played, won, lost, NR, NRR, points for all 10 teams
+2. Search "site:iplt20.com IPL 2026 results" OR "site:cricbuzz.com IPL 2026 results schedule"
+   → Find ALL match results after Match #{last_match_no} with exact scores, venues, and dates
+3. Search "site:iplt20.com IPL 2026 orange cap" OR "site:cricbuzz.com IPL 2026 most runs"
+   → Get top 5 run scorers with EXACT: runs, innings, highest score, average, strike rate
+4. Search "site:iplt20.com IPL 2026 purple cap" OR "site:cricbuzz.com IPL 2026 most wickets"
+   → Get top 5 wicket takers with EXACT: wickets, innings, best bowling, economy rate
+5. Search "site:cricbuzz.com IPL 2026 schedule" OR "site:iplt20.com IPL 2026 schedule"
+   → Get next 7 upcoming matches with dates, teams, venues, times
+6. Search "2026 Indian Premier League wikipedia"
+   → Cross-reference points table and results for accuracy
 
-For each search, extract ONLY verified facts. If you cannot find exact data for a field, keep the existing value from the current JSON rather than guessing.
+For EACH data point, verify against at least one other source. If sources disagree, prefer iplt20.com (official).
+If you cannot find exact data for a field, KEEP the existing value from the current JSON — do NOT guess.
 
 ## STEP 2 — UPDATE THE JSON:
 Take the current JSON below and update it with the data you found:
