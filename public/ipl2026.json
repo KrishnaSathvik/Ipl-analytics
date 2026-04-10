@@ -386,8 +386,7 @@
       "team": "RR",
       "runs": 170,
       "innings": 3,
-      "hs": 89,
-      "avg": 56.67,
+      "avg": 170.00,
       "sr": 192.05
     },
     {
@@ -395,40 +394,36 @@
       "player": "Sameer Rizvi",
       "team": "DC",
       "runs": 160,
-      "innings": 2,
-      "hs": 90,
-      "avg": 160.0,
+      "innings": 3,
+      "avg": 80.00,
       "sr": 163.26
     },
     {
       "rank": 3,
-      "player": "Vaibhav Suryavanshi",
-      "team": "RR",
-      "runs": 122,
-      "innings": 3,
-      "hs": 52,
-      "avg": 40.67,
-      "sr": 224.07
+      "player": "Angkrish Raghuvanshi",
+      "team": "KKR",
+      "runs": 155,
+      "innings": 4,
+      "avg": 51.67,
+      "sr": 142.20
     },
     {
       "rank": 4,
-      "player": "Rohit Sharma",
-      "team": "MI",
-      "runs": 118,
-      "innings": 3,
-      "hs": 78,
-      "avg": 39.33,
-      "sr": 176.12
-    },
-    {
-      "rank": 5,
       "player": "Heinrich Klaasen",
       "team": "SRH",
       "runs": 145,
       "innings": 3,
-      "hs": 62,
       "avg": 48.33,
       "sr": 147.95
+    },
+    {
+      "rank": 5,
+      "player": "Ajinkya Rahane",
+      "team": "KKR",
+      "runs": 124,
+      "innings": 3,
+      "avg": 41.33,
+      "sr": 135.87
     }
   ],
   "purpleCap": [
@@ -438,44 +433,39 @@
       "team": "RR",
       "wickets": 7,
       "innings": 3,
-      "bbi": "4/20",
-      "economy": 7.44
+      "economy": 9.11
     },
     {
       "rank": 2,
+      "player": "Prasidh Krishna",
+      "team": "GT",
+      "wickets": 6,
+      "innings": 3,
+      "economy": 10.33
+    },
+    {
+      "rank": 3,
+      "player": "Rashid Khan",
+      "team": "GT",
+      "wickets": 5,
+      "innings": 3,
+      "economy": 7.08
+    },
+    {
+      "rank": 3,
+      "player": "Lungi Ngidi",
+      "team": "DC",
+      "wickets": 5,
+      "innings": 3,
+      "economy": 7.29
+    },
+    {
+      "rank": 3,
       "player": "Nandre Burger",
       "team": "RR",
       "wickets": 5,
       "innings": 3,
-      "bbi": "3/28",
-      "economy": 8.25
-    },
-    {
-      "rank": 3,
-      "player": "Vijaykumar Vyshak",
-      "team": "PBKS",
-      "wickets": 5,
-      "innings": 2,
-      "bbi": "3/34",
-      "economy": 9.0
-    },
-    {
-      "rank": 4,
-      "player": "Jacob Duffy",
-      "team": "RCB",
-      "wickets": 5,
-      "innings": 2,
-      "bbi": "3/22",
-      "economy": 10.0
-    },
-    {
-      "rank": 5,
-      "player": "Anshul Kamboj",
-      "team": "CSK",
-      "wickets": 5,
-      "innings": 3,
-      "bbi": "2/27",
-      "economy": 11.43
+      "economy": 8.44
     }
   ],
   "storylines": [
