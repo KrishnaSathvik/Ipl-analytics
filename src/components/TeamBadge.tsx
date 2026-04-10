@@ -1,17 +1,4 @@
-// Local logos bundled from public/logos/ — no CDN dependency
-const LOGO_URL: Record<string, string> = {
-  CSK:  './logos/CSK.png',
-  MI:   './logos/MI.png',
-  RCB:  './logos/RCB.png',
-  KKR:  './logos/KKR.png',
-  DC:   './logos/DC.png',
-  PBKS: './logos/PBKS.png',
-  RR:   './logos/RR.png',
-  SRH:  './logos/SRH.png',
-  GT:   './logos/GT.png',
-  LSG:  './logos/LSG.png',
-  DCH:  './logos/DCH.png',  // Deccan Chargers (defunct)
-};
+import { LOGO_URL } from '../lib/teams';
 
 const SIZES = {
   xs:  { box: 28, img: 22 },

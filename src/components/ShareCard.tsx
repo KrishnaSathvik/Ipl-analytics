@@ -193,7 +193,7 @@ export default function ShareCard(props: ShareCardProps) {
 
       {/* Modal */}
       {open && (
-        <div style={{
+        <div role="dialog" aria-modal="true" aria-label="Share player card" style={{
           position: 'fixed', inset: 0, zIndex: 200,
           background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(8px)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',

@@ -1,12 +1,32 @@
-// Data is bundled directly — no runtime fetch needed.
-// To update 2026 season data, edit src/data/ipl2026.json and rebuild.
-import data from '../data/ipl2026.json';
+import { useState, useEffect } from 'react';
 import type { IPL2026Data } from '../types';
 
 export function useIPL2026() {
-  return {
-    data: data as IPL2026Data,
-    loading: false,
-    error: null,
-  };
+  const [data, setData] = useState<IPL2026Data | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch('./ipl2026.json')
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then((json: IPL2026Data) => {
+        if (!cancelled) {
+          setData(json);
+          setLoading(false);
+        }
+      })
+      .catch(err => {
+        if (!cancelled) {
+          setError(err.message);
+          setLoading(false);
+        }
+      });
+    return () => { cancelled = true; };
+  }, []);
+
+  return { data, loading, error };
 }

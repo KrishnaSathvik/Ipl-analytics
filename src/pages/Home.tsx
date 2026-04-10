@@ -4,6 +4,7 @@ import TeamBadge from '../components/TeamBadge';
 import tossAnalysis from '../data/toss-analysis.json';
 
 import type { PointsTableEntry, MatchResult, Fixture } from '../types';
+import { LOGO_CODE, TEAM_COLORS } from '../lib/teams';
 
 const TAG_STYLE: Record<string, { bg: string; color: string }> = {
   'On Fire':        { bg: '#fff7ed', color: '#c2410c' },
@@ -12,25 +13,6 @@ const TAG_STYLE: Record<string, { bg: string; color: string }> = {
   'Breakout':       { bg: '#eff6ff', color: '#1d4ed8' },
   'Under Pressure': { bg: '#fef2f2', color: '#b91c1c' },
   'Historic':       { bg: '#f5f3ff', color: '#6d28d9' },
-};
-
-// Map team full name → logo short code
-const LOGO_CODE: Record<string, string> = {
-  'Chennai Super Kings': 'CSK', 'Mumbai Indians': 'MI',
-  'Royal Challengers Bengaluru': 'RCB', 'Royal Challengers Bangalore': 'RCB',
-  'Kolkata Knight Riders': 'KKR', 'Delhi Capitals': 'DC', 'Delhi Daredevils': 'DC',
-  'Punjab Kings': 'PBKS', 'Kings XI Punjab': 'PBKS',
-  'Rajasthan Royals': 'RR', 'Sunrisers Hyderabad': 'SRH',
-  'Gujarat Titans': 'GT', 'Lucknow Super Giants': 'LSG',
-};
-
-const TEAM_COLORS: Record<string, string> = {
-  'Chennai Super Kings': '#F9CD05', 'Mumbai Indians': '#004BA0',
-  'Royal Challengers Bengaluru': '#EC1C24', 'Royal Challengers Bangalore': '#EC1C24',
-  'Kolkata Knight Riders': '#3A225D', 'Delhi Capitals': '#0078BC',
-  'Punjab Kings': '#ED1B24', 'Rajasthan Royals': '#EA1A85',
-  'Sunrisers Hyderabad': '#FF822A', 'Gujarat Titans': '#1C1C2B',
-  'Lucknow Super Giants': '#A72056',
 };
 
 function FormPill({ r }: { r: string }) {
@@ -64,7 +46,7 @@ function PointsTable({ rows }: { rows: PointsTableEntry[] }) {
         <thead>
           <tr style={{ background: '#f8f8f8', borderBottom: '1px solid var(--border)' }}>
             {['#', 'Team', 'P', 'W', 'L', 'NRR', 'Pts', 'Form'].map(h => (
-              <th key={h} style={{
+              <th scope="col" key={h} style={{
                 padding: '9px 3px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)',
                 textAlign: h === '#' || h === 'Team' ? 'left' : 'center',
                 textTransform: 'uppercase', letterSpacing: '0.04em',
@@ -302,7 +284,7 @@ function TossTracker() {
           <thead>
             <tr style={{ background: '#f8f8f8', borderBottom: '1px solid var(--border)' }}>
               {['', 'Team', 'Toss W%', 'Win%'].map(h => (
-                <th key={h} style={{ padding: '8px 6px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h === 'Team' ? 'left' : 'center', textTransform: 'uppercase', letterSpacing: '0.03em' }}>{h}</th>
+                <th scope="col" key={h} style={{ padding: '8px 6px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h === 'Team' ? 'left' : 'center', textTransform: 'uppercase', letterSpacing: '0.03em' }}>{h}</th>
               ))}
             </tr>
           </thead>
@@ -328,11 +310,22 @@ function TossTracker() {
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 export default function Home() {
-  const { data } = useIPL2026();
+  const { data, loading, error } = useIPL2026();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
   useEffect(() => { const fn = () => setIsMobile(window.innerWidth < 640); window.addEventListener('resize', fn); return () => window.removeEventListener('resize', fn); }, []);
 
-  if (!data) return null;
+  if (loading) return (
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '60vh' }}>
+      <div style={{ fontSize: 13, color: 'var(--text-4)', fontWeight: 500 }}>Loading live data…</div>
+    </div>
+  );
+  if (error || !data) return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '60vh', gap: 8 }}>
+      <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--text)' }}>Could not load live data</div>
+      <div style={{ fontSize: 12, color: 'var(--text-3)' }}>{error || 'Unknown error'}</div>
+      <button onClick={() => window.location.reload()} style={{ marginTop: 12, padding: '8px 20px', fontSize: 13, fontWeight: 600, background: 'var(--accent)', color: '#fff', border: 'none', borderRadius: 8, cursor: 'pointer' }}>Retry</button>
+    </div>
+  );
   const { meta, pointsTable, recentResults, upcomingFixtures, orangeCap, purpleCap, storylines, auctionHighlights, captains } = data;
 
   // Check for today's match

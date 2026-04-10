@@ -9,25 +9,7 @@ import TeamBadge from '../components/TeamBadge';
 const R = recordsData as Records;
 const SR = seasonRecordsData as any;
 
-/* ── Team helpers (same maps as Home.tsx) ─────────────────────────── */
-const LOGO_CODE: Record<string, string> = {
-  'Chennai Super Kings': 'CSK', 'Mumbai Indians': 'MI',
-  'Royal Challengers Bengaluru': 'RCB', 'Royal Challengers Bangalore': 'RCB',
-  'Kolkata Knight Riders': 'KKR', 'Delhi Capitals': 'DC', 'Delhi Daredevils': 'DC',
-  'Punjab Kings': 'PBKS', 'Kings XI Punjab': 'PBKS',
-  'Rajasthan Royals': 'RR', 'Sunrisers Hyderabad': 'SRH',
-  'Gujarat Titans': 'GT', 'Lucknow Super Giants': 'LSG',
-  'Deccan Chargers': 'DCH',
-};
-
-const TEAM_COLORS: Record<string, string> = {
-  'Chennai Super Kings': '#F9CD05', 'Mumbai Indians': '#004BA0',
-  'Royal Challengers Bengaluru': '#EC1C24', 'Royal Challengers Bangalore': '#EC1C24',
-  'Kolkata Knight Riders': '#3A225D', 'Delhi Capitals': '#0078BC',
-  'Punjab Kings': '#ED1B24', 'Rajasthan Royals': '#EA1A85',
-  'Sunrisers Hyderabad': '#FF822A', 'Gujarat Titans': '#1C1C2B',
-  'Lucknow Super Giants': '#A72056', 'Deccan Chargers': '#F7941D',
-};
+import { LOGO_CODE, TEAM_COLORS } from '../lib/teams';
 
 const BOARDS = [
   { title: 'Most Runs',      items: R.mostRuns,       nameKey: 'batter', statKey: 'runs',     unit: 'runs', color: 'var(--accent)' },

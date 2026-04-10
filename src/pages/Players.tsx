@@ -21,38 +21,7 @@ type Tab = 'batters' | 'bowlers';
 type View = 'list' | 'profile' | 'compare';
 const PER = 25;
 
-const ACTIVE_TEAMS = [
-  'Chennai Super Kings', 'Mumbai Indians', 'Royal Challengers Bengaluru',
-  'Kolkata Knight Riders', 'Delhi Capitals', 'Punjab Kings',
-  'Rajasthan Royals', 'Sunrisers Hyderabad', 'Gujarat Titans', 'Lucknow Super Giants',
-];
-
-// Map team full name → logo short code
-const LOGO_CODE: Record<string, string> = {
-  'Chennai Super Kings':'CSK','Mumbai Indians':'MI',
-  'Royal Challengers Bengaluru':'RCB','Royal Challengers Bangalore':'RCB',
-  'Kolkata Knight Riders':'KKR','Delhi Capitals':'DC','Delhi Daredevils':'DC',
-  'Punjab Kings':'PBKS','Kings XI Punjab':'PBKS',
-  'Rajasthan Royals':'RR','Sunrisers Hyderabad':'SRH',
-  'Gujarat Titans':'GT','Lucknow Super Giants':'LSG','Deccan Chargers':'DCH',
-};
-function getTeamLogo(teams: string[]): string {
-  for (let i = teams.length-1; i >= 0; i--) {
-    const code = LOGO_CODE[teams[i]];
-    if (code) return `./logos/${code}.png`;
-  }
-  return '';
-}
-
-const TEAM_COLORS: Record<string, string> = {
-  'Chennai Super Kings': '#F9CD05', 'Mumbai Indians': '#004BA0',
-  'Royal Challengers Bengaluru': '#EC1C24', 'Royal Challengers Bangalore': '#EC1C24',
-  'Kolkata Knight Riders': '#3A225D', 'Delhi Capitals': '#0078BC',
-  'Delhi Daredevils': '#0078BC', 'Punjab Kings': '#ED1B24',
-  'Kings XI Punjab': '#ED1B24', 'Rajasthan Royals': '#EA1A85',
-  'Sunrisers Hyderabad': '#FF822A', 'Gujarat Titans': '#1C1C2B',
-  'Lucknow Super Giants': '#A72056', 'Deccan Chargers': '#F7941D',
-};
+import { TEAM_COLORS, ACTIVE_TEAMS, getTeamLogo } from '../lib/teams';
 
 const TH = (right = false): React.CSSProperties => ({
   padding: '8px 4px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)',
@@ -644,7 +613,7 @@ export default function Players() {
               <thead>
                 <tr>
                   {['#', 'Player', 'Runs', 'Avg', 'SR', 'HS', '50s', '100s', '6s'].map(h => (
-                    <th key={h} style={{ ...TH(h !== '#' && h !== 'Player'), paddingLeft: h === '#' ? 10 : 4 }}>{h}</th>
+                    <th scope="col" key={h} style={{ ...TH(h !== '#' && h !== 'Player'), paddingLeft: h === '#' ? 10 : 4 }}>{h}</th>
                   ))}
                 </tr>
               </thead>
@@ -680,7 +649,7 @@ export default function Players() {
               <thead>
                 <tr>
                   {['#', 'Player', 'Wkts', 'Overs', 'Econ', 'Avg', 'SR', '5W', 'Dots'].map(h => (
-                    <th key={h} style={{ ...TH(h !== '#' && h !== 'Player'), paddingLeft: h === '#' ? 10 : 4 }}>{h}</th>
+                    <th scope="col" key={h} style={{ ...TH(h !== '#' && h !== 'Player'), paddingLeft: h === '#' ? 10 : 4 }}>{h}</th>
                   ))}
                 </tr>
               </thead>
