@@ -87,8 +87,10 @@ with the latest match results, standings, and statistics.
 
 5. If NO new matches have been played since the last update, return the data unchanged but set lastUpdated to today.
 
-## CRITICAL:
-- Return ONLY valid JSON. No markdown, no code fences, no explanation.
+## CRITICAL OUTPUT FORMAT:
+- Your response must be ONLY the JSON object. No text before it. No text after it. No markdown fences.
+- Start your response with {{ and end with }}
+- Do NOT include any explanation, commentary, or preamble — ONLY the raw JSON.
 - Maintain the exact same schema structure as the input.
 - All team names must be full official names (e.g., "Royal Challengers Bengaluru", not "RCB").
 - NRR should be a string with sign (e.g., "+1.234" or "-0.567").
@@ -143,16 +145,31 @@ def call_claude(prompt: str) -> str:
 
 
 def extract_json(text: str) -> dict:
-    """Extract JSON from Claude's response, handling potential markdown fences."""
+    """Extract JSON from Claude's response, handling preamble text and markdown fences."""
     # Strip markdown code fences if present
     if "```json" in text:
         text = text.split("```json", 1)[1]
         text = text.rsplit("```", 1)[0]
+        return json.loads(text.strip())
     elif "```" in text:
         text = text.split("```", 1)[1]
         text = text.rsplit("```", 1)[0]
+        return json.loads(text.strip())
 
-    return json.loads(text.strip())
+    # Try parsing as-is first
+    text = text.strip()
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+
+    # Find the first '{' and last '}' — extract the JSON object from surrounding text
+    start = text.find("{")
+    end = text.rfind("}")
+    if start != -1 and end != -1 and end > start:
+        return json.loads(text[start:end + 1])
+
+    raise json.JSONDecodeError("No JSON object found in response", text, 0)
 
 
 def validate_output(data: dict) -> list[str]:
