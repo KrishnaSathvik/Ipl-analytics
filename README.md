@@ -76,7 +76,7 @@ A comprehensive, mobile-first IPL statistics and live season tracker built with 
 
 - Light mode only -- white `#ffffff` background
 - Accent: `#f97316` (orange)
-- Font: Geist (Google Fonts)
+- Font: Oswald (Google Fonts)
 - Vercel/Linear-inspired minimal aesthetic
 - All tables use `tableLayout: fixed` with `colgroup` for mobile-first layout
 - No horizontal overflow on 390px viewport
