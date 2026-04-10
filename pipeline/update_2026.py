@@ -57,44 +57,82 @@ def build_prompt(current_data: dict) -> str:
     """Build the update prompt with current data as context."""
     current_json = json.dumps(current_data, indent=2)
     today_str = date.today().isoformat()
+    last_update = current_data['meta']['lastUpdated']
+    matches_played = current_data['meta']['matchesPlayed']
 
-    return f"""You are an IPL 2026 data analyst. Your job is to update the live season JSON file
-with the latest match results, standings, and statistics.
+    # Get last match number from recent results
+    last_match_no = 0
+    if current_data.get("recentResults"):
+        last_match_no = max(r.get("matchNo", 0) for r in current_data["recentResults"])
 
-## Current data (as of {current_data['meta']['lastUpdated']}):
+    return f"""You are a meticulous IPL 2026 data analyst. Your job is to find ACCURATE, VERIFIED data
+from the web and update the season JSON. Accuracy is critical — do NOT guess or fabricate any statistics.
+
+## Today's date: {today_str}
+## Last update: {last_update} (after Match #{last_match_no}, {matches_played} matches played)
+
+## STEP 1 — SEARCH FOR DATA (do ALL of these searches):
+You MUST perform these specific web searches to gather accurate data:
+
+1. Search "IPL 2026 results schedule" — find ALL match results after Match #{last_match_no}
+2. Search "IPL 2026 points table {today_str}" — get the EXACT current standings with NRR
+3. Search "IPL 2026 orange cap most runs {today_str}" — get top 5 run scorers with exact stats
+4. Search "IPL 2026 purple cap most wickets {today_str}" — get top 5 wicket takers with exact stats
+5. Search "IPL 2026 upcoming fixtures schedule" — get next 7 upcoming matches
+
+For each search, extract ONLY verified facts. If you cannot find exact data for a field, keep the existing value from the current JSON rather than guessing.
+
+## STEP 2 — UPDATE THE JSON:
+Take the current JSON below and update it with the data you found:
+
 ```json
 {current_json}
 ```
 
-## Today's date: {today_str}
+### Update rules per section:
 
-## Instructions:
-1. Use web_search to find IPL 2026 match results that occurred AFTER the last update date ({current_data['meta']['lastUpdated']}).
-2. Search for: "IPL 2026 results {today_str}", "IPL 2026 points table", "IPL 2026 orange cap purple cap"
-3. Update ALL sections of the JSON with the latest data:
+**meta**: Update matchesPlayed count and set lastUpdated to "{today_str}".
 
-   - **meta.matchesPlayed**: Update the count
-   - **meta.lastUpdated**: Set to "{today_str}"
-   - **pointsTable**: Recalculate ranks sorted by points (desc), then NRR (desc). Update W/L/NR/form arrays.
-   - **recentResults**: Add new match results. Each needs: matchNo, date, team1, team2, result, venue, t1Score, t2Score, highlight
-   - **upcomingFixtures**: Remove any matches that have been played. Keep next 7 upcoming.
-   - **orangeCap**: Top 5 run scorers with: rank, player, team (short code), runs, innings, hs, avg, sr
-   - **purpleCap**: Top 5 wicket takers with: rank, player, team (short code), wickets, innings, bbi, economy
-   - **storylines**: Generate 4-6 fresh narratives about the season. Each needs: id, title, body, tag.
-     Tags: "On Fire", "Sensation", "Crisis", "Under Pressure", "Historic", "Breakout"
+**pointsTable**: Must have EXACTLY 10 teams. For each team provide:
+  - rank (1-10, sorted by points desc, then NRR desc)
+  - team (full name), short (code), color (keep existing hex)
+  - played, won, lost, nr (no result count)
+  - nrr (string with sign like "+1.234" or "-0.567" — get EXACT value from web)
+  - points (2 per win, 1 per no-result, 0 per loss)
+  - form (array of last 5 results: "W", "L", or "N", most recent LAST)
+  CRITICAL: Points = won*2 + nr*1. Verify this math. played = won + lost + nr.
 
-4. Keep these sections UNCHANGED: groups, captains, auctionHighlights
+**recentResults**: Keep ALL existing results. APPEND new ones after Match #{last_match_no}.
+  Each result needs: matchNo, date (YYYY-MM-DD), team1, team2, result, venue, t1Score, t2Score, highlight.
+  - t1Score/t2Score format: "185/6 (20)" or "N/A" for abandoned.
+  - highlight: one-liner about the match (key performer, dramatic finish, etc.)
 
-5. If NO new matches have been played since the last update, return the data unchanged but set lastUpdated to today.
+**upcomingFixtures**: List the next 7 matches NOT yet played. Each needs:
+  matchNo, date (YYYY-MM-DD), team1, team2, venue, time ("7:30 PM IST" or "3:30 PM IST").
 
-## CRITICAL OUTPUT FORMAT:
-- Your response must be ONLY the JSON object. No text before it. No text after it. No markdown fences.
-- Start your response with {{ and end with }}
-- Do NOT include any explanation, commentary, or preamble — ONLY the raw JSON.
-- Maintain the exact same schema structure as the input.
-- All team names must be full official names (e.g., "Royal Challengers Bengaluru", not "RCB").
-- NRR should be a string with sign (e.g., "+1.234" or "-0.567").
-- form arrays should contain "W", "L", or "N" strings.
+**orangeCap**: Top 5 run scorers. Each needs: rank, player, team (short code), runs, innings, hs, avg, sr.
+  Get EXACT stats from search results. Do not round or estimate.
+
+**purpleCap**: Top 5 wicket takers. Each needs: rank, player, team (short code), wickets, innings, bbi, economy.
+  Get EXACT stats from search results. Do not round or estimate.
+
+**storylines**: Generate 4-6 narratives based on ACTUAL events from the matches you found. Each needs: id, title, body, tag.
+  Tags: "On Fire", "Sensation", "Crisis", "Under Pressure", "Historic", "Breakout".
+  IMPORTANT: Storylines must reference SPECIFIC recent matches, player performances, and team streaks.
+  Examples of good storylines:
+    - A team's winning/losing streak with specific match references
+    - A breakout player performance in a recent match (name, score, opponent)
+    - A captain's form slump or revival with stats
+    - A record broken or milestone achieved in a specific match
+  Do NOT write generic storylines. Every storyline must cite at least one specific match or stat.
+
+**Keep UNCHANGED**: groups, captains, auctionHighlights — do not modify these.
+
+## STEP 3 — OUTPUT:
+Return ONLY the complete updated JSON object.
+- Start your response directly with {{ — no text, no explanation, no markdown fences before it.
+- End with }} — no text after it.
+- Every field must be present. Use existing values for any data you could not verify.
 """
 
 
@@ -172,7 +210,7 @@ def extract_json(text: str) -> dict:
     raise json.JSONDecodeError("No JSON object found in response", text, 0)
 
 
-def validate_output(data: dict) -> list[str]:
+def validate_output(data: dict, original: dict) -> list[str]:
     """Validate the output JSON against the expected schema. Returns list of errors."""
     errors = []
 
@@ -199,11 +237,26 @@ def validate_output(data: dict) -> list[str]:
                     if key not in entry:
                         errors.append(f"pointsTable entry missing '{key}': {entry.get('team', '?')}")
                         break
+                # Validate points math: points = won*2 + nr*1
+                if all(k in entry for k in ["won", "lost", "points"]):
+                    nr = entry.get("nr", 0)
+                    expected_pts = entry["won"] * 2 + nr
+                    if entry["points"] != expected_pts:
+                        errors.append(
+                            f"pointsTable math error for {entry.get('team', '?')}: "
+                            f"won={entry['won']}, nr={nr}, points={entry['points']} "
+                            f"(expected {expected_pts})"
+                        )
 
-    # Check recentResults
+    # Check recentResults — must not lose existing results
     if "recentResults" in data:
         if not isinstance(data["recentResults"], list):
             errors.append("recentResults must be a list")
+        elif len(data["recentResults"]) < len(original.get("recentResults", [])):
+            errors.append(
+                f"recentResults shrunk from {len(original['recentResults'])} to {len(data['recentResults'])} — "
+                "new results should be appended, not replace existing"
+            )
 
     # Check orangeCap / purpleCap
     for cap in ["orangeCap", "purpleCap"]:
@@ -231,29 +284,41 @@ def save_output(data: dict, original: dict):
     old_results = len(original["recentResults"])
     new_results = len(data["recentResults"])
 
-    print(f"\n{'='*50}")
-    print(f"Update Summary")
-    print(f"{'='*50}")
+    print(f"\n{'='*60}")
+    print(f"  Update Summary")
+    print(f"{'='*60}")
     print(f"  Last updated:    {original['meta']['lastUpdated']} → {data['meta']['lastUpdated']}")
     print(f"  Matches played:  {old_matches} → {new_matches} (+{new_matches - old_matches})")
     print(f"  Results:         {old_results} → {new_results} (+{new_results - old_results})")
     print(f"  Storylines:      {len(data.get('storylines', []))}")
 
     if data.get("orangeCap"):
-        print(f"  Orange Cap:      {data['orangeCap'][0]['player']} ({data['orangeCap'][0].get('runs', '?')} runs)")
+        oc = data['orangeCap'][0]
+        print(f"  Orange Cap:      {oc['player']} ({oc.get('team', '?')}) — {oc.get('runs', '?')} runs")
     if data.get("purpleCap"):
-        print(f"  Purple Cap:      {data['purpleCap'][0]['player']} ({data['purpleCap'][0].get('wickets', '?')} wkts)")
+        pc = data['purpleCap'][0]
+        print(f"  Purple Cap:      {pc['player']} ({pc.get('team', '?')}) — {pc.get('wickets', '?')} wkts")
+
+    # Print points table summary
+    print(f"\n  {'Rank':<5} {'Team':<30} {'P':>3} {'W':>3} {'L':>3} {'NR':>3} {'Pts':>4} {'NRR':>8}")
+    print(f"  {'─'*60}")
+    for row in data.get("pointsTable", []):
+        print(f"  {row.get('rank', '?'):<5} {row.get('team', '?'):<30} "
+              f"{row.get('played', '?'):>3} {row.get('won', '?'):>3} "
+              f"{row.get('lost', '?'):>3} {row.get('nr', 0):>3} "
+              f"{row.get('points', '?'):>4} {row.get('nrr', '?'):>8}")
 
     with open(PUBLIC_JSON, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
         f.write("\n")
 
-    print(f"\nWritten to {PUBLIC_JSON}")
+    print(f"\n  Written to {PUBLIC_JSON}")
+    print(f"{'='*60}")
 
 
 def main():
     print(f"IPL 2026 Live Data Updater")
-    print(f"{'='*50}")
+    print(f"{'='*60}")
 
     # Load current data
     current = load_current()
@@ -272,7 +337,7 @@ def main():
         sys.exit(1)
 
     # Validate
-    errors = validate_output(updated)
+    errors = validate_output(updated, current)
     if errors:
         print(f"\nValidation errors ({len(errors)}):")
         for err in errors:
