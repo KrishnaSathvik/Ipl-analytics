@@ -6,9 +6,9 @@
     "startDate": "2026-03-28",
     "endDate": "2026-05-31",
     "totalMatches": 74,
-    "matchesPlayed": 15,
+    "matchesPlayed": 16,
     "defendingChampion": "Royal Challengers Bengaluru",
-    "lastUpdated": "2026-04-10"
+    "lastUpdated": "2026-04-11"
   },
   "groups": {
     "A": [
@@ -32,17 +32,13 @@
       "team": "Rajasthan Royals",
       "short": "RR",
       "color": "#EA1A85",
-      "played": 3,
-      "won": 3,
+      "played": 4,
+      "won": 4,
       "lost": 0,
       "nr": 0,
       "nrr": "+2.403",
-      "points": 6,
-      "form": [
-        "W",
-        "W",
-        "W"
-      ]
+      "points": 8,
+      "form": ["W", "W", "W", "W"]
     },
     {
       "rank": 2,
@@ -66,16 +62,13 @@
       "team": "Royal Challengers Bengaluru",
       "short": "RCB",
       "color": "#EC1C24",
-      "played": 2,
+      "played": 3,
       "won": 2,
-      "lost": 0,
+      "lost": 1,
       "nr": 0,
-      "nrr": "+2.501",
+      "nrr": "+1.800",
       "points": 4,
-      "form": [
-        "W",
-        "W"
-      ]
+      "form": ["W", "W", "L"]
     },
     {
       "rank": 4,
@@ -99,18 +92,13 @@
       "team": "Lucknow Super Giants",
       "short": "LSG",
       "color": "#A72056",
-      "played": 4,
-      "won": 3,
+      "played": 3,
+      "won": 2,
       "lost": 1,
       "nr": 0,
       "nrr": "-0.359",
-      "points": 6,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "W"
-      ]
+      "points": 4,
+      "form": ["L", "W", "W"]
     },
     {
       "rank": 6,
@@ -174,12 +162,7 @@
       "nr": 1,
       "nrr": "-1.315",
       "points": 1,
-      "form": [
-        "L",
-        "N",
-        "L",
-        "L"
-      ]
+      "form": ["L", "L", "N", "L"]
     },
     {
       "rank": 10,
@@ -373,20 +356,23 @@
       "team2": "Lucknow Super Giants",
       "result": "LSG won by 3 wickets",
       "venue": "Eden Gardens, Kolkata",
-      "t1Score": "181/4 (20)",
-      "t2Score": "182/7 (20)",
-      "highlight": "LSG chase down 182 with 0 balls to spare — KKR remain winless from 4 matches"
-    }
-  ],
-  "upcomingFixtures": [
+      "t1Score": "161/7 (20)",
+      "t2Score": "165/2 (18.4)",
+      "highlight": "LSG cruise past KKR \u2014 Rishabh Pant's side climb to 5th, KKR still winless"
+    },
     {
       "matchNo": 16,
       "date": "2026-04-10",
-      "team1": "Rajasthan Royals",
-      "team2": "Royal Challengers Bengaluru",
-      "venue": "ACA Stadium, Guwahati",
-      "time": "7:30 PM IST"
-    },
+      "team1": "Royal Challengers Bengaluru",
+      "team2": "Rajasthan Royals",
+      "result": "RR won by 6 wickets",
+      "venue": "Barsapara Cricket Stadium, Guwahati",
+      "t1Score": "201/8 (20)",
+      "t2Score": "202/4 (18)",
+      "highlight": "Vaibhav Sooryavanshi 78 off 29 (PoM) + Dhruv Jurel 81* \u2014 RR go 4-0, Bishnoi castles Kohli"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "matchNo": 17,
       "date": "2026-04-11",
@@ -439,15 +425,24 @@
   "orangeCap": [
     {
       "rank": 1,
-      "player": "Yashasvi Jaiswal",
+      "player": "Vaibhav Sooryavanshi",
       "team": "RR",
-      "runs": 170,
-      "innings": 3,
-      "avg": 170.0,
-      "sr": 192.05
+      "runs": 200,
+      "innings": 4,
+      "avg": 50.00,
+      "sr": 266.67
     },
     {
       "rank": 2,
+      "player": "Yashasvi Jaiswal",
+      "team": "RR",
+      "runs": 170,
+      "innings": 4,
+      "avg": 56.67,
+      "sr": 192.05
+    },
+    {
+      "rank": 3,
       "player": "Sameer Rizvi",
       "team": "DC",
       "runs": 160,
@@ -456,7 +451,7 @@
       "sr": 163.26
     },
     {
-      "rank": 3,
+      "rank": 4,
       "player": "Angkrish Raghuvanshi",
       "team": "KKR",
       "runs": 155,
@@ -465,22 +460,13 @@
       "sr": 142.2
     },
     {
-      "rank": 4,
+      "rank": 5,
       "player": "Heinrich Klaasen",
       "team": "SRH",
       "runs": 145,
       "innings": 3,
       "avg": 48.33,
       "sr": 147.95
-    },
-    {
-      "rank": 5,
-      "player": "Ajinkya Rahane",
-      "team": "KKR",
-      "runs": 124,
-      "innings": 3,
-      "avg": 41.33,
-      "sr": 135.87
     }
   ],
   "purpleCap": [
@@ -488,8 +474,8 @@
       "rank": 1,
       "player": "Ravi Bishnoi",
       "team": "RR",
-      "wickets": 7,
-      "innings": 3,
+      "wickets": 9,
+      "innings": 4,
       "economy": 9.11
     },
     {
@@ -527,16 +513,28 @@
   ],
   "storylines": [
     {
-      "id": "rr-unbeaten",
-      "title": "RR perfect 3-from-3 — Jaiswal and Bishnoi leading IPL 2026 caps race",
-      "body": "Rajasthan Royals have a perfect 3-0 record and top the table with 6 points. Yashasvi Jaiswal leads the Orange Cap with 170 runs including a stunning 77* off 32 against MI in the rain-reduced Match 13 in Guwahati. Ravi Bishnoi leads the Purple Cap with 7 wickets at 9.11 economy. RR dominate both individual charts.",
+      "id": "rr-4-0",
+      "title": "RR 4-from-4 \u2014 perfect start as Sooryavanshi and Bishnoi dominate",
+      "body": "Rajasthan Royals have a perfect 4-0 record and sit top of the table with 8 points after chasing down 202 vs RCB in Match 16 at Guwahati. The teenager Vaibhav Sooryavanshi (PoM) smashed 78 off 29 with a 15-ball fifty, while Dhruv Jurel scored an unbeaten 81. Ravi Bishnoi castled Virat Kohli and now has 9 wickets leading the Purple Cap.",
       "tag": "On Fire"
     },
     {
-      "id": "lsg-surge",
-      "title": "LSG climb to joint-top after thrilling win over KKR in Match 15",
-      "body": "Lucknow Super Giants secured their third win in four matches with a nail-biting 3-wicket victory over KKR at Eden Gardens. Chasing 182, LSG won with 0 balls to spare to move up to joint-top with 6 points alongside RR. Rishabh Pant's captaincy continues to inspire after losses in their opener to DC.",
+      "id": "suryavanshi-orange",
+      "title": "Vaibhav Sooryavanshi takes Orange Cap \u2014 200 runs at SR 266",
+      "body": "The 14-year-old sensation has taken over the Orange Cap after his explosive 78 off 29 balls vs RCB in Match 16. Sooryavanshi now has 200 runs in 4 innings at an astonishing strike rate of 266 and average of 50. His 15-ball fifty vs RCB was his second of the season after 52 off 17 on debut vs CSK.",
+      "tag": "Sensation"
+    },
+    {
+      "id": "bishnoi-purple",
+      "title": "Ravi Bishnoi extends Purple Cap lead \u2014 9 wickets including Kohli scalp",
+      "body": "Ravi Bishnoi remains the Purple Cap leader with 9 wickets in 4 innings. His biggest moment came in Match 16 when he bowled Virat Kohli for 32. Bishnoi's earlier 4/41 vs GT in Match 9 set the tone for his tournament-leading campaign.",
       "tag": "On Fire"
+    },
+    {
+      "id": "gt-dc-thriller",
+      "title": "GT snatch first win in last-ball thriller vs DC \u2014 Match 14",
+      "body": "Gujarat Titans, winless in their first 2 games, pulled off a stunning 1-run victory over Delhi Capitals in Match 14 at the Arun Jaitley Stadium. DC needed 2 off the last ball and could only manage a single. GT's first points of IPL 2026, while DC suffered their first loss after starting 2-0.",
+      "tag": "Breakout"
     },
     {
       "id": "kkr-crisis",
@@ -555,12 +553,6 @@
       "title": "CSK rock bottom with 0 points — worst start in franchise history",
       "body": "Chennai Super Kings sit last with 0 points from 3 matches, their worst-ever start. After being bowled out for 127 against RR's teenage sensation Vaibhav Suryavanshi in Match 3, they conceded 250 to RCB in Match 11. Pressure mounts in what could be MS Dhoni's farewell IPL season.",
       "tag": "Under Pressure"
-    },
-    {
-      "id": "rcb-defending",
-      "title": "RCB perfect start — 2 wins from 2 as defending champions",
-      "body": "Royal Challengers Bengaluru have started their title defense in style with 2 wins from 2 matches. After beating SRH in the opener, RCB posted a massive 250/3 against CSK in Match 11 with Tim David's 70* off 25 leading the carnage. They sit 3rd on NRR behind RR and PBKS in early standings.",
-      "tag": "On Fire"
     }
   ],
   "auctionHighlights": [
