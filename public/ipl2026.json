@@ -92,18 +92,13 @@
       "team": "Lucknow Super Giants",
       "short": "LSG",
       "color": "#A72056",
-      "played": 4,
-      "won": 3,
+      "played": 3,
+      "won": 2,
       "lost": 1,
       "nr": 0,
       "nrr": "-0.359",
-      "points": 6,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "W"
-      ]
+      "points": 4,
+      "form": ["L", "W", "W"]
     },
     {
       "rank": 6,
@@ -167,12 +162,7 @@
       "nr": 1,
       "nrr": "-1.315",
       "points": 1,
-      "form": [
-        "L",
-        "N",
-        "L",
-        "L"
-      ]
+      "form": ["L", "L", "N", "L"]
     },
     {
       "rank": 10,
