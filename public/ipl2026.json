@@ -38,7 +38,12 @@
       "nr": 0,
       "nrr": "+2.403",
       "points": 8,
-      "form": ["W", "W", "W", "W"]
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
     },
     {
       "rank": 2,
@@ -68,7 +73,11 @@
       "nr": 0,
       "nrr": "+1.800",
       "points": 4,
-      "form": ["W", "W", "L"]
+      "form": [
+        "W",
+        "W",
+        "L"
+      ]
     },
     {
       "rank": 4,
@@ -98,7 +107,11 @@
       "nr": 0,
       "nrr": "-0.359",
       "points": 4,
-      "form": ["L", "W", "W"]
+      "form": [
+        "L",
+        "W",
+        "W"
+      ]
     },
     {
       "rank": 6,
@@ -162,7 +175,12 @@
       "nr": 1,
       "nrr": "-1.315",
       "points": 1,
-      "form": ["L", "L", "N", "L"]
+      "form": [
+        "L",
+        "L",
+        "N",
+        "L"
+      ]
     },
     {
       "rank": 10,
@@ -358,7 +376,7 @@
       "venue": "Eden Gardens, Kolkata",
       "t1Score": "161/7 (20)",
       "t2Score": "165/2 (18.4)",
-      "highlight": "LSG cruise past KKR \u2014 Rishabh Pant's side climb to 5th, KKR still winless"
+      "highlight": "LSG cruise past KKR — Rishabh Pant's side climb to 5th, KKR still winless"
     },
     {
       "matchNo": 16,
@@ -369,7 +387,7 @@
       "venue": "Barsapara Cricket Stadium, Guwahati",
       "t1Score": "201/8 (20)",
       "t2Score": "202/4 (18)",
-      "highlight": "Vaibhav Sooryavanshi 78 off 29 (PoM) + Dhruv Jurel 81* \u2014 RR go 4-0, Bishnoi castles Kohli"
+      "highlight": "Vaibhav Sooryavanshi 78 off 29 (PoM) + Dhruv Jurel 81* — RR go 4-0, Bishnoi castles Kohli"
     }
   ],
   "upcomingFixtures": [
@@ -429,7 +447,7 @@
       "team": "RR",
       "runs": 200,
       "innings": 4,
-      "avg": 50.00,
+      "avg": 50.0,
       "sr": 266.67
     },
     {
@@ -513,46 +531,40 @@
   ],
   "storylines": [
     {
-      "id": "rr-4-0",
-      "title": "RR 4-from-4 \u2014 perfect start as Sooryavanshi and Bishnoi dominate",
-      "body": "Rajasthan Royals have a perfect 4-0 record and sit top of the table with 8 points after chasing down 202 vs RCB in Match 16 at Guwahati. The teenager Vaibhav Sooryavanshi (PoM) smashed 78 off 29 with a 15-ball fifty, while Dhruv Jurel scored an unbeaten 81. Ravi Bishnoi castled Virat Kohli and now has 9 wickets leading the Purple Cap.",
+      "id": "rr-perfect-start",
+      "title": "RR extend perfect start to 4-0 — Sooryavanshi and Bishnoi lead the charge",
+      "body": "Rajasthan Royals maintained their perfect record with a 6-wicket win over defending champions RCB in Match 16. Vaibhav Sooryavanshi's explosive 78 off 29 balls and Dhruv Jurel's unbeaten 81 powered the chase of 202. The teenager Sooryavanshi now leads the Orange Cap with 200 runs at a stunning strike rate of 266.67.",
       "tag": "On Fire"
     },
     {
-      "id": "suryavanshi-orange",
-      "title": "Vaibhav Sooryavanshi takes Orange Cap \u2014 200 runs at SR 266",
-      "body": "The 14-year-old sensation has taken over the Orange Cap after his explosive 78 off 29 balls vs RCB in Match 16. Sooryavanshi now has 200 runs in 4 innings at an astonishing strike rate of 266 and average of 50. His 15-ball fifty vs RCB was his second of the season after 52 off 17 on debut vs CSK.",
+      "id": "sooryavanshi-sensation",
+      "title": "14-year-old Sooryavanshi takes Orange Cap — 200 runs at SR 266",
+      "body": "Vaibhav Sooryavanshi has taken cricket by storm, topping the Orange Cap after his match-winning 78 off 29 against RCB in Match 16. The teenager's 15-ball fifty at Guwahati was his second of the tournament, following his debut knock of 52 off 17 against CSK. At 200 runs in 4 innings, he's redefining T20 batting.",
       "tag": "Sensation"
     },
     {
-      "id": "bishnoi-purple",
-      "title": "Ravi Bishnoi extends Purple Cap lead \u2014 9 wickets including Kohli scalp",
-      "body": "Ravi Bishnoi remains the Purple Cap leader with 9 wickets in 4 innings. His biggest moment came in Match 16 when he bowled Virat Kohli for 32. Bishnoi's earlier 4/41 vs GT in Match 9 set the tone for his tournament-leading campaign.",
+      "id": "bishnoi-purple-dominance",
+      "title": "Ravi Bishnoi extends Purple Cap lead — 9 wickets including Kohli scalp",
+      "body": "RR's Ravi Bishnoi continues to dominate with the ball, leading the Purple Cap race with 9 wickets in 4 matches. His biggest moment came in Match 16 when he clean bowled Virat Kohli for 32. Earlier, his 4/41 against GT in Match 9 showcased his tournament-defining form alongside figures of 4/20 in RR's win over GT.",
       "tag": "On Fire"
     },
     {
-      "id": "gt-dc-thriller",
-      "title": "GT snatch first win in last-ball thriller vs DC \u2014 Match 14",
-      "body": "Gujarat Titans, winless in their first 2 games, pulled off a stunning 1-run victory over Delhi Capitals in Match 14 at the Arun Jaitley Stadium. DC needed 2 off the last ball and could only manage a single. GT's first points of IPL 2026, while DC suffered their first loss after starting 2-0.",
-      "tag": "Breakout"
-    },
-    {
-      "id": "kkr-crisis",
-      "title": "KKR winless from 4 matches — Rs.25.2Cr Green and big buys failing",
-      "body": "Kolkata Knight Riders remain the only team without a win, going 0-3 with 1 washout from 4 matches. The 3-wicket loss to LSG in Match 15 at Eden Gardens deepened their crisis. Cameron Green (Rs.25.2Cr) and other expensive auction buys have failed to deliver, leaving KKR bottom with just 1 point.",
+      "id": "kkr-crisis-deepens",
+      "title": "KKR's nightmare continues — 0 wins from 4 matches despite Rs.25.2Cr Green",
+      "body": "Kolkata Knight Riders remain the only team without a win after their 3-wicket loss to LSG in Match 15 at Eden Gardens. Despite Cameron Green's record Rs.25.2 crore price tag, KKR sit bottom with just 1 point from a rain washout. Their expensive buys have failed to deliver, with Green managing only 32 off 24 in their latest defeat.",
       "tag": "Crisis"
     },
     {
-      "id": "gt-breakthrough",
-      "title": "GT snatch first win in last-ball thriller vs DC — Match 14 stunner",
-      "body": "Gujarat Titans finally broke their duck with a heart-stopping 1-run victory over Delhi Capitals in Match 14 at Delhi. After losing their first two games, GT defended 210 as DC fell just short needing 2 off the final ball. The victory lifted GT off the bottom and into the playoff conversation.",
-      "tag": "Breakout"
+      "id": "csk-worst-start",
+      "title": "CSK's historic low — 0 points from 3 matches in potential Dhoni farewell",
+      "body": "Chennai Super Kings endure their worst-ever IPL start, sitting last with 0 points after 3 consecutive defeats. Their 43-run loss to RCB in Match 11, where they were bowled out for 207 chasing 251, epitomizes their struggles. With speculation around MS Dhoni's final season, CSK desperately need a turnaround starting with today's clash against DC.",
+      "tag": "Under Pressure"
     },
     {
-      "id": "csk-bottom",
-      "title": "CSK rock bottom with 0 points — worst start in franchise history",
-      "body": "Chennai Super Kings sit last with 0 points from 3 matches, their worst-ever start. After being bowled out for 127 against RR's teenage sensation Vaibhav Suryavanshi in Match 3, they conceded 250 to RCB in Match 11. Pressure mounts in what could be MS Dhoni's farewell IPL season.",
-      "tag": "Under Pressure"
+      "id": "gt-breakthrough-thriller",
+      "title": "GT snatch maiden win in last-ball thriller — Miller falls short by 1 run vs DC",
+      "body": "Gujarat Titans finally opened their account with a heart-stopping 1-run victory over Delhi Capitals in Match 14. Needing 2 off the final ball, David Miller failed to make contact as GT defended 210. The win lifted GT off the bottom and into playoff contention after losing their opening two matches.",
+      "tag": "Breakout"
     }
   ],
   "auctionHighlights": [
