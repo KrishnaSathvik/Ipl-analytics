@@ -6,9 +6,9 @@
     "startDate": "2026-03-28",
     "endDate": "2026-05-31",
     "totalMatches": 74,
-    "matchesPlayed": 16,
+    "matchesPlayed": 18,
     "defendingChampion": "Royal Challengers Bengaluru",
-    "lastUpdated": "2026-04-11"
+    "lastUpdated": "2026-04-12"
   },
   "groups": {
     "A": [
@@ -50,16 +50,17 @@
       "team": "Punjab Kings",
       "short": "PBKS",
       "color": "#ED1B24",
-      "played": 3,
-      "won": 2,
+      "played": 4,
+      "won": 3,
       "lost": 0,
       "nr": 1,
       "nrr": "+0.637",
-      "points": 5,
+      "points": 7,
       "form": [
         "W",
         "W",
-        "N"
+        "N",
+        "W"
       ]
     },
     {
@@ -81,23 +82,6 @@
     },
     {
       "rank": 4,
-      "team": "Delhi Capitals",
-      "short": "DC",
-      "color": "#0078BC",
-      "played": 3,
-      "won": 2,
-      "lost": 1,
-      "nr": 0,
-      "nrr": "+0.811",
-      "points": 4,
-      "form": [
-        "W",
-        "W",
-        "L"
-      ]
-    },
-    {
-      "rank": 5,
       "team": "Lucknow Super Giants",
       "short": "LSG",
       "color": "#A72056",
@@ -114,24 +98,61 @@
       ]
     },
     {
+      "rank": 5,
+      "team": "Delhi Capitals",
+      "short": "DC",
+      "color": "#0078BC",
+      "played": 4,
+      "won": 2,
+      "lost": 2,
+      "nr": 0,
+      "nrr": "+0.811",
+      "points": 4,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    {
       "rank": 6,
+      "team": "Chennai Super Kings",
+      "short": "CSK",
+      "color": "#F9CD05",
+      "played": 4,
+      "won": 1,
+      "lost": 3,
+      "nr": 0,
+      "nrr": "-2.517",
+      "points": 2,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 7,
       "team": "Sunrisers Hyderabad",
       "short": "SRH",
       "color": "#FF822A",
-      "played": 3,
+      "played": 4,
       "won": 1,
-      "lost": 2,
+      "lost": 3,
       "nr": 0,
       "nrr": "+0.275",
       "points": 2,
       "form": [
         "L",
         "W",
+        "L",
         "L"
       ]
     },
     {
-      "rank": 7,
+      "rank": 8,
       "team": "Gujarat Titans",
       "short": "GT",
       "color": "#1C1C2B",
@@ -148,7 +169,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "team": "Mumbai Indians",
       "short": "MI",
       "color": "#004BA0",
@@ -165,7 +186,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "team": "Kolkata Knight Riders",
       "short": "KKR",
       "color": "#3A225D",
@@ -179,23 +200,6 @@
         "L",
         "L",
         "N",
-        "L"
-      ]
-    },
-    {
-      "rank": 10,
-      "team": "Chennai Super Kings",
-      "short": "CSK",
-      "color": "#F9CD05",
-      "played": 3,
-      "won": 0,
-      "lost": 3,
-      "nr": 0,
-      "nrr": "-2.517",
-      "points": 0,
-      "form": [
-        "L",
-        "L",
         "L"
       ]
     }
@@ -388,25 +392,31 @@
       "t1Score": "201/8 (20)",
       "t2Score": "202/4 (18)",
       "highlight": "Vaibhav Sooryavanshi 78 off 29 (PoM) + Dhruv Jurel 81* — RR go 4-0, Bishnoi castles Kohli"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "matchNo": 17,
       "date": "2026-04-11",
       "team1": "Punjab Kings",
       "team2": "Sunrisers Hyderabad",
+      "result": "PBKS won by 6 wickets",
       "venue": "New PCA Stadium, Mullanpur",
-      "time": "3:30 PM IST"
+      "t1Score": "223/4 (18.5)",
+      "t2Score": "219/6 (20)",
+      "highlight": "Shreyas Iyer 68 leads chase of 220 — PBKS maintain unbeaten streak with 7 balls left"
     },
     {
       "matchNo": 18,
       "date": "2026-04-11",
       "team1": "Chennai Super Kings",
       "team2": "Delhi Capitals",
+      "result": "CSK won by 23 runs",
       "venue": "MA Chidambaram Stadium, Chennai",
-      "time": "7:30 PM IST"
-    },
+      "t1Score": "212/2 (20)",
+      "t2Score": "189 (19.2)",
+      "highlight": "Sanju Samson's maiden CSK century (115*) — first IPL 2026 hundred breaks CSK's winless streak"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "matchNo": 19,
       "date": "2026-04-12",
@@ -429,14 +439,38 @@
       "team1": "Sunrisers Hyderabad",
       "team2": "Rajasthan Royals",
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
-      "time": "3:30 PM IST"
+      "time": "7:30 PM IST"
     },
     {
       "matchNo": 22,
-      "date": "2026-04-13",
+      "date": "2026-04-14",
       "team1": "Chennai Super Kings",
       "team2": "Kolkata Knight Riders",
       "venue": "MA Chidambaram Stadium, Chennai",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 23,
+      "date": "2026-04-15",
+      "team1": "Royal Challengers Bengaluru",
+      "team2": "Lucknow Super Giants",
+      "venue": "M. Chinnaswamy Stadium, Bengaluru",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 24,
+      "date": "2026-04-16",
+      "team1": "Mumbai Indians",
+      "team2": "Punjab Kings",
+      "venue": "Wankhede Stadium, Mumbai",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 25,
+      "date": "2026-04-17",
+      "team1": "Gujarat Titans",
+      "team2": "Kolkata Knight Riders",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
       "time": "7:30 PM IST"
     }
   ],
@@ -531,40 +565,40 @@
   ],
   "storylines": [
     {
-      "id": "rr-perfect-start",
-      "title": "RR extend perfect start to 4-0 — Sooryavanshi and Bishnoi lead the charge",
-      "body": "Rajasthan Royals maintained their perfect record with a 6-wicket win over defending champions RCB in Match 16. Vaibhav Sooryavanshi's explosive 78 off 29 balls and Dhruv Jurel's unbeaten 81 powered the chase of 202. The teenager Sooryavanshi now leads the Orange Cap with 200 runs at a stunning strike rate of 266.67.",
+      "id": "rr-perfect-start-continues",
+      "title": "RR extend perfect start to 4-0 — Sooryavanshi leads Orange Cap race",
+      "body": "Rajasthan Royals maintained their perfect record with a 6-wicket win over defending champions RCB in Match 16 on April 10. Vaibhav Sooryavanshi's explosive 78 off 29 balls and Dhruv Jurel's unbeaten 81 powered the chase of 202. The teenager Sooryavanshi now leads the Orange Cap with 200 runs at a stunning strike rate of 266.67.",
       "tag": "On Fire"
     },
     {
-      "id": "sooryavanshi-sensation",
-      "title": "14-year-old Sooryavanshi takes Orange Cap — 200 runs at SR 266",
-      "body": "Vaibhav Sooryavanshi has taken cricket by storm, topping the Orange Cap after his match-winning 78 off 29 against RCB in Match 16. The teenager's 15-ball fifty at Guwahati was his second of the tournament, following his debut knock of 52 off 17 against CSK. At 200 runs in 4 innings, he's redefining T20 batting.",
-      "tag": "Sensation"
-    },
-    {
-      "id": "bishnoi-purple-dominance",
-      "title": "Ravi Bishnoi extends Purple Cap lead — 9 wickets including Kohli scalp",
-      "body": "RR's Ravi Bishnoi continues to dominate with the ball, leading the Purple Cap race with 9 wickets in 4 matches. His biggest moment came in Match 16 when he clean bowled Virat Kohli for 32. Earlier, his 4/41 against GT in Match 9 showcased his tournament-defining form alongside figures of 4/20 in RR's win over GT.",
+      "id": "pbks-unbeaten-streak",
+      "title": "PBKS maintain unbeaten streak — Shreyas Iyer's captaincy shines in 220+ chase",
+      "body": "Punjab Kings showcased their championship credentials with a clinical 6-wicket victory over SRH in Match 17 on April 11, chasing down 220 with 7 balls to spare. Captain Shreyas Iyer led from the front with 68 runs, while Priyansh Arya's quickfire start set the tone. PBKS remain unbeaten with 3 wins and 1 washout from 4 matches.",
       "tag": "On Fire"
     },
     {
-      "id": "kkr-crisis-deepens",
-      "title": "KKR's nightmare continues — 0 wins from 4 matches despite Rs.25.2Cr Green",
-      "body": "Kolkata Knight Riders remain the only team without a win after their 3-wicket loss to LSG in Match 15 at Eden Gardens. Despite Cameron Green's record Rs.25.2 crore price tag, KKR sit bottom with just 1 point from a rain washout. Their expensive buys have failed to deliver, with Green managing only 32 off 24 in their latest defeat.",
+      "id": "samson-breaks-csk-drought",
+      "title": "Sanju Samson ends CSK's nightmare — maiden CSK century breaks winless streak",
+      "body": "Chennai Super Kings finally got off the mark in IPL 2026 with a dominant 23-run victory over DC in Match 18 on April 11. Sanju Samson silenced critics with his first IPL century of 2026 (115* off 56 balls), ending his own poor form and CSK's three-match losing streak. Jamie Overton's 4/18 sealed the comprehensive win at Chepauk.",
+      "tag": "Breakout"
+    },
+    {
+      "id": "kkr-crisis-deepens-further",
+      "title": "KKR's nightmare continues — 0 wins from 4 matches despite Rs.25.2Cr investment",
+      "body": "Kolkata Knight Riders remain the only team without a win after their 3-wicket loss to LSG in Match 15 on April 9. Despite Cameron Green's record Rs.25.2 crore price tag and big-money additions, KKR sit bottom with just 1 point from a washout against PBKS. Their expensive buys have failed to deliver as the crisis deepens with each passing game.",
       "tag": "Crisis"
     },
     {
-      "id": "csk-worst-start",
-      "title": "CSK's historic low — 0 points from 3 matches in potential Dhoni farewell",
-      "body": "Chennai Super Kings endure their worst-ever IPL start, sitting last with 0 points after 3 consecutive defeats. Their 43-run loss to RCB in Match 11, where they were bowled out for 207 chasing 251, epitomizes their struggles. With speculation around MS Dhoni's final season, CSK desperately need a turnaround starting with today's clash against DC.",
-      "tag": "Under Pressure"
+      "id": "bishnoi-purple-domination",
+      "title": "Ravi Bishnoi extends Purple Cap lead — 9 wickets including Virat Kohli scalp",
+      "body": "RR's Ravi Bishnoi continues to dominate with the ball, leading the Purple Cap race with 9 wickets in 4 matches. His biggest moment came in Match 16 when he clean bowled Virat Kohli for 32. Earlier, his 4/41 against GT in Match 9 and 4/20 figures have been tournament-defining performances for the table-toppers.",
+      "tag": "On Fire"
     },
     {
-      "id": "gt-breakthrough-thriller",
-      "title": "GT snatch maiden win in last-ball thriller — Miller falls short by 1 run vs DC",
-      "body": "Gujarat Titans finally opened their account with a heart-stopping 1-run victory over Delhi Capitals in Match 14. Needing 2 off the final ball, David Miller failed to make contact as GT defended 210. The win lifted GT off the bottom and into playoff contention after losing their opening two matches.",
-      "tag": "Breakout"
+      "id": "sooryavanshi-orange-cap-teen",
+      "title": "14-year-old Vaibhav Sooryavanshi leads Orange Cap — redefining T20 batting at 266 SR",
+      "body": "Vaibhav Sooryavanshi has taken cricket by storm, topping the Orange Cap standings with 200 runs in 4 innings at a mind-boggling strike rate of 266.67. The teenager's 78 off 29 in Match 16 against RCB followed his debut 52 off 17 against CSK. At 14, he's redefining what's possible in T20 cricket with fearless strokeplay.",
+      "tag": "Sensation"
     }
   ],
   "auctionHighlights": [
