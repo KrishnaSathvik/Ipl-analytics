@@ -54,7 +54,7 @@
       "won": 3,
       "lost": 0,
       "nr": 1,
-      "nrr": "+0.637",
+      "nrr": "+0.720",
       "points": 7,
       "form": [
         "W",
@@ -72,7 +72,7 @@
       "won": 2,
       "lost": 1,
       "nr": 0,
-      "nrr": "+1.800",
+      "nrr": "+1.231",
       "points": 4,
       "form": [
         "W",
@@ -82,6 +82,24 @@
     },
     {
       "rank": 4,
+      "team": "Delhi Capitals",
+      "short": "DC",
+      "color": "#0078BC",
+      "played": 4,
+      "won": 2,
+      "lost": 2,
+      "nr": 0,
+      "nrr": "+0.322",
+      "points": 4,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    {
+      "rank": 5,
       "team": "Lucknow Super Giants",
       "short": "LSG",
       "color": "#A72056",
@@ -98,43 +116,7 @@
       ]
     },
     {
-      "rank": 5,
-      "team": "Delhi Capitals",
-      "short": "DC",
-      "color": "#0078BC",
-      "played": 4,
-      "won": 2,
-      "lost": 2,
-      "nr": 0,
-      "nrr": "+0.811",
-      "points": 4,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "L"
-      ]
-    },
-    {
       "rank": 6,
-      "team": "Chennai Super Kings",
-      "short": "CSK",
-      "color": "#F9CD05",
-      "played": 4,
-      "won": 1,
-      "lost": 3,
-      "nr": 0,
-      "nrr": "-2.517",
-      "points": 2,
-      "form": [
-        "L",
-        "L",
-        "L",
-        "W"
-      ]
-    },
-    {
-      "rank": 7,
       "team": "Sunrisers Hyderabad",
       "short": "SRH",
       "color": "#FF822A",
@@ -142,7 +124,7 @@
       "won": 1,
       "lost": 3,
       "nr": 0,
-      "nrr": "+0.275",
+      "nrr": "-0.024",
       "points": 2,
       "form": [
         "L",
@@ -152,7 +134,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 7,
       "team": "Gujarat Titans",
       "short": "GT",
       "color": "#1C1C2B",
@@ -169,7 +151,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 8,
       "team": "Mumbai Indians",
       "short": "MI",
       "color": "#004BA0",
@@ -183,6 +165,24 @@
         "W",
         "L",
         "L"
+      ]
+    },
+    {
+      "rank": 9,
+      "team": "Chennai Super Kings",
+      "short": "CSK",
+      "color": "#F9CD05",
+      "played": 4,
+      "won": 1,
+      "lost": 3,
+      "nr": 0,
+      "nrr": "-1.532",
+      "points": 2,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "W"
       ]
     },
     {
@@ -488,9 +488,9 @@
       "rank": 2,
       "player": "Yashasvi Jaiswal",
       "team": "RR",
-      "runs": 170,
+      "runs": 183,
       "innings": 4,
-      "avg": 56.67,
+      "avg": 61.0,
       "sr": 192.05
     },
     {
@@ -498,8 +498,8 @@
       "player": "Sameer Rizvi",
       "team": "DC",
       "runs": 160,
-      "innings": 3,
-      "avg": 80.0,
+      "innings": 4,
+      "avg": 53.33,
       "sr": 163.26
     },
     {
@@ -513,12 +513,12 @@
     },
     {
       "rank": 5,
-      "player": "Heinrich Klaasen",
-      "team": "SRH",
-      "runs": 145,
-      "innings": 3,
-      "avg": 48.33,
-      "sr": 147.95
+      "player": "Sanju Samson",
+      "team": "CSK",
+      "runs": 137,
+      "innings": 4,
+      "avg": 45.67,
+      "sr": 158.95
     }
   ],
   "purpleCap": [
@@ -528,7 +528,7 @@
       "team": "RR",
       "wickets": 9,
       "innings": 4,
-      "economy": 9.11
+      "economy": 8.76
     },
     {
       "rank": 2,
@@ -540,6 +540,14 @@
     },
     {
       "rank": 3,
+      "player": "Anshul Kamboj",
+      "team": "CSK",
+      "wickets": 8,
+      "innings": 4,
+      "economy": 9.81
+    },
+    {
+      "rank": 4,
       "player": "Rashid Khan",
       "team": "GT",
       "wickets": 5,
@@ -547,57 +555,49 @@
       "economy": 7.08
     },
     {
-      "rank": 3,
+      "rank": 5,
       "player": "Lungi Ngidi",
       "team": "DC",
       "wickets": 5,
-      "innings": 3,
+      "innings": 4,
       "economy": 7.29
-    },
-    {
-      "rank": 3,
-      "player": "Nandre Burger",
-      "team": "RR",
-      "wickets": 5,
-      "innings": 3,
-      "economy": 8.44
     }
   ],
   "storylines": [
     {
       "id": "rr-perfect-start-continues",
-      "title": "RR extend perfect start to 4-0 — Sooryavanshi leads Orange Cap race",
-      "body": "Rajasthan Royals maintained their perfect record with a 6-wicket win over defending champions RCB in Match 16 on April 10. Vaibhav Sooryavanshi's explosive 78 off 29 balls and Dhruv Jurel's unbeaten 81 powered the chase of 202. The teenager Sooryavanshi now leads the Orange Cap with 200 runs at a stunning strike rate of 266.67.",
+      "title": "RR extend perfect start to 4-0 — Sooryavanshi leads Orange Cap race after RCB scalping",
+      "body": "Rajasthan Royals maintained their perfect record with a 6-wicket win over defending champions RCB in Match 16 on April 10. Vaibhav Sooryavanshi's explosive 78 off 29 balls and Dhruv Jurel's unbeaten 81 powered the chase of 202. The teenager now leads the Orange Cap with 200 runs at a stunning strike rate of 266.67, while Ravi Bishnoi dismissed Virat Kohli to maintain his Purple Cap lead with 9 wickets.",
       "tag": "On Fire"
     },
     {
       "id": "pbks-unbeaten-streak",
-      "title": "PBKS maintain unbeaten streak — Shreyas Iyer's captaincy shines in 220+ chase",
-      "body": "Punjab Kings showcased their championship credentials with a clinical 6-wicket victory over SRH in Match 17 on April 11, chasing down 220 with 7 balls to spare. Captain Shreyas Iyer led from the front with 68 runs, while Priyansh Arya's quickfire start set the tone. PBKS remain unbeaten with 3 wins and 1 washout from 4 matches.",
+      "title": "PBKS maintain unbeaten streak — Shreyas Iyer's captaincy shines in 220+ chase against SRH",
+      "body": "Punjab Kings showcased their championship credentials with a clinical 6-wicket victory over SRH in Match 17 on April 11, chasing down 220 with 7 balls to spare. Captain Shreyas Iyer led from the front with 68 runs, maintaining PBKS's unbeaten record with 3 wins and 1 washout from 4 matches, sitting second with 7 points.",
       "tag": "On Fire"
     },
     {
       "id": "samson-breaks-csk-drought",
-      "title": "Sanju Samson ends CSK's nightmare — maiden CSK century breaks winless streak",
-      "body": "Chennai Super Kings finally got off the mark in IPL 2026 with a dominant 23-run victory over DC in Match 18 on April 11. Sanju Samson silenced critics with his first IPL century of 2026 (115* off 56 balls), ending his own poor form and CSK's three-match losing streak. Jamie Overton's 4/18 sealed the comprehensive win at Chepauk.",
+      "title": "Sanju Samson ends CSK's nightmare — maiden IPL 2026 century breaks winless streak",
+      "body": "Chennai Super Kings finally got off the mark in IPL 2026 with a dominant 23-run victory over DC in Match 18 on April 11. Sanju Samson silenced critics with the tournament's first century (115* off 56 balls), ending his poor form and CSK's three-match losing streak. The victory moved CSK from bottom to ninth place with their first 2 points.",
       "tag": "Breakout"
     },
     {
       "id": "kkr-crisis-deepens-further",
-      "title": "KKR's nightmare continues — 0 wins from 4 matches despite Rs.25.2Cr investment",
-      "body": "Kolkata Knight Riders remain the only team without a win after their 3-wicket loss to LSG in Match 15 on April 9. Despite Cameron Green's record Rs.25.2 crore price tag and big-money additions, KKR sit bottom with just 1 point from a washout against PBKS. Their expensive buys have failed to deliver as the crisis deepens with each passing game.",
+      "title": "KKR's nightmare continues — 0 wins from 4 matches despite Rs.25.2Cr Cameron Green investment",
+      "body": "Kolkata Knight Riders remain the only team without a win after their 3-wicket loss to LSG in Match 15 on April 9. Despite Cameron Green's record Rs.25.2 crore price tag and big-money additions, KKR sit bottom with just 1 point from a washout against PBKS in Match 12. Their expensive buys have failed to deliver as the crisis deepens.",
       "tag": "Crisis"
     },
     {
       "id": "bishnoi-purple-domination",
-      "title": "Ravi Bishnoi extends Purple Cap lead — 9 wickets including Virat Kohli scalp",
-      "body": "RR's Ravi Bishnoi continues to dominate with the ball, leading the Purple Cap race with 9 wickets in 4 matches. His biggest moment came in Match 16 when he clean bowled Virat Kohli for 32. Earlier, his 4/41 against GT in Match 9 and 4/20 figures have been tournament-defining performances for the table-toppers.",
+      "title": "Ravi Bishnoi dominates Purple Cap — 9 wickets including Virat Kohli scalp in RR's perfect run",
+      "body": "RR's Ravi Bishnoi continues to lead the Purple Cap race with 9 wickets in 4 matches at an average of 12.66. His biggest moment came in Match 16 when he clean bowled Virat Kohli for 32. His figures of 1/16, 4/41, 2/25, and 2/32 have been instrumental in RR's unbeaten 4-0 start to IPL 2026.",
       "tag": "On Fire"
     },
     {
       "id": "sooryavanshi-orange-cap-teen",
-      "title": "14-year-old Vaibhav Sooryavanshi leads Orange Cap — redefining T20 batting at 266 SR",
-      "body": "Vaibhav Sooryavanshi has taken cricket by storm, topping the Orange Cap standings with 200 runs in 4 innings at a mind-boggling strike rate of 266.67. The teenager's 78 off 29 in Match 16 against RCB followed his debut 52 off 17 against CSK. At 14, he's redefining what's possible in T20 cricket with fearless strokeplay.",
+      "title": "15-year-old Vaibhav Sooryavanshi leads Orange Cap — redefining T20 batting at 266+ SR",
+      "body": "Vaibhav Sooryavanshi has taken cricket by storm, topping the Orange Cap standings with 200 runs in 4 innings at a mind-boggling strike rate of 266.67. After his debut 52 off 17 against CSK in Match 3, his latest 78 off 29 against RCB in Match 16 showcased fearless strokeplay that's redefining T20 cricket for his generation.",
       "tag": "Sensation"
     }
   ],
