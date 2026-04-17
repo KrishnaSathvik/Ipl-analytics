@@ -5,6 +5,8 @@ import {
   ChartBar, MagnifyingGlass, DotsThree, X,
 } from '@phosphor-icons/react';
 
+const LOGO_SRC = '/logo.png';
+
 type PageId = 'home' | 'teams' | 'players' | 'seasons' | 'records' | 'analytics' | 'deepdives';
 
 const ROUTES: Record<PageId, string> = {
@@ -50,11 +52,8 @@ export default function Nav() {
       <nav aria-label="Main navigation" className="hidden md:flex fixed top-0 inset-x-0 z-50 h-12 items-center px-5 gap-0.5"
         style={{ background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--border)' }}>
 
-        <Link to="/" className="flex items-center gap-2 mr-4 flex-shrink-0" aria-label="IPL Hub home">
-          <Cricket size={18} weight="fill" color="var(--accent)" />
-          <span style={{ fontWeight: 700, fontSize: 14, color: 'var(--text)', letterSpacing: '-0.02em' }}>IPL Hub</span>
-          <span style={{ fontSize: 10, padding: '1px 6px', borderRadius: 999, fontWeight: 700,
-            background: 'var(--accent-bg)', color: 'var(--accent)', border: '1px solid var(--accent-border)' }}>2026</span>
+        <Link to="/" className="flex items-center mr-4 flex-shrink-0" aria-label="IPL Analytics home">
+          <img src={LOGO_SRC} alt="" width={32} height={32} style={{ display: 'block', borderRadius: 6 }} />
         </Link>
 
         {ALL_PAGES.map(item => (
@@ -72,7 +71,15 @@ export default function Nav() {
         ))}
       </nav>
 
-      {/* ── Mobile ─────────────────────────────────────────────────────── */}
+      {/* ── Mobile top header (logo only) ───────────────────────────────── */}
+      <header aria-label="Site header" className="md:hidden fixed top-0 inset-x-0 z-50 h-12 flex items-center justify-center px-4"
+        style={{ background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--border)' }}>
+        <Link to="/" aria-label="IPL Analytics home" className="flex items-center">
+          <img src={LOGO_SRC} alt="" width={30} height={30} style={{ display: 'block', borderRadius: 6 }} />
+        </Link>
+      </header>
+
+      {/* ── Mobile bottom nav ──────────────────────────────────────────── */}
       <>
         {showMore && (
           <>
