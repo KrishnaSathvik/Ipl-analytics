@@ -11,14 +11,17 @@ import os
 from collections import defaultdict
 
 # ── Output directories ────────────────────────────────────────────────────────
-SRC_DATA = "/home/user/workspace/ipl-app/src/data"
-PUBLIC    = "/home/user/workspace/ipl-app/public"
+# Defaults assume the script is run from the repo root.
+REPO_ROOT = os.environ.get("IPL_REPO_ROOT", os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+SRC_DATA  = os.environ.get("IPL_SRC_DATA", os.path.join(REPO_ROOT, "src", "data"))
+PUBLIC    = os.environ.get("IPL_PUBLIC",   os.path.join(REPO_ROOT, "public"))
+CSV_PATH  = os.environ.get("IPL_CSV",      os.path.join(REPO_ROOT, "IPL.csv"))
 os.makedirs(SRC_DATA, exist_ok=True)
 os.makedirs(PUBLIC,   exist_ok=True)
 
 # ── Load CSV ──────────────────────────────────────────────────────────────────
-print("Loading IPL.csv …")
-df = pd.read_csv("/home/user/workspace/IPL.csv", low_memory=False)
+print(f"Loading {CSV_PATH} …")
+df = pd.read_csv(CSV_PATH, low_memory=False)
 print(f"  Loaded {len(df):,} rows × {len(df.columns)} columns")
 
 # ── Team name canonicalisation ────────────────────────────────────────────────
@@ -61,6 +64,44 @@ df["batting_team"]  = df["batting_team"].apply(canon_team)
 df["bowling_team"]  = df["bowling_team"].apply(canon_team)
 df["toss_winner"]   = df["toss_winner"].apply(canon_team)
 df["match_won_by"]  = df["match_won_by"].apply(canon_team)
+
+# ── Player name canonicalisation ──────────────────────────────────────────────
+# The raw CSV uses cricket-style initials ("V Kohli", "SV Samson"). The frontend
+# prefers full names for well-known players ("Virat Kohli", "Sanju Samson").
+# pipeline/player_name_map.json stores this crosswalk — apply it everywhere a
+# player name is emitted.
+_name_map_path = os.path.join(os.path.dirname(__file__), "player_name_map.json")
+try:
+    with open(_name_map_path) as _f:
+        PLAYER_NAME_MAP = json.load(_f)
+    print(f"  Loaded player_name_map.json ({len(PLAYER_NAME_MAP)} entries)")
+except FileNotFoundError:
+    PLAYER_NAME_MAP = {}
+    print("  (no player_name_map.json found — player names will use CSV initials)")
+
+def canon_player(name):
+    if pd.isna(name) or name is None:
+        return name
+    return PLAYER_NAME_MAP.get(str(name), str(name))
+
+# Apply to all player-name columns so every downstream aggregation is consistent.
+for _col in ("batter", "bowler", "non_striker", "player_of_match", "player_out"):
+    if _col in df.columns:
+        df[_col] = df[_col].apply(canon_player)
+
+# batting_partners is a stringified tuple like "('A', 'B')" — rewrite each side.
+_partners_re = re.compile(r"\('([^']+)',\s*'([^']+)'\)")
+def _canon_partners(s):
+    if pd.isna(s):
+        return s
+    m = _partners_re.match(str(s))
+    if not m:
+        return s
+    a, b = canon_player(m.group(1)), canon_player(m.group(2))
+    return f"('{a}', '{b}')"
+
+if "batting_partners" in df.columns:
+    df["batting_partners"] = df["batting_partners"].apply(_canon_partners)
 
 # ── Season display label ──────────────────────────────────────────────────────
 SEASON_LABEL = {
@@ -112,6 +153,8 @@ VENUE_MAP = {
     "Ekana Cricket Stadium":                     "Ekana Cricket Stadium",
     "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium": "Ekana Cricket Stadium",
     "Barsapara Cricket Stadium":                 "Barsapara Cricket Stadium",
+    "Nehru Stadium":                             "Jawaharlal Nehru Stadium",
+    "Jawaharlal Nehru Stadium":                  "Jawaharlal Nehru Stadium",
     "Shaheed Veer Narayan Singh International Stadium": "SVNS International Stadium",
     "Vidarbha Cricket Association Stadium, Jamtha": "VCA Stadium Nagpur",
     "South Africa": "Various (SA)",
@@ -146,21 +189,23 @@ print(f"  Unique matches: {len(match_meta):,}")
 # ── VALIDATION ASSERTIONS ─────────────────────────────────────────────────────
 print("\nRunning validation assertions …")
 
-# 1. Kohli runs
-kohli_runs = int(df[df["batter"] == "V Kohli"]["runs_batter"].sum())
+# 1. Kohli runs (name may have been canonicalised from the CSV's "V Kohli")
+_kohli = canon_player("V Kohli")
+kohli_runs = int(df[df["batter"] == _kohli]["runs_batter"].sum())
 assert kohli_runs == 8671, f"FAIL: Kohli runs = {kohli_runs}, expected 8671"
-print(f"  [PASS] V Kohli runs = {kohli_runs}")
+print(f"  [PASS] {_kohli} runs = {kohli_runs}")
 
 # 2. Chahal wickets
 # wickets = rows where bowler_wicket == 1 and wicket_kind not in run out / retired
 BOWLING_WICKETS = ["bowled","caught","lbw","stumped","caught and bowled","hit wicket"]
+_chahal = canon_player("YS Chahal")
 chahal_wkts = int(df[
-    (df["bowler"] == "YS Chahal") &
+    (df["bowler"] == _chahal) &
     (df["bowler_wicket"] == 1) &
     (df["wicket_kind"].str.lower().isin(BOWLING_WICKETS))
 ]["bowler_wicket"].sum())
 assert chahal_wkts == 221, f"FAIL: Chahal wickets = {chahal_wkts}, expected 221"
-print(f"  [PASS] YS Chahal wickets = {chahal_wkts}")
+print(f"  [PASS] {_chahal} wickets = {chahal_wkts}")
 
 # 3. Total sixes (valid deliveries only — no-balls count as extras not valid balls)
 sixes = int(((df["runs_batter"] == 6) & (df["valid_ball"] == 1)).sum())
@@ -264,11 +309,11 @@ TEAM_META = {
     "Gujarat Titans":              {"short":"GT", "color":"#1C1C2B","textColor":"#FFFFFF","city":"Ahmedabad","ground":"Narendra Modi Stadium","founded":2022},
     "Lucknow Super Giants":        {"short":"LSG","color":"#A72056","textColor":"#FFFFFF","city":"Lucknow","ground":"Ekana Cricket Stadium","founded":2022},
     # Defunct
-    "Deccan Chargers":             {"short":"DC2","color":"#F7941D","textColor":"#000000","city":"Hyderabad","ground":"Rajiv Gandhi International Stadium","founded":2008},
+    "Deccan Chargers":             {"short":"DCH","color":"#F7941D","textColor":"#000000","city":"Hyderabad","ground":"Rajiv Gandhi International Stadium","founded":2008},
     "Kochi Tuskers Kerala":        {"short":"KTK","color":"#F15A24","textColor":"#FFFFFF","city":"Kochi","ground":"Jawaharlal Nehru Stadium","founded":2011},
     "Rising Pune Supergiant":      {"short":"RPS","color":"#6F2E81","textColor":"#FFFFFF","city":"Pune","ground":"MCA Stadium Pune","founded":2016},
     "Gujarat Lions":               {"short":"GL", "color":"#EB8B2F","textColor":"#000000","city":"Rajkot","ground":"Saurashtra Cricket Association Stadium","founded":2016},
-    "Pune Warriors":               {"short":"PW", "color":"#1B427C","textColor":"#FFFFFF","city":"Pune","ground":"MCA Stadium Pune","founded":2011},
+    "Pune Warriors":               {"short":"PWI","color":"#1B427C","textColor":"#FFFFFF","city":"Pune","ground":"MCA Stadium Pune","founded":2011},
 }
 
 team_profiles = []
@@ -655,6 +700,280 @@ records = {
 with open(f"{SRC_DATA}/records.json", "w") as f:
     json.dump(records, f)
 print("  Written records.json")
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 8a. TEAM-SEASONS — per team, per season record (all 15 teams)
+# ─────────────────────────────────────────────────────────────────────────────
+print("Building team-seasons.json …")
+team_seasons = {}
+for team in all_teams:
+    team_match_ids = df[
+        (df["batting_team"] == team) | (df["bowling_team"] == team)
+    ]["match_id"].unique()
+    t_matches = match_meta[match_meta["match_id"].isin(team_match_ids)]
+    rows = []
+    for season, ss_grp in t_matches.groupby("season_label"):
+        played = len(ss_grp)
+        wins   = int((ss_grp["match_won_by"] == team).sum())
+        nr     = int(ss_grp["win_outcome"].isna().sum())
+        lost   = played - wins - nr
+        rows.append({"season": str(season), "played": played, "won": wins, "lost": lost, "nr": nr})
+    rows.sort(key=lambda x: int(x["season"]))
+    team_seasons[team] = rows
+with open(f"{SRC_DATA}/team-seasons.json", "w") as f:
+    json.dump(team_seasons, f)
+print(f"  Written team-seasons for {len(team_seasons)} teams")
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 8b. RIVALRIES-ALL — h2h enriched with meta + recent 5 results (all pairs)
+# ─────────────────────────────────────────────────────────────────────────────
+print("Building rivalries-all.json …")
+# match_pairs + date, sorted desc for recent results
+pair_rows = match_pairs.merge(
+    match_meta[["match_id","date"]], on="match_id", how="left"
+).sort_values("date", ascending=False)
+
+rivalries_all = []
+for (t1, t2), data in h2h.items():
+    pair_df = pair_rows[
+        ((pair_rows["team_inn1"] == t1) & (pair_rows["team_inn2"] == t2)) |
+        ((pair_rows["team_inn1"] == t2) & (pair_rows["team_inn2"] == t1))
+    ].head(5)
+    recent = []
+    for _, r in pair_df.iterrows():
+        recent.append({
+            "season": str(r["season_label"]),
+            "winner": r["match_won_by"] if pd.notna(r["match_won_by"]) else None,
+        })
+    m1 = TEAM_META.get(t1, {})
+    m2 = TEAM_META.get(t2, {})
+    rivalries_all.append({
+        "team1":   t1,
+        "team2":   t2,
+        "short1":  m1.get("short", t1[:3].upper()),
+        "short2":  m2.get("short", t2[:3].upper()),
+        "color1":  m1.get("color", "#888888"),
+        "color2":  m2.get("color", "#888888"),
+        "played":  data["played"],
+        "t1Wins":  data["wins"].get(t1, 0),
+        "t2Wins":  data["wins"].get(t2, 0),
+        "noResult": data["draws"],
+        "recentResults": recent,
+    })
+rivalries_all.sort(key=lambda x: x["played"], reverse=True)
+with open(f"{SRC_DATA}/rivalries-all.json", "w") as f:
+    json.dump(rivalries_all, f)
+print(f"  Written {len(rivalries_all)} rivalry pairs")
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 8c. HOME-ADVANTAGE — per team (all 15)
+# ─────────────────────────────────────────────────────────────────────────────
+print("Building home-advantage.json …")
+home_adv = []
+for team in all_teams:
+    meta = TEAM_META.get(team, {})
+    home_ground = meta.get("ground", "")
+    if not home_ground:
+        continue
+    team_match_ids = df[(df["batting_team"] == team) | (df["bowling_team"] == team)]["match_id"].unique()
+    t_matches = match_meta[match_meta["match_id"].isin(team_match_ids)]
+    home_matches = t_matches[t_matches["venue_canon"] == home_ground]
+    away_matches = t_matches[t_matches["venue_canon"] != home_ground]
+
+    h_played = len(home_matches)
+    h_won    = int((home_matches["match_won_by"] == team).sum())
+    a_played = len(away_matches)
+    a_won    = int((away_matches["match_won_by"] == team).sum())
+
+    h_pct = round(h_won / h_played * 100, 1) if h_played else 0.0
+    a_pct = round(a_won / a_played * 100, 1) if a_played else 0.0
+
+    home_adv.append({
+        "team":  team,
+        "short": meta.get("short", team[:3].upper()),
+        "color": meta.get("color", "#888888"),
+        "home":  {"won": h_won, "played": h_played, "winPct": h_pct},
+        "away":  {"won": a_won, "played": a_played, "winPct": a_pct},
+        "advantage": round(h_pct - a_pct, 1),
+    })
+home_adv.sort(key=lambda x: x["advantage"], reverse=True)
+with open(f"{SRC_DATA}/home-advantage.json", "w") as f:
+    json.dump(home_adv, f)
+print(f"  Written home-advantage for {len(home_adv)} teams")
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 8d. TOSS ANALYSIS — overall + per team (all 15)
+# ─────────────────────────────────────────────────────────────────────────────
+print("Building toss-analysis.json …")
+decided = match_meta[match_meta["match_won_by"].notna()]
+total_matches = len(decided)
+toss_winner_wins = int((decided["toss_winner"] == decided["match_won_by"]).sum())
+bat_first  = decided[decided["toss_decision"] == "bat"]
+field_first = decided[decided["toss_decision"] == "field"]
+bat_wins   = int((bat_first["toss_winner"] == bat_first["match_won_by"]).sum())
+field_wins = int((field_first["toss_winner"] == field_first["match_won_by"]).sum())
+
+toss_overall = {
+    "totalMatches":    total_matches,
+    "tossWinnerWins":  toss_winner_wins,
+    "tossWinPct":      round(toss_winner_wins / total_matches * 100, 1) if total_matches else 0,
+    "batFirst":        {"matches": len(bat_first),   "wins": bat_wins,   "winPct": round(bat_wins   / len(bat_first)   * 100, 1) if len(bat_first)   else 0},
+    "fieldFirst":      {"matches": len(field_first), "wins": field_wins, "winPct": round(field_wins / len(field_first) * 100, 1) if len(field_first) else 0},
+}
+
+toss_by_team = []
+for team in all_teams:
+    meta = TEAM_META.get(team, {})
+    team_match_ids = df[(df["batting_team"] == team) | (df["bowling_team"] == team)]["match_id"].unique()
+    t_matches = match_meta[match_meta["match_id"].isin(team_match_ids)]
+    tw_total = len(t_matches)
+    tw_won   = int((t_matches["toss_winner"] == team).sum())
+    won_after_toss = int(((t_matches["toss_winner"] == team) & (t_matches["match_won_by"] == team)).sum())
+    chose_bat   = int(((t_matches["toss_winner"] == team) & (t_matches["toss_decision"] == "bat")).sum())
+    chose_field = int(((t_matches["toss_winner"] == team) & (t_matches["toss_decision"] == "field")).sum())
+    toss_by_team.append({
+        "team":  team,
+        "short": meta.get("short", team[:3].upper()),
+        "color": meta.get("color", "#888888"),
+        "tossWon":   tw_won,
+        "tossTotal": tw_total,
+        "tossWinPct": round(tw_won / tw_total * 100, 1) if tw_total else 0,
+        "wonAfterToss": won_after_toss,
+        "tossToMatchWinPct": round(won_after_toss / tw_won * 100, 1) if tw_won else 0,
+        "choseBat":   chose_bat,
+        "choseField": chose_field,
+    })
+toss_by_team.sort(key=lambda x: x["tossWinPct"], reverse=True)
+
+with open(f"{SRC_DATA}/toss-analysis.json", "w") as f:
+    json.dump({"overall": toss_overall, "byTeam": toss_by_team}, f)
+print(f"  Written toss-analysis (byTeam={len(toss_by_team)})")
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 8e. POWERPLAY STATS — byTeam (all 15), byOver (1–6), overall
+# ─────────────────────────────────────────────────────────────────────────────
+print("Building powerplay-stats.json …")
+pp = df[df["over"] < 6]
+pp_inn = pp.groupby(["match_id","innings","batting_team"]).agg(
+    pp_runs    = ("runs_total",   "sum"),
+    pp_balls   = ("valid_ball",   "sum"),
+    pp_wickets = ("bowler_wicket", lambda x: int((x == 1).sum())),
+).reset_index()
+
+pp_by_team = []
+for team in all_teams:
+    meta = TEAM_META.get(team, {})
+    t_pp = pp_inn[pp_inn["batting_team"] == team]
+    innings_n = len(t_pp)
+    if innings_n == 0:
+        continue
+    total_runs  = float(t_pp["pp_runs"].sum())
+    total_balls = float(t_pp["pp_balls"].sum())
+    pp_by_team.append({
+        "team":   team,
+        "short":  meta.get("short", team[:3].upper()),
+        "color":  meta.get("color", "#888888"),
+        "avgPPScore":   round(t_pp["pp_runs"].mean(), 1),
+        "ppRunRate":    round(total_runs / total_balls * 6, 2) if total_balls else 0,
+        "ppWicketsLost": int(t_pp["pp_wickets"].sum()),
+        "innings":      innings_n,
+    })
+pp_by_team.sort(key=lambda x: x["avgPPScore"], reverse=True)
+
+pp_by_over = []
+for over_idx in range(6):
+    ovr = df[df["over"] == over_idx]
+    runs_v  = int(ovr["runs_total"].sum())
+    balls_v = int(ovr["valid_ball"].sum())
+    pp_by_over.append({
+        "over":    over_idx + 1,
+        "runs":    runs_v,
+        "wickets": int((ovr["bowler_wicket"] == 1).sum()),
+        "sixes":   int((ovr["runs_batter"] == 6).sum()),
+        "runRate": round(runs_v / balls_v * 6, 2) if balls_v else 0,
+    })
+
+all_pp_inn = pp.groupby(["match_id","innings"]).agg(
+    pp_runs  = ("runs_total", "sum"),
+    pp_balls = ("valid_ball", "sum"),
+).reset_index()
+pp_overall = {
+    "avgPPScore": round(all_pp_inn["pp_runs"].mean(), 1),
+    "avgRunRate": round(all_pp_inn["pp_runs"].sum() / all_pp_inn["pp_balls"].sum() * 6, 2) if all_pp_inn["pp_balls"].sum() > 0 else 0,
+}
+
+with open(f"{SRC_DATA}/powerplay-stats.json", "w") as f:
+    json.dump({"byTeam": pp_by_team, "byOver": pp_by_over, "overall": pp_overall}, f)
+print(f"  Written powerplay-stats (byTeam={len(pp_by_team)})")
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 8f. PARTNERSHIPS — topPairs (career) + bestInnings (single inning)
+# ─────────────────────────────────────────────────────────────────────────────
+print("Building partnerships.json …")
+_pair_re = re.compile(r"\('([^']+)',\s*'([^']+)'\)")
+def _parse_partners(s):
+    if pd.isna(s):
+        return None
+    m = _pair_re.match(str(s))
+    if not m:
+        return None
+    a, b = m.group(1), m.group(2)
+    return tuple(sorted([a, b]))
+
+df["partner_pair"] = df["batting_partners"].apply(_parse_partners)
+valid_pp = df[df["partner_pair"].notna()]
+pair_inn = valid_pp.groupby(
+    ["match_id","innings","partner_pair","batting_team","season_label","venue_canon"],
+    as_index=False,
+).agg(runs=("runs_total","sum"), balls=("valid_ball","sum"))
+
+# topPairs — aggregated across career
+pair_total = pair_inn.groupby("partner_pair", as_index=False).agg(
+    total_runs    = ("runs","sum"),
+    total_innings = ("match_id","count"),
+    best          = ("runs","max"),
+)
+pair_total["avg_runs"] = (pair_total["total_runs"] / pair_total["total_innings"]).round(1)
+
+# Most-common batting team per pair
+pair_team_mode = (
+    pair_inn.groupby(["partner_pair","batting_team"]).size().reset_index(name="c")
+    .sort_values("c", ascending=False).drop_duplicates("partner_pair")
+    .set_index("partner_pair")["batting_team"]
+)
+
+top_pairs = pair_total[pair_total["total_innings"] >= 5] \
+    .sort_values("total_runs", ascending=False).head(30)
+top_pairs_list = []
+for _, row in top_pairs.iterrows():
+    p1, p2 = row["partner_pair"]
+    top_pairs_list.append({
+        "p1": p1, "p2": p2,
+        "batting_team": pair_team_mode.get(row["partner_pair"], ""),
+        "total_runs":   int(row["total_runs"]),
+        "total_innings": int(row["total_innings"]),
+        "avg_runs":     float(row["avg_runs"]),
+        "best":         int(row["best"]),
+    })
+
+best_inn = pair_inn.sort_values("runs", ascending=False).head(30)
+best_inn_list = []
+for _, row in best_inn.iterrows():
+    p1, p2 = row["partner_pair"]
+    runs_i, balls_i = int(row["runs"]), int(row["balls"])
+    best_inn_list.append({
+        "p1": p1, "p2": p2,
+        "batting_team": row["batting_team"],
+        "runs":   runs_i,
+        "balls":  balls_i,
+        "sr":     round(runs_i / balls_i * 100, 1) if balls_i else 0,
+        "season_label": str(row["season_label"]),
+        "venue":  row["venue_canon"],
+    })
+
+with open(f"{SRC_DATA}/partnerships.json", "w") as f:
+    json.dump({"topPairs": top_pairs_list, "bestInnings": best_inn_list}, f)
+print(f"  Written partnerships (topPairs={len(top_pairs_list)}, bestInnings={len(best_inn_list)})")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 9. IPL 2026 LIVE DATA (public/ipl2026.json)

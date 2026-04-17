@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Raw pipeline input (large; keep out of VCS)
+IPL.csv
+IPL.csv.gz
