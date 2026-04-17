@@ -49,33 +49,41 @@ export default function Nav() {
   return (
     <>
       {/* ── Desktop top nav ─────────────────────────────────────────────── */}
-      <nav aria-label="Main navigation" className="hidden md:flex fixed top-0 inset-x-0 z-50 h-12 items-center px-5 gap-0.5"
+      <nav aria-label="Main navigation" className="hidden md:flex fixed top-0 inset-x-0 z-50 h-12 items-center justify-center px-5"
         style={{ background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--border)' }}>
 
-        <Link to="/" className="flex items-center mr-4 flex-shrink-0" aria-label="IPL Analytics home">
+        <Link to="/" className="absolute left-5 flex items-center gap-2" aria-label="IPL Analytics home">
           <img src={LOGO_SRC} alt="" width={32} height={32} style={{ display: 'block', borderRadius: 6 }} />
+          <span className="hidden lg:inline" style={{ fontSize: 14, fontWeight: 600, color: 'var(--text)', letterSpacing: '-0.01em' }}>
+            IPL Analytics
+          </span>
         </Link>
 
-        {ALL_PAGES.map(item => (
-          <Link key={item.id} to={ROUTES[item.id]}
-            aria-current={current === item.id ? 'page' : undefined}
-            style={{
-              padding: '4px 11px', borderRadius: 6, fontSize: 13, whiteSpace: 'nowrap',
-              textDecoration: 'none',
-              fontWeight: current === item.id ? 600 : 400, transition: 'all 0.15s',
-              background: current === item.id ? 'var(--bg-muted)' : 'transparent',
-              color: current === item.id ? 'var(--text)' : 'var(--text-3)',
-            }}>
-            {item.label}
-          </Link>
-        ))}
+        <div className="flex items-center gap-0.5">
+          {ALL_PAGES.map(item => (
+            <Link key={item.id} to={ROUTES[item.id]}
+              aria-current={current === item.id ? 'page' : undefined}
+              style={{
+                padding: '4px 11px', borderRadius: 6, fontSize: 13, whiteSpace: 'nowrap',
+                textDecoration: 'none',
+                fontWeight: current === item.id ? 600 : 400, transition: 'all 0.15s',
+                background: current === item.id ? 'var(--bg-muted)' : 'transparent',
+                color: current === item.id ? 'var(--text)' : 'var(--text-3)',
+              }}>
+              {item.label}
+            </Link>
+          ))}
+        </div>
       </nav>
 
-      {/* ── Mobile top header (logo only) ───────────────────────────────── */}
-      <header aria-label="Site header" className="md:hidden fixed top-0 inset-x-0 z-50 h-12 flex items-center justify-center px-4"
+      {/* ── Mobile top header ───────────────────────────────────────────── */}
+      <header aria-label="Site header" className="md:hidden fixed top-0 inset-x-0 z-50 h-12 flex items-center px-4"
         style={{ background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--border)' }}>
-        <Link to="/" aria-label="IPL Analytics home" className="flex items-center">
-          <img src={LOGO_SRC} alt="" width={30} height={30} style={{ display: 'block', borderRadius: 6 }} />
+        <Link to="/" aria-label="IPL Analytics home" className="flex items-center gap-2">
+          <img src={LOGO_SRC} alt="" width={28} height={28} style={{ display: 'block', borderRadius: 6 }} />
+          <span style={{ fontSize: 15, fontWeight: 600, color: 'var(--text)', letterSpacing: '-0.01em' }}>
+            IPL Analytics
+          </span>
         </Link>
       </header>
 
