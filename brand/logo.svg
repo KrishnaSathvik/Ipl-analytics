@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Rounded square background (maskable-safe) -->
+  <rect width="512" height="512" rx="96" fill="#09090b"/>
+
+  <!-- Subtle orange radial glow behind the ball -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.22"/>
+      <stop offset="70%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ball" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="60%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="256" cy="256" r="240" fill="url(#glow)"/>
+
+  <!-- Cricket ball -->
+  <circle cx="256" cy="256" r="150" fill="url(#ball)"/>
+
+  <!-- Stitching seam (two parallel curves) -->
+  <g fill="none" stroke="#fff7ed" stroke-width="3" stroke-linecap="round">
+    <!-- Top seam line -->
+    <path d="M 130 228 Q 256 208 382 228" opacity="0.92"/>
+    <!-- Bottom seam line -->
+    <path d="M 130 252 Q 256 272 382 252" opacity="0.92"/>
+  </g>
+
+  <!-- Stitch marks (short perpendicular dashes between the seam lines) -->
+  <g stroke="#fff7ed" stroke-width="3" stroke-linecap="round" opacity="0.95">
+    <line x1="148" y1="228" x2="148" y2="250"/>
+    <line x1="172" y1="223" x2="172" y2="248"/>
+    <line x1="196" y1="220" x2="196" y2="247"/>
+    <line x1="220" y1="218" x2="220" y2="246"/>
+    <line x1="244" y1="217" x2="244" y2="246"/>
+    <line x1="268" y1="217" x2="268" y2="246"/>
+    <line x1="292" y1="218" x2="292" y2="246"/>
+    <line x1="316" y1="220" x2="316" y2="247"/>
+    <line x1="340" y1="223" x2="340" y2="248"/>
+    <line x1="364" y1="228" x2="364" y2="250"/>
+  </g>
+
+  <!-- Highlight (gloss) -->
+  <ellipse cx="212" cy="204" rx="36" ry="22" fill="#ffffff" opacity="0.22"/>
+</svg>
