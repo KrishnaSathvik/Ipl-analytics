@@ -25,6 +25,17 @@ const PER = 25;
 
 import { TEAM_COLORS, ACTIVE_TEAMS, getTeamLogo } from '../lib/teams';
 
+const TEAM_FILTER_OPTIONS: string[] = (() => {
+  const active = new Set<string>(ACTIVE_TEAMS);
+  const seen = new Set<string>();
+  for (const p of [...battersData, ...bowlersData] as { teams: string[] }[]) {
+    for (const t of p.teams) seen.add(t);
+  }
+  const activeList = [...ACTIVE_TEAMS].filter(t => seen.has(t));
+  const historicalList = [...seen].filter(t => !active.has(t)).sort();
+  return [...activeList, ...historicalList];
+})();
+
 const TH = (right = false): React.CSSProperties => ({
   padding: '8px 4px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)',
   textTransform: 'uppercase', letterSpacing: '0.03em',
@@ -603,7 +614,7 @@ export default function Players() {
           style={{ padding: '7px 10px', borderRadius: 8, fontSize: 12, border: '1px solid var(--border)',
             background: 'var(--bg)', color: 'var(--text)', cursor: 'pointer', outline: 'none', flexShrink: 0 }}>
           <option value="">All Teams</option>
-          {ACTIVE_TEAMS.map(t => (
+          {TEAM_FILTER_OPTIONS.map(t => (
             <option key={t} value={t}>{t}</option>
           ))}
         </select>
