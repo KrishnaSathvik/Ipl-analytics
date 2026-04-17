@@ -60,27 +60,27 @@ function Board({ title, items, nameKey, statKey, unit, color }: typeof BOARDS[0]
 }
 
 /* ── Season Records sub-tabs ────────────────────────────────────────── */
-type SeasonTab = 'highest' | 'margins' | 'milestones';
+type SeasonTab = 'highest' | 'lowest' | 'margins' | 'milestones';
 
-function HighestTotalsTab() {
+function TotalsTab({ rows, label, accent }: { rows: any[]; label: string; accent?: string }) {
   return (
     <div>
       <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--text-4)', textTransform: 'uppercase',
         letterSpacing: '0.04em', marginBottom: 8, padding: '0 2px' }}>
-        Top Innings Totals
+        {label}
       </div>
-      {SR.highestTotals.slice(0, 10).map((row: any, i: number) => {
+      {rows.slice(0, 10).map((row: any, i: number) => {
         const short = LOGO_CODE[row.team] || row.team.slice(0, 3).toUpperCase();
-        const color = TEAM_COLORS[row.team] || 'var(--accent)';
+        const color = accent || TEAM_COLORS[row.team] || 'var(--accent)';
         return (
           <div key={i} style={{
             display: 'flex', alignItems: 'center', gap: 10, padding: '9px 0',
-            borderBottom: i < 9 ? '1px solid var(--border)' : 'none',
+            borderBottom: i < Math.min(rows.length, 10) - 1 ? '1px solid var(--border)' : 'none',
           }}>
             <span style={{ fontSize: 12, color: 'var(--text-4)', fontWeight: 700, width: 18, flexShrink: 0, textAlign: 'center' }}>
               {i + 1}
             </span>
-            <TeamBadge short={short} color={color} size="xs" />
+            <TeamBadge short={short} color={TEAM_COLORS[row.team] || 'var(--accent)'} size="xs" />
             <span style={{ flex: 1, fontSize: 13, color: 'var(--text)', fontWeight: 500,
               overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
               {row.team}
@@ -219,6 +219,7 @@ function SeasonRecordsSection() {
 
   const tabs: { key: SeasonTab; label: string }[] = [
     { key: 'highest', label: 'Highest Totals' },
+    { key: 'lowest', label: 'Lowest Totals' },
     { key: 'margins', label: 'Biggest Margins' },
     { key: 'milestones', label: 'Player Milestones' },
   ];
@@ -246,7 +247,8 @@ function SeasonRecordsSection() {
 
       {/* Tab content */}
       <div style={{ padding: '14px' }}>
-        {tab === 'highest' && <HighestTotalsTab />}
+        {tab === 'highest' && <TotalsTab rows={SR.highestTotals} label="Top Innings Totals" />}
+        {tab === 'lowest' && <TotalsTab rows={SR.lowestTotals} label="Lowest All-Out / Innings Totals" accent="var(--red)" />}
         {tab === 'margins' && <MarginsTab />}
         {tab === 'milestones' && <MilestonesTab />}
       </div>
