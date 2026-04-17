@@ -1,4 +1,5 @@
 import { useState, lazy, Suspense } from 'react';
+import { Analytics as VercelAnalytics } from '@vercel/analytics/react';
 import Nav from './components/Nav';
 import InstallPrompt from './components/InstallPrompt';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -45,6 +46,7 @@ export default function App() {
         </Suspense>
       </ErrorBoundary>
       <InstallPrompt />
+      <VercelAnalytics />
     </div>
   );
 }
