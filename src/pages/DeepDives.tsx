@@ -40,6 +40,14 @@ const bestInnings  = (partnershipsData as any).bestInnings as BestInnings[];
 const homeAdv      = homeAdvData as HomeAdv[];
 const rivalriesAll = rivalriesAllData as RivalryAll[];
 const otd          = otdData as Record<string, OTDEntry[]>;
+
+function tiedScoreLine(teams: string): boolean {
+  const parts = teams.split(' vs ');
+  if (parts.length !== 2) return false;
+  const n1 = parts[0].match(/(\d+)\s*$/)?.[1];
+  const n2 = parts[1].match(/(\d+)\s*$/)?.[1];
+  return !!n1 && n1 === n2;
+}
 const venueAnalytics = venueAnalyticsData as any[];
 
 type Tab = 'partnerships' | 'homeadvantage' | 'rivalries' | 'onthisday';
@@ -502,7 +510,11 @@ function OnThisDay() {
               </div>
 
               <div style={{ fontSize:13, fontWeight:700, color:'var(--accent)', marginBottom:ev.highlights.length>0?8:0 }}>
-                {ev.winner !== 'No Result' && ev.winner !== 'NR' ? `${TEAM_SHORT[ev.winner]||ev.winner} won` : 'No Result'}
+                {ev.winner === 'No Result' || ev.winner === 'NR'
+                  ? 'No Result'
+                  : ev.winner === 'Unknown'
+                    ? (tiedScoreLine(ev.teams) ? 'Match tied (Super Over)' : 'Result unavailable')
+                    : `${TEAM_SHORT[ev.winner]||ev.winner} won`}
               </div>
 
               {ev.highlights.length > 0 && (
