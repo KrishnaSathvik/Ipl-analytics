@@ -76,7 +76,7 @@ function PointsTable({ rows }: { rows: PointsTableEntry[] }) {
               <td style={{ padding: '10px 3px', textAlign: 'center', fontSize: 14, fontWeight: 800, color: row.points > 0 ? 'var(--text)' : 'var(--text-4)' }}>{row.points}</td>
               <td style={{ padding: '10px 3px', textAlign: 'center' }}>
                 <div style={{ display: 'flex', gap: 2, justifyContent: 'center' }}>
-                  {row.form.map((f, fi) => <FormPill key={fi} r={f} />)}
+                  {row.form.slice(-3).map((f, fi) => <FormPill key={fi} r={f} />)}
                 </div>
               </td>
             </tr>
@@ -269,9 +269,7 @@ export default function Home() {
         marginBottom: 0,
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
-          <span className="live-dot" />
-          <span style={{ fontSize: 11, fontWeight: 700, color: '#22c55e', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Live Season</span>
-          <span style={{ fontSize: 11, color: '#71717a' }}>· Match {meta.matchesPlayed} of {meta.totalMatches}</span>
+          <span style={{ fontSize: 11, color: '#71717a' }}>Match {meta.matchesPlayed} of {meta.totalMatches}</span>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 16, flexWrap: 'wrap' }}>

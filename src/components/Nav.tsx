@@ -6,7 +6,7 @@ import {
 } from '@phosphor-icons/react';
 
 const ALL_PAGES: { id: Page; label: string; Icon: React.ElementType }[] = [
-  { id: 'home',      label: 'IPL 2026',   Icon: Cricket },
+  { id: 'home',      label: 'Home',        Icon: Cricket },
   { id: 'teams',     label: 'Teams',      Icon: Shield },
   { id: 'players',   label: 'Players',    Icon: User },
   { id: 'seasons',   label: 'Seasons',    Icon: CalendarBlank },
@@ -48,10 +48,6 @@ export default function Nav({ current, onChange }: { current: Page; onChange: (p
           </button>
         ))}
 
-        <div className="ml-auto flex items-center gap-2 flex-shrink-0">
-          <span className="live-dot" />
-          <span style={{ fontSize: 12, fontWeight: 500, color: '#16a34a', whiteSpace: 'nowrap' }}>Live Season</span>
-        </div>
       </nav>
 
       {/* ── Mobile ─────────────────────────────────────────────────────── */}
@@ -111,7 +107,7 @@ export default function Nav({ current, onChange }: { current: Page; onChange: (p
                   }}>
                   <item.Icon size={20} weight={active ? 'fill' : 'regular'} />
                   <span style={{ fontSize: 9, fontWeight: active ? 700 : 400, whiteSpace: 'nowrap', lineHeight: 1 }}>
-                    {item.label === 'IPL 2026' ? '2026' : item.label === 'Deep Dives' ? 'Dives' : item.label}
+                    {item.label === 'Deep Dives' ? 'Dives' : item.label}
                   </span>
                 </button>
               );

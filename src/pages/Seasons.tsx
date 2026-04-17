@@ -44,7 +44,7 @@ export default function Seasons() {
         <h1 style={{ fontSize: 'clamp(22px,4vw,36px)', fontWeight: 800, letterSpacing: '-0.04em', color: 'var(--text)', marginBottom: 4 }}>
           Season History
         </h1>
-        <p style={{ fontSize: 13, color: 'var(--text-3)' }}>18 seasons · 2008–2025 · 1,169 matches</p>
+        <p style={{ fontSize: 13, color: 'var(--text-3)' }}>18 seasons · 1,169 matches</p>
         <HistoricalBadge />
       </div>
 
