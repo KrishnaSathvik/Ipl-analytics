@@ -12,6 +12,7 @@ import { Trophy } from '@phosphor-icons/react';
 
 const allTeams = teamProfiles as TeamProfile[];
 const active = allTeams.filter(t => t.active).sort((a, b) => b.stats.won - a.stats.won);
+const historical = allTeams.filter(t => !t.active).sort((a, b) => b.stats.played - a.stats.played);
 const h2h = h2hData as H2HRecord[];
 const seasons = teamSeasons as Record<string, { season: string; won: number; lost: number; played: number; nr: number }[]>;
 const rivalriesAllData = rivalriesAll as any[];
@@ -51,8 +52,9 @@ function Tip({ active: a, payload, label }: any) {
 export default function Teams() {
   const [sel, setSel] = useState<TeamProfile>(active[0]);
   const [tab, setTab] = useState<'overview'|'h2h'>('overview');
+  const [showHistorical, setShowHistorical] = useState(false);
 
-  const opponents = active
+  const opponents = allTeams
     .filter(t => t.name !== sel.name)
     .map(t => ({ team: t, record: getH2H(sel.name, t.name) }))
     .filter(x => x.record)
@@ -70,12 +72,12 @@ export default function Teams() {
       />
       <div style={{ paddingTop: 20, paddingBottom: 20 }}>
         <h1 style={{ fontSize: 'clamp(22px,4vw,36px)', fontWeight: 800, letterSpacing: '-0.04em', color: 'var(--text)', marginBottom: 4 }}>IPL Teams</h1>
-        <p style={{ fontSize: 13, color: 'var(--text-3)' }}>10 active franchises</p>
+        <p style={{ fontSize: 13, color: 'var(--text-3)' }}>10 active franchises · {historical.length} historical</p>
         <HistoricalBadge />
       </div>
 
       {/* Team picker */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 20 }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 12 }}>
         {active.map(t => (
           <button key={t.name} onClick={() => { setSel(t); setTab('overview'); }} style={{
             display:'flex', alignItems:'center', gap:6, padding:'5px 10px 5px 6px',
@@ -89,6 +91,39 @@ export default function Teams() {
         ))}
       </div>
 
+      {/* Historical teams toggle + picker */}
+      <div style={{ marginBottom: 20 }}>
+        <button
+          onClick={() => setShowHistorical(v => !v)}
+          aria-expanded={showHistorical}
+          style={{
+            display:'inline-flex', alignItems:'center', gap:6, padding:'4px 10px',
+            borderRadius:999, border:'1px dashed var(--border)', background:'transparent',
+            cursor:'pointer', fontSize:11, fontWeight:600, color:'var(--text-4)',
+            letterSpacing:'0.02em',
+          }}>
+          <span style={{ width:5, height:5, borderRadius:'50%', background:'var(--text-4)' }} />
+          {showHistorical ? 'Hide' : 'Show'} historical teams ({historical.length})
+        </button>
+
+        {showHistorical && (
+          <div style={{ display:'flex', flexWrap:'wrap', gap:6, marginTop:10 }}>
+            {historical.map(t => (
+              <button key={t.name} onClick={() => { setSel(t); setTab('overview'); }} style={{
+                display:'flex', alignItems:'center', gap:6, padding:'5px 10px 5px 6px',
+                borderRadius:8, cursor:'pointer', transition:'all 0.15s',
+                border:`1.5px dashed ${sel.name===t.name?t.color:'var(--border)'}`,
+                background: sel.name===t.name?`${t.color}12`:'var(--bg)',
+                opacity: sel.name===t.name?1:0.85,
+              }}>
+                <TeamBadge short={t.short} color={t.color} size="xs" textColor={t.short==='CSK'||t.short==='SRH'?'#000':'#fff'} />
+                <span style={{ fontSize:12, fontWeight:sel.name===t.name?700:400, color:sel.name===t.name?t.color:'var(--text-3)' }}>{t.short}</span>
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
       {/* Header card */}
       <div style={{ border:'1px solid var(--border)', borderRadius:12, overflow:'hidden', marginBottom:16 }}>
         <div style={{ borderTop:`3px solid ${sel.color}` }} />
@@ -96,8 +131,18 @@ export default function Teams() {
           <div style={{ display:'flex', alignItems:'center', gap:14, flexWrap:'wrap' }}>
             <TeamBadge short={sel.short} color={sel.color} size="lg" textColor={sel.short==='CSK'||sel.short==='SRH'?'#000':'#fff'} />
             <div style={{ flex:1, minWidth:140 }}>
-              <h2 style={{ fontSize:'clamp(17px,3vw,22px)', fontWeight:800, letterSpacing:'-0.03em', color:'var(--text)', marginBottom:2 }}>{sel.name}</h2>
-              <p style={{ fontSize:12, color:'var(--text-3)' }}>{sel.city} · {sel.ground} · Est. {sel.founded}</p>
+              <div style={{ display:'flex', alignItems:'center', gap:8, flexWrap:'wrap', marginBottom:2 }}>
+                <h2 style={{ fontSize:'clamp(17px,3vw,22px)', fontWeight:800, letterSpacing:'-0.03em', color:'var(--text)' }}>{sel.name}</h2>
+                {!sel.active && (
+                  <span style={{
+                    fontSize:9, fontWeight:700, letterSpacing:'0.06em', textTransform:'uppercase',
+                    padding:'2px 7px', borderRadius:999, background:'#fef3c7', color:'#92400e', border:'1px solid #fde68a',
+                  }}>Defunct</span>
+                )}
+              </div>
+              <p style={{ fontSize:12, color:'var(--text-3)' }}>
+                {sel.city} · {sel.ground} · {sel.active ? `Est. ${sel.founded}` : `${sel.seasonsPlayed[0]}–${sel.seasonsPlayed[sel.seasonsPlayed.length-1]}`}
+              </p>
             </div>
             {sel.titleCount>0 && (
               <div style={{ textAlign:'center', padding:'8px 14px', borderRadius:8, background:`${sel.color}15`, border:`1px solid ${sel.color}30` }}>
@@ -132,21 +177,30 @@ export default function Teams() {
         <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
 
           {/* Season-by-season chart */}
-          <div style={{ border:'1px solid var(--border)', borderRadius:10, padding:'14px', background:'var(--bg)' }}>
-            <div style={{ fontSize:12, fontWeight:700, color:'var(--text)', marginBottom:12 }}>Season-by-Season Record</div>
-            <div style={{ height:170 }}>
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={seasonData} margin={{top:0,right:0,bottom:0,left:-20}}>
-                  <XAxis dataKey="season" tick={{fill:'var(--text-4)',fontSize:9}} axisLine={false} tickLine={false} />
-                  <YAxis tick={{fill:'var(--text-4)',fontSize:9}} axisLine={false} tickLine={false} />
-                  <Tooltip content={<Tip />} cursor={{fill:'var(--bg-muted)'}} />
-                  <Bar dataKey="won" name="Won" fill="#16a34a" radius={[2,2,0,0]} stackId="a" />
-                  <Bar dataKey="lost" name="Lost" fill="#ef4444" radius={[0,0,0,0]} stackId="a" />
-                  <Legend iconType="square" iconSize={8} wrapperStyle={{fontSize:11,color:'var(--text-4)'}} />
-                </BarChart>
-              </ResponsiveContainer>
+          {seasonData.length > 0 ? (
+            <div style={{ border:'1px solid var(--border)', borderRadius:10, padding:'14px', background:'var(--bg)' }}>
+              <div style={{ fontSize:12, fontWeight:700, color:'var(--text)', marginBottom:12 }}>Season-by-Season Record</div>
+              <div style={{ height:170 }}>
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={seasonData} margin={{top:0,right:0,bottom:0,left:-20}}>
+                    <XAxis dataKey="season" tick={{fill:'var(--text-4)',fontSize:9}} axisLine={false} tickLine={false} />
+                    <YAxis tick={{fill:'var(--text-4)',fontSize:9}} axisLine={false} tickLine={false} />
+                    <Tooltip content={<Tip />} cursor={{fill:'var(--bg-muted)'}} />
+                    <Bar dataKey="won" name="Won" fill="#16a34a" radius={[2,2,0,0]} stackId="a" />
+                    <Bar dataKey="lost" name="Lost" fill="#ef4444" radius={[0,0,0,0]} stackId="a" />
+                    <Legend iconType="square" iconSize={8} wrapperStyle={{fontSize:11,color:'var(--text-4)'}} />
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div style={{ border:'1px solid var(--border)', borderRadius:10, padding:'14px', background:'var(--bg)' }}>
+              <div style={{ fontSize:12, fontWeight:700, color:'var(--text)', marginBottom:6 }}>Season-by-Season Record</div>
+              <div style={{ fontSize:12, color:'var(--text-4)' }}>
+                Played {sel.seasonsPlayed.length} season{sel.seasonsPlayed.length>1?'s':''} ({sel.seasonsPlayed[0]}–{sel.seasonsPlayed[sel.seasonsPlayed.length-1]}). Per-season breakdown unavailable for historical franchises.
+              </div>
+            </div>
+          )}
 
           {/* Title Timeline */}
           <div style={{ border:'1px solid var(--border)', borderRadius:10, padding:'14px', background:'var(--bg)' }}>

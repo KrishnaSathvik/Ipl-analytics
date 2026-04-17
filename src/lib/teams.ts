@@ -20,6 +20,7 @@ export const LOGO_CODE: Record<string, string> = {
   'Rising Pune Supergiant': 'RPS',
   'Pune Warriors': 'PWI',
   'Kochi Tuskers Kerala': 'KTK',
+  'Gujarat Lions': 'GL',
 };
 
 /** Team full name → brand hex color */
@@ -39,8 +40,9 @@ export const TEAM_COLORS: Record<string, string> = {
   'Lucknow Super Giants': '#A72056',
   'Deccan Chargers': '#F7941D',
   'Rising Pune Supergiant': '#6F2E81',
-  'Pune Warriors': '#1A4FA0',
-  'Kochi Tuskers Kerala': '#8B2C8B',
+  'Pune Warriors': '#1B427C',
+  'Kochi Tuskers Kerala': '#F15A24',
+  'Gujarat Lions': '#EB8B2F',
 };
 
 /** Logo short code → local logo path */
@@ -59,6 +61,7 @@ export const LOGO_URL: Record<string, string> = {
   RPS:  './logos/RPS.png',
   PWI:  './logos/PWI.png',
   KTK:  './logos/KTK.png',
+  GL:   './logos/GL.png',
 };
 
 /** Teams with light brand colors that need dark text */
