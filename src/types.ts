@@ -8,6 +8,7 @@ export interface PointsTableEntry {
   played: number;
   won: number;
   lost: number;
+  nr?: number;
   nrr: string;
   points: number;
   form: string[];
@@ -36,10 +37,21 @@ export interface CapEntry {
   rank: number;
   player: string;
   team: string;
-  runs?: number;
-  wickets?: number;
+  matches?: number;
   innings?: number;
+  // Batting
+  runs?: number;
+  avg?: number;
+  sr?: number;
+  fours?: number;
+  sixes?: number;
+  // Bowling
+  wickets?: number;
+  overs?: number;
+  balls?: number;
   economy?: number;
+  fourWickets?: number;
+  fiveWickets?: number;
 }
 
 export interface Storyline {

@@ -6,7 +6,7 @@
     "startDate": "2026-03-28",
     "endDate": "2026-05-31",
     "totalMatches": 74,
-    "matchesPlayed": 24,
+    "matchesPlayed": 25,
     "defendingChampion": "Royal Challengers Bengaluru",
     "lastUpdated": "2026-04-17"
   },
@@ -43,8 +43,7 @@
         "W",
         "N",
         "W",
-        "W",
-        "L"
+        "W"
       ]
     },
     {
@@ -87,6 +86,25 @@
     },
     {
       "rank": 4,
+      "team": "Gujarat Titans",
+      "short": "GT",
+      "color": "#1C1C2B",
+      "played": 5,
+      "won": 3,
+      "lost": 2,
+      "nr": 0,
+      "nrr": "+0.018",
+      "points": 6,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 5,
       "team": "Sunrisers Hyderabad",
       "short": "SRH",
       "color": "#FF822A",
@@ -105,7 +123,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
       "team": "Delhi Capitals",
       "short": "DC",
       "color": "#0078BC",
@@ -113,31 +131,12 @@
       "won": 2,
       "lost": 2,
       "nr": 0,
-      "nrr": "-0.029",
+      "nrr": "+0.322",
       "points": 4,
       "form": [
         "L",
         "L",
         "W",
-        "W"
-      ]
-    },
-    {
-      "rank": 6,
-      "team": "Gujarat Titans",
-      "short": "GT",
-      "color": "#1C1C2B",
-      "played": 4,
-      "won": 2,
-      "lost": 3,
-      "nr": 0,
-      "nrr": "+0.356",
-      "points": 4,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "L",
         "W"
       ]
     },
@@ -155,6 +154,7 @@
       "form": [
         "W",
         "W",
+        "L",
         "L",
         "L"
       ]
@@ -202,16 +202,17 @@
       "team": "Kolkata Knight Riders",
       "short": "KKR",
       "color": "#3A225D",
-      "played": 5,
+      "played": 6,
       "won": 0,
-      "lost": 4,
+      "lost": 5,
       "nr": 1,
-      "nrr": "-1.383",
+      "nrr": "-1.149",
       "points": 1,
       "form": [
         "L",
-        "L",
         "N",
+        "L",
+        "L",
         "L",
         "L"
       ]
@@ -493,17 +494,20 @@
       "t1Score": "195/6 (20)",
       "t2Score": "198/3 (16.3)",
       "highlight": "de Kock 112*(60) in vain; Prabhsimran 83* & Shreyas Iyer 66 stitch 139 — PBKS 4-0, top of the table"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "matchNo": 25,
       "date": "2026-04-17",
-      "team1": "Gujarat Titans",
-      "team2": "Kolkata Knight Riders",
+      "team1": "Kolkata Knight Riders",
+      "team2": "Gujarat Titans",
+      "result": "GT won by 5 wickets",
       "venue": "Narendra Modi Stadium, Ahmedabad",
-      "time": "7:30 PM IST"
-    },
+      "t1Score": "180 (20)",
+      "t2Score": "181/5 (19.4)",
+      "highlight": "Shubman Gill's unbeaten half-century powers GT's chase with 2 balls to spare; Prasidh Krishna strikes early to climb to 11 wickets in Purple Cap race"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "matchNo": 26,
       "date": "2026-04-18",
@@ -556,48 +560,123 @@
   "orangeCap": [
     {
       "rank": 1,
-      "player": "Virat Kohli",
-      "team": "RCB",
-      "runs": 228,
-      "innings": 5,
-      "avg": 57.0,
-      "sr": 158.33
+      "player": "Shubman Gill",
+      "team": "GT",
+      "matches": 4,
+      "innings": 4,
+      "runs": 251,
+      "avg": 62.75,
+      "sr": 154.94,
+      "fours": 24,
+      "sixes": 10
     },
     {
       "rank": 2,
-      "player": "Heinrich Klaasen",
-      "team": "SRH",
-      "runs": 224,
+      "player": "Virat Kohli",
+      "team": "RCB",
+      "matches": 5,
       "innings": 5,
-      "avg": 44.8,
-      "sr": 142.68
+      "runs": 228,
+      "avg": 57.0,
+      "sr": 158.33,
+      "fours": 25,
+      "sixes": 8
     },
     {
       "rank": 3,
-      "player": "Rajat Patidar",
-      "team": "RCB",
-      "runs": 222,
+      "player": "Heinrich Klaasen",
+      "team": "SRH",
+      "matches": 5,
       "innings": 5,
-      "avg": 55.5,
-      "sr": 213.46
+      "runs": 224,
+      "avg": 44.8,
+      "sr": 142.68,
+      "fours": 13,
+      "sixes": 8
     },
     {
       "rank": 4,
-      "player": "Ishan Kishan",
-      "team": "SRH",
-      "runs": 213,
+      "player": "Rajat Patidar",
+      "team": "RCB",
+      "matches": 5,
       "innings": 5,
-      "avg": 42.6,
-      "sr": 190.18
+      "runs": 222,
+      "avg": 55.5,
+      "sr": 213.46,
+      "fours": 12,
+      "sixes": 21
     },
     {
       "rank": 5,
+      "player": "Ishan Kishan",
+      "team": "SRH",
+      "matches": 5,
+      "innings": 5,
+      "runs": 213,
+      "avg": 42.6,
+      "sr": 190.18,
+      "fours": 22,
+      "sixes": 12
+    },
+    {
+      "rank": 6,
       "player": "Prabhsimran Singh",
       "team": "PBKS",
-      "runs": 211,
+      "matches": 5,
       "innings": 4,
+      "runs": 211,
       "avg": 70.33,
-      "sr": 172.95
+      "sr": 172.95,
+      "fours": 22,
+      "sixes": 11
+    },
+    {
+      "rank": 7,
+      "player": "Shreyas Iyer",
+      "team": "PBKS",
+      "matches": 5,
+      "innings": 4,
+      "runs": 203,
+      "avg": 67.67,
+      "sr": 187.96,
+      "fours": 14,
+      "sixes": 14
+    },
+    {
+      "rank": 8,
+      "player": "Jos Buttler",
+      "team": "GT",
+      "matches": 5,
+      "innings": 5,
+      "runs": 201,
+      "avg": 40.2,
+      "sr": 159.52,
+      "fours": 24,
+      "sixes": 9
+    },
+    {
+      "rank": 9,
+      "player": "Vaibhav Sooryavanshi",
+      "team": "RR",
+      "matches": 5,
+      "innings": 5,
+      "runs": 200,
+      "avg": 40.0,
+      "sr": 263.16,
+      "fours": 18,
+      "sixes": 18
+    },
+    {
+      "rank": 10,
+      "player": "Angkrish Raghuvanshi",
+      "team": "KKR",
+      "matches": 6,
+      "innings": 6,
+      "runs": 190,
+      "avg": 38.0,
+      "sr": 157.02,
+      "fours": 22,
+      "sixes": 7
     }
   ],
   "purpleCap": [
@@ -605,49 +684,181 @@
       "rank": 1,
       "player": "Prasidh Krishna",
       "team": "GT",
-      "wickets": 10,
-      "innings": 4,
-      "economy": 9.5
+      "matches": 5,
+      "overs": 20.0,
+      "balls": 120,
+      "wickets": 11,
+      "avg": 16.73,
+      "runs": 184,
+      "economy": 9.2,
+      "fourWickets": 1,
+      "fiveWickets": 0
     },
     {
       "rank": 2,
       "player": "Anshul Kamboj",
       "team": "CSK",
+      "matches": 5,
+      "overs": 18.4,
+      "balls": 112,
       "wickets": 10,
-      "innings": 5,
-      "economy": 10.12
+      "avg": 18.9,
+      "runs": 189,
+      "economy": 10.12,
+      "fourWickets": 0,
+      "fiveWickets": 0
     },
     {
       "rank": 3,
       "player": "Prince Yadav",
       "team": "LSG",
+      "matches": 5,
+      "overs": 18.0,
+      "balls": 108,
       "wickets": 9,
-      "innings": 5,
-      "economy": 9.11
+      "avg": 18.22,
+      "runs": 164,
+      "economy": 9.11,
+      "fourWickets": 0,
+      "fiveWickets": 0
     },
     {
       "rank": 4,
       "player": "Ravi Bishnoi",
-      "team": "RR",
+      "team": "LSG",
+      "matches": 5,
+      "overs": 16.0,
+      "balls": 96,
       "wickets": 9,
-      "innings": 5,
-      "economy": 9.31
+      "avg": 16.56,
+      "runs": 149,
+      "economy": 9.31,
+      "fourWickets": 1,
+      "fiveWickets": 0
     },
     {
       "rank": 5,
       "player": "Jofra Archer",
       "team": "RR",
+      "matches": 5,
+      "overs": 17.0,
+      "balls": 102,
       "wickets": 7,
-      "innings": 5,
-      "economy": 8.47
+      "avg": 20.57,
+      "runs": 144,
+      "economy": 8.47,
+      "fourWickets": 0,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 6,
+      "player": "Bhuvneshwar Kumar",
+      "team": "MI",
+      "matches": 5,
+      "overs": 20.0,
+      "balls": 120,
+      "wickets": 7,
+      "avg": 24.86,
+      "runs": 174,
+      "economy": 8.7,
+      "fourWickets": 0,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 7,
+      "player": "Krunal Pandya",
+      "team": "RCB",
+      "matches": 5,
+      "overs": 17.0,
+      "balls": 102,
+      "wickets": 7,
+      "avg": 22.29,
+      "runs": 156,
+      "economy": 9.18,
+      "fourWickets": 0,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 8,
+      "player": "Kagiso Rabada",
+      "team": "GT",
+      "matches": 5,
+      "overs": 19.0,
+      "balls": 114,
+      "wickets": 7,
+      "avg": 27.29,
+      "runs": 191,
+      "economy": 10.05,
+      "fourWickets": 0,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 9,
+      "player": "Vaibhav Arora",
+      "team": "KKR",
+      "matches": 6,
+      "overs": 20.0,
+      "balls": 120,
+      "wickets": 7,
+      "avg": 32.43,
+      "runs": 227,
+      "economy": 11.35,
+      "fourWickets": 0,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 10,
+      "player": "Rashid Khan",
+      "team": "GT",
+      "matches": 5,
+      "overs": 20.0,
+      "balls": 120,
+      "wickets": 6,
+      "avg": 25.67,
+      "runs": 154,
+      "economy": 7.7,
+      "fourWickets": 0,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 11,
+      "player": "Ashok Sharma",
+      "team": "RR",
+      "matches": 5,
+      "overs": 18.0,
+      "balls": 108,
+      "wickets": 6,
+      "avg": 31.67,
+      "runs": 190,
+      "economy": 10.56,
+      "fourWickets": 0,
+      "fiveWickets": 0
     }
   ],
   "storylines": [
     {
-      "id": "pbks-take-top-spot",
-      "title": "PBKS grab top spot — Prabhsimran 83* & Iyer 66 stitch 139 to shrug off de Kock's 112*",
-      "body": "Punjab Kings are the new table-toppers after their 7-wicket win at Wankhede on April 16. Chasing 196, openers Prabhsimran Singh (83* off 60) and captain Shreyas Iyer (66 off 41) put on 139 in just 67 balls to nullify a stunning Quinton de Kock 112* off 60 balls for MI. PBKS are now 4-0 on the pitch with one washout, 9 points and a +1.067 NRR at the summit.",
+      "id": "gt-beat-kkr-match-25",
+      "title": "GT blitz past KKR — Shubman Gill fires GT to 4th as Kolkata stay winless",
+      "body": "Gujarat Titans chased 181 with 2 balls to spare at the Narendra Modi Stadium on April 17, powered by Shubman Gill's unbeaten half-century. The 5-wicket win lifts GT to 4th (6 points, NRR +0.018) in a bunched mid-table, while KKR slump to 0-5 from 6 games after Prasidh Krishna (11 wkts, new Purple Cap leader) struck early to restrict them to 180.",
       "tag": "On Fire"
+    },
+    {
+      "id": "pbks-take-top-spot",
+      "title": "PBKS hold top spot — Prabhsimran 83* & Iyer 66 stitch 139 to shrug off de Kock's 112*",
+      "body": "Punjab Kings remain the table-toppers after their 7-wicket win at Wankhede on April 16. Chasing 196, openers Prabhsimran Singh (83* off 60) and captain Shreyas Iyer (66 off 41) put on 139 in just 67 balls to nullify a stunning Quinton de Kock 112* off 60 balls for MI. PBKS are now 4-0 on the pitch with one washout, 9 points and a +1.067 NRR at the summit.",
+      "tag": "On Fire"
+    },
+    {
+      "id": "gill-grabs-orange-cap",
+      "title": "Gill steals Kohli's Orange Cap — 251 in 4, tops a tight top-5",
+      "body": "Shubman Gill has leapfrogged Virat Kohli to the top of the IPL 2026 run charts with 251 runs in just 4 innings, averaging 62.75 at a strike rate of 154.94. Kohli (228) slips to 2nd, with Heinrich Klaasen (224), RCB skipper Rajat Patidar (222) and Ishan Kishan (213) all within 40 runs of the leader. Patidar's tournament-high 21 sixes and Sooryavanshi's 263 SR keep the race spicy.",
+      "tag": "Sensation"
+    },
+    {
+      "id": "prasidh-leads-purple",
+      "title": "Prasidh goes solo at the top — 11 wickets and the best average in the Purple Cap race",
+      "body": "Gujarat Titans' Prasidh Krishna is now the outright Purple Cap leader with 11 wickets in 5 matches at an average of 16.73, after striking in today's win over KKR. CSK's Anshul Kamboj (10) is a wicket behind, while Prince Yadav and Ravi Bishnoi (9 each) keep LSG in the chase. Jofra Archer's 8.47 economy is the best among top wicket-takers.",
+      "tag": "Breakout"
     },
     {
       "id": "srh-end-rr-unbeaten-run",
@@ -662,21 +873,9 @@
       "tag": "On Fire"
     },
     {
-      "id": "kohli-takes-orange-cap",
-      "title": "Kohli grabs the Orange Cap — 228 runs in 5, edges Klaasen & own skipper Patidar",
-      "body": "Virat Kohli leads the IPL 2026 run charts with 228 runs at average 57 and strike rate 158.33 after 5 innings. Right behind him are SRH's Heinrich Klaasen (224) and RCB captain Rajat Patidar (222), making it the tightest Orange Cap race in years. Patidar has hit a tournament-high 21 sixes, while Kishan (213) and Prabhsimran (211 in 4 inns) round out a top 5 separated by just 17 runs.",
-      "tag": "Sensation"
-    },
-    {
-      "id": "prasidh-kamboj-tied-purple",
-      "title": "Prasidh & Kamboj tied on 10 wkts — Prince Yadav's 9 puts three pacers within one strike",
-      "body": "GT's Prasidh Krishna and CSK's Anshul Kamboj are joint Purple Cap leaders with 10 wickets apiece; LSG's Prince Yadav is hot on their heels with 9. Prasidh is far ahead on average (15.2 vs Kamboj's 18.9) after his 4/28 vs LSG. Ravi Bishnoi (9 wkts, avg 16.56) and Jofra Archer (7, econ 8.47) keep RR in the hunt from both ends.",
-      "tag": "Breakout"
-    },
-    {
-      "id": "kkr-still-winless-match-24",
-      "title": "KKR's nightmare continues — 0 wins from 5, only team still without a W after 24 matches",
-      "body": "Even after Match 24, Kolkata Knight Riders remain the sole winless side in IPL 2026. CSK's 32-run drubbing on April 14 took them to 0-4-1 (one washout), anchored at the bottom with 1 point and a -1.383 NRR. The big-money brigade of Cameron Green (Rs.25.2 Cr), Matheesha Pathirana (Rs.18 Cr) and Phil Salt has yet to fire; KKR host Rajasthan Royals at Eden Gardens on April 19.",
+      "id": "kkr-still-winless-match-25",
+      "title": "KKR's nightmare deepens — 0 wins from 6, only winless side at the quarter-mark",
+      "body": "Even after Match 25, Kolkata Knight Riders remain the sole winless side in IPL 2026. Today's loss to GT drops them to 0-5-1 (one washout), anchored at the bottom with 1 point and a -1.149 NRR. The big-money brigade of Cameron Green (Rs.25.2 Cr), Matheesha Pathirana (Rs.18 Cr) and Phil Salt has yet to fire; KKR host Rajasthan Royals at Eden Gardens on April 19 in a must-win.",
       "tag": "Crisis"
     }
   ],
