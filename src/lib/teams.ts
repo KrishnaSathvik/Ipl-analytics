@@ -56,6 +56,9 @@ export const LOGO_URL: Record<string, string> = {
   GT:   './logos/GT.png',
   LSG:  './logos/LSG.png',
   DCH:  './logos/DCH.png',
+  RPS:  './logos/RPS.png',
+  PWI:  './logos/PWI.png',
+  KTK:  './logos/KTK.png',
 };
 
 /** Teams with light brand colors that need dark text */
