@@ -64,7 +64,7 @@ export default function Teams() {
     <div style={{ maxWidth: 1100, margin: '0 auto', padding: '56px 14px 88px' }}>
       <div style={{ paddingTop: 20, paddingBottom: 20 }}>
         <h1 style={{ fontSize: 'clamp(22px,4vw,36px)', fontWeight: 800, letterSpacing: '-0.04em', color: 'var(--text)', marginBottom: 4 }}>IPL Teams</h1>
-        <p style={{ fontSize: 13, color: 'var(--text-3)' }}>10 active franchises · all-time stats 2008–2025</p>
+        <p style={{ fontSize: 13, color: 'var(--text-3)' }}>10 active franchises</p>
         <HistoricalBadge />
       </div>
 

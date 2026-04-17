@@ -338,7 +338,7 @@ export default function RecordsPage() {
         <h1 style={{ fontSize: 'clamp(22px,4vw,36px)', fontWeight: 800, letterSpacing: '-0.04em', color: 'var(--text)', marginBottom: 4 }}>
           All-Time Records
         </h1>
-        <p style={{ fontSize: 13, color: 'var(--text-3)' }}>{R.totalSeasons} seasons · {R.totalMatches.toLocaleString()} matches · 2008–2025</p>
+        <p style={{ fontSize: 13, color: 'var(--text-3)' }}>{R.totalSeasons} seasons · {R.totalMatches.toLocaleString()} matches</p>
         <HistoricalBadge />
       </div>
 
