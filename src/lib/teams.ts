@@ -18,6 +18,8 @@ export const LOGO_CODE: Record<string, string> = {
   'Lucknow Super Giants': 'LSG',
   'Deccan Chargers': 'DCH',
   'Rising Pune Supergiant': 'RPS',
+  'Pune Warriors': 'PWI',
+  'Kochi Tuskers Kerala': 'KTK',
 };
 
 /** Team full name → brand hex color */
@@ -37,6 +39,8 @@ export const TEAM_COLORS: Record<string, string> = {
   'Lucknow Super Giants': '#A72056',
   'Deccan Chargers': '#F7941D',
   'Rising Pune Supergiant': '#6F2E81',
+  'Pune Warriors': '#1A4FA0',
+  'Kochi Tuskers Kerala': '#8B2C8B',
 };
 
 /** Logo short code → local logo path */

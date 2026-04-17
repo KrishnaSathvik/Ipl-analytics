@@ -94,9 +94,9 @@ export default function Nav() {
             <div onClick={() => setShowMore(false)}
               style={{ position: 'fixed', inset: 0, zIndex: 48, background: 'rgba(0,0,0,0.15)' }} />
             <div style={{
-              position: 'fixed', bottom: 56, left: 0, right: 0, zIndex: 49,
+              position: 'fixed', bottom: 'calc(56px + env(safe-area-inset-bottom))', left: 0, right: 0, zIndex: 49,
               background: 'var(--bg)', borderTop: '1px solid var(--border)',
-              borderRadius: '12px 12px 0 0', padding: '12px 16px 8px',
+              borderRadius: '12px 12px 0 0', padding: '12px 16px 12px',
               boxShadow: '0 -4px 24px rgba(0,0,0,0.08)',
             }}>
               <div style={{ fontSize: 11, fontWeight: 600, color: 'var(--text-4)', textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: 10 }}>
