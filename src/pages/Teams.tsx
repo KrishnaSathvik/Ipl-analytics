@@ -5,6 +5,7 @@ import teamSeasons from '../data/team-seasons.json';
 import rivalriesAll from '../data/rivalries-all.json';
 import type { TeamProfile, H2HRecord } from '../types';
 import TeamBadge from '../components/TeamBadge';
+import HistoricalBadge from '../components/HistoricalBadge';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { Trophy } from '@phosphor-icons/react';
 
@@ -64,6 +65,7 @@ export default function Teams() {
       <div style={{ paddingTop: 20, paddingBottom: 20 }}>
         <h1 style={{ fontSize: 'clamp(22px,4vw,36px)', fontWeight: 800, letterSpacing: '-0.04em', color: 'var(--text)', marginBottom: 4 }}>IPL Teams</h1>
         <p style={{ fontSize: 13, color: 'var(--text-3)' }}>10 active franchises · all-time stats 2008–2025</p>
+        <HistoricalBadge />
       </div>
 
       {/* Team picker */}

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useIPL2026 } from '../hooks/useIPL2026';
 import TeamBadge from '../components/TeamBadge';
-import tossAnalysis from '../data/toss-analysis.json';
 
 import type { PointsTableEntry, MatchResult, Fixture } from '../types';
 import { LOGO_CODE, TEAM_COLORS } from '../lib/teams';
@@ -236,78 +235,6 @@ function TodaySpotlight({ fixture }: { fixture: Fixture }) {
   );
 }
 
-// ── Toss Tracker ──────────────────────────────────────────────────────────────
-function TossTracker() {
-  const toss = tossAnalysis as any;
-  const overall = toss.overall;
-  const byTeam = toss.byTeam as any[];
-
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-      {/* Summary row */}
-      <div style={{ border: '1px solid var(--border)', borderRadius: 10, padding: '14px', background: 'var(--bg)' }}>
-        <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--text)', marginBottom: 8 }}>
-          Toss winner wins <span style={{ color: 'var(--accent)', fontSize: 18, fontWeight: 900 }}>{overall.tossWinPct}%</span> of matches
-        </div>
-        <div style={{ height: 8, borderRadius: 4, background: 'var(--bg-muted)', overflow: 'hidden', marginBottom: 4 }}>
-          <div style={{ height: '100%', width: `${overall.tossWinPct}%`, background: 'var(--accent)', borderRadius: 4 }} />
-        </div>
-        <div style={{ fontSize: 10, color: 'var(--text-4)' }}>{overall.totalMatches.toLocaleString()} matches analysed · 2008–2025</div>
-      </div>
-
-      {/* Bat first vs Field first cards */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
-        <div style={{ border: '1px solid var(--border)', borderRadius: 10, padding: '12px', background: 'var(--bg)', textAlign: 'center' }}>
-          <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: 4 }}>Bat First Win%</div>
-          <div style={{ fontSize: 24, fontWeight: 900, color: '#3b82f6', letterSpacing: '-0.03em', lineHeight: 1 }}>{overall.batFirst.winPct}%</div>
-          <div style={{ fontSize: 10, color: 'var(--text-4)', marginTop: 4 }}>{overall.batFirst.wins}W / {overall.batFirst.matches}M</div>
-        </div>
-        <div style={{ border: '1px solid var(--border)', borderRadius: 10, padding: '12px', background: 'var(--bg)', textAlign: 'center' }}>
-          <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: 4 }}>Field First Win%</div>
-          <div style={{ fontSize: 24, fontWeight: 900, color: '#16a34a', letterSpacing: '-0.03em', lineHeight: 1 }}>{overall.fieldFirst.winPct}%</div>
-          <div style={{ fontSize: 10, color: 'var(--text-4)', marginTop: 4 }}>{overall.fieldFirst.wins}W / {overall.fieldFirst.matches}M</div>
-        </div>
-      </div>
-
-      {/* Team table */}
-      <div style={{ border: '1px solid var(--border)', borderRadius: 10, overflow: 'hidden', background: 'var(--bg)' }}>
-        <div style={{ padding: '10px 14px', borderBottom: '1px solid var(--border)', background: '#f8f8f8' }}>
-          <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--text)' }}>Toss Stats by Team</span>
-        </div>
-        <table style={{ width: '100%', borderCollapse: 'collapse', tableLayout: 'fixed' }}>
-          <colgroup>
-            <col style={{ width: 36 }} />
-            <col />
-            <col style={{ width: 72 }} />
-            <col style={{ width: 72 }} />
-          </colgroup>
-          <thead>
-            <tr style={{ background: '#f8f8f8', borderBottom: '1px solid var(--border)' }}>
-              {['', 'Team', 'Toss W%', 'Win%'].map(h => (
-                <th scope="col" key={h} style={{ padding: '8px 6px', fontSize: 10, fontWeight: 700, color: 'var(--text-4)', textAlign: h === 'Team' ? 'left' : 'center', textTransform: 'uppercase', letterSpacing: '0.03em' }}>{h}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {byTeam.sort((a: any, b: any) => b.tossWinPct - a.tossWinPct).map((t: any, i: number) => (
-              <tr key={t.team} style={{ borderBottom: i < byTeam.length - 1 ? '1px solid var(--border)' : 'none' }}
-                onMouseEnter={e => (e.currentTarget.style.background = 'var(--bg-subtle)')}
-                onMouseLeave={e => (e.currentTarget.style.background = 'var(--bg)')}>
-                <td style={{ padding: '9px 6px', textAlign: 'center' }}>
-                  <TeamBadge short={t.short} color={t.color} size="xs" textColor={t.short === 'CSK' || t.short === 'SRH' ? '#000' : '#fff'} />
-                </td>
-                <td style={{ padding: '9px 6px', fontSize: 12, fontWeight: 500, color: 'var(--text)' }}>{t.short}</td>
-                <td style={{ padding: '9px 6px', textAlign: 'center', fontSize: 13, fontWeight: 700, color: t.color }}>{t.tossWinPct}%</td>
-                <td style={{ padding: '9px 6px', textAlign: 'center', fontSize: 12, color: 'var(--text-3)' }}>{t.tossToMatchWinPct}%</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  );
-}
-
 // ── Main ──────────────────────────────────────────────────────────────────────
 export default function Home() {
   const { data, loading, error } = useIPL2026();
@@ -396,12 +323,6 @@ export default function Home() {
             <CapList entries={orangeCap} statKey="runs" color="var(--accent)" icon="🟠" />
             <CapList entries={purpleCap} statKey="wickets" color="var(--purple)" icon="🟣" />
           </div>
-        </div>
-
-        {/* ── Toss Tracker ── */}
-        <div style={{ marginBottom: 28 }}>
-          <SectionHeader title="Toss Tracker" sub="Does winning the toss matter?" />
-          <TossTracker />
         </div>
 
         {/* ── Results ── */}
