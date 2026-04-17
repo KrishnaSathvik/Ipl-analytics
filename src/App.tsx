@@ -1,9 +1,10 @@
-import { useState, lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { Analytics as VercelAnalytics } from '@vercel/analytics/react';
 import Nav from './components/Nav';
 import InstallPrompt from './components/InstallPrompt';
 import ErrorBoundary from './components/ErrorBoundary';
-import type { Page } from './types';
 
 const Home = lazy(() => import('./pages/Home'));
 const Teams = lazy(() => import('./pages/Teams'));
@@ -22,31 +23,29 @@ function Loading() {
 }
 
 export default function App() {
-  const [page, setPage] = useState<Page>('home');
-
-  const renderPage = () => {
-    switch (page) {
-      case 'home':      return <Home />;
-      case 'teams':     return <Teams />;
-      case 'players':   return <Players />;
-      case 'seasons':   return <Seasons />;
-      case 'records':   return <Records />;
-      case 'analytics': return <Analytics />;
-      case 'deepdives': return <DeepDives />;
-      default:          return <Home />;
-    }
-  };
-
   return (
-    <div style={{ minHeight: '100vh', background: 'var(--bg)' }}>
-      <Nav current={page} onChange={setPage} />
-      <ErrorBoundary>
-        <Suspense fallback={<Loading />}>
-          {renderPage()}
-        </Suspense>
-      </ErrorBoundary>
-      <InstallPrompt />
-      <VercelAnalytics />
-    </div>
+    <HelmetProvider>
+      <BrowserRouter>
+        <div style={{ minHeight: '100vh', background: 'var(--bg)' }}>
+          <Nav />
+          <ErrorBoundary>
+            <Suspense fallback={<Loading />}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/teams" element={<Teams />} />
+                <Route path="/players" element={<Players />} />
+                <Route path="/seasons" element={<Seasons />} />
+                <Route path="/records" element={<Records />} />
+                <Route path="/analytics" element={<Analytics />} />
+                <Route path="/deep-dives" element={<DeepDives />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
+              </Routes>
+            </Suspense>
+          </ErrorBoundary>
+          <InstallPrompt />
+          <VercelAnalytics />
+        </div>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }

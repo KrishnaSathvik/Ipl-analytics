@@ -10,6 +10,7 @@ import { ChartBar, MapPin, Lightning, ArrowsDownUp, Shuffle } from '@phosphor-ic
 import { useState } from 'react';
 import TeamBadge from '../components/TeamBadge';
 import HistoricalBadge from '../components/HistoricalBadge';
+import PageSEO from '../components/PageSEO';
 
 const overs = overData as OverStat[];
 const allVenues = venueData as VenueStat[];
@@ -561,6 +562,11 @@ export default function Analytics() {
 
   return (
     <div style={{ maxWidth: 1100, margin: '0 auto', padding: '56px 14px 88px' }}>
+      <PageSEO
+        title="IPL Analytics — Over Patterns, Venue Stats, Clutch Players"
+        description="Deep IPL analytics: over-by-over scoring, venue-specific stats, clutch batting & bowling, toss trends and powerplay breakdowns across 18 seasons."
+        path="/analytics"
+      />
       <div style={{ paddingTop: 20, paddingBottom: 20 }}>
         <h1 style={{ fontSize: 'clamp(22px,4vw,36px)', fontWeight: 800, letterSpacing: '-0.04em', color: 'var(--text)', marginBottom: 4 }}>
           Analytics

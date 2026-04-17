@@ -1,12 +1,24 @@
 import { useState } from 'react';
-import type { Page } from '../types';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {
   Cricket, Shield, User, CalendarBlank, Trophy,
   ChartBar, MagnifyingGlass, DotsThree, X,
 } from '@phosphor-icons/react';
 
-const ALL_PAGES: { id: Page; label: string; Icon: React.ElementType }[] = [
-  { id: 'home',      label: 'Home',        Icon: Cricket },
+type PageId = 'home' | 'teams' | 'players' | 'seasons' | 'records' | 'analytics' | 'deepdives';
+
+const ROUTES: Record<PageId, string> = {
+  home:      '/',
+  teams:     '/teams',
+  players:   '/players',
+  seasons:   '/seasons',
+  records:   '/records',
+  analytics: '/analytics',
+  deepdives: '/deep-dives',
+};
+
+const ALL_PAGES: { id: PageId; label: string; Icon: React.ElementType }[] = [
+  { id: 'home',      label: 'Home',       Icon: Cricket },
   { id: 'teams',     label: 'Teams',      Icon: Shield },
   { id: 'players',   label: 'Players',    Icon: User },
   { id: 'seasons',   label: 'Seasons',    Icon: CalendarBlank },
@@ -15,11 +27,21 @@ const ALL_PAGES: { id: Page; label: string; Icon: React.ElementType }[] = [
   { id: 'deepdives', label: 'Deep Dives', Icon: MagnifyingGlass },
 ];
 
-const PRIMARY: Page[] = ['home', 'teams', 'players', 'analytics', 'deepdives'];
-const MORE: Page[]    = ['seasons', 'records'];
+const PRIMARY: PageId[] = ['home', 'teams', 'players', 'analytics', 'deepdives'];
+const MORE: PageId[]    = ['seasons', 'records'];
 
-export default function Nav({ current, onChange }: { current: Page; onChange: (p: Page) => void }) {
+function currentPage(pathname: string): PageId {
+  for (const [id, path] of Object.entries(ROUTES)) {
+    if (path === '/' ? pathname === '/' : pathname.startsWith(path)) return id as PageId;
+  }
+  return 'home';
+}
+
+export default function Nav() {
   const [showMore, setShowMore] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const current = currentPage(location.pathname);
   const isMoreActive = MORE.includes(current);
 
   return (
@@ -28,26 +50,26 @@ export default function Nav({ current, onChange }: { current: Page; onChange: (p
       <nav aria-label="Main navigation" className="hidden md:flex fixed top-0 inset-x-0 z-50 h-12 items-center px-5 gap-0.5"
         style={{ background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--border)' }}>
 
-        <button onClick={() => onChange('home')} className="flex items-center gap-2 mr-4 flex-shrink-0" aria-label="IPL Hub home">
+        <Link to="/" className="flex items-center gap-2 mr-4 flex-shrink-0" aria-label="IPL Hub home">
           <Cricket size={18} weight="fill" color="var(--accent)" />
           <span style={{ fontWeight: 700, fontSize: 14, color: 'var(--text)', letterSpacing: '-0.02em' }}>IPL Hub</span>
           <span style={{ fontSize: 10, padding: '1px 6px', borderRadius: 999, fontWeight: 700,
             background: 'var(--accent-bg)', color: 'var(--accent)', border: '1px solid var(--accent-border)' }}>2026</span>
-        </button>
+        </Link>
 
         {ALL_PAGES.map(item => (
-          <button key={item.id} onClick={() => onChange(item.id)}
+          <Link key={item.id} to={ROUTES[item.id]}
             aria-current={current === item.id ? 'page' : undefined}
             style={{
-              padding: '4px 11px', borderRadius: 6, fontSize: 13, cursor: 'pointer', whiteSpace: 'nowrap',
-              fontWeight: current === item.id ? 600 : 400, border: 'none', transition: 'all 0.15s',
+              padding: '4px 11px', borderRadius: 6, fontSize: 13, whiteSpace: 'nowrap',
+              textDecoration: 'none',
+              fontWeight: current === item.id ? 600 : 400, transition: 'all 0.15s',
               background: current === item.id ? 'var(--bg-muted)' : 'transparent',
               color: current === item.id ? 'var(--text)' : 'var(--text-3)',
             }}>
             {item.label}
-          </button>
+          </Link>
         ))}
-
       </nav>
 
       {/* ── Mobile ─────────────────────────────────────────────────────── */}
@@ -68,7 +90,7 @@ export default function Nav({ current, onChange }: { current: Page; onChange: (p
               {MORE.map(id => {
                 const item = ALL_PAGES.find(p => p.id === id)!;
                 return (
-                  <button key={id} onClick={() => { onChange(id); setShowMore(false); }}
+                  <button key={id} onClick={() => { navigate(ROUTES[id]); setShowMore(false); }}
                     style={{
                       display: 'flex', alignItems: 'center', gap: 12, padding: '11px 12px', width: '100%',
                       borderRadius: 8, border: 'none', cursor: 'pointer', textAlign: 'left',
@@ -95,7 +117,7 @@ export default function Nav({ current, onChange }: { current: Page; onChange: (p
               const item = ALL_PAGES.find(p => p.id === id)!;
               const active = current === id;
               return (
-                <button key={id} onClick={() => { onChange(id); setShowMore(false); }}
+                <button key={id} onClick={() => { navigate(ROUTES[id]); setShowMore(false); }}
                   aria-label={item.label}
                   aria-current={active ? 'page' : undefined}
                   style={{

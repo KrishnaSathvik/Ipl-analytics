@@ -6,6 +6,7 @@ import rivalriesAll from '../data/rivalries-all.json';
 import type { TeamProfile, H2HRecord } from '../types';
 import TeamBadge from '../components/TeamBadge';
 import HistoricalBadge from '../components/HistoricalBadge';
+import PageSEO from '../components/PageSEO';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { Trophy } from '@phosphor-icons/react';
 
@@ -62,6 +63,11 @@ export default function Teams() {
 
   return (
     <div style={{ maxWidth: 1100, margin: '0 auto', padding: '56px 14px 88px' }}>
+      <PageSEO
+        title="IPL Teams — Profiles, Rivalries & Head-to-Head"
+        description="All 10 active IPL franchises: season-by-season stats, head-to-head records, and all-time rivalries across 18 seasons of IPL history."
+        path="/teams"
+      />
       <div style={{ paddingTop: 20, paddingBottom: 20 }}>
         <h1 style={{ fontSize: 'clamp(22px,4vw,36px)', fontWeight: 800, letterSpacing: '-0.04em', color: 'var(--text)', marginBottom: 4 }}>IPL Teams</h1>
         <p style={{ fontSize: 13, color: 'var(--text-3)' }}>10 active franchises</p>

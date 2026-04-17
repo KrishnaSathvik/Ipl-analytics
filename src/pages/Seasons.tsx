@@ -4,6 +4,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 
 import { Trophy, Baseball, Star, Users, MapPin, Medal } from '@phosphor-icons/react';
 import TeamBadge from '../components/TeamBadge';
 import HistoricalBadge from '../components/HistoricalBadge';
+import PageSEO from '../components/PageSEO';
 
 const seasons = seasonData as SeasonSummary[];
 
@@ -40,6 +41,11 @@ export default function Seasons() {
 
   return (
     <div style={{ maxWidth: 1100, margin: '0 auto', padding: '56px 14px 88px' }}>
+      <PageSEO
+        title="IPL Seasons History — All 18 Editions (2008–2025)"
+        description="Every IPL season from 2008 to 2025 — champions, runners-up, Orange Cap, Purple Cap, run totals and standout moments across 1,169 matches."
+        path="/seasons"
+      />
       <div style={{ paddingTop: 20, paddingBottom: 20 }}>
         <h1 style={{ fontSize: 'clamp(22px,4vw,36px)', fontWeight: 800, letterSpacing: '-0.04em', color: 'var(--text)', marginBottom: 4 }}>
           Season History

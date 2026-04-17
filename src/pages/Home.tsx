@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useIPL2026 } from '../hooks/useIPL2026';
 import TeamBadge from '../components/TeamBadge';
+import PageSEO from '../components/PageSEO';
 
 import type { PointsTableEntry, MatchResult, Fixture } from '../types';
 import { LOGO_CODE, TEAM_COLORS } from '../lib/teams';
@@ -261,6 +262,11 @@ export default function Home() {
 
   return (
     <div style={{ maxWidth: 1100, margin: '0 auto', padding: isMobile ? '56px 0 88px' : '60px 24px 48px' }}>
+      <PageSEO
+        title="IPL 2026 Live"
+        description={`Live IPL 2026 points table, recent results, Orange Cap, Purple Cap and upcoming fixtures. Match ${meta.matchesPlayed} of ${meta.totalMatches}.`}
+        path="/"
+      />
 
       {/* ── Matchday Hero Banner ── */}
       <div style={{

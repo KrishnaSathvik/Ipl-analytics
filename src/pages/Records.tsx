@@ -4,6 +4,7 @@ import seasonRecordsData from '../data/season-records.json';
 import type { Records } from '../types';
 import ShareCard from '../components/ShareCard';
 import HistoricalBadge from '../components/HistoricalBadge';
+import PageSEO from '../components/PageSEO';
 import { Trophy } from '@phosphor-icons/react';
 import TeamBadge from '../components/TeamBadge';
 
@@ -336,6 +337,11 @@ function IPLFirstsSection() {
 export default function RecordsPage() {
   return (
     <div style={{ maxWidth: 1100, margin: '0 auto', padding: '56px 14px 88px' }}>
+      <PageSEO
+        title="IPL All-Time Records — Highest, Lowest, Milestones"
+        description="Every IPL record that matters: most runs, most wickets, highest team totals (SRH 287), lowest totals (RCB 49), biggest margins, player milestones and championship tally."
+        path="/records"
+      />
       <div style={{ paddingTop: 20, paddingBottom: 20 }}>
         <h1 style={{ fontSize: 'clamp(22px,4vw,36px)', fontWeight: 800, letterSpacing: '-0.04em', color: 'var(--text)', marginBottom: 4 }}>
           All-Time Records

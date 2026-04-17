@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { Handshake, House, Sword, CalendarBlank, Star } from '@phosphor-icons/react';
 import TeamBadge from '../components/TeamBadge';
 import HistoricalBadge from '../components/HistoricalBadge';
+import PageSEO from '../components/PageSEO';
 import partnershipsData from '../data/partnerships.json';
 import homeAdvData from '../data/home-advantage.json';
 import rivalriesAllData from '../data/rivalries-all.json';
@@ -552,6 +553,11 @@ export default function DeepDives() {
 
   return (
     <div style={{ maxWidth:1100, margin:'0 auto', padding:'56px 14px 88px' }}>
+      <PageSEO
+        title="IPL Deep Dives — Partnerships, Rivalries, On This Day"
+        description="Hidden-gem IPL analytics: best partnerships, home-advantage trends, team rivalries and 'On This Day' match history going back to 2008."
+        path="/deep-dives"
+      />
       <div style={{ paddingTop:20, paddingBottom:20 }}>
         <h1 style={{ fontSize:'clamp(22px,4vw,36px)', fontWeight:800, letterSpacing:'-0.04em', color:'var(--text)', marginBottom:4 }}>
           Deep Dives
