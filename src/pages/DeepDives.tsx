@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { Handshake, House, Sword, CalendarBlank, Star } from '@phosphor-icons/react';
 import TeamBadge from '../components/TeamBadge';
+import HistoricalBadge from '../components/HistoricalBadge';
 import partnershipsData from '../data/partnerships.json';
 import homeAdvData from '../data/home-advantage.json';
 import rivalriesAllData from '../data/rivalries-all.json';
@@ -544,6 +545,7 @@ export default function DeepDives() {
           Deep Dives
         </h1>
         <p style={{ fontSize:13, color:'var(--text-3)' }}>Partnerships · Home advantage · Rivalries · On This Day</p>
+        <HistoricalBadge />
       </div>
 
       {/* Tab bar */}

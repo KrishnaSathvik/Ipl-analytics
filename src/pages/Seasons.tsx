@@ -3,6 +3,7 @@ import type { SeasonSummary } from '../types';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { Trophy, Baseball, Star, Users, MapPin, Medal } from '@phosphor-icons/react';
 import TeamBadge from '../components/TeamBadge';
+import HistoricalBadge from '../components/HistoricalBadge';
 
 const seasons = seasonData as SeasonSummary[];
 
@@ -44,6 +45,7 @@ export default function Seasons() {
           Season History
         </h1>
         <p style={{ fontSize: 13, color: 'var(--text-3)' }}>18 seasons · 2008–2025 · 1,169 matches</p>
+        <HistoricalBadge />
       </div>
 
       {/* Chart */}

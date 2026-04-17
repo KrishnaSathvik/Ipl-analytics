@@ -8,6 +8,7 @@ import batterSrSeasonsData from '../data/batter-sr-seasons.json';
 import type { BatterRecord, BowlerRecord } from '../types';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
 import ShareCard from '../components/ShareCard';
+import HistoricalBadge from '../components/HistoricalBadge';
 import { ArrowLeft } from '@phosphor-icons/react';
 
 const batters = battersData as BatterRecord[];
@@ -575,6 +576,7 @@ export default function Players() {
           Player Stats
         </h1>
         <p style={{ fontSize: 13, color: 'var(--text-3)' }}>703 batters · 550 bowlers · tap any player for full profile</p>
+        <HistoricalBadge />
       </div>
 
       <div style={{ display: 'flex', gap: 10, marginBottom: 14, flexWrap: 'wrap' }}>

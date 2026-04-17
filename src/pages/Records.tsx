@@ -3,6 +3,7 @@ import recordsData from '../data/records.json';
 import seasonRecordsData from '../data/season-records.json';
 import type { Records } from '../types';
 import ShareCard from '../components/ShareCard';
+import HistoricalBadge from '../components/HistoricalBadge';
 import { Trophy } from '@phosphor-icons/react';
 import TeamBadge from '../components/TeamBadge';
 
@@ -338,6 +339,7 @@ export default function RecordsPage() {
           All-Time Records
         </h1>
         <p style={{ fontSize: 13, color: 'var(--text-3)' }}>{R.totalSeasons} seasons · {R.totalMatches.toLocaleString()} matches · 2008–2025</p>
+        <HistoricalBadge />
       </div>
 
       {/* Hero stats — 2x2 grid */}

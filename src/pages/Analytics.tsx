@@ -9,6 +9,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 
 import { ChartBar, MapPin, Lightning, ArrowsDownUp, Shuffle } from '@phosphor-icons/react';
 import { useState } from 'react';
 import TeamBadge from '../components/TeamBadge';
+import HistoricalBadge from '../components/HistoricalBadge';
 
 const overs = overData as OverStat[];
 const allVenues = venueData as VenueStat[];
@@ -565,6 +566,7 @@ export default function Analytics() {
           Analytics
         </h1>
         <p style={{ fontSize: 13, color: 'var(--text-3)' }}>Deep dives — over patterns, venue stats, clutch performers, toss & powerplay</p>
+        <HistoricalBadge />
       </div>
 
       {/* Tabs */}
