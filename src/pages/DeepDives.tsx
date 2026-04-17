@@ -49,6 +49,19 @@ function tiedScoreLine(teams: string): boolean {
   const n2 = parts[1].match(/(\d+)\s*$/)?.[1];
   return !!n1 && n1 === n2;
 }
+
+function parseTeamsLine(teams: string): null | { team1: string; score1: number | null; team2: string; score2: number | null } {
+  // Formats seen: "Team A 166 vs Team B 162"  or "Team A vs Team B" (no scores).
+  const both = teams.match(/^(.+?)\s+(\d+)\s+vs\s+(.+?)\s+(\d+)$/);
+  if (both) {
+    return { team1: both[1].trim(), score1: parseInt(both[2],10), team2: both[3].trim(), score2: parseInt(both[4],10) };
+  }
+  const noScores = teams.match(/^(.+?)\s+vs\s+(.+?)$/);
+  if (noScores) {
+    return { team1: noScores[1].trim(), score1: null, team2: noScores[2].trim(), score2: null };
+  }
+  return null;
+}
 const venueAnalytics = venueAnalyticsData as any[];
 
 type Tab = 'partnerships' | 'homeadvantage' | 'rivalries' | 'onthisday';
@@ -489,51 +502,121 @@ function OnThisDay() {
           <div style={{ fontSize:12, color:'var(--text-4)', marginTop:4 }}>Try a date between late March and late May</div>
         </div>
       ) : (
-        <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
-          {events.map((ev,i)=>(
-            <div key={i} style={{ border:'1px solid var(--border)', borderRadius:10, padding:'14px', background:'var(--bg)' }}>
-              <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-start', gap:8, marginBottom:8 }}>
-                <div>
-                  <span style={{ fontSize:11, padding:'2px 8px', borderRadius:999, fontWeight:700,
-                    background:'var(--bg-muted)', color:'var(--text-3)', marginRight:6 }}>IPL {ev.season}</span>
-                  <span style={{ fontSize:12, color:'var(--text-4)' }}>{ev.year}</span>
-                </div>
-                {ev.pom && (
-                  <span style={{ fontSize:10, padding:'2px 8px', borderRadius:999, fontWeight:600,
-                    background:'var(--accent-bg)', color:'var(--accent)', border:'1px solid var(--accent-border)', flexShrink:0 }}>
-                    {ev.pom}
+        <div style={{ display:'flex', flexDirection:'column', gap:12 }}>
+          {events.map((ev,i)=>{
+            const parsed = parseTeamsLine(ev.teams);
+            const isNR     = ev.winner === 'No Result' || ev.winner === 'NR';
+            const isTied   = ev.winner === 'Unknown' && tiedScoreLine(ev.teams);
+            const isUnknown = ev.winner === 'Unknown' && !isTied;
+            const winnerName = !isNR && !isTied && !isUnknown ? ev.winner : '';
+
+            const venueMain = ev.venue?.split(',')[0]?.trim() || '';
+            const venueCity = ev.venue?.split(',').slice(1).join(',').trim() || '';
+
+            // Compute a chase/defend margin line if possible.
+            let resultLine = 'Result unavailable';
+            if (isNR) resultLine = 'No Result';
+            else if (isTied) resultLine = 'Match tied · decided by Super Over';
+            else if (parsed && winnerName) {
+              const { team1, score1, team2, score2 } = parsed;
+              const winnerShort = TEAM_SHORT[winnerName] || winnerName;
+              if (score1 != null && score2 != null) {
+                if (winnerName === team1 && score1 > score2) {
+                  resultLine = `${winnerShort} won by ${score1 - score2} run${score1 - score2 === 1 ? '' : 's'}`;
+                } else if (winnerName === team2 && score2 >= score1) {
+                  resultLine = `${winnerShort} won (chased ${score1 + 1})`;
+                } else if (winnerName === team2 && score2 < score1) {
+                  resultLine = `${winnerShort} won by ${score1 - score2} run${score1 - score2 === 1 ? '' : 's'}`;
+                } else {
+                  resultLine = `${winnerShort} won`;
+                }
+              } else {
+                resultLine = `${winnerShort} won`;
+              }
+            }
+
+            const TeamRow = ({ name, score, won }: { name: string; score: number | null; won: boolean }) => {
+              const short = TEAM_SHORT[name] || name.slice(0,3).toUpperCase();
+              const color = TEAM_COLOR[name] || '#888';
+              return (
+                <div style={{
+                  display:'flex', alignItems:'center', gap:10, padding:'8px 10px',
+                  borderRadius:8,
+                  background: won ? `${color}10` : 'transparent',
+                  border: won ? `1px solid ${color}30` : '1px solid transparent',
+                }}>
+                  <TeamBadge short={short} color={color} size="xs"
+                    textColor={short==='CSK'||short==='SRH'?'#000':'#fff'} />
+                  <span style={{ flex:1, fontSize:13, fontWeight: won ? 700 : 500, color: won ? color : 'var(--text)', letterSpacing:'-0.01em' }}>
+                    {name}
                   </span>
+                  <span style={{ fontSize:16, fontWeight:800, color: won ? color : 'var(--text)', letterSpacing:'-0.02em', fontVariantNumeric:'tabular-nums' }}>
+                    {score != null ? score : '—'}
+                  </span>
+                </div>
+              );
+            };
+
+            return (
+              <div key={i} style={{ border:'1px solid var(--border)', borderRadius:10, padding:'12px', background:'var(--bg)' }}>
+                {/* Meta row */}
+                <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', gap:8, marginBottom:10 }}>
+                  <span style={{ fontSize:10, padding:'2px 8px', borderRadius:999, fontWeight:700, letterSpacing:'0.03em',
+                    background:'var(--bg-muted)', color:'var(--text-3)' }}>IPL {ev.season}</span>
+                  {ev.pom && (
+                    <span style={{ display:'inline-flex', alignItems:'center', gap:4, fontSize:10, padding:'2px 8px', borderRadius:999, fontWeight:600,
+                      background:'var(--accent-bg)', color:'var(--accent)', border:'1px solid var(--accent-border)', flexShrink:0 }}>
+                      <Star size={9} weight="fill" /> {ev.pom}
+                    </span>
+                  )}
+                </div>
+
+                {/* Scorecard */}
+                {parsed ? (
+                  <div style={{ display:'flex', flexDirection:'column', gap:4, marginBottom:10 }}>
+                    <TeamRow name={parsed.team1} score={parsed.score1} won={winnerName === parsed.team1} />
+                    <TeamRow name={parsed.team2} score={parsed.score2} won={winnerName === parsed.team2} />
+                  </div>
+                ) : (
+                  <div style={{ fontSize:13, fontWeight:600, color:'var(--text)', marginBottom:10 }}>
+                    {ev.teams}
+                  </div>
+                )}
+
+                {/* Result line */}
+                <div style={{
+                  fontSize:12, fontWeight:700,
+                  color: isNR || isTied ? 'var(--text-3)' : 'var(--accent)',
+                  padding:'6px 10px', borderRadius:6,
+                  background: isNR || isTied ? 'var(--bg-muted)' : 'var(--accent-bg)',
+                  border: `1px solid ${isNR || isTied ? 'var(--border)' : 'var(--accent-border)'}`,
+                  marginBottom: ev.highlights.length > 0 ? 10 : (venueMain ? 10 : 0),
+                }}>
+                  {resultLine}
+                </div>
+
+                {/* Highlights */}
+                {ev.highlights.length > 0 && (
+                  <div style={{ display:'flex', flexDirection:'column', gap:3, marginBottom: venueMain ? 10 : 0 }}>
+                    {ev.highlights.map((h,hi)=>(
+                      <div key={hi} style={{ fontSize:12, color:'var(--text-3)', display:'flex', alignItems:'flex-start', gap:6 }}>
+                        <Star size={11} weight="fill" color="var(--blue)" style={{flexShrink:0, marginTop:2}} />
+                        {h}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Venue */}
+                {venueMain && (
+                  <div style={{ fontSize:11, color:'var(--text-4)', display:'flex', alignItems:'center', gap:4 }}>
+                    <span style={{ fontWeight:600 }}>{venueMain}</span>
+                    {venueCity && <span>· {venueCity.split(',')[0]}</span>}
+                  </div>
                 )}
               </div>
-
-              <div style={{ fontSize:13, fontWeight:600, color:'var(--text)', marginBottom:4, lineHeight:1.4 }}>
-                {ev.teams}
-              </div>
-
-              <div style={{ fontSize:13, fontWeight:700, color:'var(--accent)', marginBottom:ev.highlights.length>0?8:0 }}>
-                {ev.winner === 'No Result' || ev.winner === 'NR'
-                  ? 'No Result'
-                  : ev.winner === 'Unknown'
-                    ? (tiedScoreLine(ev.teams) ? 'Match tied (Super Over)' : 'Result unavailable')
-                    : `${TEAM_SHORT[ev.winner]||ev.winner} won`}
-              </div>
-
-              {ev.highlights.length > 0 && (
-                <div style={{ display:'flex', flexDirection:'column', gap:3 }}>
-                  {ev.highlights.map((h,hi)=>(
-                    <div key={hi} style={{ fontSize:12, color:'var(--text-3)', display:'flex', alignItems:'flex-start', gap:6 }}>
-                      <Star size={11} weight="fill" color="var(--blue)" style={{flexShrink:0, marginTop:2}} />
-                      {h}
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              {ev.venue && (
-                <div style={{ fontSize:11, color:'var(--text-4)', marginTop:8 }}>{ev.venue.split(',')[0]}</div>
-              )}
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
     </div>
