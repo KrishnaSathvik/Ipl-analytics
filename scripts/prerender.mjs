@@ -16,7 +16,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST = join(__dirname, '..', 'dist');
-const SITE = 'https://iplanalyticsapp.vercel.app';
+const SITE = 'https://iplanalytics.app';
 
 const ROUTES = [
   {

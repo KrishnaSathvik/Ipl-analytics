@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-const SITE_URL = 'https://iplanalyticsapp.vercel.app';
+const SITE_URL = 'https://iplanalytics.app';
 
 interface PageSEOProps {
   title: string;
