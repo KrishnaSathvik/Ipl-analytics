@@ -9,6 +9,7 @@ import type { BatterRecord, BowlerRecord } from '../types';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
 import ShareCard from '../components/ShareCard';
 import HistoricalBadge from '../components/HistoricalBadge';
+import PageSEO from '../components/PageSEO';
 import { ArrowLeft } from '@phosphor-icons/react';
 
 const batters = battersData as BatterRecord[];
@@ -572,6 +573,11 @@ export default function Players() {
   return (
     <div style={{ maxWidth: 1100, margin: '0 auto', padding: '56px 14px 88px' }}>
       <div style={{ paddingTop: 20, paddingBottom: 20 }}>
+        <PageSEO
+          title="Player Stats — Batters & Bowlers"
+          description="Deep IPL career stats for 703 batters and 550 bowlers across 18 seasons. Compare runs, strike rates, wickets, economy, batter-vs-bowler matchups."
+          path="/players"
+        />
         <h1 style={{ fontSize: 'clamp(22px,4vw,36px)', fontWeight: 800, letterSpacing: '-0.04em', color: 'var(--text)', marginBottom: 4 }}>
           Player Stats
         </h1>

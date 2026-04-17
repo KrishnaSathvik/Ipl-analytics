@@ -214,5 +214,3 @@ export interface Records {
   totalSeasons: number;
 }
 
-// ── App Navigation ────────────────────────────────────────────────────────────
-export type Page = 'home' | 'teams' | 'players' | 'seasons' | 'records' | 'analytics' | 'deepdives';
