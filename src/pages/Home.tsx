@@ -180,19 +180,31 @@ function MatchCard({ m }: { m: MatchResult }) {
 
 // ── Fixture card ──────────────────────────────────────────────────────────────
 function FixtureCard({ f }: { f: Fixture }) {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = new Date().toLocaleDateString('en-CA');
   const isToday = f.date === today;
+  const t1Short = LOGO_CODE[f.team1];
+  const t2Short = LOGO_CODE[f.team2];
+  const t1Color = TEAM_COLORS[f.team1] || 'var(--accent)';
+  const t2Color = TEAM_COLORS[f.team2] || 'var(--accent)';
   return (
     <div style={{ border: `1px solid ${isToday ? 'var(--accent)' : 'var(--border)'}`, borderRadius: 10, overflow: 'hidden', background: isToday ? 'var(--accent-bg)' : 'var(--bg)' }}>
       <div style={{ padding: '7px 12px', background: isToday ? 'var(--accent)' : '#f8f8f8', borderBottom: `1px solid ${isToday ? 'transparent' : 'var(--border)'}`, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <span style={{ fontSize: 10, fontWeight: 700, color: isToday ? '#fff' : 'var(--text-4)' }}>
-          {isToday ? '⚡ TODAY' : new Date(f.date).toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' })}
+          {isToday ? '⚡ TODAY' : new Date(f.date + 'T12:00:00').toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' })}
         </span>
         <span style={{ fontSize: 10, fontWeight: 600, color: isToday ? '#fff' : 'var(--text-4)' }}>{f.time}</span>
       </div>
       <div style={{ padding: '10px 12px' }}>
-        <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--text)', marginBottom: 4 }}>
-          {f.team1} <span style={{ color: 'var(--text-4)', fontWeight: 400, fontSize: 11 }}>vs</span> {f.team2}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 4 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            {t1Short && <TeamBadge short={t1Short} color={t1Color} size="xs" textColor={t1Short === 'CSK' || t1Short === 'SRH' ? '#000' : '#fff'} />}
+            <span style={{ fontSize: 13, fontWeight: 700, color: 'var(--text)' }}>{t1Short || f.team1}</span>
+          </div>
+          <span style={{ color: 'var(--text-4)', fontWeight: 400, fontSize: 11 }}>vs</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span style={{ fontSize: 13, fontWeight: 700, color: 'var(--text)' }}>{t2Short || f.team2}</span>
+            {t2Short && <TeamBadge short={t2Short} color={t2Color} size="xs" textColor={t2Short === 'CSK' || t2Short === 'SRH' ? '#000' : '#fff'} />}
+          </div>
         </div>
         <div style={{ fontSize: 11, color: 'var(--text-4)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{f.venue}</div>
       </div>
@@ -257,7 +269,7 @@ export default function Home() {
   const { meta, pointsTable, recentResults, upcomingFixtures, orangeCap, purpleCap, storylines, auctionHighlights, captains } = data;
 
   // Check for today's match
-  const today = new Date().toISOString().slice(0, 10);
+  const today = new Date().toLocaleDateString('en-CA');
   const todayFixture = upcomingFixtures.find(f => f.date === today);
 
   return (
@@ -342,7 +354,7 @@ export default function Home() {
           <SectionHeader title="Upcoming Fixtures" sub="Next matches" />
           {todayFixture && <TodaySpotlight fixture={todayFixture} />}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-            {upcomingFixtures.filter(f => f.date !== today).slice(0, 6).map(f => <FixtureCard key={f.matchNo} f={f} />)}
+            {upcomingFixtures.filter(f => f.matchNo !== todayFixture?.matchNo).slice(0, 6).map(f => <FixtureCard key={f.matchNo} f={f} />)}
           </div>
         </div>
 
