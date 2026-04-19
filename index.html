@@ -53,19 +53,37 @@
         "@type": "SportsEvent",
         "name": "Indian Premier League 2026",
         "alternateName": "TATA IPL 2026",
+        "description": "The 19th edition of the Indian Premier League (IPL), the world's premier T20 cricket league featuring 10 franchise teams across 74 matches from March to May 2026.",
         "sport": "Cricket",
         "startDate": "2026-03-28",
         "endDate": "2026-05-31",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
         "location": {
-          "@type": "Country",
-          "name": "India"
+          "@type": "Place",
+          "name": "Multiple Venues across India",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+          }
         },
         "organizer": {
           "@type": "Organization",
           "name": "Board of Control for Cricket in India",
           "url": "https://www.iplt20.com/"
+        },
+        "performer": {
+          "@type": "SportsTeam",
+          "name": "10 IPL Franchise Teams"
+        },
+        "image": "https://iplanalytics.app/og-image.png",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.iplt20.com/",
+          "availability": "https://schema.org/InStock",
+          "price": "0",
+          "priceCurrency": "INR",
+          "validFrom": "2026-03-01"
         },
         "url": "https://iplanalytics.app/"
       }
