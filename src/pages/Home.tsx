@@ -92,47 +92,47 @@ function PointsTable({ rows }: { rows: PointsTableEntry[] }) {
   );
 }
 
-// ── Cap leaderboard ───────────────────────────────────────────────────────────
+// ── Cap leaderboard (table) ──────────────────────────────────────────────────
+const thStyle: React.CSSProperties = { padding: '8px 6px', fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.04em', color: 'var(--text-4)', textAlign: 'center', whiteSpace: 'nowrap' };
+const tdStyle: React.CSSProperties = { padding: '10px 6px', fontSize: 12, textAlign: 'center', color: 'var(--text)', borderTop: '1px solid var(--border)' };
+
 function CapList({ entries, statKey, color, icon }: { entries: any[]; statKey: 'runs' | 'wickets'; color: string; icon: string }) {
+  const isOrange = statKey === 'runs';
+  const cols = isOrange
+    ? [{ key: 'matches', label: 'M' }, { key: 'innings', label: 'Inns' }, { key: 'runs', label: 'Runs', bold: true }, { key: 'avg', label: 'Avg' }, { key: 'sr', label: 'SR' }, { key: 'fours', label: '4s' }, { key: 'sixes', label: '6s' }]
+    : [{ key: 'matches', label: 'M' }, { key: 'overs', label: 'Ov' }, { key: 'wickets', label: 'Wkts', bold: true }, { key: 'avg', label: 'Avg' }, { key: 'economy', label: 'Econ' }, { key: 'runs', label: 'Runs' }];
+
   return (
     <div style={{ border: '1px solid var(--border)', borderRadius: 10, overflow: 'hidden', background: 'var(--bg)' }}>
       <div style={{ padding: '10px 14px', borderBottom: '1px solid var(--border)', background: '#f8f8f8', display: 'flex', alignItems: 'center', gap: 6 }}>
         <span style={{ fontSize: 13 }}>{icon}</span>
-        <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--text)' }}>{statKey === 'runs' ? 'Orange Cap' : 'Purple Cap'}</span>
+        <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--text)' }}>{isOrange ? 'Orange Cap' : 'Purple Cap'}</span>
       </div>
-      {entries.slice(0, 5).map((e, i) => (
-        <div key={e.player} style={{
-          display: 'flex', alignItems: 'center', gap: 10, padding: '10px 14px',
-          borderBottom: i < 4 ? '1px solid var(--border)' : 'none',
-          background: i === 0 ? `${color}06` : 'var(--bg)',
-        }}>
-          <span style={{
-            width: 22, height: 22, borderRadius: '50%', background: i === 0 ? color : 'var(--bg-muted)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: 10, fontWeight: 800, color: i === 0 ? '#fff' : 'var(--text-4)', flexShrink: 0,
-          }}>{i + 1}</span>
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <div style={{ fontSize: 13, fontWeight: i === 0 ? 700 : 500, color: 'var(--text)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{e.player}</div>
-            <div style={{ fontSize: 10, color: 'var(--text-4)' }}>{e.team} · {e.innings} inns</div>
-          </div>
-          <div style={{ textAlign: 'right', flexShrink: 0 }}>
-            <span style={{ fontSize: 17, fontWeight: 900, color, letterSpacing: '-0.02em' }}>{e[statKey]}</span>
-            <span style={{ fontSize: 10, color: 'var(--text-4)', marginLeft: 2 }}>{statKey === 'runs' ? 'runs' : 'wkts'}</span>
-            {statKey === 'runs' && (e.fours != null || e.sixes != null) && (
-              <div style={{ fontSize: 10, color: 'var(--text-4)', marginTop: 2 }}>
-                {e.fours != null && <span>{e.fours}<span style={{ fontSize: 9 }}>×4</span></span>}
-                {e.fours != null && e.sixes != null && <span style={{ margin: '0 3px' }}>·</span>}
-                {e.sixes != null && <span>{e.sixes}<span style={{ fontSize: 9 }}>×6</span></span>}
-                {e.sr != null && <span style={{ margin: '0 3px' }}>·</span>}
-                {e.sr != null && <span>SR {e.sr}</span>}
-              </div>
-            )}
-            {statKey === 'wickets' && e.economy != null && (
-              <div style={{ fontSize: 10, color: 'var(--text-4)', marginTop: 2 }}>Econ {e.economy}</div>
-            )}
-          </div>
-        </div>
-      ))}
+      <div style={{ overflowX: 'auto' }}>
+        <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: isOrange ? 420 : 380 }}>
+          <thead>
+            <tr style={{ background: '#f0f0f0' }}>
+              <th style={{ ...thStyle, textAlign: 'left', paddingLeft: 14 }}>Player</th>
+              {cols.map(c => <th key={c.key} style={thStyle}>{c.label}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {entries.slice(0, 5).map((e, i) => (
+              <tr key={e.player} style={{ background: i === 0 ? `${color}08` : 'var(--bg)' }}>
+                <td style={{ ...tdStyle, textAlign: 'left', paddingLeft: 14 }}>
+                  <div style={{ fontWeight: i === 0 ? 700 : 500, fontSize: 13, color: color, whiteSpace: 'nowrap' }}>{e.player}</div>
+                  <div style={{ fontSize: 10, color: 'var(--text-4)', marginTop: 1 }}>{e.team}</div>
+                </td>
+                {cols.map(c => (
+                  <td key={c.key} style={{ ...tdStyle, fontWeight: (c as any).bold ? 800 : 400, fontSize: (c as any).bold ? 14 : 12 }}>
+                    {e[c.key] ?? '-'}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
