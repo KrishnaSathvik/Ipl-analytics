@@ -6,9 +6,9 @@
     "startDate": "2026-03-28",
     "endDate": "2026-05-31",
     "totalMatches": 74,
-    "matchesPlayed": 27,
+    "matchesPlayed": 29,
     "defendingChampion": "Royal Challengers Bengaluru",
-    "lastUpdated": "2026-04-18"
+    "lastUpdated": "2026-04-19"
   },
   "groups": {
     "A": [
@@ -32,16 +32,17 @@
       "team": "Punjab Kings",
       "short": "PBKS",
       "color": "#ED1B24",
-      "played": 5,
-      "won": 4,
+      "played": 6,
+      "won": 5,
       "lost": 0,
       "nr": 1,
-      "nrr": "+1.067",
-      "points": 9,
+      "nrr": "+1.420",
+      "points": 11,
       "form": [
         "W",
         "W",
         "N",
+        "W",
         "W",
         "W"
       ]
@@ -71,17 +72,18 @@
       "team": "Rajasthan Royals",
       "short": "RR",
       "color": "#EA1A85",
-      "played": 5,
+      "played": 6,
       "won": 4,
-      "lost": 1,
+      "lost": 2,
       "nr": 0,
-      "nrr": "+0.889",
+      "nrr": "+0.599",
       "points": 8,
       "form": [
         "W",
         "W",
         "W",
         "W",
+        "L",
         "L"
       ]
     },
@@ -168,15 +170,16 @@
       "team": "Lucknow Super Giants",
       "short": "LSG",
       "color": "#A72056",
-      "played": 5,
+      "played": 6,
       "won": 2,
-      "lost": 3,
+      "lost": 4,
       "nr": 0,
-      "nrr": "-0.804",
+      "nrr": "-1.173",
       "points": 4,
       "form": [
         "W",
         "W",
+        "L",
         "L",
         "L",
         "L"
@@ -184,6 +187,27 @@
     },
     {
       "rank": 9,
+      "team": "Kolkata Knight Riders",
+      "short": "KKR",
+      "color": "#3A225D",
+      "played": 7,
+      "won": 1,
+      "lost": 5,
+      "nr": 1,
+      "nrr": "-0.879",
+      "points": 3,
+      "form": [
+        "L",
+        "N",
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 10,
       "team": "Mumbai Indians",
       "short": "MI",
       "color": "#004BA0",
@@ -195,26 +219,6 @@
       "points": 2,
       "form": [
         "W",
-        "L",
-        "L",
-        "L",
-        "L"
-      ]
-    },
-    {
-      "rank": 10,
-      "team": "Kolkata Knight Riders",
-      "short": "KKR",
-      "color": "#3A225D",
-      "played": 6,
-      "won": 0,
-      "lost": 5,
-      "nr": 1,
-      "nrr": "-1.149",
-      "points": 1,
-      "form": [
-        "L",
-        "N",
         "L",
         "L",
         "L",
@@ -531,25 +535,31 @@
       "t1Score": "194/9 (20)",
       "t2Score": "184/8 (20)",
       "highlight": "Abhishek Sharma 59(22), Klaasen 59(39); Eshan Malinga 3/29 (PoM) — SRH climb to 4th, Klaasen grabs Orange Cap"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "matchNo": 28,
       "date": "2026-04-19",
       "team1": "Kolkata Knight Riders",
       "team2": "Rajasthan Royals",
+      "result": "KKR won by 4 wickets",
       "venue": "Eden Gardens, Kolkata",
-      "time": "3:30 PM IST"
+      "t1Score": "161/6 (19.4)",
+      "t2Score": "155/9 (20)",
+      "highlight": "Rinku Singh 53*(34) & Anukul Roy 29*(16) rescue KKR from 85/6; Varun Chakravarthy 3/14 (PoM) — KKR's FIRST WIN of IPL 2026 after 6-match winless streak"
     },
     {
       "matchNo": 29,
       "date": "2026-04-19",
       "team1": "Punjab Kings",
       "team2": "Lucknow Super Giants",
+      "result": "PBKS won by 54 runs",
       "venue": "Maharaja Yadavindra Singh Stadium, New Chandigarh",
-      "time": "7:30 PM IST"
-    },
+      "t1Score": "254/7 (20)",
+      "t2Score": "200/5 (20)",
+      "highlight": "Priyansh Arya 93(37) & Connolly 87(46) smash 182-run stand — PBKS post season-high 254, stay unbeaten at 5-0"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "matchNo": 30,
       "date": "2026-04-20",
@@ -581,6 +591,30 @@
       "team2": "Chennai Super Kings",
       "venue": "Wankhede Stadium, Mumbai",
       "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 34,
+      "date": "2026-04-24",
+      "team1": "Royal Challengers Bengaluru",
+      "team2": "Gujarat Titans",
+      "venue": "M. Chinnaswamy Stadium, Bengaluru",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 35,
+      "date": "2026-04-25",
+      "team1": "Delhi Capitals",
+      "team2": "Punjab Kings",
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "time": "3:30 PM IST"
+    },
+    {
+      "matchNo": 36,
+      "date": "2026-04-25",
+      "team1": "Rajasthan Royals",
+      "team2": "Sunrisers Hyderabad",
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "time": "7:30 PM IST"
     }
   ],
   "orangeCap": [
@@ -593,15 +627,15 @@
       "runs": 283,
       "avg": 47.17,
       "sr": 144.38,
-      "fours": 18,
-      "sixes": 11
+      "fours": 19,
+      "sixes": 10
     },
     {
       "rank": 2,
       "player": "Shubman Gill",
       "team": "GT",
-      "matches": 4,
-      "innings": 4,
+      "matches": 5,
+      "innings": 5,
       "runs": 251,
       "avg": 62.75,
       "sr": 154.93,
@@ -617,11 +651,23 @@
       "runs": 247,
       "avg": 49.40,
       "sr": 157.32,
-      "fours": 27,
-      "sixes": 9
+      "fours": 28,
+      "sixes": 8
     },
     {
       "rank": 4,
+      "player": "Vaibhav Sooryavanshi",
+      "team": "RR",
+      "matches": 6,
+      "innings": 6,
+      "runs": 246,
+      "avg": 41.00,
+      "sr": 236.53,
+      "fours": 24,
+      "sixes": 20
+    },
+    {
+      "rank": 5,
       "player": "Rajat Patidar",
       "team": "RCB",
       "matches": 6,
@@ -629,20 +675,8 @@
       "runs": 230,
       "avg": 46.00,
       "sr": 212.96,
-      "fours": 13,
-      "sixes": 21
-    },
-    {
-      "rank": 5,
-      "player": "Ishan Kishan",
-      "team": "SRH",
-      "matches": 6,
-      "innings": 6,
-      "runs": 213,
-      "avg": 35.50,
-      "sr": 188.49,
-      "fours": 22,
-      "sixes": 12
+      "fours": 12,
+      "sixes": 22
     }
   ],
   "purpleCap": [
@@ -662,6 +696,20 @@
     },
     {
       "rank": 2,
+      "player": "Prince Yadav",
+      "team": "LSG",
+      "matches": 6,
+      "overs": 22.0,
+      "balls": 132,
+      "wickets": 11,
+      "avg": 17.18,
+      "runs": 189,
+      "economy": 8.59,
+      "fourWickets": 0,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 3,
       "player": "Prasidh Krishna",
       "team": "GT",
       "matches": 5,
@@ -670,12 +718,12 @@
       "wickets": 11,
       "avg": 16.72,
       "runs": 184,
-      "economy": 9.2,
+      "economy": 9.20,
       "fourWickets": 1,
       "fiveWickets": 0
     },
     {
-      "rank": 3,
+      "rank": 4,
       "player": "Bhuvneshwar Kumar",
       "team": "RCB",
       "matches": 6,
@@ -689,70 +737,56 @@
       "fiveWickets": 0
     },
     {
-      "rank": 4,
-      "player": "Prince Yadav",
-      "team": "LSG",
-      "matches": 5,
-      "overs": 18.0,
-      "balls": 108,
-      "wickets": 9,
-      "avg": 18.22,
-      "runs": 164,
-      "economy": 9.11,
-      "fourWickets": 0,
-      "fiveWickets": 0
-    },
-    {
       "rank": 5,
       "player": "Ravi Bishnoi",
       "team": "RR",
-      "matches": 5,
-      "overs": 16.0,
-      "balls": 96,
-      "wickets": 9,
-      "avg": 16.55,
-      "runs": 149,
-      "economy": 9.31,
+      "matches": 6,
+      "overs": 20.0,
+      "balls": 120,
+      "wickets": 10,
+      "avg": 19.00,
+      "runs": 190,
+      "economy": 9.50,
       "fourWickets": 1,
       "fiveWickets": 0
     }
   ],
   "storylines": [
     {
-      "id": "dc-stun-rcb-match-26",
-      "title": "DC stun RCB at Chinnaswamy — Miller 22(10) seals an epic rescue from 18/3",
-      "body": "Delhi Capitals pulled off a stunning 6-wicket win at Chinnaswamy on April 18. Reeling at 18/3 early in the chase of 176, KL Rahul (57 off 34, PoM) and Tristan Stubbs (60*) rebuilt before David Miller blasted 22 off 10 balls (1 four, 2 sixes) to finish the job when 15 were needed off the last over from Romario Shepherd. Phil Salt's 50(30) had anchored RCB to 175/8 but DC's death bowling restricted them to just 29 in the last 5 overs. RCB slip to 4-2 but stay 2nd on NRR (+1.171); DC climb to 5th with 3 wins from 5.",
-      "tag": "Sensation"
+      "id": "kkr-first-win-match-28",
+      "title": "KKR break the curse — Rinku & Anukul's 76-run rescue powers first win of IPL 2026",
+      "body": "After 22 days and a 6-match winless streak (5 losses + 1 washout), Kolkata Knight Riders finally tasted victory on April 19 at Eden Gardens. Chasing 156, KKR collapsed to 85/6 — Jofra Archer struck with the first ball (Seifert golden duck), and captain Rahane fell cheaply again. Enter Rinku Singh (53* off 34) and Anukul Roy (29* off 16), who put on an unbeaten 76 off 37 balls for the 7th wicket. Rinku was dropped on 8 by Nandre Burger — a costly miss that turned the game. Varun Chakravarthy's 3/14 (his 200th T20 wicket) earlier restricted RR to 155/9 after they were 81/0. KKR move to 9th with 3 points.",
+      "tag": "Redemption"
     },
     {
-      "id": "klaasen-grabs-orange-cap",
-      "title": "Klaasen seizes the Orange Cap — 283 runs after 59 off 39 powers SRH past CSK",
-      "body": "Heinrich Klaasen's 59 off 39 in SRH's 10-run win over CSK at Hyderabad on April 18 propelled him to the top of the run charts with 283 runs, overtaking Shubman Gill (251) and Virat Kohli (247). Abhishek Sharma's 59 off 22 gave SRH early firepower as they posted 194/9. CSK's chase fell short at 184/8 despite contributions from Ayush Mhatre (30 off 13) and Matthew Short (34). Eshan Malinga's 3/29 earned him Player of the Match.",
-      "tag": "On Fire"
+      "id": "pbks-unbeaten-254",
+      "title": "PBKS smash season-high 254 — Arya & Connolly's 182-run stand keeps unbeaten dream alive",
+      "body": "Punjab Kings demolished Lucknow Super Giants by 54 runs at Mullanpur, posting a mammoth 254/7 — the highest team total of IPL 2026. Priyansh Arya (93 off 37, 4 fours, 9 sixes) and Cooper Connolly (87 off 46, 8 fours, 7 sixes) shared a breathtaking 182-run partnership off just 80 balls for the 2nd wicket — the 3rd highest partnership in PBKS history. PBKS hit 21 sixes, the most in a single innings this season. Aiden Markram's 13th over went for 32 runs — LSG's most expensive over ever. LSG's reply of 200/5 (Pant 43 off 23, Markram 42*) never threatened. PBKS stand at 11 points (5-0-1), firmly atop the table.",
+      "tag": "Dominant"
     },
     {
-      "id": "kamboj-steals-purple-cap",
-      "title": "Kamboj takes Purple Cap — CSK seamer surges to 13 wickets despite team's loss",
-      "body": "Anshul Kamboj's 3/22 against SRH lifted him to 13 wickets and the Purple Cap, leapfrogging Prasidh Krishna (11) who didn't play today. Despite CSK losing the match, Kamboj has been their standout performer with an average of 16.23. Bhuvneshwar Kumar (10 wkts, eco 8.33) enters the top 3 after RCB's match, while Prince Yadav and Ravi Bishnoi hold steady at 9 each.",
+      "id": "sooryavanshi-breakout-season",
+      "title": "15-year-old Sooryavanshi storms into Orange Cap top 4 — 246 runs at SR 236",
+      "body": "Vaibhav Sooryavanshi continues to rewrite the record books at just 15 years old. With 246 runs from 6 innings at a staggering strike rate of 236.53, the Rajasthan Royals opener sits 4th in the Orange Cap race. His powerplay dominance is unmatched — he averages 46 runs off 28 balls in the first 6 overs and has two 15-ball fifties. Highlights include 52 off 17 vs CSK, 78 off 29 vs RCB, and 39 off 14 vs MI. Against capped internationals, his strike rate is nearly 237 — the highest in the tournament. Despite a duck vs SRH and 46 vs KKR today, Sooryavanshi remains in the running for the Orange Cap.",
       "tag": "Breakout"
     },
     {
-      "id": "pbks-hold-top-spot",
-      "title": "PBKS hold top spot — 9 points, unbeaten and untouched at the summit",
-      "body": "Punjab Kings remain the table-toppers with 9 points from 5 matches (4 wins, 1 washout). With a +1.067 NRR, Shreyas Iyer's side haven't lost a single game on the field. Their next test comes on April 19 against Lucknow Super Giants at Chandigarh.",
-      "tag": "On Fire"
+      "id": "dhoni-comeback-watch",
+      "title": "Dhoni watch — CSK legend sidelined with calf strain, April 23 vs MI the likely return",
+      "body": "MS Dhoni hasn't featured in IPL 2026 yet, sitting out all 6 CSK matches with a calf strain. Batting coach Michael Hussey confirmed Dhoni is 'batting well but focusing on running fitness.' Reports suggest April 23 vs MI at Wankhede — the marquee El Clasico of the IPL — as his most likely return date. With CSK languishing at 7th (2-4, -0.780 NRR) and MI desperately needing a win too, Match 33 could be the blockbuster moment of the tournament. The Dhoni farewell watch continues to be the biggest fan storyline of IPL 2026.",
+      "tag": "Anticipation"
     },
     {
-      "id": "mid-table-logjam",
-      "title": "Three-way tie at 6 points — SRH, DC and GT locked in a battle for 4th-6th",
-      "body": "After today's double-header, Sunrisers Hyderabad, Delhi Capitals and Gujarat Titans are all level on 6 points. SRH (NRR +0.566) hold 4th by net run rate, with DC (+0.310) and GT (+0.018) rounding out the mini-cluster. Below them, CSK and LSG sit on 4 points apiece with plenty of cricket to play. The mid-table race is shaping up to be the narrative of the tournament's second phase.",
+      "id": "mid-table-battle-intensifies",
+      "title": "Three-way tie at 6 points — SRH, DC and GT locked in battle for the top 4",
+      "body": "Sunrisers Hyderabad, Delhi Capitals and Gujarat Titans remain deadlocked at 6 points each, separated only by net run rate. SRH (NRR +0.566) hold 4th courtesy of Heinrich Klaasen's Orange Cap-leading 283 runs and Eshan Malinga's death bowling. DC (+0.310) have won 3 straight including the stunning Chinnaswamy heist. GT (+0.018) ride Shubman Gill's consistent run-scoring (251, 2nd in Orange Cap) and Prasidh Krishna's 11 wickets. Below them, CSK and LSG sit on 4 points — both on losing streaks. The mid-table race is the narrative of the tournament's second phase.",
       "tag": "Battle"
     },
     {
-      "id": "kkr-still-winless",
-      "title": "KKR's crisis deepens — 0 wins from 6, Rs.52 Cr spend yet to deliver",
-      "body": "Kolkata Knight Riders remain the sole winless side in IPL 2026 with 0-5-1 (1 washout) and just 1 point at the bottom. Cameron Green (Rs.25.2 Cr), Matheesha Pathirana (Rs.18 Cr) and the rest of their big-money signings have failed to click. They host Rajasthan Royals at Eden Gardens on April 19 — anything other than a win could make their playoff hopes near-impossible.",
-      "tag": "Crisis"
+      "id": "rr-losing-steam",
+      "title": "Royals wobble — RR lose back-to-back after perfect 4-0 start",
+      "body": "Rajasthan Royals, who looked invincible after winning their first 4 matches, have now lost 2 in a row — hammered by SRH (57-run loss) and stunned by KKR at Eden Gardens. Their middle order remains fragile — going from 81/0 to 155/9 against KKR after openers Jaiswal (39) and Sooryavanshi (46) gave them a brilliant start. Despite still sitting 3rd with 8 points, RR's NRR has dropped from +0.889 to +0.599. Captain Riyan Parag's spin-heavy bowling strategy backfired as KKR's own spinners (Chakravarthy 3/14, Narine 2/26) dominated on the Eden Gardens surface.",
+      "tag": "Wobble"
     }
   ],
   "auctionHighlights": [
@@ -760,13 +794,13 @@
       "player": "Cameron Green",
       "team": "KKR",
       "price": "Rs. 25.2 Cr",
-      "note": "Most expensive overseas buy ever — KKR 0-5-1, yet to justify the price tag"
+      "note": "Most expensive overseas buy ever — 27 off 13 in KKR's first win vs RR, showing signs of life"
     },
     {
       "player": "Matheesha Pathirana",
       "team": "KKR",
       "price": "Rs. 18 Cr",
-      "note": "Sri Lanka yorker king — Rs.43 Cr KKR duo with Green yet to fire"
+      "note": "Sri Lanka yorker king — Rs.43 Cr KKR duo, 1 win from 7 but finally off the mark"
     },
     {
       "player": "Prashant Veer",
@@ -784,19 +818,19 @@
       "player": "Liam Livingstone",
       "team": "SRH",
       "price": "Rs. 13 Cr",
-      "note": "England powerhouse all-rounder — impact sub role as SRH climb to 4th"
+      "note": "England powerhouse all-rounder — impact sub role as SRH sit 4th at 6 points"
     },
     {
       "player": "Mustafizur Rahman",
       "team": "KKR",
       "price": "Rs. 9.2 Cr",
-      "note": "Bangladesh's death-over specialist — struggling alongside KKR's winless campaign"
+      "note": "Bangladesh's death-over specialist — part of KKR's first-win bowling attack vs RR"
     },
     {
       "player": "Josh Inglis",
       "team": "LSG",
       "price": "Rs. 8.6 Cr",
-      "note": "Australia's explosive wicket-keeper"
+      "note": "Australia's explosive wicket-keeper — LSG slump to 8th with 4 straight losses"
     },
     {
       "player": "Auqib Dar",
@@ -808,19 +842,19 @@
       "player": "Ravi Bishnoi",
       "team": "RR",
       "price": "Rs. 7.2 Cr",
-      "note": "9 wkts @ avg 16.55 — joint-3rd most wickets"
+      "note": "10 wkts @ avg 19.00 — joint-4th in Purple Cap, key to RR's 4-2 campaign"
     },
     {
       "player": "Jason Holder",
       "team": "RR",
       "price": "Rs. 7 Cr",
-      "note": "West Indies all-rounder — RR 4-1, sitting 3rd in the table"
+      "note": "West Indies all-rounder — RR 4-2, back-to-back losses dent their momentum"
     },
     {
       "player": "Cooper Connolly",
       "team": "PBKS",
       "price": "Rs. 3 Cr",
-      "note": "72* on debut — PBKS unbeaten 4-0, best value buy of the auction"
+      "note": "87(46) in record 182-run stand with Arya vs LSG — PBKS unbeaten 5-0-1, steal of the auction"
     },
     {
       "player": "Quinton de Kock",
