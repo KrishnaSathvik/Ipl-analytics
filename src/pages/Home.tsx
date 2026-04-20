@@ -118,8 +118,14 @@ function CapList({ entries, statKey, color, icon }: { entries: any[]; statKey: '
           <div style={{ textAlign: 'right', flexShrink: 0 }}>
             <span style={{ fontSize: 17, fontWeight: 900, color, letterSpacing: '-0.02em' }}>{e[statKey]}</span>
             <span style={{ fontSize: 10, color: 'var(--text-4)', marginLeft: 2 }}>{statKey === 'runs' ? 'runs' : 'wkts'}</span>
-            {statKey === 'runs' && e.sr != null && (
-              <div style={{ fontSize: 10, color: 'var(--text-4)', marginTop: 2 }}>SR {e.sr}</div>
+            {statKey === 'runs' && (e.fours != null || e.sixes != null) && (
+              <div style={{ fontSize: 10, color: 'var(--text-4)', marginTop: 2 }}>
+                {e.fours != null && <span>{e.fours}<span style={{ fontSize: 9 }}>×4</span></span>}
+                {e.fours != null && e.sixes != null && <span style={{ margin: '0 3px' }}>·</span>}
+                {e.sixes != null && <span>{e.sixes}<span style={{ fontSize: 9 }}>×6</span></span>}
+                {e.sr != null && <span style={{ margin: '0 3px' }}>·</span>}
+                {e.sr != null && <span>SR {e.sr}</span>}
+              </div>
             )}
             {statKey === 'wickets' && e.economy != null && (
               <div style={{ fontSize: 10, color: 'var(--text-4)', marginTop: 2 }}>Econ {e.economy}</div>
