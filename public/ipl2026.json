@@ -6,9 +6,9 @@
     "startDate": "2026-03-28",
     "endDate": "2026-05-31",
     "totalMatches": 74,
-    "matchesPlayed": 32,
+    "matchesPlayed": 33,
     "defendingChampion": "Royal Challengers Bengaluru",
-    "lastUpdated": "2026-04-22"
+    "lastUpdated": "2026-04-23"
   },
   "groups": {
     "A": [
@@ -111,6 +111,27 @@
     },
     {
       "rank": 5,
+      "team": "Chennai Super Kings",
+      "short": "CSK",
+      "color": "#F9CD05",
+      "played": 7,
+      "won": 3,
+      "lost": 4,
+      "nr": 0,
+      "nrr": "+0.118",
+      "points": 6,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 6,
       "team": "Delhi Capitals",
       "short": "DC",
       "color": "#0078BC",
@@ -130,7 +151,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 7,
       "team": "Gujarat Titans",
       "short": "GT",
       "color": "#1C1C2B",
@@ -150,15 +171,15 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 8,
       "team": "Mumbai Indians",
       "short": "MI",
       "color": "#004BA0",
-      "played": 6,
+      "played": 7,
       "won": 2,
-      "lost": 4,
+      "lost": 5,
       "nr": 0,
-      "nrr": "+0.067",
+      "nrr": "-0.736",
       "points": 4,
       "form": [
         "W",
@@ -166,25 +187,6 @@
         "L",
         "L",
         "L",
-        "W"
-      ]
-    },
-    {
-      "rank": 8,
-      "team": "Chennai Super Kings",
-      "short": "CSK",
-      "color": "#F9CD05",
-      "played": 6,
-      "won": 2,
-      "lost": 4,
-      "nr": 0,
-      "nrr": "-0.780",
-      "points": 4,
-      "form": [
-        "L",
-        "L",
-        "L",
-        "W",
         "W",
         "L"
       ]
@@ -246,17 +248,6 @@
   },
   "recentResults": [
     {
-      "matchNo": 28,
-      "date": "2026-04-19",
-      "team1": "Kolkata Knight Riders",
-      "team2": "Rajasthan Royals",
-      "result": "KKR won by 4 wickets",
-      "venue": "Eden Gardens, Kolkata",
-      "t1Score": "161/6 (19.4)",
-      "t2Score": "155/9 (20)",
-      "highlight": "Rinku Singh 53*(34) & Anukul Roy 29*(16) rescue KKR from 85/6; Varun Chakravarthy 3/14 (PoM) — KKR's FIRST WIN of IPL 2026 after 6-match winless streak"
-    },
-    {
       "matchNo": 29,
       "date": "2026-04-19",
       "team1": "Punjab Kings",
@@ -299,17 +290,20 @@
       "t1Score": "119 (18)",
       "t2Score": "159/6 (20)",
       "highlight": "Jadeja 43*(29) rescues RR to 159; Jofra Archer 3/20, Nandre Burger 2/27 defend lowest IPL 2026 total — LSG's 4th straight loss, RR jump to 2nd"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "matchNo": 33,
       "date": "2026-04-23",
       "team1": "Mumbai Indians",
       "team2": "Chennai Super Kings",
+      "result": "CSK won by 103 runs",
       "venue": "Wankhede Stadium, Mumbai",
-      "time": "7:30 PM IST"
-    },
+      "t1Score": "104 (19)",
+      "t2Score": "207/6 (20)",
+      "highlight": "Sanju Samson 101*(54) — first El Clasico without Dhoni or Rohit; Akeal Hosein 4/17, Noor Ahmad 2/19, Ghazanfar 2/? — MI's BIGGEST defeat in IPL history (by runs), CSK climb to 5th"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "matchNo": 34,
       "date": "2026-04-24",
@@ -341,6 +335,14 @@
       "team2": "Chennai Super Kings",
       "venue": "MA Chidambaram Stadium, Chennai",
       "time": "3:30 PM IST"
+    },
+    {
+      "matchNo": 38,
+      "date": "2026-04-26",
+      "team1": "Lucknow Super Giants",
+      "team2": "Kolkata Knight Riders",
+      "venue": "Ekana Cricket Stadium, Lucknow",
+      "time": "7:30 PM IST"
     }
   ],
   "orangeCap": [
@@ -365,72 +367,72 @@
       "runs": 320,
       "avg": 53.33,
       "sr": 153.11,
-      "fours": 21,
+      "fours": 22,
       "sixes": 13
     },
     {
       "rank": 3,
-      "player": "Shubman Gill",
-      "team": "GT",
-      "matches": 6,
-      "innings": 6,
-      "runs": 265,
-      "avg": 53.0,
-      "sr": 151.42,
-      "fours": 25,
-      "sixes": 10
+      "player": "Sanju Samson",
+      "team": "CSK",
+      "matches": 7,
+      "innings": 7,
+      "runs": 293,
+      "avg": 58.6,
+      "sr": 178.66,
+      "fours": 31,
+      "sixes": 15
     },
     {
       "rank": 4,
+      "player": "Shubman Gill",
+      "team": "GT",
+      "matches": 5,
+      "innings": 5,
+      "runs": 265,
+      "avg": 53.0,
+      "sr": 151.43,
+      "fours": 27,
+      "sixes": 10
+    },
+    {
+      "rank": 5,
       "player": "Vaibhav Sooryavanshi",
       "team": "RR",
       "matches": 7,
       "innings": 7,
       "runs": 254,
       "avg": 36.29,
-      "sr": 220.86,
+      "sr": 220.87,
       "fours": 26,
       "sixes": 20
-    },
-    {
-      "rank": 5,
-      "player": "Virat Kohli",
-      "team": "RCB",
-      "matches": 6,
-      "innings": 6,
-      "runs": 247,
-      "avg": 49.4,
-      "sr": 157.32,
-      "fours": 28,
-      "sixes": 8
     }
   ],
   "purpleCap": [
     {
       "rank": 1,
+      "player": "Anshul Kamboj",
+      "team": "CSK",
+      "matches": 7,
+      "overs": 24.4,
+      "balls": 148,
+      "wickets": 14,
+      "avg": 15.79,
+      "runs": 221,
+      "economy": 8.96,
+      "fourWickets": 0,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 2,
       "player": "Prince Yadav",
       "team": "LSG",
       "matches": 7,
       "overs": 26.0,
       "balls": 156,
       "wickets": 13,
-      "avg": 16.76,
+      "avg": 16.77,
       "runs": 218,
       "economy": 8.38,
-      "fourWickets": 0,
-      "fiveWickets": 0
-    },
-    {
-      "rank": 2,
-      "player": "Anshul Kamboj",
-      "team": "CSK",
-      "matches": 6,
-      "overs": 21.4,
-      "balls": 130,
-      "wickets": 13,
-      "avg": 16.23,
-      "runs": 211,
-      "economy": 9.73,
       "fourWickets": 0,
       "fiveWickets": 0
     },
@@ -467,11 +469,11 @@
       "player": "Jofra Archer",
       "team": "RR",
       "matches": 7,
-      "overs": 25.1,
-      "balls": 151,
+      "overs": 25.0,
+      "balls": 150,
       "wickets": 11,
       "avg": 18.09,
-      "runs": 200,
+      "runs": 199,
       "economy": 7.96,
       "fourWickets": 0,
       "fiveWickets": 0
@@ -479,39 +481,39 @@
   ],
   "storylines": [
     {
-      "id": "rr-archer-jadeja-defend-159",
-      "title": "Archer and Jadeja drag RR back to 2nd — 159 proves 40 too many for LSG",
-      "body": "Rajasthan Royals ended a two-match losing streak in unusual fashion at Ekana on April 22 — defending 159, the lowest total of IPL 2026 so far. Batting first, RR collapsed to 54/4 before Ravindra Jadeja (43* off 29) and impact sub Shubham Dubey stitched an unbeaten 49-run stand to push the total to 159/6. Yashasvi Jaiswal and Dhruv Jurel fell on consecutive deliveries to Mohammed Shami in the 3rd over. Chasing 160, LSG were routed: Jofra Archer (3/20) bowled a maiden over to Nicholas Pooran in the powerplay and returned to flatten Mohammed Shami's leg stump with a late-tailing yorker. Mitchell Marsh's 55 off 41 was the lone resistance; Rishabh Pant was run out for a duck backing up too far. LSG folded for 119 in 18 overs, slumping to their 4th straight loss and 3rd in a row at home. RR climb to 2nd on 10 points, leapfrogging RCB and SRH.",
-      "tag": "Bowlers' night"
+      "id": "samson-el-clasico-ton",
+      "title": "Samson's 101* hands MI their biggest-ever IPL defeat — CSK win first El Clasico without Dhoni or Rohit",
+      "body": "Chennai Super Kings thumped Mumbai Indians by 103 runs at Wankhede on April 23 — MI's biggest-ever defeat in IPL history by runs. Sanju Samson's unbeaten 101 off 54 (10 fours, 6 sixes) was his second century of IPL 2026 and came in an otherwise anaemic CSK batting card — the second-highest score was just 22. Ruturaj Gaikwad (22) and Dewald Brevis (21) got starts but couldn't convert; Shivam Dube's poor run continued with 5. CSK posted 207/6. MI's chase never started: Akeal Hosein (4/17 in 4 overs) struck with his first and second overs as MI slumped to 11/3, then 29/3 in the powerplay — their lowest of IPL 2026. Noor Ahmad (2/19) and Ghazanfar (2/?) choked the middle; only Suryakumar (43) and Tilak Varma (37) resisted with a 73-run stand. MI bowled out for 104 in 19 overs. Historic in another way: first El Clasico without both MS Dhoni (knee issue) and Rohit Sharma (hamstring) in the XI. Nine wickets for spinners — the most in any IPL game at Wankhede.",
+      "tag": "Historic"
     },
     {
-      "id": "prince-yadav-purple-cap",
-      "title": "Prince Yadav takes Purple Cap — LSG pacer's 13 wickets despite team's slump",
-      "body": "Amid Lucknow's four-match losing streak, one man has emerged as the story of IPL 2026's bowling charts. Prince Yadav now leads the Purple Cap with 13 wickets in 7 matches at an economy of 8.38 — overtaking CSK's Anshul Kamboj on balls-per-wicket. The 24-year-old pacer credits Mohammed Shami's mentorship for his form. He's joined in the top 5 by SRH's Eshan Malinga (12 wkts), GT's Prasidh Krishna (12), and now RR's Jofra Archer (11) after the England speedster's 3/20 against LSG. Four different franchises represented in the top five — IPL 2026's bowling race has never been more competitive.",
+      "id": "kamboj-purple-cap-back",
+      "title": "Anshul Kamboj reclaims Purple Cap with 14 wickets — CSK's quiet bargain is IPL 2026's leading pacer",
+      "body": "Just 24 hours after Prince Yadav snatched it from him, CSK's Anshul Kamboj is back at the top of the Purple Cap list with 14 wickets in 7 matches at an economy of 8.95 and average of 15.78. He picked up two against MI — his 12th and 13th dismissal of the season came in consecutive balls during the collapse. Prince Yadav (LSG, 13), Eshan Malinga (SRH, 12), Prasidh Krishna (GT, 12), and Jofra Archer (RR, 11) round out the top 5 — five teams, five wicket-takers, all within 3 wickets. The tightest Purple Cap race in recent IPL memory.",
       "tag": "Purple Cap"
     },
     {
-      "id": "abhishek-135-srh-surge",
-      "title": "Abhishek Sharma's 135* equals Kohli's Indian T20 record — SRH level with RCB on 8 pts",
-      "body": "Sunrisers Hyderabad thrashed Delhi Capitals by 47 runs at Uppal on April 21, powered by Abhishek Sharma's unbeaten 135 off 68 — his 9th T20 hundred, drawing level with Virat Kohli for most by an Indian. The left-hander brought up his century in 47 balls with a towering six off Nitish Rana and hit 10 fours and 10 sixes, his second entry in the all-time top-five IPL scores. Supporting cameos from Travis Head (37), Ishan Kishan (25) and Klaasen (37*) took SRH to 242/2. Eshan Malinga (4/32) and Harsh Dubey (3/35) ripped through DC. SRH and RCB sit level on 8 points, separated by NRR.",
-      "tag": "Record"
+      "id": "samson-orange-cap-race",
+      "title": "Samson enters Orange Cap top 3 — 293 runs at SR 178, two centuries in IPL 2026",
+      "body": "Sanju Samson's El Clasico ton vaulted him from outside the top 5 into the Orange Cap top 3 with 293 runs at an average of 58.60 and SR of 178.65. He's now the only player in IPL 2026 with two centuries (115* vs DC, 101* vs MI) — and his numbers look better than anyone else's when innings are weighted by match situation. SRH openers Abhishek Sharma (323) and Heinrich Klaasen (320) still hold the top two spots, while Shubman Gill (265) and Vaibhav Sooryavanshi (254) drop a place each. With CSK suddenly back in the playoff conversation at 5th, Samson's form is the biggest shift in the tournament.",
+      "tag": "Orange Cap"
     },
     {
-      "id": "dhoni-comeback-watch",
-      "title": "Dhoni watch — Wankhede El Clasico on April 23 is the likely return",
-      "body": "MS Dhoni hasn't featured in IPL 2026 yet, sitting out all 6 CSK matches with a calf strain. Batting coach Michael Hussey confirmed Dhoni is batting well but focusing on running fitness. Reports suggest April 23 vs MI at Wankhede — the marquee El Clasico of the IPL — as his most likely return date. With CSK languishing at 8th (2-4, -0.780 NRR) and MI fresh off a 99-run demolition of GT at Ahmedabad, Match 33 could be the blockbuster moment of the tournament.",
-      "tag": "Anticipation"
+      "id": "el-clasico-no-icons",
+      "title": "A rivalry redefined — the first MI vs CSK without Dhoni or Rohit, and CSK didn't need them",
+      "body": "For the first time in IPL history, both MS Dhoni (knee issue) and Rohit Sharma (hamstring) were absent from an El Clasico playing XI. Dhoni kept wickets and batted in the nets earlier in the week but hasn't played a match this season. Rohit had been training but missed a session before the game. Instead, two other captains — Ruturaj Gaikwad and Hardik Pandya — and a new CSK talisman in Sanju Samson wrote the script. That CSK dominated without their legend, and MI collapsed without theirs, may become the defining moment of the transition era for both franchises. With MI now 2-5 and on -0.736 NRR, Hardik Pandya's playoff math looks grim.",
+      "tag": "Era change"
     },
     {
-      "id": "tilak-varma-maiden-ton",
-      "title": "Tilak Varma's 45-ball maiden IPL ton — MI smash GT by 99 runs to end 4-match slump",
-      "body": "Tilak Varma produced one of the great coming-of-age IPL innings at Ahmedabad on April 20, rescuing Mumbai Indians from 103/4 in 14 overs to 199/5 with an unbeaten 101 off 45 balls. The left-hander didn't hit a boundary in his first 20 balls, then exploded for 82 runs in the last six overs — the most anyone has scored in that period in an IPL innings. His century equalled Sanath Jayasuriya's 18-year-old record for the fastest MI hundred. Jasprit Bumrah then struck with the very first ball of the chase and Gujarat Titans folded for 100 in 15.5 overs. Ashwani Kumar (4/24) joint-matched his best IPL figures.",
-      "tag": "Breakout"
+      "id": "rr-archer-jadeja-defend-159",
+      "title": "RR defend lowest total of IPL 2026 — Archer and Jadeja drag Royals back to 2nd",
+      "body": "Rajasthan Royals ended a two-match losing streak at Ekana on April 22 in unusual fashion — defending 159, the lowest total of IPL 2026 so far. Ravindra Jadeja (43* off 29) and impact sub Shubham Dubey stitched an unbeaten 49-run stand to push the total to 159/6 from 54/4. Chasing 160, LSG were routed: Jofra Archer (3/20) bowled a maiden over to Nicholas Pooran in the powerplay and returned to flatten Mohammed Shami's leg stump with a late-tailing yorker. Mitchell Marsh's 55 off 41 was the lone resistance; Rishabh Pant was run out for a duck. LSG folded for 119 in 18 overs — 4th straight loss. RR climb to 2nd with 10 points.",
+      "tag": "Bowlers' night"
     },
     {
       "id": "pooran-parag-out-of-form",
-      "title": "Two captains and a star — Pooran, Parag and Pant's form becomes IPL 2026's biggest concern",
-      "body": "Three of the most talked-about batters of IPL 2026 are collectively scraping bottom. Nicholas Pooran has 51 runs in 7 innings at the lowest strike rate in the tournament among batters facing 50+ balls. Rishabh Pant, LSG's Rs.27 Cr captain, was run out backing up too far for a duck against RR — his latest in a string of low scores drawing brutal fan reaction. Riyan Parag has 61 runs in 7 innings as RR captain with a highest of 20. That all three play for teams in the bottom half of the table (LSG 9th, KKR-adjacent territory for RR suddenly makes sense) is no coincidence. Whether any of them figure out form before the playoff race closes will decide three season narratives.",
+      "title": "Pooran, Parag and Pant — three high-profile batters whose form has collapsed",
+      "body": "Three of the most talked-about batters of IPL 2026 are collectively scraping bottom. Nicholas Pooran has 51 runs in 7 innings at the lowest strike rate in the tournament among batters facing 50+ balls. Rishabh Pant, LSG's Rs.27 Cr captain, was run out backing up too far for a duck against RR — his latest in a string of low scores drawing brutal fan reaction. Riyan Parag has 61 runs in 7 innings as RR captain with a highest of 20. That all three play for teams in trouble (LSG 9th, RR just recovered to 2nd, MI 8th) is no coincidence. Whether any of them figure out form before the playoff race closes will decide three season narratives.",
       "tag": "Concern"
     }
   ],
@@ -520,79 +522,67 @@
       "player": "Cameron Green",
       "team": "KKR",
       "price": "Rs. 25.2 Cr",
-      "note": "Most expensive overseas buy ever — 27 off 13 in KKR's first win vs RR, showing signs of life"
+      "note": "Most expensive overseas buy in IPL history — 27(13) in KKR's only win vs RR; cramps have limited his bowling spells"
     },
     {
       "player": "Matheesha Pathirana",
       "team": "KKR",
       "price": "Rs. 18 Cr",
-      "note": "Sri Lanka yorker king — Rs.43 Cr KKR duo, 1 win from 7 but finally off the mark"
+      "note": "Sri Lanka slinger — calf/hamstring injury from T20 World Cup has kept him sidelined most of the season"
     },
     {
       "player": "Prashant Veer",
       "team": "CSK",
       "price": "Rs. 14.2 Cr",
-      "note": "Record uncapped — pace all-rounder"
+      "note": "Joint record uncapped buy — UP all-rounder picked from base Rs.30 lakh after 5-team bidding war"
     },
     {
       "player": "Kartik Sharma",
       "team": "CSK",
       "price": "Rs. 14.2 Cr",
-      "note": "Record uncapped (equal) — left-arm spinner"
+      "note": "Joint record uncapped buy — 19yo Rajasthan wicket-keeper batter, serial six-hitter (28 sixes in 12 T20s)"
     },
     {
       "player": "Liam Livingstone",
       "team": "SRH",
       "price": "Rs. 13 Cr",
-      "note": "England powerhouse all-rounder — impact sub role as SRH surge to 3rd on 3-match winning streak"
-    },
-    {
-      "player": "Mustafizur Rahman",
-      "team": "KKR",
-      "price": "Rs. 9.2 Cr",
-      "note": "Bangladesh's death-over specialist — part of KKR's first-win bowling attack vs RR"
+      "note": "England all-rounder — part of SRH's squad as they climb to joint-3rd on 8 points with 3 straight wins"
     },
     {
       "player": "Josh Inglis",
       "team": "LSG",
       "price": "Rs. 8.6 Cr",
-      "note": "Australia's explosive wicket-keeper — LSG slump to 9th with 4 straight losses"
+      "note": "Australia wicket-keeper — LSG languishing 9th with 5 losses in a row and the tournament's worst NRR"
     },
     {
-      "player": "Auqib Dar",
+      "player": "Auqib Nabi Dar",
       "team": "DC",
       "price": "Rs. 8.4 Cr",
-      "note": "J&K's Ranji Trophy hero — 60 wickets in 2025-26"
+      "note": "J&K pacer — 60 wickets in 2025-26 Ranji earned him a surprise Rs.8.4 Cr deal"
     },
     {
       "player": "Ravi Bishnoi",
       "team": "RR",
       "price": "Rs. 7.2 Cr",
-      "note": "Key to RR's 4-2 campaign — pegged back by back-to-back losses"
-    },
-    {
-      "player": "Jason Holder",
-      "team": "RR",
-      "price": "Rs. 7 Cr",
-      "note": "West Indies all-rounder — RR 4-2, back-to-back losses dent their momentum"
+      "note": "Leg-spinner — key wicket-taker in RR's 5-2 campaign as Royals sit 2nd with 10 points"
     },
     {
       "player": "Cooper Connolly",
       "team": "PBKS",
       "price": "Rs. 3 Cr",
-      "note": "87(46) in record 182-run stand with Arya vs LSG — PBKS unbeaten 5-0-1, steal of the auction"
+      "note": "Australian all-rounder — 87(46) in record 182-run stand with Arya vs LSG; PBKS unbeaten at 5-0-1"
     },
     {
       "player": "Quinton de Kock",
       "team": "MI",
-      "price": "Rs. 1 Cr",
-      "note": "Rs.1 Cr bargain — 112*(60) vs PBKS still tournament's best knock from cheapest buy"
+      "price": "Rs. 2 Cr",
+      "note": "South Africa opener — 112*(60) vs PBKS was his peak; golden duck vs CSK continues MI's batting slump"
     },
     {
       "player": "Ashwani Kumar",
       "team": "MI",
       "price": "Rs. 30 Lakh",
-      "note": "4/24 vs GT to match his IPL-best — the quiet bargain ending MI's 4-match slump"
+      "note": "Left-arm pacer — 4/24 vs GT matched his IPL-best, a quiet bargain buy in MI's bowling attack"
     }
   ]
 }
