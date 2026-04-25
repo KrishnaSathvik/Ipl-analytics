@@ -6,9 +6,9 @@
     "startDate": "2026-03-28",
     "endDate": "2026-05-31",
     "totalMatches": 74,
-    "matchesPlayed": 33,
+    "matchesPlayed": 36,
     "defendingChampion": "Royal Challengers Bengaluru",
-    "lastUpdated": "2026-04-23"
+    "lastUpdated": "2026-04-25"
   },
   "groups": {
     "A": [
@@ -32,16 +32,17 @@
       "team": "Punjab Kings",
       "short": "PBKS",
       "color": "#ED1B24",
-      "played": 6,
-      "won": 5,
+      "played": 7,
+      "won": 6,
       "lost": 0,
       "nr": 1,
-      "nrr": "+1.420",
-      "points": 11,
+      "nrr": "+1.333",
+      "points": 13,
       "form": [
         "W",
         "W",
         "N",
+        "W",
         "W",
         "W",
         "W"
@@ -49,14 +50,57 @@
     },
     {
       "rank": 2,
-      "team": "Rajasthan Royals",
-      "short": "RR",
-      "color": "#EA1A85",
+      "team": "Royal Challengers Bengaluru",
+      "short": "RCB",
+      "color": "#EC1C24",
       "played": 7,
       "won": 5,
       "lost": 2,
       "nr": 0,
-      "nrr": "+0.790",
+      "nrr": "+1.101",
+      "points": 10,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 3,
+      "team": "Sunrisers Hyderabad",
+      "short": "SRH",
+      "color": "#FF822A",
+      "played": 8,
+      "won": 5,
+      "lost": 3,
+      "nr": 0,
+      "nrr": "+0.815",
+      "points": 10,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 4,
+      "team": "Rajasthan Royals",
+      "short": "RR",
+      "color": "#EA1A85",
+      "played": 8,
+      "won": 5,
+      "lost": 3,
+      "nr": 0,
+      "nrr": "+0.602",
       "points": 10,
       "form": [
         "W",
@@ -65,48 +109,8 @@
         "W",
         "L",
         "L",
-        "W"
-      ]
-    },
-    {
-      "rank": 3,
-      "team": "Royal Challengers Bengaluru",
-      "short": "RCB",
-      "color": "#EC1C24",
-      "played": 6,
-      "won": 4,
-      "lost": 2,
-      "nr": 0,
-      "nrr": "+1.171",
-      "points": 8,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
         "W",
         "L"
-      ]
-    },
-    {
-      "rank": 4,
-      "team": "Sunrisers Hyderabad",
-      "short": "SRH",
-      "color": "#FF822A",
-      "played": 7,
-      "won": 4,
-      "lost": 3,
-      "nr": 0,
-      "nrr": "+0.820",
-      "points": 8,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "W",
-        "W",
-        "W"
       ]
     },
     {
@@ -135,11 +139,11 @@
       "team": "Delhi Capitals",
       "short": "DC",
       "color": "#0078BC",
-      "played": 6,
+      "played": 7,
       "won": 3,
-      "lost": 3,
+      "lost": 4,
       "nr": 0,
-      "nrr": "-0.130",
+      "nrr": "-0.184",
       "points": 6,
       "form": [
         "L",
@@ -147,6 +151,7 @@
         "W",
         "W",
         "W",
+        "L",
         "L"
       ]
     },
@@ -155,11 +160,11 @@
       "team": "Gujarat Titans",
       "short": "GT",
       "color": "#1C1C2B",
-      "played": 6,
+      "played": 7,
       "won": 3,
-      "lost": 3,
+      "lost": 4,
       "nr": 0,
-      "nrr": "-0.821",
+      "nrr": "-0.790",
       "points": 6,
       "form": [
         "L",
@@ -167,6 +172,7 @@
         "L",
         "W",
         "W",
+        "L",
         "L"
       ]
     },
@@ -235,51 +241,19 @@
     }
   ],
   "captains": {
-    "CSK": "Ruturaj Gaikwad",
-    "MI": "Hardik Pandya",
-    "RCB": "Rajat Patidar",
-    "KKR": "Ajinkya Rahane",
-    "DC": "Axar Patel",
     "PBKS": "Shreyas Iyer",
     "RR": "Riyan Parag",
-    "SRH": "Ishan Kishan",
+    "RCB": "Rajat Patidar",
+    "SRH": "Pat Cummins",
+    "CSK": "Ruturaj Gaikwad",
+    "DC": "Axar Patel",
     "GT": "Shubman Gill",
-    "LSG": "Rishabh Pant"
+    "MI": "Hardik Pandya",
+    "LSG": "Rishabh Pant",
+    "KKR": "Ajinkya Rahane",
+    "_note": "IPL 2026 began with the FIRST-EVER all-Indian captains lineup in IPL history (Ishan Kishan led SRH as stand-in for matches 1-35 with Cummins recovering from a lumbar stress injury). The all-Indian era ended on April 25 (Match 36, RR vs SRH at Jaipur) when Pat Cummins returned to reclaim SRH captaincy."
   },
   "recentResults": [
-    {
-      "matchNo": 29,
-      "date": "2026-04-19",
-      "team1": "Punjab Kings",
-      "team2": "Lucknow Super Giants",
-      "result": "PBKS won by 54 runs",
-      "venue": "Maharaja Yadavindra Singh Stadium, New Chandigarh",
-      "t1Score": "254/7 (20)",
-      "t2Score": "200/5 (20)",
-      "highlight": "Priyansh Arya 93(37) & Connolly 87(46) smash 182-run stand — PBKS post season-high 254, stay unbeaten at 5-0"
-    },
-    {
-      "matchNo": 30,
-      "date": "2026-04-20",
-      "team1": "Gujarat Titans",
-      "team2": "Mumbai Indians",
-      "result": "MI won by 99 runs",
-      "venue": "Narendra Modi Stadium, Ahmedabad",
-      "t1Score": "199/5 (20)",
-      "t2Score": "100 (15.5)",
-      "highlight": "Tilak Varma 101*(45) maiden IPL ton — joint-fastest for MI; Ashwani Kumar 4/24, Bumrah strikes first ball as MI end 4-match slump"
-    },
-    {
-      "matchNo": 31,
-      "date": "2026-04-21",
-      "team1": "Sunrisers Hyderabad",
-      "team2": "Delhi Capitals",
-      "result": "SRH won by 47 runs",
-      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
-      "t1Score": "242/2 (20)",
-      "t2Score": "195/9 (20)",
-      "highlight": "Abhishek Sharma 135*(68) — 9th T20 ton equals Kohli's Indian record; Eshan Malinga 4/32, SRH win 3rd on the trot, climb to 3rd"
-    },
     {
       "matchNo": 32,
       "date": "2026-04-22",
@@ -301,38 +275,47 @@
       "t1Score": "104 (19)",
       "t2Score": "207/6 (20)",
       "highlight": "Sanju Samson 101*(54) — first El Clasico without Dhoni or Rohit; Akeal Hosein 4/17, Noor Ahmad 2/19, Ghazanfar 2/? — MI's BIGGEST defeat in IPL history (by runs), CSK climb to 5th"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "matchNo": 34,
       "date": "2026-04-24",
       "team1": "Royal Challengers Bengaluru",
       "team2": "Gujarat Titans",
+      "result": "RCB won by 5 wickets",
       "venue": "M. Chinnaswamy Stadium, Bengaluru",
-      "time": "7:30 PM IST"
+      "t1Score": "206/5 (18.5)",
+      "t2Score": "205/3 (20)",
+      "highlight": "Kohli 81(44) PoM (dropped on 0) & Padikkal 55(27) stitch 115; Sai Sudharsan 100(58) in vain — Holder 23*(10), late fireworks for GT; RCB climb to 2nd"
     },
     {
       "matchNo": 35,
       "date": "2026-04-25",
       "team1": "Delhi Capitals",
       "team2": "Punjab Kings",
+      "result": "PBKS won by 6 wickets",
       "venue": "Arun Jaitley Stadium, Delhi",
-      "time": "3:30 PM IST"
+      "t1Score": "264/2 (20)",
+      "t2Score": "265/4 (18.5)",
+      "highlight": "HIGHEST SUCCESSFUL CHASE IN T20 HISTORY — KL Rahul 152*(67) PoM (1st Indian to 150 in IPL) & Rana 91 set 264; Prabhsimran 76, Iyer 71*(36); Karun Nair drops Iyer twice, Ngidi taken to hospital after head injury"
     },
     {
       "matchNo": 36,
       "date": "2026-04-25",
       "team1": "Rajasthan Royals",
       "team2": "Sunrisers Hyderabad",
+      "result": "SRH won by 5 wickets",
       "venue": "Sawai Mansingh Stadium, Jaipur",
-      "time": "7:30 PM IST"
-    },
+      "t1Score": "228/6 (20)",
+      "t2Score": "229/5 (18.3)",
+      "highlight": "Sooryavanshi 103(37) — 2nd-fastest IPL ton ever, 12 sixes; Ishan Kishan 74(31) PoM & Abhishek 57(29) put on 132 in 55 balls; Cummins returns as captain, takes 2/30 — SRH 4th win in a row"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "matchNo": 37,
       "date": "2026-04-26",
-      "team1": "Gujarat Titans",
-      "team2": "Chennai Super Kings",
+      "team1": "Chennai Super Kings",
+      "team2": "Gujarat Titans",
       "venue": "MA Chidambaram Stadium, Chennai",
       "time": "3:30 PM IST"
     },
@@ -341,7 +324,31 @@
       "date": "2026-04-26",
       "team1": "Lucknow Super Giants",
       "team2": "Kolkata Knight Riders",
-      "venue": "Ekana Cricket Stadium, Lucknow",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 39,
+      "date": "2026-04-27",
+      "team1": "Delhi Capitals",
+      "team2": "Royal Challengers Bengaluru",
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 40,
+      "date": "2026-04-28",
+      "team1": "Punjab Kings",
+      "team2": "Rajasthan Royals",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 41,
+      "date": "2026-04-29",
+      "team1": "Mumbai Indians",
+      "team2": "Sunrisers Hyderabad",
+      "venue": "Wankhede Stadium, Mumbai",
       "time": "7:30 PM IST"
     }
   ],
@@ -350,61 +357,61 @@
       "rank": 1,
       "player": "Abhishek Sharma",
       "team": "SRH",
-      "matches": 7,
-      "innings": 7,
-      "runs": 323,
-      "avg": 53.83,
-      "sr": 215.33,
-      "fours": 25,
-      "sixes": 27
+      "matches": 8,
+      "innings": 8,
+      "runs": 380,
+      "avg": 54.29,
+      "sr": 212.29,
+      "fours": 36,
+      "sixes": 28
     },
     {
       "rank": 2,
-      "player": "Heinrich Klaasen",
-      "team": "SRH",
+      "player": "KL Rahul",
+      "team": "DC",
       "matches": 7,
       "innings": 7,
-      "runs": 320,
-      "avg": 53.33,
-      "sr": 153.11,
-      "fours": 22,
-      "sixes": 13
+      "runs": 357,
+      "avg": 59.5,
+      "sr": 187.89,
+      "fours": 36,
+      "sixes": 19
     },
     {
       "rank": 3,
-      "player": "Sanju Samson",
-      "team": "CSK",
-      "matches": 7,
-      "innings": 7,
-      "runs": 293,
-      "avg": 58.6,
-      "sr": 178.66,
+      "player": "Vaibhav Sooryavanshi",
+      "team": "RR",
+      "matches": 8,
+      "innings": 8,
+      "runs": 357,
+      "avg": 44.62,
+      "sr": 234.87,
       "fours": 31,
-      "sixes": 15
+      "sixes": 32
     },
     {
       "rank": 4,
-      "player": "Shubman Gill",
-      "team": "GT",
-      "matches": 5,
-      "innings": 5,
-      "runs": 265,
-      "avg": 53.0,
-      "sr": 151.43,
-      "fours": 27,
-      "sixes": 10
+      "player": "Heinrich Klaasen",
+      "team": "SRH",
+      "matches": 8,
+      "innings": 8,
+      "runs": 349,
+      "avg": 49.86,
+      "sr": 149.79,
+      "fours": 25,
+      "sixes": 14
     },
     {
       "rank": 5,
-      "player": "Vaibhav Sooryavanshi",
-      "team": "RR",
+      "player": "Virat Kohli",
+      "team": "RCB",
       "matches": 7,
       "innings": 7,
-      "runs": 254,
-      "avg": 36.29,
-      "sr": 220.87,
-      "fours": 26,
-      "sixes": 20
+      "runs": 328,
+      "avg": 54.67,
+      "sr": 163.18,
+      "fours": 36,
+      "sixes": 12
     }
   ],
   "purpleCap": [
@@ -424,6 +431,34 @@
     },
     {
       "rank": 2,
+      "player": "Eshan Malinga",
+      "team": "SRH",
+      "matches": 8,
+      "overs": 27.0,
+      "balls": 162,
+      "wickets": 14,
+      "avg": 18.21,
+      "runs": 255,
+      "economy": 9.44,
+      "fourWickets": 1,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 3,
+      "player": "Jofra Archer",
+      "team": "RR",
+      "matches": 8,
+      "overs": 29.0,
+      "balls": 174,
+      "wickets": 13,
+      "avg": 17.92,
+      "runs": 233,
+      "economy": 8.03,
+      "fourWickets": 0,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 4,
       "player": "Prince Yadav",
       "team": "LSG",
       "matches": 7,
@@ -437,83 +472,55 @@
       "fiveWickets": 0
     },
     {
-      "rank": 3,
-      "player": "Eshan Malinga",
-      "team": "SRH",
-      "matches": 7,
-      "overs": 23.0,
-      "balls": 138,
-      "wickets": 12,
-      "avg": 18.08,
-      "runs": 217,
-      "economy": 9.43,
-      "fourWickets": 1,
-      "fiveWickets": 0
-    },
-    {
-      "rank": 4,
+      "rank": 5,
       "player": "Prasidh Krishna",
       "team": "GT",
-      "matches": 6,
-      "overs": 24.0,
-      "balls": 144,
-      "wickets": 12,
-      "avg": 19.83,
-      "runs": 238,
-      "economy": 9.91,
-      "fourWickets": 1,
-      "fiveWickets": 0
-    },
-    {
-      "rank": 5,
-      "player": "Jofra Archer",
-      "team": "RR",
       "matches": 7,
-      "overs": 25.0,
-      "balls": 150,
-      "wickets": 11,
-      "avg": 18.09,
-      "runs": 199,
-      "economy": 7.96,
-      "fourWickets": 0,
+      "overs": 26.0,
+      "balls": 156,
+      "wickets": 12,
+      "avg": 22.42,
+      "runs": 269,
+      "economy": 10.35,
+      "fourWickets": 1,
       "fiveWickets": 0
     }
   ],
   "storylines": [
     {
-      "id": "samson-el-clasico-ton",
-      "title": "Samson's 101* hands MI their biggest-ever IPL defeat — CSK win first El Clasico without Dhoni or Rohit",
-      "body": "Chennai Super Kings thumped Mumbai Indians by 103 runs at Wankhede on April 23 — MI's biggest-ever defeat in IPL history by runs. Sanju Samson's unbeaten 101 off 54 (10 fours, 6 sixes) was his second century of IPL 2026 and came in an otherwise anaemic CSK batting card — the second-highest score was just 22. Ruturaj Gaikwad (22) and Dewald Brevis (21) got starts but couldn't convert; Shivam Dube's poor run continued with 5. CSK posted 207/6. MI's chase never started: Akeal Hosein (4/17 in 4 overs) struck with his first and second overs as MI slumped to 11/3, then 29/3 in the powerplay — their lowest of IPL 2026. Noor Ahmad (2/19) and Ghazanfar (2/?) choked the middle; only Suryakumar (43) and Tilak Varma (37) resisted with a 73-run stand. MI bowled out for 104 in 19 overs. Historic in another way: first El Clasico without both MS Dhoni (knee issue) and Rohit Sharma (hamstring) in the XI. Nine wickets for spinners — the most in any IPL game at Wankhede.",
+      "id": "pbks-record-chase-265",
+      "title": "T20 record shattered — PBKS chase 265 to stay unbeaten, KL Rahul's 152 in vain",
+      "body": "Punjab Kings produced the highest successful run chase in T20 cricket history at the Arun Jaitley Stadium on April 25, hunting down 265 with 7 balls to spare. KL Rahul's masterful unbeaten 152 off 67 (his 6th IPL century, fastest fifty since 2021) — earning him Player of the Match despite being on the losing side, and making him the first Indian batter to score 150 in IPL — combined with Nitish Rana's 91 off 44 (a 28-run over off Bartlett included) had powered DC to 264/2, the highest team total of IPL 2026. But Prabhsimran Singh (76 off 26) and Priyansh Arya (43) gave PBKS a 132-run powerplay-plus opening stand. Karun Nair then dropped Shreyas Iyer twice in successive overs, and the captain made DC pay with an unbeaten 71 off 36. PBKS now sit 13 points clear at the top, unbeaten 6-0-1 in 7 matches. Lungi Ngidi was stretchered off and taken to hospital after a horrific head fall trying to catch Arya. Three of IPL 2026's top totals have all come this week.",
       "tag": "Historic"
     },
     {
-      "id": "kamboj-purple-cap-back",
-      "title": "Anshul Kamboj reclaims Purple Cap with 14 wickets — CSK's quiet bargain is IPL 2026's leading pacer",
-      "body": "Just 24 hours after Prince Yadav snatched it from him, CSK's Anshul Kamboj is back at the top of the Purple Cap list with 14 wickets in 7 matches at an economy of 8.95 and average of 15.78. He picked up two against MI — his 12th and 13th dismissal of the season came in consecutive balls during the collapse. Prince Yadav (LSG, 13), Eshan Malinga (SRH, 12), Prasidh Krishna (GT, 12), and Jofra Archer (RR, 11) round out the top 5 — five teams, five wicket-takers, all within 3 wickets. The tightest Purple Cap race in recent IPL memory.",
-      "tag": "Purple Cap"
+      "id": "sooryavanshi-second-ton-37-balls",
+      "title": "Sooryavanshi's 37-ball ton — 2nd-fastest IPL century ever, 12 sixes against the same bowler who got him out last time",
+      "body": "Vaibhav Sooryavanshi, all of 15 years old, scored his second IPL hundred — 103 off just 37 balls — at Sawai Mansingh Stadium on April 25. He now owns the second AND third-fastest IPL centuries in history (his own 35-ball ton in 2025 still leads). Twelve days after Praful Hinge dismissed him for a duck on debut, Sooryavanshi opened by hitting Hinge for 0, 6, 6, 6, 6 in the first over — 25 runs. Twelve sixes in 37 balls broke RR's franchise record for most sixes in an innings. Fewest innings to four T20 hundreds: Sooryavanshi at 26, next-best Usman Khan at 33. But it went in vain — SRH chased 229 with 9 balls remaining, the second 200-plus chase of the day. Abhishek Sharma (57 off 29) and Ishan Kishan (74 off 31, PoM) put on 132 in 55 balls.",
+      "tag": "Record"
     },
     {
-      "id": "samson-orange-cap-race",
-      "title": "Samson enters Orange Cap top 3 — 293 runs at SR 178, two centuries in IPL 2026",
-      "body": "Sanju Samson's El Clasico ton vaulted him from outside the top 5 into the Orange Cap top 3 with 293 runs at an average of 58.60 and SR of 178.65. He's now the only player in IPL 2026 with two centuries (115* vs DC, 101* vs MI) — and his numbers look better than anyone else's when innings are weighted by match situation. SRH openers Abhishek Sharma (323) and Heinrich Klaasen (320) still hold the top two spots, while Shubman Gill (265) and Vaibhav Sooryavanshi (254) drop a place each. With CSK suddenly back in the playoff conversation at 5th, Samson's form is the biggest shift in the tournament.",
-      "tag": "Orange Cap"
+      "id": "kl-rahul-orange-cap-charge",
+      "title": "KL Rahul's 152 catapults him to #2 in Orange Cap — DC opener now joint-second on 357",
+      "body": "KL Rahul's unbeaten 152 off the DC innings in Match 35 was the highest individual score of IPL 2026, surpassing Abhishek Sharma's 135*. He now sits joint-2nd in the Orange Cap with 357 runs in 7 matches at an average of 59.50 — tied with Sooryavanshi but ahead of Heinrich Klaasen (349) and Virat Kohli (328). Rahul became the fastest to reach 100 in this game (47 balls), surpassed Dhoni in IPL all-time runs, and brought up his 6th IPL century. With Abhishek Sharma still leading on 380, the Orange Cap is now a four-way race between SRH's openers, RR's teenager, and DC's veteran — with Kohli lurking close behind.",
+      "tag": "Race"
     },
     {
-      "id": "el-clasico-no-icons",
-      "title": "A rivalry redefined — the first MI vs CSK without Dhoni or Rohit, and CSK didn't need them",
-      "body": "For the first time in IPL history, both MS Dhoni (knee issue) and Rohit Sharma (hamstring) were absent from an El Clasico playing XI. Dhoni kept wickets and batted in the nets earlier in the week but hasn't played a match this season. Rohit had been training but missed a session before the game. Instead, two other captains — Ruturaj Gaikwad and Hardik Pandya — and a new CSK talisman in Sanju Samson wrote the script. That CSK dominated without their legend, and MI collapsed without theirs, may become the defining moment of the transition era for both franchises. With MI now 2-5 and on -0.736 NRR, Hardik Pandya's playoff math looks grim.",
-      "tag": "Era change"
+      "id": "cummins-returns-srh",
+      "title": "End of an era — Cummins' return ends IPL's first all-Indian captains streak after 35 matches",
+      "body": "When IPL 2026 began on March 28, all 10 franchises took the field with Indian captains for the first time in league history — Iyer (PBKS), Parag (RR), Patidar (RCB), Kishan (SRH stand-in), Gaikwad (CSK), Axar (DC), Gill (GT), Hardik (MI), Pant (LSG), and Rahane (KKR). That milestone era ended today, April 25, when Pat Cummins returned for SRH after recovering from a lumbar stress injury sustained during the Adelaide Ashes Test in mid-December. Cummins won the toss immediately on return — SRH's first toss win of IPL 2026 (Kishan had lost all 7 he contested). He bowled a peach of a yorker to dismiss RR captain Riyan Parag for 7 off 9, and finished with 2/30 in 4 overs alongside crucial death-overs work. Kishan, freed from captaincy duties, smashed 74 off 31 to win Player of the Match as SRH chased 229 to make it four wins in a row, climbing to 3rd. The 35-match all-Indian-captains chapter is now part of IPL history.",
+      "tag": "Milestone"
     },
     {
-      "id": "rr-archer-jadeja-defend-159",
-      "title": "RR defend lowest total of IPL 2026 — Archer and Jadeja drag Royals back to 2nd",
-      "body": "Rajasthan Royals ended a two-match losing streak at Ekana on April 22 in unusual fashion — defending 159, the lowest total of IPL 2026 so far. Ravindra Jadeja (43* off 29) and impact sub Shubham Dubey stitched an unbeaten 49-run stand to push the total to 159/6 from 54/4. Chasing 160, LSG were routed: Jofra Archer (3/20) bowled a maiden over to Nicholas Pooran in the powerplay and returned to flatten Mohammed Shami's leg stump with a late-tailing yorker. Mitchell Marsh's 55 off 41 was the lone resistance; Rishabh Pant was run out for a duck. LSG folded for 119 in 18 overs — 4th straight loss. RR climb to 2nd with 10 points.",
-      "tag": "Bowlers' night"
+      "id": "rcb-second-spot-kohli",
+      "title": "RCB jump to 2nd as Kohli's 81 trumps Sai Sudharsan's century at Chinnaswamy",
+      "body": "Royal Challengers Bengaluru chased down 206 with 7 balls to spare on April 24, beating Gujarat Titans by 5 wickets to climb to 2nd in the table. Sai Sudharsan's elegant 100 off 58 (his 3rd IPL ton, fastest to 2000 IPL runs in 47 innings) had powered GT to 205/3, with Holder finishing with an unbeaten 23 off 10. But Kohli — dropped on 0 by Washington Sundar at midwicket off Siraj's first over — punished GT with 81 off 44 and a 115-run partnership with Devdutt Padikkal (55 off 27). Padikkal hit 6 sixes and 2 fours in his 27-ball cameo. RCB have now won 4 of 5 at Chinnaswamy this season; with Kohli grabbing the temporary Orange Cap that night, IPL 2026's batting race continues to swing with every match.",
+      "tag": "Statement"
     },
     {
-      "id": "pooran-parag-out-of-form",
-      "title": "Pooran, Parag and Pant — three high-profile batters whose form has collapsed",
-      "body": "Three of the most talked-about batters of IPL 2026 are collectively scraping bottom. Nicholas Pooran has 51 runs in 7 innings at the lowest strike rate in the tournament among batters facing 50+ balls. Rishabh Pant, LSG's Rs.27 Cr captain, was run out backing up too far for a duck against RR — his latest in a string of low scores drawing brutal fan reaction. Riyan Parag has 61 runs in 7 innings as RR captain with a highest of 20. That all three play for teams in trouble (LSG 9th, RR just recovered to 2nd, MI 8th) is no coincidence. Whether any of them figure out form before the playoff race closes will decide three season narratives.",
+      "id": "ngidi-injury-scare",
+      "title": "Lungi Ngidi taken to hospital — head injury during DC vs PBKS chase casts shadow over record-breaking day",
+      "body": "Amid the highest successful chase in T20 history, Lungi Ngidi was the day's grimmest story. The DC pacer ran back to take a steepler from Priyansh Arya off Axar Patel in the 4th over of PBKS's chase, lost his footing, fell on his back and banged his head heavily on the hard Arun Jaitley outfield. Ngidi was down for several minutes, an ambulance was called onto the field, and a neck brace was applied before he was stretchered off. He was taken to hospital for further examination. South African teammates David Miller and Tristan Stubbs looked visibly shaken; head coach Hemang Badani and Ricky Ponting were involved in the on-field assessment. Dushmantha Chameera came in as the substitute fielder. Latest reports say Ngidi was responsive and conscious — but the IPL community will await further updates.",
       "tag": "Concern"
     }
   ],
@@ -546,7 +553,7 @@
       "player": "Liam Livingstone",
       "team": "SRH",
       "price": "Rs. 13 Cr",
-      "note": "England all-rounder — part of SRH's squad as they climb to joint-3rd on 8 points with 3 straight wins"
+      "note": "England all-rounder — SRH on a 4-match winning streak, climb to joint-3rd at 10 points after Cummins' return"
     },
     {
       "player": "Josh Inglis",
@@ -558,19 +565,19 @@
       "player": "Auqib Nabi Dar",
       "team": "DC",
       "price": "Rs. 8.4 Cr",
-      "note": "J&K pacer — 60 wickets in 2025-26 Ranji earned him a surprise Rs.8.4 Cr deal"
+      "note": "J&K pacer — DC's impact-sub regular, opened the bowling vs PBKS in the record chase"
     },
     {
       "player": "Ravi Bishnoi",
       "team": "RR",
       "price": "Rs. 7.2 Cr",
-      "note": "Leg-spinner — key wicket-taker in RR's 5-2 campaign as Royals sit 2nd with 10 points"
+      "note": "Leg-spinner — RR slip to 4th at 5-3, only got 1 over today as Sooryavanshi's brilliance went in vain"
     },
     {
       "player": "Cooper Connolly",
       "team": "PBKS",
       "price": "Rs. 3 Cr",
-      "note": "Australian all-rounder — 87(46) in record 182-run stand with Arya vs LSG; PBKS unbeaten at 5-0-1"
+      "note": "Australian all-rounder — PBKS 6-0-1 with 13 points after T20 record chase, key all-round contributor"
     },
     {
       "player": "Quinton de Kock",
@@ -583,6 +590,12 @@
       "team": "MI",
       "price": "Rs. 30 Lakh",
       "note": "Left-arm pacer — 4/24 vs GT matched his IPL-best, a quiet bargain buy in MI's bowling attack"
+    },
+    {
+      "player": "Jason Holder",
+      "team": "GT",
+      "price": "Rs. 7 Cr",
+      "note": "West Indies all-rounder (back after 2 years) — debut innings of 23*(10) at SR 230 vs RCB; took the Kohli wicket on his return"
     }
   ]
 }
