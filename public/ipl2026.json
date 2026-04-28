@@ -6,9 +6,9 @@
     "startDate": "2026-03-28",
     "endDate": "2026-05-31",
     "totalMatches": 74,
-    "matchesPlayed": 39,
+    "matchesPlayed": 40,
     "defendingChampion": "Royal Challengers Bengaluru",
-    "lastUpdated": "2026-04-27"
+    "lastUpdated": "2026-04-28"
   },
   "groups": {
     "A": [
@@ -32,11 +32,11 @@
       "team": "Punjab Kings",
       "short": "PBKS",
       "color": "#ED1B24",
-      "played": 7,
+      "played": 8,
       "won": 6,
-      "lost": 0,
+      "lost": 1,
       "nr": 1,
-      "nrr": "+1.333",
+      "nrr": "+1.043",
       "points": 13,
       "form": [
         "W",
@@ -45,7 +45,8 @@
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -72,6 +73,29 @@
     },
     {
       "rank": 3,
+      "team": "Rajasthan Royals",
+      "short": "RR",
+      "color": "#EA1A85",
+      "played": 9,
+      "won": 6,
+      "lost": 3,
+      "nr": 0,
+      "nrr": "+0.617",
+      "points": 12,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L",
+        "L",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 4,
       "team": "Sunrisers Hyderabad",
       "short": "SRH",
       "color": "#FF822A",
@@ -90,28 +114,6 @@
         "W",
         "W",
         "W"
-      ]
-    },
-    {
-      "rank": 4,
-      "team": "Rajasthan Royals",
-      "short": "RR",
-      "color": "#EA1A85",
-      "played": 8,
-      "won": 5,
-      "lost": 3,
-      "nr": 0,
-      "nrr": "+0.602",
-      "points": 10,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L",
-        "L",
-        "W",
-        "L"
       ]
     },
     {
@@ -260,17 +262,6 @@
   },
   "recentResults": [
     {
-      "matchNo": 35,
-      "date": "2026-04-25",
-      "team1": "Delhi Capitals",
-      "team2": "Punjab Kings",
-      "result": "PBKS won by 6 wickets",
-      "venue": "Arun Jaitley Stadium, Delhi",
-      "t1Score": "264/2 (20)",
-      "t2Score": "265/4 (18.5)",
-      "highlight": "HIGHEST SUCCESSFUL CHASE IN T20 HISTORY — KL Rahul 152*(67) PoM (1st Indian to 150 in IPL) & Rana 91 set 264; Prabhsimran 76, Iyer 71*(36); Karun Nair drops Iyer twice, Ngidi taken to hospital after head injury"
-    },
-    {
       "matchNo": 36,
       "date": "2026-04-25",
       "team1": "Rajasthan Royals",
@@ -313,17 +304,20 @@
       "t1Score": "75 (16.3)",
       "t2Score": "77/1 (6.3)",
       "highlight": "Hazlewood 4/12 PoM & Bhuvi 3/5 (DC 8/6 in 4 overs) — DC's lowest of season, lowest match aggregate (152) ever for DC vs RCB; Kohli 23*, hits 9000 IPL runs & 300 sixes; RCB up to 2nd at 12 pts"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "matchNo": 40,
       "date": "2026-04-28",
       "team1": "Punjab Kings",
       "team2": "Rajasthan Royals",
+      "result": "RR won by 6 wickets",
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
-      "time": "7:30 PM IST"
-    },
+      "t1Score": "222/4 (20)",
+      "t2Score": "228/4 (19.2)",
+      "highlight": "RR END PBKS UNBEATEN RUN — Stoinis 62*(22), Prabhsimran 59 lift PBKS to 222; Sooryavanshi 27(11) blitz, Jaiswal 51(27), Ferreira 50*(26) & Dubey finish 228-chase; Chahal 3-fer in vain — RR jump to 3rd, PBKS taste first defeat at home"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "matchNo": 41,
       "date": "2026-04-29",
@@ -355,11 +349,31 @@
       "team2": "Mumbai Indians",
       "venue": "MA Chidambaram Stadium, Chennai",
       "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 45,
+      "date": "2026-05-03",
+      "team1": "Sunrisers Hyderabad",
+      "team2": "Kolkata Knight Riders",
+      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "time": "3:30 PM IST"
     }
   ],
   "orangeCap": [
     {
       "rank": 1,
+      "player": "Vaibhav Sooryavanshi",
+      "team": "RR",
+      "matches": 9,
+      "innings": 9,
+      "runs": 400,
+      "avg": 44.44,
+      "sr": 238.1,
+      "fours": 34,
+      "sixes": 37
+    },
+    {
+      "rank": 2,
       "player": "Abhishek Sharma",
       "team": "SRH",
       "matches": 8,
@@ -371,7 +385,7 @@
       "sixes": 28
     },
     {
-      "rank": 2,
+      "rank": 3,
       "player": "KL Rahul",
       "team": "DC",
       "matches": 8,
@@ -381,18 +395,6 @@
       "sr": 185.49,
       "fours": 36,
       "sixes": 19
-    },
-    {
-      "rank": 3,
-      "player": "Vaibhav Sooryavanshi",
-      "team": "RR",
-      "matches": 8,
-      "innings": 8,
-      "runs": 357,
-      "avg": 44.62,
-      "sr": 234.87,
-      "fours": 31,
-      "sixes": 32
     },
     {
       "rank": 4,
@@ -436,6 +438,20 @@
     },
     {
       "rank": 2,
+      "player": "Jofra Archer",
+      "team": "RR",
+      "matches": 9,
+      "overs": 33.0,
+      "balls": 198,
+      "wickets": 14,
+      "avg": 19.5,
+      "runs": 273,
+      "economy": 8.27,
+      "fourWickets": 0,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 3,
       "player": "Anshul Kamboj",
       "team": "CSK",
       "matches": 8,
@@ -449,7 +465,7 @@
       "fiveWickets": 0
     },
     {
-      "rank": 3,
+      "rank": 4,
       "player": "Eshan Malinga",
       "team": "SRH",
       "matches": 8,
@@ -460,20 +476,6 @@
       "runs": 255,
       "economy": 9.44,
       "fourWickets": 1,
-      "fiveWickets": 0
-    },
-    {
-      "rank": 4,
-      "player": "Jofra Archer",
-      "team": "RR",
-      "matches": 8,
-      "overs": 29.0,
-      "balls": 174,
-      "wickets": 13,
-      "avg": 17.92,
-      "runs": 233,
-      "economy": 8.03,
-      "fourWickets": 0,
       "fiveWickets": 0
     },
     {
@@ -493,22 +495,22 @@
   ],
   "storylines": [
     {
+      "id": "pbks-first-loss-rr-chase",
+      "title": "PBKS' unbeaten run ends — RR chase 223 in 19.2 overs at Mullanpur",
+      "body": "Punjab Kings tasted their first defeat of IPL 2026 on April 28 as Rajasthan Royals chased down 223 with four balls to spare at Mullanpur, finishing 228/4. PBKS had posted what looked like a winning 222/4 thanks to Marcus Stoinis's stunning 62* off 22 (24 runs off the last over of Brijesh Sharma) and Prabhsimran Singh's 59 off 44. But RR opted to bowl, and Vaibhav Sooryavanshi's 27 off 11 in the powerplay (84/1 first six overs) plus Yashasvi Jaiswal's 26-ball 51 set the platform. Yuzvendra Chahal turned the match briefly with 3 wickets for 16 (Jaiswal, Jurel, Parag), reducing RR to 151/4. But Donovan Ferreira (50* off 26) and impact sub Shubham Dubey iced it from there. Sooryavanshi's powerplay knock takes him past 400 runs — he's now Orange Cap leader at SR 238. PBKS now 6-1-1, still top with 13 points but no longer unbeaten. RR jump to 3rd with 12 points.",
+      "tag": "Upset"
+    },
+    {
+      "id": "sooryavanshi-orange-cap-400",
+      "title": "15-year-old Sooryavanshi takes Orange Cap — 400 runs at SR 238, 37 sixes already",
+      "body": "Vaibhav Sooryavanshi has stormed to the top of the Orange Cap. After his 27 off 11 in RR's record chase against PBKS, the teenager now has 400 runs in 9 innings — at a strike rate of 238.10, the highest by anyone in the top 30 of the run-scorer list. His 37 sixes lead the entire tournament, ahead of even Abhishek Sharma (28). For perspective: Sooryavanshi has scored more sixes in 9 innings than Klaasen, Kohli, KL Rahul or Gill have in 8. He averages 44 even with two ducks. The kid's powerplay numbers are absurd — he's averaging close to 30 runs off 13 balls in the first 6 overs. With CSK and PBKS having fallen prey to his explosive starts, every team's bowling plan now has 'how do we contain Sooryavanshi in the powerplay' as the first item. The fact that he's leading IPL 2026's batting charts at 15 years old is one of the most extraordinary stories in cricket history.",
+      "tag": "Orange Cap"
+    },
+    {
       "id": "dc-bowled-out-75",
       "title": "DC bowled out for 75 — Hazlewood 4/12, Bhuvi 3/5 expose Delhi's powerplay nightmare",
       "body": "Delhi Capitals were demolished for just 75 — the lowest total of IPL 2026 and the smallest aggregate (152) ever in a DC vs RCB match. Just 48 hours after scoring 264, DC found themselves 8 for 6 inside 4 overs as Bhuvneshwar Kumar (3/5) and Josh Hazlewood (4/12 PoM) shared seven wickets. KL Rahul, Nitish Rana and Tristan Stubbs all gone in the powerplay. Abishek Porel's 30 was the highest score; Miller (19) and Jamieson (12) gave DC a fig leaf. RCB chased 76 in 6.3 overs — Padikkal 34*, Bethell 20, Kohli a brutal 23* including the six that brought up his 9000 IPL runs (first ever) and 300th career IPL six. Captain Rajat Patidar admitted even he was surprised; Axar Patel said \"I still cannot understand what happened.\" RCB jump to 2nd with 12 points; DC slip to 7th and have now lost 3 in a row.",
       "tag": "Demolition"
-    },
-    {
-      "id": "kkr-super-over-rinku-narine",
-      "title": "Rinku 83*, Mohsin's maiden 5-fer, Shami's last-ball six — KKR steal Super Over thriller in Lucknow",
-      "body": "An ICU thriller at Ekana on April 26. Mohsin Khan's maiden T20 five-for (5/23) had KKR at 93/7 in the 15th over; Rinku Singh played the innings of his life, going from 43 off 40 to 83 off 51 by smashing four sixes off Digvesh Rathi in a 26-run final over to lift KKR to 155/7. LSG looked finished at 93/5 chasing, then needed 7 off the last ball — Mohammed Shami launched it over long-on for six to tie. In the Super Over, Sunil Narine bowled Pooran first ball, then trapped Markram with a Powell-Rinku relay catch at long-on. KKR needed 2; Rinku stroked it through cover for four. Rinku had 4 catches in the match plus the relay assist plus the winning runs. KKR's first Super Over win, second straight victory, climb to 8th. LSG plummet to 10th — bottom of the table after 6 straight losses.",
-      "tag": "Thriller"
-    },
-    {
-      "id": "gt-first-chepauk-win",
-      "title": "Gujarat's Chepauk hoodoo ends — Rabada 3/25 and Sai Sudharsan 87 break a curse",
-      "body": "Gujarat Titans had never won at MA Chidambaram Stadium. They ticked that box on April 26 in emphatic fashion — beating CSK by 8 wickets. Kagiso Rabada (3/25 PoM) and Mohammed Siraj's powerplay burst left CSK at 24/3 before they could blink, with the pace and bounce no one expected on a dry pitch. Ruturaj Gaikwad fought hard with 74* off 60 (his first IPL fifty in 11 innings), but no other CSK batter passed 18. Sai Sudharsan, fresh off his hundred vs RCB, delivered 87 off 46 with 7 sixes — fastest to 2000 IPL runs (47 innings). GT brought up their hundred quicker than CSK brought up their fifty. GT climb to 5th, CSK drop to 6th and now sit at 3-5 with their playoff hopes hanging by a thread.",
-      "tag": "Curse-breaker"
     },
     {
       "id": "kohli-9000-300-sixes",
@@ -523,10 +525,10 @@
       "tag": "Purple Cap"
     },
     {
-      "id": "lsg-bottom-of-table",
-      "title": "Pant's LSG hit rock bottom — 6 losses in a row, 10th in table, biggest disaster of IPL 2026",
-      "body": "Lucknow Super Giants are now bottom of the IPL 2026 table after 6 straight defeats. From sitting 5th with 4 points after 2 wins, LSG have collapsed: lost to RCB, KKR, Punjab (twice technically — they lost to PBKS at Mullanpur), RR (defending 159), and tied-but-lost to KKR in the Super Over. Rishabh Pant (Rs.27 Cr captain) has averaged poorly, was run-out for a duck, and made just 42 in the LSG-KKR tie before getting bowled. Nicholas Pooran continues to be among the worst-performing high-priced overseas buys (51 runs in 8 innings). Mitchell Marsh has mostly failed to convert. The bowling has been LSG's only bright spot — Mohsin's 5-fer, Prince Yadav's 13 wickets — but with NRR at -1.106 and the table piling up at the top, LSG's playoff hopes are essentially gone with 6 games to play.",
-      "tag": "Crisis"
+      "id": "gt-first-chepauk-win",
+      "title": "Gujarat's Chepauk hoodoo ends — Rabada 3/25 and Sai Sudharsan 87 break a curse",
+      "body": "Gujarat Titans had never won at MA Chidambaram Stadium. They ticked that box on April 26 in emphatic fashion — beating CSK by 8 wickets. Kagiso Rabada (3/25 PoM) and Mohammed Siraj's powerplay burst left CSK at 24/3 before they could blink, with the pace and bounce no one expected on a dry pitch. Ruturaj Gaikwad fought hard with 74* off 60 (his first IPL fifty in 11 innings), but no other CSK batter passed 18. Sai Sudharsan, fresh off his hundred vs RCB, delivered 87 off 46 with 7 sixes — fastest to 2000 IPL runs (47 innings). GT brought up their hundred quicker than CSK brought up their fifty. GT climb to 5th, CSK drop to 6th and now sit at 3-5 with their playoff hopes hanging by a thread.",
+      "tag": "Curse-breaker"
     }
   ],
   "auctionHighlights": [
@@ -582,7 +584,7 @@
       "player": "Cooper Connolly",
       "team": "PBKS",
       "price": "Rs. 3 Cr",
-      "note": "Australian all-rounder — PBKS 6-0-1 with 13 points, only unbeaten team after T20-record chase"
+      "note": "Australian all-rounder — PBKS still top at 13 points (6-1-1) after first loss to RR ended unbeaten run"
     },
     {
       "player": "Quinton de Kock",
