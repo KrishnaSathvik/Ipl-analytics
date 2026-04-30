@@ -6,9 +6,9 @@
     "startDate": "2026-03-28",
     "endDate": "2026-05-31",
     "totalMatches": 74,
-    "matchesPlayed": 40,
+    "matchesPlayed": 41,
     "defendingChampion": "Royal Challengers Bengaluru",
-    "lastUpdated": "2026-04-28"
+    "lastUpdated": "2026-04-29"
   },
   "groups": {
     "A": [
@@ -73,6 +73,29 @@
     },
     {
       "rank": 3,
+      "team": "Sunrisers Hyderabad",
+      "short": "SRH",
+      "color": "#FF822A",
+      "played": 9,
+      "won": 6,
+      "lost": 3,
+      "nr": 0,
+      "nrr": "+0.832",
+      "points": 12,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 4,
       "team": "Rajasthan Royals",
       "short": "RR",
       "color": "#EA1A85",
@@ -91,28 +114,6 @@
         "L",
         "W",
         "L",
-        "W"
-      ]
-    },
-    {
-      "rank": 4,
-      "team": "Sunrisers Hyderabad",
-      "short": "SRH",
-      "color": "#FF822A",
-      "played": 8,
-      "won": 5,
-      "lost": 3,
-      "nr": 0,
-      "nrr": "+0.815",
-      "points": 10,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "W",
-        "W",
-        "W",
         "W"
       ]
     },
@@ -209,11 +210,11 @@
       "team": "Mumbai Indians",
       "short": "MI",
       "color": "#004BA0",
-      "played": 7,
+      "played": 8,
       "won": 2,
-      "lost": 5,
+      "lost": 6,
       "nr": 0,
-      "nrr": "-0.736",
+      "nrr": "-0.784",
       "points": 4,
       "form": [
         "W",
@@ -222,6 +223,7 @@
         "L",
         "L",
         "W",
+        "L",
         "L"
       ]
     },
@@ -261,17 +263,6 @@
     "KKR": "Ajinkya Rahane"
   },
   "recentResults": [
-    {
-      "matchNo": 36,
-      "date": "2026-04-25",
-      "team1": "Rajasthan Royals",
-      "team2": "Sunrisers Hyderabad",
-      "result": "SRH won by 5 wickets",
-      "venue": "Sawai Mansingh Stadium, Jaipur",
-      "t1Score": "228/6 (20)",
-      "t2Score": "229/5 (18.3)",
-      "highlight": "Sooryavanshi 103(37) — 2nd-fastest IPL ton ever, 12 sixes; Ishan Kishan 74(31) PoM & Abhishek 57(29) put on 132 in 55 balls; Cummins returns as captain, takes 2/30 — SRH 4th win in a row"
-    },
     {
       "matchNo": 37,
       "date": "2026-04-26",
@@ -315,17 +306,20 @@
       "t1Score": "222/4 (20)",
       "t2Score": "228/4 (19.2)",
       "highlight": "RR END PBKS UNBEATEN RUN — Stoinis 62*(22), Prabhsimran 59 lift PBKS to 222; Sooryavanshi 27(11) blitz, Jaiswal 51(27), Ferreira 50*(26) & Dubey finish 228-chase; Chahal 3-fer in vain — RR jump to 3rd, PBKS taste first defeat at home"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "matchNo": 41,
       "date": "2026-04-29",
       "team1": "Mumbai Indians",
       "team2": "Sunrisers Hyderabad",
+      "result": "SRH won by 6 wickets",
       "venue": "Wankhede Stadium, Mumbai",
-      "time": "7:30 PM IST"
-    },
+      "t1Score": "243/5 (20)",
+      "t2Score": "249/4 (18.4)",
+      "highlight": "HIGHEST EVER CHASE AT WANKHEDE — Rickelton 123*(55) MI's all-time highest IPL score in vain; Head 76(30), Abhishek 45(20) put on 129 in 8.4 overs; Klaasen 65*(30) PoM, Travis Head MVP; Bumrah 0/54 — SRH's 5th straight win, climb to 3rd"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "matchNo": 42,
       "date": "2026-04-30",
@@ -357,11 +351,43 @@
       "team2": "Kolkata Knight Riders",
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
       "time": "3:30 PM IST"
+    },
+    {
+      "matchNo": 46,
+      "date": "2026-05-03",
+      "team1": "Gujarat Titans",
+      "team2": "Punjab Kings",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "time": "7:30 PM IST"
     }
   ],
   "orangeCap": [
     {
       "rank": 1,
+      "player": "Abhishek Sharma",
+      "team": "SRH",
+      "matches": 9,
+      "innings": 9,
+      "runs": 425,
+      "avg": 53.12,
+      "sr": 209.36,
+      "fours": 40,
+      "sixes": 31
+    },
+    {
+      "rank": 2,
+      "player": "Heinrich Klaasen",
+      "team": "SRH",
+      "matches": 9,
+      "innings": 9,
+      "runs": 414,
+      "avg": 59.14,
+      "sr": 157.41,
+      "fours": 32,
+      "sixes": 18
+    },
+    {
+      "rank": 3,
       "player": "Vaibhav Sooryavanshi",
       "team": "RR",
       "matches": 9,
@@ -373,19 +399,7 @@
       "sixes": 37
     },
     {
-      "rank": 2,
-      "player": "Abhishek Sharma",
-      "team": "SRH",
-      "matches": 8,
-      "innings": 8,
-      "runs": 380,
-      "avg": 54.29,
-      "sr": 212.29,
-      "fours": 36,
-      "sixes": 28
-    },
-    {
-      "rank": 3,
+      "rank": 4,
       "player": "KL Rahul",
       "team": "DC",
       "matches": 8,
@@ -397,7 +411,7 @@
       "sixes": 19
     },
     {
-      "rank": 4,
+      "rank": 5,
       "player": "Virat Kohli",
       "team": "RCB",
       "matches": 8,
@@ -407,23 +421,25 @@
       "sr": 162.5,
       "fours": 37,
       "sixes": 14
-    },
-    {
-      "rank": 5,
-      "player": "Heinrich Klaasen",
-      "team": "SRH",
-      "matches": 8,
-      "innings": 8,
-      "runs": 349,
-      "avg": 49.86,
-      "sr": 149.79,
-      "fours": 25,
-      "sixes": 14
     }
   ],
   "purpleCap": [
     {
       "rank": 1,
+      "player": "Eshan Malinga",
+      "team": "SRH",
+      "matches": 9,
+      "overs": 31.0,
+      "balls": 186,
+      "wickets": 15,
+      "avg": 18.93,
+      "runs": 284,
+      "economy": 9.16,
+      "fourWickets": 1,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 2,
       "player": "Bhuvneshwar Kumar",
       "team": "RCB",
       "matches": 8,
@@ -437,7 +453,7 @@
       "fiveWickets": 0
     },
     {
-      "rank": 2,
+      "rank": 3,
       "player": "Jofra Archer",
       "team": "RR",
       "matches": 9,
@@ -451,7 +467,7 @@
       "fiveWickets": 0
     },
     {
-      "rank": 3,
+      "rank": 4,
       "player": "Anshul Kamboj",
       "team": "CSK",
       "matches": 8,
@@ -462,20 +478,6 @@
       "runs": 237,
       "economy": 8.57,
       "fourWickets": 0,
-      "fiveWickets": 0
-    },
-    {
-      "rank": 4,
-      "player": "Eshan Malinga",
-      "team": "SRH",
-      "matches": 8,
-      "overs": 27.0,
-      "balls": 162,
-      "wickets": 14,
-      "avg": 18.21,
-      "runs": 255,
-      "economy": 9.44,
-      "fourWickets": 1,
       "fiveWickets": 0
     },
     {
@@ -495,16 +497,28 @@
   ],
   "storylines": [
     {
+      "id": "srh-five-match-streak",
+      "title": "SRH's 5-match winning streak — Travishek + Klaasen demolish Wankhede in highest chase ever",
+      "body": "Sunrisers Hyderabad chased 244 with 8 balls to spare at Wankhede on April 29 — the highest successful chase ever at the venue and the 4th-highest in IPL history. The remarkable part: MI had posted 243/5 with Ryan Rickelton's unbeaten 123 off 55, the highest individual IPL score by an MI batter ever. Yet it didn't matter. Travis Head (76 off 30) and Abhishek Sharma (45 off 20) added 129 in just 8.4 overs, with 92 coming in the powerplay. Bumrah went for 54 in 4 overs without a wicket; Boult got tonked too. When Ghazanfar took two in two to remove Abhishek and Ishan Kishan, Klaasen swept in with an unbeaten 65 off 30 — 22-ball fifty including 4 fours in an Ashwani Kumar over. Salil Arora's 10-ball 30* iced it. Klaasen Player of the Match, Head was Cricinfo's MVP. SRH have now won 5 in a row since Cummins returned, climbing to 3rd at 12 points.",
+      "tag": "Streak"
+    },
+    {
+      "id": "abhishek-back-to-orange-cap",
+      "title": "Abhishek Sharma reclaims Orange Cap — 425 runs at SR 209, 31 sixes in 9 matches",
+      "body": "Just two days after Vaibhav Sooryavanshi took the Orange Cap with his 400 runs, Abhishek Sharma has wrestled it back. After his 45 off 20 in SRH's record chase at Wankhede, the SRH opener now has 425 runs in 9 matches at SR 209.36, with 40 fours and 31 sixes. His SRH partner Heinrich Klaasen has surged to #2 with 414 runs (AVG 59.14) — meaning the same team has both the top-2 run-scorers in the tournament. Sooryavanshi sits 3rd on 400 runs, with KL Rahul (358) and Kohli (351) rounding out the top 5. Klaasen, Abhishek and Sooryavanshi are all on 9 matches; the others have played 8. The Orange Cap could change hands every other game from here.",
+      "tag": "Orange Cap"
+    },
+    {
+      "id": "malinga-purple-cap-15",
+      "title": "Eshan Malinga takes Purple Cap with 15 wickets — SRH's quiet wrecker leads the bowling charts",
+      "body": "While Abhishek and Klaasen take the headlines, SRH have a third tournament-leader hidden in plain sight. Eshan Malinga — the Sri Lankan slinger — picked up another wicket against MI to move to 15 in 9 matches, taking the Purple Cap from Bhuvneshwar Kumar. His season includes a 4-fer in the SRH vs DC chase and a string of crucial death-overs efforts. Despite an economy of 9.16 (high but defensible given how the season is going), his strike rate is the best among leading wicket-takers. Bhuvi (14, RCB), Archer (14, RR), Kamboj (14, CSK) and Prince Yadav (13, LSG) keep it tight — five different teams in the top 5. With three SRH players leading their respective categories (Abhishek/Klaasen for batting, Malinga for bowling), the Cummins-led side is suddenly the team nobody wants to face.",
+      "tag": "Purple Cap"
+    },
+    {
       "id": "pbks-first-loss-rr-chase",
       "title": "PBKS' unbeaten run ends — RR chase 223 in 19.2 overs at Mullanpur",
       "body": "Punjab Kings tasted their first defeat of IPL 2026 on April 28 as Rajasthan Royals chased down 223 with four balls to spare at Mullanpur, finishing 228/4. PBKS had posted what looked like a winning 222/4 thanks to Marcus Stoinis's stunning 62* off 22 (24 runs off the last over of Brijesh Sharma) and Prabhsimran Singh's 59 off 44. But RR opted to bowl, and Vaibhav Sooryavanshi's 27 off 11 in the powerplay (84/1 first six overs) plus Yashasvi Jaiswal's 26-ball 51 set the platform. Yuzvendra Chahal turned the match briefly with 3 wickets for 16 (Jaiswal, Jurel, Parag), reducing RR to 151/4. But Donovan Ferreira (50* off 26) and impact sub Shubham Dubey iced it from there. Sooryavanshi's powerplay knock takes him past 400 runs — he's now Orange Cap leader at SR 238. PBKS now 6-1-1, still top with 13 points but no longer unbeaten. RR jump to 3rd with 12 points.",
       "tag": "Upset"
-    },
-    {
-      "id": "sooryavanshi-orange-cap-400",
-      "title": "15-year-old Sooryavanshi takes Orange Cap — 400 runs at SR 238, 37 sixes already",
-      "body": "Vaibhav Sooryavanshi has stormed to the top of the Orange Cap. After his 27 off 11 in RR's record chase against PBKS, the teenager now has 400 runs in 9 innings — at a strike rate of 238.10, the highest by anyone in the top 30 of the run-scorer list. His 37 sixes lead the entire tournament, ahead of even Abhishek Sharma (28). For perspective: Sooryavanshi has scored more sixes in 9 innings than Klaasen, Kohli, KL Rahul or Gill have in 8. He averages 44 even with two ducks. The kid's powerplay numbers are absurd — he's averaging close to 30 runs off 13 balls in the first 6 overs. With CSK and PBKS having fallen prey to his explosive starts, every team's bowling plan now has 'how do we contain Sooryavanshi in the powerplay' as the first item. The fact that he's leading IPL 2026's batting charts at 15 years old is one of the most extraordinary stories in cricket history.",
-      "tag": "Orange Cap"
     },
     {
       "id": "dc-bowled-out-75",
@@ -517,18 +531,6 @@
       "title": "Kohli's twin milestones — first to 9000 IPL runs and 300 IPL sixes, both in the same chase",
       "body": "Virat Kohli used the smallest of stages — a 76-run chase against DC — to hit two career-defining marks within the same six-ball over. He clipped Natarajan to long-off to bring up 9000 IPL runs (the first batter ever to reach the figure), then followed up with two flat sixes — one back over the bowler's head, one over deep midwicket — that were also his 299th and 300th sixes in IPL history. Kohli has now scored 351 runs in 8 matches at SR 162.50, jumping to 4th in the Orange Cap race. He's also leapfrogged MS Dhoni in IPL all-time runs. With RCB now up to 2nd at 12 points and unbeaten at home this season, Kohli's farewell-watch chatter has only intensified.",
       "tag": "Milestone"
-    },
-    {
-      "id": "bhuvi-purple-cap",
-      "title": "Bhuvneshwar's 7-runs-an-over genius takes Purple Cap — RCB pacer joins Kamboj and Malinga on 14",
-      "body": "Bhuvneshwar Kumar's 3/5 against DC moved him to 14 wickets in 8 matches — joint leader of the Purple Cap with Anshul Kamboj and Eshan Malinga, but with the lowest economy of all leading wicket-takers at just 7.61. He's now bowled 31 overs in IPL 2026 and conceded 236 runs total. Three Indians at the top of the chart (Bhuvi, Kamboj, Malinga – the latter is from SRH); Jofra Archer and Prince Yadav round out the top 5 on 13 each. The bowling race is now a five-team scramble: every match swings the lead. Notable: Bhuvi has not picked up a 4-fer this season — just relentless 2 and 3-wicket spells.",
-      "tag": "Purple Cap"
-    },
-    {
-      "id": "gt-first-chepauk-win",
-      "title": "Gujarat's Chepauk hoodoo ends — Rabada 3/25 and Sai Sudharsan 87 break a curse",
-      "body": "Gujarat Titans had never won at MA Chidambaram Stadium. They ticked that box on April 26 in emphatic fashion — beating CSK by 8 wickets. Kagiso Rabada (3/25 PoM) and Mohammed Siraj's powerplay burst left CSK at 24/3 before they could blink, with the pace and bounce no one expected on a dry pitch. Ruturaj Gaikwad fought hard with 74* off 60 (his first IPL fifty in 11 innings), but no other CSK batter passed 18. Sai Sudharsan, fresh off his hundred vs RCB, delivered 87 off 46 with 7 sixes — fastest to 2000 IPL runs (47 innings). GT brought up their hundred quicker than CSK brought up their fifty. GT climb to 5th, CSK drop to 6th and now sit at 3-5 with their playoff hopes hanging by a thread.",
-      "tag": "Curse-breaker"
     }
   ],
   "auctionHighlights": [
@@ -560,7 +562,7 @@
       "player": "Liam Livingstone",
       "team": "SRH",
       "price": "Rs. 13 Cr",
-      "note": "England all-rounder — SRH on a 4-match winning streak, sit 3rd at 10 points after Cummins' return"
+      "note": "England all-rounder — SRH on 5-match winning streak, climb to 3rd at 12 points; Cummins-led side now hot favorites"
     },
     {
       "player": "Josh Inglis",
@@ -590,7 +592,7 @@
       "player": "Quinton de Kock",
       "team": "MI",
       "price": "Rs. 2 Cr",
-      "note": "South Africa opener — 112*(60) vs PBKS remains his only big knock; MI down to 9th at 2-5"
+      "note": "South Africa opener — 112*(60) vs PBKS remains his only big knock; MI down to 9th at 2-6 after Wankhede defeat"
     },
     {
       "player": "Ashwani Kumar",
