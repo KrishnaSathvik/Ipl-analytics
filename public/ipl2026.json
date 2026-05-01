@@ -6,9 +6,9 @@
     "startDate": "2026-03-28",
     "endDate": "2026-05-31",
     "totalMatches": 74,
-    "matchesPlayed": 41,
+    "matchesPlayed": 42,
     "defendingChampion": "Royal Challengers Bengaluru",
-    "lastUpdated": "2026-04-29"
+    "lastUpdated": "2026-04-30"
   },
   "groups": {
     "A": [
@@ -54,11 +54,11 @@
       "team": "Royal Challengers Bengaluru",
       "short": "RCB",
       "color": "#EC1C24",
-      "played": 8,
+      "played": 9,
       "won": 6,
-      "lost": 2,
+      "lost": 3,
       "nr": 0,
-      "nrr": "+1.919",
+      "nrr": "+1.420",
       "points": 12,
       "form": [
         "W",
@@ -68,7 +68,8 @@
         "W",
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -122,12 +123,12 @@
       "team": "Gujarat Titans",
       "short": "GT",
       "color": "#1C1C2B",
-      "played": 8,
-      "won": 4,
+      "played": 9,
+      "won": 5,
       "lost": 4,
       "nr": 0,
-      "nrr": "-0.475",
-      "points": 8,
+      "nrr": "-0.192",
+      "points": 10,
       "form": [
         "L",
         "W",
@@ -136,6 +137,7 @@
         "W",
         "L",
         "L",
+        "W",
         "W"
       ]
     },
@@ -264,17 +266,6 @@
   },
   "recentResults": [
     {
-      "matchNo": 37,
-      "date": "2026-04-26",
-      "team1": "Chennai Super Kings",
-      "team2": "Gujarat Titans",
-      "result": "GT won by 8 wickets",
-      "venue": "MA Chidambaram Stadium, Chennai",
-      "t1Score": "158/7 (20)",
-      "t2Score": "162/2 (16.4)",
-      "highlight": "Kagiso Rabada 3/25 PoM rips through CSK powerplay; Sai Sudharsan 87(46), 7 sixes — GT's FIRST EVER win at Chepauk; Gaikwad 74* lone hand, CSK drop to 6th"
-    },
-    {
       "matchNo": 38,
       "date": "2026-04-26",
       "team1": "Lucknow Super Giants",
@@ -317,17 +308,20 @@
       "t1Score": "243/5 (20)",
       "t2Score": "249/4 (18.4)",
       "highlight": "HIGHEST EVER CHASE AT WANKHEDE — Rickelton 123*(55) MI's all-time highest IPL score in vain; Head 76(30), Abhishek 45(20) put on 129 in 8.4 overs; Klaasen 65*(30) PoM, Travis Head MVP; Bumrah 0/54 — SRH's 5th straight win, climb to 3rd"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "matchNo": 42,
       "date": "2026-04-30",
-      "team1": "Gujarat Titans",
-      "team2": "Royal Challengers Bengaluru",
+      "team1": "Royal Challengers Bengaluru",
+      "team2": "Gujarat Titans",
+      "result": "GT won by 4 wickets",
       "venue": "Narendra Modi Stadium, Ahmedabad",
-      "time": "7:30 PM IST"
-    },
+      "t1Score": "155 (19.2)",
+      "t2Score": "158/6 (15.5)",
+      "highlight": "Jason Holder PoM 5 DISMISSALS (2/29 + 3 catches) — RCB BOWLED OUT for 1st time this season; Padikkal 40, Kohli 28; Arshad 3/22, Rashid 2/19; Gill 43, Buttler 39, Tewatia 27* — GT climb to 5th, RCB 3rd defeat (won't reach top of table)"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "matchNo": 43,
       "date": "2026-05-01",
@@ -358,6 +352,14 @@
       "team1": "Gujarat Titans",
       "team2": "Punjab Kings",
       "venue": "Narendra Modi Stadium, Ahmedabad",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 47,
+      "date": "2026-05-04",
+      "team1": "Mumbai Indians",
+      "team2": "Lucknow Super Giants",
+      "venue": "Wankhede Stadium, Mumbai",
       "time": "7:30 PM IST"
     }
   ],
@@ -400,32 +402,46 @@
     },
     {
       "rank": 4,
-      "player": "KL Rahul",
-      "team": "DC",
-      "matches": 8,
-      "innings": 8,
-      "runs": 358,
-      "avg": 51.14,
-      "sr": 185.49,
-      "fours": 36,
-      "sixes": 19
+      "player": "Virat Kohli",
+      "team": "RCB",
+      "matches": 9,
+      "innings": 9,
+      "runs": 379,
+      "avg": 54.14,
+      "sr": 165.5,
+      "fours": 42,
+      "sixes": 15
     },
     {
       "rank": 5,
-      "player": "Virat Kohli",
-      "team": "RCB",
+      "player": "Shubman Gill",
+      "team": "GT",
       "matches": 8,
       "innings": 8,
-      "runs": 351,
-      "avg": 58.5,
-      "sr": 162.5,
-      "fours": 37,
-      "sixes": 14
+      "runs": 373,
+      "avg": 46.62,
+      "sr": 155.42,
+      "fours": 34,
+      "sixes": 17
     }
   ],
   "purpleCap": [
     {
       "rank": 1,
+      "player": "Bhuvneshwar Kumar",
+      "team": "RCB",
+      "matches": 9,
+      "overs": 35.0,
+      "balls": 210,
+      "wickets": 17,
+      "avg": 15.53,
+      "runs": 264,
+      "economy": 7.54,
+      "fourWickets": 0,
+      "fiveWickets": 0
+    },
+    {
+      "rank": 2,
       "player": "Eshan Malinga",
       "team": "SRH",
       "matches": 9,
@@ -436,20 +452,6 @@
       "runs": 284,
       "economy": 9.16,
       "fourWickets": 1,
-      "fiveWickets": 0
-    },
-    {
-      "rank": 2,
-      "player": "Bhuvneshwar Kumar",
-      "team": "RCB",
-      "matches": 8,
-      "overs": 31.0,
-      "balls": 186,
-      "wickets": 14,
-      "avg": 16.86,
-      "runs": 236,
-      "economy": 7.61,
-      "fourWickets": 0,
       "fiveWickets": 0
     },
     {
@@ -482,20 +484,32 @@
     },
     {
       "rank": 5,
-      "player": "Prince Yadav",
-      "team": "LSG",
-      "matches": 8,
-      "overs": 30.0,
-      "balls": 180,
-      "wickets": 13,
-      "avg": 18.62,
-      "runs": 242,
-      "economy": 8.07,
+      "player": "Kagiso Rabada",
+      "team": "GT",
+      "matches": 9,
+      "overs": 35.0,
+      "balls": 210,
+      "wickets": 14,
+      "avg": 24.14,
+      "runs": 338,
+      "economy": 9.66,
       "fourWickets": 0,
       "fiveWickets": 0
     }
   ],
   "storylines": [
+    {
+      "id": "rcb-bowled-out-holder",
+      "title": "Holder's 5-dismissal night — RCB bowled out for the first time in IPL 2026 as GT seal it at Ahmedabad",
+      "body": "Jason Holder was so omnipresent at Ahmedabad on April 30 that his five dismissals — 2 for 29 plus three catches — singlehandedly turned Match 42. Royal Challengers Bengaluru, looking to take top spot on the table with a win, were instead bowled out for 155 in 19.2 overs — the first time RCB have been all out this season. Padikkal's 40 off 24 was the top score; Kohli's 28 (after looking set with five consecutive boundaries off Rabada) ended early. Arshad Khan returned 3/22 and Rashid Khan 2/19 with the spinners running through the middle order. The Patidar dismissal — Holder taking a one-handed catch with his arm extended over the rope — sparked controversy but was given out. Gujarat Titans chased 156 with 25 balls to spare: Gill 43, Buttler 39, Holder 12*, Tewatia 27*. GT climb to 5th with 10 points; RCB stay 2nd with 12 but their NRR drops from +1.919 to +1.420. Defending champions now sit on three losses with five league games left.",
+      "tag": "Upset"
+    },
+    {
+      "id": "bhuvi-purple-cap-17",
+      "title": "Bhuvneshwar reclaims Purple Cap with 17 wickets — economy of 7.54 the best among leaders",
+      "body": "Bhuvneshwar Kumar's 3 for 28 against GT today moves him to 17 wickets in 9 matches at an economy of 7.54 — the lowest in the leading wicket-takers list. He's now alone at the top, two clear of Eshan Malinga (15) and three clear of Archer/Kamboj/Rabada (14 each). Notable: Bhuvi has 17 wickets without picking up a single 4-fer this season — just 25 spells of consistent 1-2-3 wicket bursts. Kagiso Rabada, who took 0/29 today after picking up earlier wickets in the season, sneaks into the top 5 on 14. Five teams represented in the top 5 (RCB, SRH, RR, CSK, GT) and the bowling race genuinely could go to anyone in the playoffs. RCB's loss tonight was about their batting collapse, not their bowling — they bowled GT to 99/4 at one stage but couldn't finish the job.",
+      "tag": "Purple Cap"
+    },
     {
       "id": "srh-five-match-streak",
       "title": "SRH's 5-match winning streak — Travishek + Klaasen demolish Wankhede in highest chase ever",
@@ -509,22 +523,10 @@
       "tag": "Orange Cap"
     },
     {
-      "id": "malinga-purple-cap-15",
-      "title": "Eshan Malinga takes Purple Cap with 15 wickets — SRH's quiet wrecker leads the bowling charts",
-      "body": "While Abhishek and Klaasen take the headlines, SRH have a third tournament-leader hidden in plain sight. Eshan Malinga — the Sri Lankan slinger — picked up another wicket against MI to move to 15 in 9 matches, taking the Purple Cap from Bhuvneshwar Kumar. His season includes a 4-fer in the SRH vs DC chase and a string of crucial death-overs efforts. Despite an economy of 9.16 (high but defensible given how the season is going), his strike rate is the best among leading wicket-takers. Bhuvi (14, RCB), Archer (14, RR), Kamboj (14, CSK) and Prince Yadav (13, LSG) keep it tight — five different teams in the top 5. With three SRH players leading their respective categories (Abhishek/Klaasen for batting, Malinga for bowling), the Cummins-led side is suddenly the team nobody wants to face.",
-      "tag": "Purple Cap"
-    },
-    {
       "id": "pbks-first-loss-rr-chase",
       "title": "PBKS' unbeaten run ends — RR chase 223 in 19.2 overs at Mullanpur",
       "body": "Punjab Kings tasted their first defeat of IPL 2026 on April 28 as Rajasthan Royals chased down 223 with four balls to spare at Mullanpur, finishing 228/4. PBKS had posted what looked like a winning 222/4 thanks to Marcus Stoinis's stunning 62* off 22 (24 runs off the last over of Brijesh Sharma) and Prabhsimran Singh's 59 off 44. But RR opted to bowl, and Vaibhav Sooryavanshi's 27 off 11 in the powerplay (84/1 first six overs) plus Yashasvi Jaiswal's 26-ball 51 set the platform. Yuzvendra Chahal turned the match briefly with 3 wickets for 16 (Jaiswal, Jurel, Parag), reducing RR to 151/4. But Donovan Ferreira (50* off 26) and impact sub Shubham Dubey iced it from there. Sooryavanshi's powerplay knock takes him past 400 runs — he's now Orange Cap leader at SR 238. PBKS now 6-1-1, still top with 13 points but no longer unbeaten. RR jump to 3rd with 12 points.",
       "tag": "Upset"
-    },
-    {
-      "id": "dc-bowled-out-75",
-      "title": "DC bowled out for 75 — Hazlewood 4/12, Bhuvi 3/5 expose Delhi's powerplay nightmare",
-      "body": "Delhi Capitals were demolished for just 75 — the lowest total of IPL 2026 and the smallest aggregate (152) ever in a DC vs RCB match. Just 48 hours after scoring 264, DC found themselves 8 for 6 inside 4 overs as Bhuvneshwar Kumar (3/5) and Josh Hazlewood (4/12 PoM) shared seven wickets. KL Rahul, Nitish Rana and Tristan Stubbs all gone in the powerplay. Abishek Porel's 30 was the highest score; Miller (19) and Jamieson (12) gave DC a fig leaf. RCB chased 76 in 6.3 overs — Padikkal 34*, Bethell 20, Kohli a brutal 23* including the six that brought up his 9000 IPL runs (first ever) and 300th career IPL six. Captain Rajat Patidar admitted even he was surprised; Axar Patel said \"I still cannot understand what happened.\" RCB jump to 2nd with 12 points; DC slip to 7th and have now lost 3 in a row.",
-      "tag": "Demolition"
     },
     {
       "id": "kohli-9000-300-sixes",
@@ -604,7 +606,7 @@
       "player": "Jason Holder",
       "team": "GT",
       "price": "Rs. 7 Cr",
-      "note": "West Indies all-rounder (back after 2 years) — GT's first-ever Chepauk win lifts them to 5th; took the Kohli wicket at Chinnaswamy"
+      "note": "West Indies all-rounder — 5 dismissals (2/29 + 3 catches) PoM vs RCB tonight; the steal of the auction now winning matches"
     }
   ]
 }
