@@ -6,9 +6,9 @@
     "startDate": "2026-03-28",
     "endDate": "2026-05-31",
     "totalMatches": 74,
-    "matchesPlayed": 50,
+    "matchesPlayed": 55,
     "defendingChampion": "Royal Challengers Bengaluru",
-    "lastUpdated": "2026-05-07"
+    "lastUpdated": "2026-05-11"
   },
   "groups": {
     "A": [
@@ -29,6 +29,31 @@
   "pointsTable": [
     {
       "rank": 1,
+      "team": "Royal Challengers Bengaluru",
+      "short": "RCB",
+      "color": "#EC1C24",
+      "played": 11,
+      "won": 7,
+      "lost": 4,
+      "nr": 0,
+      "nrr": "+1.103",
+      "points": 14,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 2,
       "team": "Sunrisers Hyderabad",
       "short": "SRH",
       "color": "#FF822A",
@@ -53,15 +78,40 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "team": "Gujarat Titans",
+      "short": "GT",
+      "color": "#1C1C2B",
+      "played": 11,
+      "won": 7,
+      "lost": 4,
+      "nr": 0,
+      "nrr": "+0.228",
+      "points": 14,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 4,
       "team": "Punjab Kings",
       "short": "PBKS",
       "color": "#ED1B24",
-      "played": 10,
+      "played": 11,
       "won": 6,
-      "lost": 3,
+      "lost": 4,
       "nr": 1,
-      "nrr": "+0.571",
+      "nrr": "+0.428",
       "points": 13,
       "form": [
         "W",
@@ -73,75 +123,29 @@
         "W",
         "L",
         "L",
-        "L"
-      ]
-    },
-    {
-      "rank": 3,
-      "team": "Royal Challengers Bengaluru",
-      "short": "RCB",
-      "color": "#EC1C24",
-      "played": 10,
-      "won": 6,
-      "lost": 4,
-      "nr": 0,
-      "nrr": "+1.249",
-      "points": 12,
-      "form": [
-        "W",
-        "W",
         "L",
-        "W",
-        "W",
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ]
-    },
-    {
-      "rank": 4,
-      "team": "Rajasthan Royals",
-      "short": "RR",
-      "color": "#EA1A85",
-      "played": 10,
-      "won": 6,
-      "lost": 4,
-      "nr": 0,
-      "nrr": "+0.510",
-      "points": 12,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L",
-        "L",
-        "W",
-        "L",
-        "W",
         "L"
       ]
     },
     {
       "rank": 5,
-      "team": "Gujarat Titans",
-      "short": "GT",
-      "color": "#1C1C2B",
-      "played": 10,
+      "team": "Chennai Super Kings",
+      "short": "CSK",
+      "color": "#F9CD05",
+      "played": 11,
       "won": 6,
-      "lost": 4,
+      "lost": 5,
       "nr": 0,
-      "nrr": "-0.147",
+      "nrr": "+0.185",
       "points": 12,
       "form": [
         "L",
-        "W",
+        "L",
         "L",
         "W",
         "W",
         "L",
+        "W",
         "L",
         "W",
         "W",
@@ -150,26 +154,27 @@
     },
     {
       "rank": 6,
-      "team": "Chennai Super Kings",
-      "short": "CSK",
-      "color": "#F9CD05",
-      "played": 10,
-      "won": 5,
+      "team": "Rajasthan Royals",
+      "short": "RR",
+      "color": "#EA1A85",
+      "played": 11,
+      "won": 6,
       "lost": 5,
       "nr": 0,
-      "nrr": "+0.151",
-      "points": 10,
+      "nrr": "+0.082",
+      "points": 12,
       "form": [
-        "L",
-        "L",
-        "L",
+        "W",
+        "W",
         "W",
         "W",
         "L",
+        "L",
         "W",
         "L",
         "W",
-        "W"
+        "L",
+        "L"
       ]
     },
     {
@@ -177,12 +182,12 @@
       "team": "Delhi Capitals",
       "short": "DC",
       "color": "#0078BC",
-      "played": 10,
-      "won": 4,
-      "lost": 6,
+      "played": 12,
+      "won": 5,
+      "lost": 7,
       "nr": 0,
-      "nrr": "-0.949",
-      "points": 8,
+      "nrr": "-0.993",
+      "points": 10,
       "form": [
         "L",
         "L",
@@ -193,7 +198,9 @@
         "L",
         "L",
         "W",
-        "L"
+        "L",
+        "L",
+        "W"
       ]
     },
     {
@@ -201,12 +208,12 @@
       "team": "Kolkata Knight Riders",
       "short": "KKR",
       "color": "#3A225D",
-      "played": 9,
-      "won": 3,
+      "played": 10,
+      "won": 4,
       "lost": 5,
       "nr": 1,
-      "nrr": "-0.539",
-      "points": 7,
+      "nrr": "-0.169",
+      "points": 9,
       "form": [
         "L",
         "N",
@@ -214,6 +221,7 @@
         "L",
         "L",
         "L",
+        "W",
         "W",
         "W",
         "W"
@@ -224,12 +232,13 @@
       "team": "Mumbai Indians",
       "short": "MI",
       "color": "#004BA0",
-      "played": 10,
+      "played": 11,
       "won": 3,
-      "lost": 7,
+      "lost": 8,
       "nr": 0,
-      "nrr": "-0.649",
+      "nrr": "-0.585",
       "points": 6,
+      "eliminated": true,
       "form": [
         "W",
         "L",
@@ -240,7 +249,8 @@
         "L",
         "L",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -248,12 +258,13 @@
       "team": "Lucknow Super Giants",
       "short": "LSG",
       "color": "#A72056",
-      "played": 10,
+      "played": 11,
       "won": 3,
-      "lost": 7,
+      "lost": 8,
       "nr": 0,
-      "nrr": "-0.949",
+      "nrr": "-0.907",
       "points": 6,
+      "eliminated": true,
       "form": [
         "W",
         "W",
@@ -264,7 +275,8 @@
         "L",
         "L",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     }
   ],
@@ -282,100 +294,100 @@
   },
   "recentResults": [
     {
-      "matchNo": 46,
-      "date": "2026-05-03",
-      "team1": "Punjab Kings",
-      "team2": "Gujarat Titans",
-      "result": "GT won by 4 wickets",
-      "venue": "Narendra Modi Stadium, Ahmedabad",
-      "t1Score": "163/9 (20)",
-      "t2Score": "167/6 (19.5)",
-      "highlight": "GT chase 164 — PBKS 2nd loss in a row, lose top spot tightening grip; GT to 5th with 12 points after 3rd straight win"
-    },
-    {
-      "matchNo": 47,
-      "date": "2026-05-04",
-      "team1": "Lucknow Super Giants",
-      "team2": "Mumbai Indians",
-      "result": "MI won by 6 wickets",
-      "venue": "Wankhede Stadium, Mumbai",
-      "t1Score": "228/5 (20)",
-      "t2Score": "229/4 (18.4)",
-      "highlight": "MI chase 229 — first win in 5; LSG hit 7th loss, stay bottom of table (4 pts, NRR -1.076)"
-    },
-    {
-      "matchNo": 48,
-      "date": "2026-05-05",
-      "team1": "Delhi Capitals",
-      "team2": "Chennai Super Kings",
-      "result": "CSK won by 8 wickets",
-      "venue": "Arun Jaitley Stadium, Delhi",
-      "t1Score": "155/7 (20)",
-      "t2Score": "159/2 (17.3)",
-      "highlight": "CSK back-to-back 8-wkt wins! DC's 3rd loss in 4; CSK climb to 6th at 10 pts, suddenly in playoff math; DC slip to 7th with NRR -0.949"
-    },
-    {
-      "matchNo": 49,
-      "date": "2026-05-06",
-      "team1": "Sunrisers Hyderabad",
-      "team2": "Punjab Kings",
-      "result": "SRH won by 33 runs",
-      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
-      "t1Score": "235/4 (20)",
-      "t2Score": "202 (20)",
-      "highlight": "SRH GO TOP OF THE TABLE — Klaasen 69(43), Kishan 55(32), Head 38(19); Connolly 107*(59) maiden century in any format LONE WARRIOR; PBKS dropped 4 catches, lose 3rd in a row, slip to 2nd"
-    },
-    {
-      "matchNo": 50,
-      "date": "2026-05-07",
-      "team1": "Lucknow Super Giants",
-      "team2": "Royal Challengers Bengaluru",
-      "result": "LSG won by 9 runs",
-      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "t1Score": "209/3 (19)",
-      "t2Score": "203/6 (19)",
-      "highlight": "MARSH 111(55) MASTERCLASS — fastest century by LSG batter (49 balls, 9x4, 9x6); Pant 32 off 10 at death; LSG 209/3 in rain-shortened 19; KOHLI 2-BALL DUCK to Prince Yadav (1st chasing duck in 9 years, since 2017); Patidar 50 in vain — LSG end 7-match losing streak"
-    }
-  ],
-  "upcomingFixtures": [
-    {
       "matchNo": 51,
       "date": "2026-05-08",
       "team1": "Delhi Capitals",
       "team2": "Kolkata Knight Riders",
+      "result": "KKR won by 8 wickets",
       "venue": "Arun Jaitley Stadium, Delhi",
-      "time": "7:30 PM IST"
+      "t1Score": "142/8 (20)",
+      "t2Score": "147/2 (14.2)",
+      "highlight": "FINN ALLEN 100*(47) PoM — 4th KKR player ever to score IPL ton; Cameron Green 4/? in DC innings; Nissanka 50 + Ashutosh 39 in vain; KKR's spin attack chokes DC, 4th straight win climbing to 8th"
     },
     {
       "matchNo": 52,
       "date": "2026-05-09",
-      "team1": "Rajasthan Royals",
-      "team2": "Gujarat Titans",
+      "team1": "Gujarat Titans",
+      "team2": "Rajasthan Royals",
+      "result": "GT won by 77 runs",
       "venue": "Sawai Mansingh Stadium, Jaipur",
-      "time": "7:30 PM IST"
+      "t1Score": "229/4 (20)",
+      "t2Score": "152 (16.3)",
+      "highlight": "RASHID KHAN 4/33 PoM — wrecks RR middle order; Gill 84 + Sai Sudharsan 55 (118 opening stand); Jadeja 38 lone hand, RR bowled out 152; Jaiswal captaining (Parag injured); GT's 4th straight win, climb to #2"
     },
     {
       "matchNo": 53,
       "date": "2026-05-10",
-      "team1": "Chennai Super Kings",
-      "team2": "Lucknow Super Giants",
+      "team1": "Lucknow Super Giants",
+      "team2": "Chennai Super Kings",
+      "result": "CSK won by 5 wickets",
       "venue": "MA Chidambaram Stadium, Chennai",
-      "time": "3:30 PM IST"
+      "t1Score": "203/8 (20)",
+      "t2Score": "208/5 (19.2)",
+      "highlight": "URVIL PATEL 65(23) 13-BALL FIFTY (joint-fastest IPL ever, equals Jaiswal); Jamie Overton 3/36 PoM; Inglis 85(33) for LSG but in vain; Dube 2 sixes off last over — CSK's 3rd-highest IPL chase ever, LSG ELIMINATED"
     },
     {
       "matchNo": 54,
       "date": "2026-05-10",
-      "team1": "Royal Challengers Bengaluru",
-      "team2": "Mumbai Indians",
+      "team1": "Mumbai Indians",
+      "team2": "Royal Challengers Bengaluru",
+      "result": "RCB won by 2 wickets",
       "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-      "time": "7:30 PM IST"
+      "t1Score": "166/7 (20)",
+      "t2Score": "167/8 (20)",
+      "highlight": "BHUVI 4/23 PoM + LAST-BALL SIX winning runs (1st IPL six since 2016); Krunal 73(46) fighting cramps; KOHLI GOLDEN DUCK to Deepak Chahar (BACK-TO-BACK DUCKS after LSG); Bawa overstep no-ball gifts free hit, RCB win off LAST BALL — MI ELIMINATED"
     },
     {
       "matchNo": 55,
       "date": "2026-05-11",
       "team1": "Punjab Kings",
       "team2": "Delhi Capitals",
-      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+      "result": "DC won by 3 wickets",
+      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "t1Score": "210/5 (20)",
+      "t2Score": "216/7 (19)",
+      "highlight": "PBKS 4TH STRAIGHT LOSS — Arya 50(24), Stoinis & Iyer fall; AUQIB NABI 10* + ASHUTOSH 24(10) + MADHAV TIWARI 18* (PoM) chase 211; Yash Thakur 2/55 in vain; PBKS now choking after 6-0-1 start"
+    }
+  ],
+  "upcomingFixtures": [
+    {
+      "matchNo": 56,
+      "date": "2026-05-12",
+      "team1": "Gujarat Titans",
+      "team2": "Sunrisers Hyderabad",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 57,
+      "date": "2026-05-13",
+      "team1": "Royal Challengers Bengaluru",
+      "team2": "Kolkata Knight Riders",
+      "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 58,
+      "date": "2026-05-14",
+      "team1": "Punjab Kings",
+      "team2": "Mumbai Indians",
+      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 59,
+      "date": "2026-05-15",
+      "team1": "Lucknow Super Giants",
+      "team2": "Chennai Super Kings",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "time": "7:30 PM IST"
+    },
+    {
+      "matchNo": 60,
+      "date": "2026-05-16",
+      "team1": "Kolkata Knight Riders",
+      "team2": "Gujarat Titans",
+      "venue": "Eden Gardens, Kolkata",
       "time": "7:30 PM IST"
     }
   ],
@@ -394,6 +406,18 @@
     },
     {
       "rank": 2,
+      "player": "KL Rahul",
+      "team": "DC",
+      "matches": 12,
+      "innings": 12,
+      "runs": 477,
+      "avg": 43.36,
+      "sr": 177.99,
+      "fours": 50,
+      "sixes": 24
+    },
+    {
+      "rank": 3,
       "player": "Abhishek Sharma",
       "team": "SRH",
       "matches": 11,
@@ -405,40 +429,28 @@
       "sixes": 36
     },
     {
-      "rank": 3,
-      "player": "KL Rahul",
-      "team": "DC",
+      "rank": 4,
+      "player": "Shubman Gill",
+      "team": "GT",
       "matches": 10,
       "innings": 10,
-      "runs": 445,
-      "avg": 49.44,
-      "sr": 180.89,
+      "runs": 462,
+      "avg": 46.2,
+      "sr": 160.42,
       "fours": 44,
-      "sixes": 24
-    },
-    {
-      "rank": 4,
-      "player": "Ishan Kishan",
-      "team": "SRH",
-      "matches": 11,
-      "innings": 11,
-      "runs": 409,
-      "avg": 37.18,
-      "sr": 186.76,
-      "fours": 41,
-      "sixes": 22
+      "sixes": 20
     },
     {
       "rank": 5,
-      "player": "Vaibhav Sooryavanshi",
-      "team": "RR",
-      "matches": 10,
-      "innings": 10,
-      "runs": 404,
-      "avg": 40.4,
-      "sr": 237.65,
-      "fours": 35,
-      "sixes": 37
+      "player": "Sai Sudharsan",
+      "team": "GT",
+      "matches": 11,
+      "innings": 11,
+      "runs": 440,
+      "avg": 40.0,
+      "sr": 157.71,
+      "fours": 44,
+      "sixes": 20
     }
   ],
   "purpleCap": [
@@ -446,55 +458,55 @@
       "rank": 1,
       "player": "Bhuvneshwar Kumar",
       "team": "RCB",
-      "matches": 10,
-      "overs": 39.0,
-      "balls": 234,
-      "wickets": 17,
-      "avg": 17.53,
-      "runs": 298,
-      "economy": 7.64,
-      "fourWickets": 0,
+      "matches": 11,
+      "overs": 43.0,
+      "balls": 258,
+      "wickets": 21,
+      "avg": 15.29,
+      "runs": 321,
+      "economy": 7.47,
+      "fourWickets": 1,
       "fiveWickets": 0
     },
     {
       "rank": 2,
       "player": "Anshul Kamboj",
       "team": "CSK",
-      "matches": 10,
-      "overs": 35.4,
-      "balls": 214,
-      "wickets": 17,
-      "avg": 18.71,
-      "runs": 318,
-      "economy": 8.92,
+      "matches": 11,
+      "overs": 39.4,
+      "balls": 238,
+      "wickets": 19,
+      "avg": 19.21,
+      "runs": 365,
+      "economy": 9.2,
       "fourWickets": 0,
       "fiveWickets": 0
     },
     {
       "rank": 3,
-      "player": "Prince Yadav",
-      "team": "LSG",
-      "matches": 10,
-      "overs": 37.0,
-      "balls": 222,
-      "wickets": 16,
-      "avg": 18.69,
-      "runs": 299,
-      "economy": 8.08,
+      "player": "Kagiso Rabada",
+      "team": "GT",
+      "matches": 11,
+      "overs": 42.0,
+      "balls": 252,
+      "wickets": 18,
+      "avg": 21.83,
+      "runs": 393,
+      "economy": 9.36,
       "fourWickets": 0,
       "fiveWickets": 0
     },
     {
       "rank": 4,
-      "player": "Kagiso Rabada",
-      "team": "GT",
-      "matches": 10,
-      "overs": 39.0,
-      "balls": 234,
+      "player": "Prince Yadav",
+      "team": "LSG",
+      "matches": 11,
+      "overs": 41.0,
+      "balls": 246,
       "wickets": 16,
-      "avg": 22.5,
-      "runs": 360,
-      "economy": 9.23,
+      "avg": 20.94,
+      "runs": 335,
+      "economy": 8.17,
       "fourWickets": 0,
       "fiveWickets": 0
     },
@@ -515,40 +527,42 @@
   ],
   "storylines": [
     {
-      "id": "lsg-end-streak-rcb-stumble",
-      "title": "LSG end 7-match losing streak — Marsh 111(55) fireworks down RCB at Ekana",
-      "body": "Lucknow Super Giants ended their season-defining 7-match losing streak with a 9-run win over Royal Challengers Bengaluru on May 7, powered by Mitchell Marsh's 111 off 55 — the fastest century by an LSG batter in IPL history (49 balls, 9 fours, 9 sixes). Marsh's 20-ball fifty had RCB on the back foot from the powerplay, and rain interruptions reducing the game to 19 overs only delayed the inevitable. Rishabh Pant added 32 off 10 in a frantic finish, taking LSG to 209/3 (DLS target 213). Kohli was bowled 2nd ball of RCB's chase to Prince Yadav — his first 2-ball duck while chasing in IPL since 2017. Patidar's 50 kept the chase alive briefly, but RCB fell short at 203/6. A sliding-doors moment for the table — a win would've taken RCB to 14 points and joint-top with SRH; instead they stay 3rd with 12, and now have back-to-back losses going into the playoff stretch.",
-      "tag": "Upset"
+      "id": "pbks-chokers-4-in-a-row",
+      "title": "PBKS lose 4 in a row — Madhav Tiwari, Auqib Nabi cameos seal Dharamsala heist",
+      "body": "Punjab Kings have completed an unthinkable collapse. From 6-0-1 on April 19, they've lost 4 in a row to slip to 4th. At Dharamsala on May 11, Priyansh Arya's 24-ball fifty had PBKS at 210/5 — should have been winning. DC chased it with 6 balls to spare, thanks to a series of unlikely heroes: Ashutosh Sharma 24 off 10 (smashed Yash Thakur for two sixes in the death), Madhav Tiwari 18* (Player of the Match), and Auqib Nabi 10* who hit a free-hit four after a no-ball to all but seal it. Iyer admitted post-match: 'Don't have to beat around the bush — fielding and bowling again. Feel it was 30 runs more on this wicket.' PBKS dropped two catches and misfielded repeatedly. The bowling — the season's structural flaw — has now leaked 222, 235 (in vain), 216 (chased) across the slide. NRR has crashed from +1.333 to +0.428. With 3 games left (MI, GT, SRH), they need to win at least 2 to confirm top 4. The 'chokers' label is back in the conversation.",
+      "tag": "Choke"
     },
     {
-      "id": "kohli-9-year-duck-prince-yadav",
-      "title": "Kohli's first 2-ball duck while chasing in 9 years — Prince Yadav delivers the surprise",
-      "body": "Virat Kohli's wretched evening at Ekana on May 7 produced a stat that's been almost unimaginable for a decade. Out 2nd ball of RCB's chase to a beauty from LSG's Prince Yadav, Kohli walked back for a duck. It was his first 2-ball duck while chasing in the IPL since 2017, ending a remarkable 9-year streak. Prince Yadav, the 24-year-old LSG pacer mentored by Mohammed Shami at the franchise, picked up the marquee scalp on his way to a 3-wicket haul, taking his season tally to 16 — joint-3rd in the Purple Cap with Rabada and Malinga, just one behind Bhuvi and Kamboj. Kohli still sits top-5 in the Orange Cap with 379 runs at SR 165, but with RCB now on back-to-back losses and Patidar's side missing the chance to go top, every dismissal of the talisman gets bigger.",
+      "id": "rcb-top-of-table-bhuvi-last-ball",
+      "title": "Bhuvneshwar Kumar 4/23 + last-ball six — RCB heist MI off the final delivery at Raipur",
+      "body": [
+        "Royal Challengers Bengaluru pulled off a 2-wicket win off the LAST BALL at Raipur on May 10 in their first home game at the venue in a decade. Bhuvneshwar Kumar took 4/23 (Player of the Match, plus Cricinfo's MVP at 144.46 pts) AND hit the winning runs — only the 4th six of his entire IPL career, his first since 2016, an inside-out drive over cover off Raj Bawa to clinch it. The match got off to a brutal start for RCB though: Virat Kohli was dismissed for a GOLDEN DUCK by Deepak Chahar — a mistimed lofted drive caught at mid-off by Raj Bawa — making it back-to-back ducks for Kohli after his 2-ball nought to Prince Yadav vs LSG. Krunal Pandya played the innings of his life on the way: 73 off 46 fighting cramps so bad he was on the floor between balls. MI's Bumrah bowled a sensational 19th but Raj Bawa misfielded the final ball, gifting the winning run. An earlier overstep no-ball by Bawa also gifted RCB a free hit at a critical moment. RCB go top of the table at 14 points, NRR +1.103. MI ELIMINATED."
+      ],
+      "tag": "Heist"
+    },
+    {
+      "id": "kohli-back-to-back-ducks",
+      "title": "Kohli back-to-back ducks — 2-ball duck vs LSG, golden duck vs MI in consecutive games",
+      "body": "Virat Kohli's miserable week continued at Raipur. Two days after his first 2-ball duck while chasing in 9 years (bowled by Prince Yadav at Ekana), Kohli walked back for a GOLDEN DUCK the very next match — caught at mid-off by Raj Bawa off Deepak Chahar in the third ball of RCB's innings. He played a mistimed lofted drive, the bat face closing and the ball hitting the inside half, ballooning to catchable height. Back-to-back ducks for IPL's GOAT — a stat that would have been unimaginable a month ago. Even more painful for RCB fans: Kohli still leads the Orange Cap top 5 with 379 runs but his SR has dipped sharply, and dismissals are coming early. The 9-year streak of NO 2-ball chasing ducks ended Thursday; the back-to-back ducks add to a rough patch right when RCB need their talisman at the top to fire for the playoffs.",
       "tag": "Stat"
     },
     {
-      "id": "srh-top-of-table",
-      "title": "SRH atop the table — Cummins-led side now 14 points, looking like title favorites",
-      "body": "Sunrisers Hyderabad are sitting at the top of IPL 2026 with 14 points after their 33-run demolition of PBKS on May 6. Pat Cummins is now 5W in 6 since returning from his lumbar injury, and SRH have weaponized their best opening pair (Travishek), best middle order (Klaasen-Kishan) and Eshan Malinga's death bowling into the most balanced lineup in the tournament. Klaasen leads the Orange Cap (494 runs), Abhishek 2nd (475), Malinga 3rd in Purple Cap (16 wickets). One loss in their last 6 games. The team that started 2-3 has flipped into the title favorite — and with PBKS on a 3-match losing streak and RCB on back-to-back losses, SRH are alone at the top going into the final stretch.",
-      "tag": "Power shift"
+      "id": "urvil-patel-record-fifty",
+      "title": "Urvil Patel's 13-ball fifty equals IPL record — CSK's third-highest chase ever knocks out LSG",
+      "body": "Urvil Patel walked into the middle at Chepauk on May 10 with CSK's chances of winning at 38%. He walked out 23 balls and 65 runs later with the chances at 93%. His 13-ball fifty equalled Yashasvi Jaiswal's all-time IPL record — eight sixes off LSG's spin and pace, five sixes off five consecutive balls at one point, the crowd chanting his name. Earlier, Josh Inglis had pulverised CSK's bowling with 85 off 33, but Jamie Overton (3/36, Player of the Match) and Anshul Kamboj (2/47) kept LSG to 203/8. Shivam Dube finished with two sixes off the last over. CSK's 208/5 chased target of 204 — their third-highest successful IPL chase ever, behind two 206 chases against RCB. LSG officially ELIMINATED. CSK on a 3-match winning streak, sit 5th with 12 points, alive in the playoff race. Dhoni still not in the XI.",
+      "tag": "Record"
     },
     {
-      "id": "playoff-race-tight",
-      "title": "Five teams within 4 points — RCB, RR, GT all locked at 12 points fighting for top 4",
-      "body": "With 4-5 league games left for most teams, the playoff race has become a knife-fight: SRH (14, 11 played), PBKS (13, 10), RCB (12, 10), RR (12, 10), GT (12, 10), CSK (10, 10), then DC (8), KKR (7), MI (6), LSG (6). The top 5 are separated only by NRR — and three teams are tied on 12 points. RCB's NRR cushion is shrinking (+1.300 down from +1.919 a week ago). PBKS need to break their 3-match slide. CSK on a 2-match win streak need 3 more wins from 4 to realistically squeeze in. The next 4 days alone — DC vs KKR, RR vs GT, the Sunday doubleheader — will likely decide which two of these 12-point teams stay in the playoff conversation.",
-      "tag": "Race"
+      "id": "rashid-khan-gt-fourth-win",
+      "title": "Rashid Khan 4/33 wrecks RR — GT's fourth straight win lifts them to top of the table",
+      "body": "Gujarat Titans dismantled Rajasthan Royals by 77 runs at Jaipur on May 9 to climb to second place (now joint-top after results) with 14 points. Shubman Gill (84) and Sai Sudharsan (55) put on a 118-run opening stand to power GT to 229/4 — their biggest IPL score outside Ahmedabad. RR's chase looked promising at 86/3 in 7 overs before Rashid Khan came on and turned the game on its head: 4/33 (Player of the Match), the first scalp of Dhruv Jurel on 24, then ripping through the middle order. Yashasvi Jaiswal was captaining RR for the first time after Riyan Parag's hamstring injury — Parag had scored 90 in the previous match before going down. Jadeja's 38 was the only resistance as RR were bowled out for 152. GT's 4th straight win has them firmly in the top 4 conversation.",
+      "tag": "Surge"
     },
     {
-      "id": "pbks-three-in-a-row-bowling-exposed",
-      "title": "PBKS' fortress crumbles — 3 straight losses, bowling exposed, top spot lost to SRH",
-      "body": "Punjab Kings, who looked invincible at 6-0-1 just 10 days ago, have now lost three in a row: to RR (chasing 222 at Mullanpur), to GT (failing to defend 163), and to SRH (collapsing for 202 chasing 235 despite Connolly's 107*). Their bowling — always the season's red flag — has been exposed without elite batting cover. They've conceded 222, 163 (defended a low score in vain) and 235 across the three losses. Iyer's captaincy hasn't been the issue; squad balance is. They went heavy on top-order Indians at the auction and didn't invest in a strike bowler. NRR has crashed from +1.333 to +0.555 in 8 days. They have 4 games left, starting with PBKS vs DC at Mullanpur on May 11 — a must-win to stop the slide.",
-      "tag": "Slide"
-    },
-    {
-      "id": "dhoni-watch-may-10-window-closing",
-      "title": "Dhoni watch — CSK home game vs LSG on May 10 looks like the last realistic chance",
-      "body": "MS Dhoni still hasn't played a single match in IPL 2026. The El Clasico against MI on May 2 was widely expected to be his return — instead, Ruturaj confirmed at the toss he was still not fit. Hussey's line ('nearing return... working on running between wickets') has been the same for 8 weeks. The Sunday May 10 fixture vs LSG at Chepauk looks like the perfect setting: home crowd, daytime game (3:30 PM IST start, no rain risk), opponent fresh off a Marsh-led upset but still bottom-half of table, low-stakes if results go a certain way. CSK are on a 2-match winning streak in his absence — the team that needed Dhoni to win games no longer does. If he doesn't play that one, the season — and possibly his IPL career — closes without a final innings. The retirement-via-press-release scenario is increasingly likely.",
-      "tag": "Anticipation"
+      "id": "mi-lsg-eliminated",
+      "title": "MI and LSG officially eliminated — two billionaire-team disappointments of IPL 2026",
+      "body": "It's official: Mumbai Indians and Lucknow Super Giants are out of IPL 2026 playoffs. MI's last-ball loss to RCB at Raipur on May 10 (despite Krunal Pandya's heroic 73 with cramps) sealed their fate at 3-8 from 11 games. LSG's 5-wicket loss to CSK at Chepauk the same day, after starting 2-0 promisingly, ended their slide at 3-8. The biggest disappointments of the season: LSG's Rs.27Cr captain Rishabh Pant has averaged poorly with the bat. Nicholas Pooran is among the worst-performing high-priced overseas buys at 70+ runs in 11 innings; only Mitchell Marsh's 111 vs RCB kept LSG's season memorable. MI's Bumrah-Boult-Hardik core, despite Bumrah's brilliance, couldn't lift them past mid-table. Both teams now play out the string with one eye on the 2027 auction.",
+      "tag": "Out"
     }
   ],
   "auctionHighlights": [
@@ -556,7 +570,7 @@
       "player": "Cameron Green",
       "team": "KKR",
       "price": "Rs. 25.2 Cr",
-      "note": "Most expensive overseas buy ever — KKR back to winning ways with 3 in a row, Green starting to deliver"
+      "note": "Most expensive overseas buy ever — finally delivered: 4 wickets vs DC in KKR's 4-match winning streak; Rs.25.2Cr earning its keep at last"
     },
     {
       "player": "Matheesha Pathirana",
@@ -574,43 +588,43 @@
       "player": "Kartik Sharma",
       "team": "CSK",
       "price": "Rs. 14.2 Cr",
-      "note": "Joint record uncapped buy — sealed CSK's win vs MI with a reverse lap; the Rs.14.2Cr bet starting to pay off"
+      "note": "Joint record uncapped buy — CSK 3 in a row puts them in playoff math; Kartik part of the winning combination"
     },
     {
       "player": "Liam Livingstone",
       "team": "SRH",
       "price": "Rs. 13 Cr",
-      "note": "England all-rounder — SRH go top of the table at 14 points after demolishing PBKS; Cummins now 5W in 6 since return"
+      "note": "England all-rounder — SRH joint-top with RCB on 14 points, separated by NRR; title push real"
     },
     {
       "player": "Josh Inglis",
       "team": "LSG",
       "price": "Rs. 8.6 Cr",
-      "note": "Australia wicket-keeper — LSG end 7-match losing streak by stunning RCB; first signs of life from bottom side"
+      "note": "Australia wicket-keeper — LSG officially ELIMINATED from playoffs after CSK loss at Chepauk; squad reset incoming"
     },
     {
       "player": "Auqib Nabi Dar",
       "team": "DC",
       "price": "Rs. 8.4 Cr",
-      "note": "J&K pacer — DC slip to 7th after CSK humiliation; Auqib back in the side as DC reshuffle"
+      "note": "J&K pacer — 10* with the bat helping DC chase 211 vs PBKS at Dharamsala, sealing the win with a free-hit four"
     },
     {
       "player": "Ravi Bishnoi",
       "team": "RR",
       "price": "Rs. 7.2 Cr",
-      "note": "Leg-spinner — RR slip to 4th at 6-4, inconsistency hurting their playoff push"
+      "note": "Leg-spinner — RR slipped to 6th after GT 77-run thrashing at Jaipur; playoff math now tight"
     },
     {
       "player": "Cooper Connolly",
       "team": "PBKS",
       "price": "Rs. 3 Cr",
-      "note": "Australian all-rounder — 107* off 59 vs SRH (maiden century in ANY format) but in vain; Rs.3Cr buy now PBKS' most reliable batter through 3-game slide"
+      "note": "Australian all-rounder — PBKS in free fall with 4 straight losses; Connolly's 107* vs SRH and earlier Arya partnerships still their bright spots"
     },
     {
       "player": "Quinton de Kock",
       "team": "MI",
       "price": "Rs. 2 Cr",
-      "note": "South Africa opener — MI's revival continues with one win against LSG; de Kock back among the runs in chase"
+      "note": "South Africa opener — MI eliminated from playoffs after RCB loss; de Kock among many MI underperformers"
     },
     {
       "player": "Ashwani Kumar",
@@ -622,7 +636,7 @@
       "player": "Jason Holder",
       "team": "GT",
       "price": "Rs. 7 Cr",
-      "note": "West Indies all-rounder — GT's 3-match winning streak has them up to 5th; Holder consistently key in late-overs"
+      "note": "West Indies all-rounder — GT now 3rd with 14 points, on a winning streak as the auction steal keeps delivering"
     }
   ]
 }
