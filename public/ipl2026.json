@@ -229,7 +229,7 @@
     },
     {
       "rank": 9,
-      "team": "Mumbai Indians",
+      "team": "Mumbai Indians (E)",
       "short": "MI",
       "color": "#004BA0",
       "played": 11,
@@ -255,7 +255,7 @@
     },
     {
       "rank": 10,
-      "team": "Lucknow Super Giants",
+      "team": "Lucknow Super Giants (E)",
       "short": "LSG",
       "color": "#A72056",
       "played": 11,
@@ -346,7 +346,7 @@
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "t1Score": "210/5 (20)",
       "t2Score": "216/7 (19)",
-      "highlight": "PBKS 4TH STRAIGHT LOSS — Arya 50(24), Stoinis & Iyer fall; AUQIB NABI 10* + ASHUTOSH 24(10) + MADHAV TIWARI 18* (PoM) chase 211; Yash Thakur 2/55 in vain; PBKS now choking after 6-0-1 start"
+      "highlight": "PBKS 4TH STRAIGHT LOSS — Arya 56(33), Iyer 59*(36), Shedge 21(8); DC chase 211 with Axar 56 + Miller 51 stand; ASHUTOSH 24(10) & MADHAV TIWARI 18* (PoM) finish it; PBKS choking after 6-0-1 start"
     }
   ],
   "upcomingFixtures": [
@@ -529,7 +529,7 @@
     {
       "id": "pbks-chokers-4-in-a-row",
       "title": "PBKS lose 4 in a row — Madhav Tiwari, Auqib Nabi cameos seal Dharamsala heist",
-      "body": "Punjab Kings have completed an unthinkable collapse. From 6-0-1 on April 19, they've lost 4 in a row to slip to 4th. At Dharamsala on May 11, Priyansh Arya's 24-ball fifty had PBKS at 210/5 — should have been winning. DC chased it with 6 balls to spare, thanks to a series of unlikely heroes: Ashutosh Sharma 24 off 10 (smashed Yash Thakur for two sixes in the death), Madhav Tiwari 18* (Player of the Match), and Auqib Nabi 10* who hit a free-hit four after a no-ball to all but seal it. Iyer admitted post-match: 'Don't have to beat around the bush — fielding and bowling again. Feel it was 30 runs more on this wicket.' PBKS dropped two catches and misfielded repeatedly. The bowling — the season's structural flaw — has now leaked 222, 235 (in vain), 216 (chased) across the slide. NRR has crashed from +1.333 to +0.428. With 3 games left (MI, GT, SRH), they need to win at least 2 to confirm top 4. The 'chokers' label is back in the conversation.",
+      "body": "Punjab Kings have completed an unthinkable collapse. From 6-0-1 on April 19, they've lost 4 in a row to slip to 4th. At Dharamsala on May 11, Priyansh Arya's 56 off 33 and captain Shreyas Iyer's unbeaten 59 off 36 took PBKS to 210/5 — should have been winning. DC chased it down with an over to spare on the back of half-centuries from Axar Patel (56) and David Miller (51), with cameos from Ashutosh Sharma (24 off 10, smashing Yash Thakur for two sixes in the death) and Madhav Tiwari (18* off 8, Player of the Match). Auqib Nabi 10* hit a free-hit four after a no-ball at the death to all but seal it. Iyer admitted post-match: 'Don't have to beat around the bush — fielding and bowling again. Feel it was 30 runs more on this wicket.' Per ESPNcricinfo, PBKS have now dropped 16 catches this season (Shashank Singh alone has 5). With 3 games left (MI, GT, SRH), they need to win at least 2 to confirm top 4. The 'chokers' label is back in the conversation.",
       "tag": "Choke"
     },
     {
